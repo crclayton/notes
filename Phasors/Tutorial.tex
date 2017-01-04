@@ -1,0 +1,108 @@
+\documentclass[12pt]{extarticle}
+\usepackage{apacite, setspace}
+\usepackage[margin=1in]{geometry}
+\usepackage{setspace}
+\usepackage{gensymb}
+
+
+\setlength{\parskip}{\baselineskip}
+
+
+% automatically convert "" to ``''
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+
+
+
+\begin{document}
+
+% ------------------------------ %
+% -------- FRONT MATTER -------- %
+% ------------------------------ %
+
+\title{\huge The Basics of Phasors \\ \Large \medskip University of British Columbia}
+\date{\today}
+\author{Charles Clayton}
+\maketitle
+
+\thispagestyle{empty}
+
+\pagenumbering{roman}
+\setcounter{page}{0}
+
+\clearpage
+
+% ----------------------------- %
+% -------- MAIN MATTER -------- %
+% ----------------------------- %
+
+\pagenumbering{arabic}
+\doublespacing
+
+\section{Introduction}
+
+\subsection{Voltages and Currents}
+
+This is the equation for an AC voltage wave.
+
+$$ v(t) = V_{_{peak}} sin( 2\pi f t + \phi)$$
+
+But that's sort of ugly. So we're going to use the concept of \textbf{phasors}. Instead of treating AC signals as waves, we're going to treat them as vectors because you already learned about those in first year physics. They have magnitudes and angles. 
+
+We're going to take the phase of the wave, $\phi$ -- think of it as the shift or the offset of the wave -- and use that as the angle of the vector. So that's where the name comes from $\rightarrow$ phase vector $\rightarrow$ phasor.
+
+For the magnitude of our phasor, we're going to use the root-mean squared, \textbf{RMS}. The RMS is a good way to measure the magnitude of a wave. And for a sine wave, is just the peak voltage divided by $\sqrt{2}$. So that's our magnitude, and now we have our entire phasor.
+
+$$ \vec{V} = \frac{V_{_{peak}}}{\sqrt{2}} \angle \phi $$
+
+The frequency of the wave is $\omega = 2\pi f$, but we can forget about that now that because we're going to assume that all the waves in the circuit are operating at the same frequency, 60Hz in most of North and South America, and 50Hz in most of Eurasia, Africa, and Australia. %fig: map of 60Hz vs 50Hz in world%
+
+\subsection{Resistances, Reactances, and Impedances}
+
+So there are voltages and currents. We're two-thirds of the way there, we just have to talk about resistances now. But your DC circuits teacher lied to you, Ohms law isn't $V=IR$, it's $\vec{V}=\vec{I}\vec{Z}$. We're no longer just talking about resistances. When we incorporate capacitors and inductors in AC, we're talking about impedances. An \textbf{impedance, $\vec{Z}$} is also a vector. Though we typically don't treat it like a magnitude and an angle, as we do with voltages and currents. Instead, it's broken up into its components. Once component, which we'll treat as the horizontal axis, is the resistance, $R$. That's just the value from the resistor in the branch. The other component is \textbf{reactance, $X$}. 
+
+For an inductor, the reactance is $ X_L = 2 \pi f L$. For a capacitor the reactance is $X_C = \frac{-1}{2\pi f C}$, which includes those frequencies I said we would ignore. 
+
+There's one thing I've been putting off mentioning. So these values are vectors right, so one component is in the horizontal direction, usually called $\hat \imath$, and one component is in the vertical direction, usually called $\hat \jmath$. But instead of writing our vectors as $a \hat \imath + b \hat \jmath$, we're going to imagine them as in the complex plain, so we'll treat them as complex numbers. The x-axis is the real component, the y-axis is the imaginary component. And because electrical engineers already decided to use $i$ to represent current (which sidenote, stands for \textit{intensity} of current), we will instead use $j$ as the imaginary number. So our vector instead becomes  a complex number, $a \hat \imath + b \hat \jmath \rightarrow a + jb$ 
+
+All that to say the impedance vector is made up of the resistance in the branch as the real component, and the reactance of the branch as the imaginary component, $\vec{Z} = R + j X$
+
+$$ \vec{V} = \frac{V_{_{peak}}}{\sqrt{2}} \angle \phi \ \ \ \ \ \ \vec{I} = \frac{I_{_{peak}}}{\sqrt{2}} \angle \phi \ \ \ \ \ \ \  \vec{Z} = R + j X$$
+
+
+\section{Calculations}
+
+So let's do a quick calculation. We have some wire and we don't know if it has any resistance, capacitance, or inductance. So we apply an AC voltage of $v(t) = 240 sin(116t + 28 \degree)$ and see an AC current of $i(t) = 14 sin (116t-14 \degree)$. Let's figure out the characteristics of this wire.
+
+First let's turn these waves into phasors.
+
+$$\vec{V} = \frac{240}{\sqrt{2}} \angle 28 \degree \ \ \ \ \vec{I} = \frac{14}{\sqrt{2}} \angle -14 \degree$$
+
+Then we can apply Ohm's law.
+
+$$\vec{Z} = \frac{\vec{V}}{\vec{I}} = 12.72 + j11.47 $$
+
+Then we can deconstruct the impedance into its components.
+
+$$R = 12.72\Omega \ \ \ \ \ X = 11.47\Omega$$
+
+However, we haven't entirely solved our problem. We know that the reactance is 11.47$\Omega$, but before we can calculate inductance or capacitance, we have to determine if the reactance is from a capacitor or an inductor. Recall the formulas for reactance, $ X_L = 2 \pi f L$ and $X_C = \frac{-1}{2\pi f C}$. This shows us that whenever the reactance is negative (called \textbf{leading}), there's a capacitor in the line. And whenever the reactance is positive (called \textbf{lagging}), it's due to an inductor. Since the reactance is positive, we know there is an inductor. From the original equations we can see that the frequency, $\omega = 2\pi f = 116\ rad/s$.
+
+Rearranging the formula we get
+
+$$L = \frac{X_L}{2 \pi f} = \frac{11.47}{116} = 98.9mH $$
+
+And that's how phasors work.
+
+% ----------------------------- %
+% -------- BACK MATTER -------- %
+% ----------------------------- %
+
+% bibliography
+\clearpage
+\doublespacing
+\bibliographystyle{apacite}
+\bibliography{references}
+
+
+\end{document}

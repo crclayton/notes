@@ -1,0 +1,138 @@
+\contentsline {section}{Table of Contents}{i}
+\contentsline {section}{List of Figures}{v}
+\contentsline {section}{List of Tables}{vi}
+\contentsline {section}{Glossary}{vii}
+\contentsline {section}{\numberline {1}Economic Issues and Concepts}{1}
+\contentsline {subsection}{\numberline {1.1}What is Economics}{1}
+\contentsline {subsubsection}{\numberline {1.1.1}Scarcity}{1}
+\contentsline {subsubsection}{\numberline {1.1.2}Opportunity cost}{1}
+\contentsline {subsubsection}{\numberline {1.1.3}Production Possibilities Curve}{1}
+\contentsline {subsubsection}{\numberline {1.1.4}Four Key Economic Problems}{2}
+\contentsline {subsection}{\numberline {1.2}The Nature of Modern Economies}{3}
+\contentsline {subsubsection}{\numberline {1.2.1}Self-Organizing}{3}
+\contentsline {subsubsection}{\numberline {1.2.2}Incentives}{3}
+\contentsline {subsubsection}{\numberline {1.2.3}Specialization and Trade}{4}
+\contentsline {subsubsection}{\numberline {1.2.4}Money and Globalization}{4}
+\contentsline {subsection}{\numberline {1.3}Types of Economic Systems}{5}
+\contentsline {subsubsection}{\numberline {1.3.1}Traditional Economies}{5}
+\contentsline {subsubsection}{\numberline {1.3.2}Command Economies}{5}
+\contentsline {subsubsection}{\numberline {1.3.3}Market Economies}{6}
+\contentsline {subsubsection}{\numberline {1.3.4}Mixed Economies}{6}
+\contentsline {section}{\numberline {2}Economic Theories}{6}
+\contentsline {section}{\numberline {3}Supply and Demand}{7}
+\contentsline {subsection}{\numberline {3.1}Demand}{7}
+\contentsline {subsubsection}{\numberline {3.1.1}Quantity Demand, $Q_d$}{7}
+\contentsline {subsubsection}{\numberline {3.1.2}Factors Influencing Quantity Demand}{7}
+\contentsline {subsubsection}{\numberline {3.1.3}Demand Curve, $D$}{8}
+\contentsline {subsubsection}{\numberline {3.1.4}Shifts of Demand Curve}{8}
+\contentsline {subsection}{\numberline {3.2}Supply}{9}
+\contentsline {subsubsection}{\numberline {3.2.1}Quantity Supply, $Q_s$}{9}
+\contentsline {subsection}{\numberline {3.3}Determination of Price}{10}
+\contentsline {subsubsection}{\numberline {3.3.1}Market Equilibrium}{10}
+\contentsline {subsubsection}{\numberline {3.3.2}Shifts in Market Equilibrium}{11}
+\contentsline {subsubsection}{\numberline {3.3.3}Relative Prices and Inflation}{12}
+\contentsline {section}{\numberline {4}Elasticity, $ \eta $}{13}
+\contentsline {subsection}{\numberline {4.1}Price Elasticity of Demand}{13}
+\contentsline {subsubsection}{\numberline {4.1.1}Factors Determining Elasticity of Demand}{15}
+\contentsline {subsubsection}{\numberline {4.1.2}Effect on Revenue}{15}
+\contentsline {subsection}{\numberline {4.2}Price Elasticity of Supply}{15}
+\contentsline {subsection}{\numberline {4.3}Income Elasticity of Demand}{16}
+\contentsline {subsubsection}{\numberline {4.3.1}Goods}{16}
+\contentsline {subsection}{\numberline {4.4}Tax Incidence}{17}
+\contentsline {subsection}{\numberline {4.5}Cross-Elasticity}{17}
+\contentsline {section}{\numberline {5}Markets in Action}{18}
+\contentsline {subsection}{\numberline {5.1}Government-Controlled Prices}{18}
+\contentsline {subsubsection}{\numberline {5.1.1}Disequilibrium Prices}{18}
+\contentsline {subsubsection}{\numberline {5.1.2}Price Floors}{19}
+\contentsline {subsubsection}{\numberline {5.1.3}Price Ceilings}{19}
+\contentsline {subsubsection}{\numberline {5.1.4}Market Efficiency}{20}
+\contentsline {subsubsection}{\numberline {5.1.5}Effect of Price Controls}{21}
+\contentsline {subsubsection}{\numberline {5.1.6}Output Quotas}{21}
+\contentsline {section}{\numberline {6}Consumer Behaviour}{21}
+\contentsline {subsection}{\numberline {6.1}Marginal Utility and Consumer Choice}{22}
+\contentsline {subsubsection}{\numberline {6.1.1}Diminishing Marginal Utility}{22}
+\contentsline {subsubsection}{\numberline {6.1.2}Maximizing Utility}{23}
+\contentsline {subsubsection}{\numberline {6.1.3}Deriving the Consumer Demand Curve}{24}
+\contentsline {subsubsection}{\numberline {6.1.4}Market Demand Curve}{24}
+\contentsline {subsection}{\numberline {6.2}Income and Substitution Effects of Price Changes}{25}
+\contentsline {subsubsection}{\numberline {6.2.1}Substitution Effect}{25}
+\contentsline {subsubsection}{\numberline {6.2.2}Income Effect}{25}
+\contentsline {subsubsection}{\numberline {6.2.3}Contradictions of the Demand Curve}{26}
+\contentsline {subsection}{\numberline {6.3}Consumer Surplus}{27}
+\contentsline {subsubsection}{\numberline {6.3.1}The Paradox of Value}{28}
+\contentsline {subsection}{\numberline {6.4}Indifference Theory}{29}
+\contentsline {subsubsection}{\numberline {6.4.1}Indifference Curve}{29}
+\contentsline {subsection}{\numberline {6.5}The Budget Line}{30}
+\contentsline {subsection}{\numberline {6.6}Consumer Utility Maximizing}{30}
+\contentsline {subsubsection}{\numberline {6.6.1}Income-Consumption Line}{31}
+\contentsline {subsubsection}{\numberline {6.6.2}Price-Consumption Line}{31}
+\contentsline {subsubsection}{\numberline {6.6.3}Income and Substitution Effect}{31}
+\contentsline {section}{\numberline {7}Firms}{32}
+\contentsline {subsection}{\numberline {7.1}Financing of Firms}{32}
+\contentsline {subsection}{\numberline {7.2}Production, Cost, and Profits}{33}
+\contentsline {subsection}{\numberline {7.3}Time Horizons}{33}
+\contentsline {section}{\numberline {8}Production in the Short Run}{34}
+\contentsline {subsection}{\numberline {8.1}Total, Average, and Marginal Products}{34}
+\contentsline {subsubsection}{\numberline {8.1.1}Diminishing Marginal Product}{34}
+\contentsline {subsection}{\numberline {8.2}Costs in the Short Run}{35}
+\contentsline {subsubsection}{\numberline {8.2.1}Short Run Cost Curves}{36}
+\contentsline {section}{\numberline {9}Production in the Long Run}{37}
+\contentsline {subsection}{\numberline {9.1}Profit Maximization and Cost Minimization}{37}
+\contentsline {subsection}{\numberline {9.2}Long-Run Cost Curves}{38}
+\contentsline {subsubsection}{\numberline {9.2.1}(Dis)economies of Scale}{38}
+\contentsline {subsubsection}{\numberline {9.2.2}Relationship Between SRAC and LRAC}{39}
+\contentsline {subsubsection}{\numberline {9.2.3}Shifts in the LRAC curve}{40}
+\contentsline {subsection}{\numberline {9.3}The Very Long Run}{40}
+\contentsline {subsection}{\numberline {9.4}Isoquant and Isocost Analysis}{40}
+\contentsline {section}{\numberline {10}Perfectly Competitive Markets}{41}
+\contentsline {subsection}{\numberline {10.1}Assumptions of Perfect Competition}{42}
+\contentsline {subsection}{\numberline {10.2}Short--Run Decisions}{42}
+\contentsline {subsubsection}{\numberline {10.2.1}Short--Run Equilibrium}{44}
+\contentsline {subsection}{\numberline {10.3}Long--Run Decisions}{45}
+\contentsline {subsubsection}{\numberline {10.3.1}Entry and Exit of Firms}{45}
+\contentsline {subsubsection}{\numberline {10.3.2}Speed of Exit}{45}
+\contentsline {subsubsection}{\numberline {10.3.3}Long--Run Equilibrium}{46}
+\contentsline {subsubsection}{\numberline {10.3.4}Changes in Technology}{47}
+\contentsline {section}{\numberline {11}Monopolies, Cartels, Price Discrimination}{47}
+\contentsline {subsection}{\numberline {11.1}Single-Price Monopolist}{48}
+\contentsline {subsubsection}{\numberline {11.1.1}Short--Run Profit Maximization}{48}
+\contentsline {subsubsection}{\numberline {11.1.2}Entry Barriers and Long-Run Equilibrium}{50}
+\contentsline {subsubsection}{\numberline {11.1.3}Very Long Run and Creative Destruction}{51}
+\contentsline {subsection}{\numberline {11.2}Cartels as Monopolies}{51}
+\contentsline {subsection}{\numberline {11.3}Price Discriminating Monopolies}{52}
+\contentsline {subsubsection}{\numberline {11.3.1}Types of Price Discrimination}{52}
+\contentsline {subsubsection}{\numberline {11.3.2}Consequences of Price Discrimination}{53}
+\contentsline {section}{\numberline {12}Imperfect Competition and Game Theory}{53}
+\contentsline {subsection}{\numberline {12.1}Characteristics of Imperfect Competition}{54}
+\contentsline {subsubsection}{\numberline {12.1.1}Product Differentiation}{54}
+\contentsline {subsubsection}{\numberline {12.1.2}Sticky Prices}{55}
+\contentsline {subsubsection}{\numberline {12.1.3}Non-Price Competition}{55}
+\contentsline {subsection}{\numberline {12.2}Monopolistic Competition}{55}
+\contentsline {subsection}{\numberline {12.3}Oligopoly}{57}
+\contentsline {subsection}{\numberline {12.4}Game Theory (Strategic Behaviour)}{58}
+\contentsline {subsubsection}{\numberline {12.4.1}Nash Equilibrium}{59}
+\contentsline {subsection}{\numberline {12.5}Oligopoly in Practice}{61}
+\contentsline {section}{\numberline {13}Efficiency and Public Policy}{62}
+\contentsline {subsection}{\numberline {13.1}Productive Efficiency}{62}
+\contentsline {subsection}{\numberline {13.2}Allocative Efficiency}{63}
+\contentsline {subsection}{\numberline {13.3}Efficiency of Market Structures}{63}
+\contentsline {subsubsection}{\numberline {13.3.1}Perfect Competition}{63}
+\contentsline {subsubsection}{\numberline {13.3.2}Monopoly}{64}
+\contentsline {subsubsection}{\numberline {13.3.3}Monopolistic Competition and Oligopoly}{64}
+\contentsline {subsection}{\numberline {13.4}Consumer and Producer Surplus}{64}
+\contentsline {subsection}{\numberline {13.5}Economic Regulation to Promote Efficiency}{65}
+\contentsline {subsubsection}{\numberline {13.5.1}Regulation of Natural Monopolies}{65}
+\contentsline {subsubsection}{\numberline {13.5.2}Regulation of Oligopolies}{66}
+\contentsline {section}{\numberline {14}Role of Government}{66}
+\contentsline {subsection}{\numberline {14.1}Basic Function of Government}{66}
+\contentsline {subsection}{\numberline {14.2}The Case for Free Markets}{67}
+\contentsline {subsubsection}{\numberline {14.2.1}Allocative Efficiency}{67}
+\contentsline {subsubsection}{\numberline {14.2.2}Automatic Coordination}{67}
+\contentsline {subsubsection}{\numberline {14.2.3}Innovation and Growth}{67}
+\contentsline {subsubsection}{\numberline {14.2.4}Decentralization of Power}{68}
+\contentsline {subsection}{\numberline {14.3}The Case for Government Intervention}{68}
+\contentsline {subsubsection}{\numberline {14.3.1}Market Power}{68}
+\contentsline {subsubsection}{\numberline {14.3.2}Externalities}{68}
+\contentsline {subsubsection}{\numberline {14.3.3}Non-Rivalrous and Non-Excludable Goods}{69}
+\contentsline {subsubsection}{\numberline {14.3.4}Asymmetric Information}{70}
+\contentsline {subsection}{\numberline {14.4}Other Social Goals of Government}{71}

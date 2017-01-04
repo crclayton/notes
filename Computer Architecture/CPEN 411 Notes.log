@@ -1,0 +1,1233 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  18 DEC 2016 14:45
+entering extended mode
+**"./CPEN 411 Notes.tex"
+("CPEN 411 Notes.tex"
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen103
+\extrarowheight=\dimen104
+\NC@list=\toks14
+\extratabsurround=\skip43
+\backup@length=\skip44
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\bookta
+bs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen105
+\lightrulewidth=\dimen106
+\cmidrulewidth=\dimen107
+\belowrulesep=\dimen108
+\belowbottomsep=\dimen109
+\aboverulesep=\dimen110
+\abovetopsep=\dimen111
+\cmidrulesep=\dimen112
+\cmidrulekern=\dimen113
+\defaultaddspace=\dimen114
+\@cmidla=\count87
+\@cmidlb=\count88
+\@aboverulesep=\dimen115
+\@belowrulesep=\dimen116
+\@thisruleclass=\count89
+\@lastruleclass=\count90
+\@thisrulewidth=\dimen117
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 96.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count91
+))
+\Gin@req@height=\dimen118
+\Gin@req@width=\dimen119
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\apacite\apacite
+.sty"
+Package: apacite 2013/07/21 v6.03 APA citation
+\c@BibCnt=\count92
+\bibleftmargin=\skip45
+\bibindent=\skip46
+\bibparsep=\skip47
+\bibitemsep=\skip48
+\biblabelsep=\skip49
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspa
+ce.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\appendix\append
+ix.sty"
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count93
+\c@@ppsavesec=\count94
+\c@@ppsaveapp=\count95
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\base
+\glossaries.sty"
+Package: glossaries 2016/06/09 v4.25 (NLCT)
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks16
+\XKV@tempa@toks=\toks17
+)
+\XKV@depth=\count96
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\mfirstuc\mfirst
+uc.sty"
+Package: mfirstuc 2015/12/17 v2.02 (NLCT)
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolb
+ox.sty"
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count97
+)
+\@glsmfirst=\toks18
+\@glsmrest=\toks19
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\textcase\textca
+se.sty"
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\xfor\xfor.sty"
+Package: xfor 2009/02/05 v1.05 (NLCT)
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\datatool\datato
+ol-base.sty"
+Package: datatool-base 2016/01/18 v2.25 (NLCT)
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2016/03/10 v2.15b AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen120
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen121
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count98
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count99
+\leftroot@=\count100
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count101
+\DOTSCASE@=\count102
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen122
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count103
+\c@MaxMatrixCols=\count104
+\dotsspace@=\muskip10
+\c@parentequation=\count105
+\dspbrk@lvl=\count106
+\tag@help=\toks21
+\row@=\count107
+\column@=\count108
+\maxfields@=\count109
+\andhelp@=\toks22
+\eqnshift@=\dimen123
+\alignsep@=\dimen124
+\tagshift@=\dimen125
+\tagwidth@=\dimen126
+\totwidth@=\dimen127
+\lineht@=\dimen128
+\@envbody=\toks23
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\substr\substr.s
+ty"
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count110
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\datatool\datato
+ol-fp.sty"
+Package: datatool-fp 2016/01/18 v2.25 (NLCT)
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp.sty"
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\defpattern.s
+ty"
+Package: defpattern 1994/10/12
+\actioncount=\count111
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-basic.sty
+"
+Package: fp-basic 1996/05/13
+\FP@xs=\count112
+\FP@xia=\count113
+\FP@xib=\count114
+\FP@xfa=\count115
+\FP@xfb=\count116
+\FP@rega=\count117
+\FP@regb=\count118
+\FP@regs=\count119
+\FP@times=\count120
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-addons.st
+y"
+Package: fp-addons 1995/03/15
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-snap.sty"
+Package: fp-snap 1995/04/05
+) ("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-exp.sty
+"
+Package: fp-exp 1995/04/03
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-trigo.sty
+"
+Package: fp-trigo 1995/04/14
+) ("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-pas.sty
+"
+Package: fp-pas 1994/08/29
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-random.st
+y"
+Package: fp-random 1995/02/23
+\FPseed=\count121
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-eqn.sty"
+Package: fp-eqn 1995/04/03
+) ("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-upn.sty
+"
+Package: fp-upn 1996/10/21
+) ("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-eval.st
+y"
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks25
+\@dtl@tmpcount=\count122
+\dtl@tmplength=\skip53
+\dtl@sortresult=\count123
+\@dtl@numgrpsepcount=\count124
+\@dtl@datatype=\count125
+\dtl@codeA=\count126
+\dtl@codeB=\count127
+\@dtl@foreach@level=\count128
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\base
+\glossaries-compatible-307.sty"
+Package: glossaries-compatible-307 2016/06/09 v4.25 (NLCT)
+)
+\gls@level=\count129
+\@gls@tmpb=\toks26
+\gls@tmplen=\skip54
+\glskeylisttok=\toks27
+\glslabeltok=\toks28
+\glsshorttok=\toks29
+\glslongtok=\toks30
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styl
+es\glossary-hypernav.sty"
+Package: glossary-hypernav 2016/06/09 v4.25 (NLCT)
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styl
+es\glossary-list.sty"
+Package: glossary-list 2016/06/09 v4.25 (NLCT)
+\glslistdottedwidth=\skip55
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styl
+es\glossary-long.sty"
+Package: glossary-long 2016/06/09 v4.25 (NLCT)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip56
+\LTright=\skip57
+\LTpre=\skip58
+\LTpost=\skip59
+\LTchunksize=\count130
+\LTcapwidth=\dimen129
+\LT@head=\box28
+\LT@firsthead=\box29
+\LT@foot=\box30
+\LT@lastfoot=\box31
+\LT@cols=\count131
+\LT@rows=\count132
+\c@LT@tables=\count133
+\c@LT@chunks=\count134
+\LT@p@ftn=\toks31
+)
+\glsdescwidth=\skip60
+\glspagelistwidth=\skip61
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styl
+es\glossary-super.sty"
+Package: glossary-super 2016/06/09 v4.25 (NLCT)
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\supertabular\su
+pertabular.sty"
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count135
+\ST@wd=\dimen130
+\ST@rightskip=\skip62
+\ST@leftskip=\skip63
+\ST@parfillskip=\skip64
+\ST@pageleft=\dimen131
+\ST@headht=\dimen132
+\ST@tailht=\dimen133
+\ST@pagesofar=\dimen134
+\ST@pboxht=\dimen135
+\ST@lineht=\dimen136
+\ST@stretchht=\dimen137
+\ST@prevht=\dimen138
+\ST@toadd=\dimen139
+\ST@dimen=\dimen140
+\ST@pbox=\box32
+))
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styl
+es\glossary-tree.sty"
+Package: glossary-tree 2016/06/09 v4.25 (NLCT)
+\glstreeindent=\skip65
+))
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\tocloft\tocloft
+.sty"
+Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 44.
+\cftparskip=\skip66
+\cftbeforetoctitleskip=\skip67
+\cftaftertoctitleskip=\skip68
+\cftbeforepartskip=\skip69
+\cftpartnumwidth=\skip70
+\cftpartindent=\skip71
+\cftbeforesecskip=\skip72
+\cftsecindent=\skip73
+\cftsecnumwidth=\skip74
+\cftbeforesubsecskip=\skip75
+\cftsubsecindent=\skip76
+\cftsubsecnumwidth=\skip77
+\cftbeforesubsubsecskip=\skip78
+\cftsubsubsecindent=\skip79
+\cftsubsubsecnumwidth=\skip80
+\cftbeforeparaskip=\skip81
+\cftparaindent=\skip82
+\cftparanumwidth=\skip83
+\cftbeforesubparaskip=\skip84
+\cftsubparaindent=\skip85
+\cftsubparanumwidth=\skip86
+\cftbeforeloftitleskip=\skip87
+\cftafterloftitleskip=\skip88
+\cftbeforefigskip=\skip89
+\cftfigindent=\skip90
+\cftfignumwidth=\skip91
+\c@lofdepth=\count136
+\c@lotdepth=\count137
+\cftbeforelottitleskip=\skip92
+\cftafterlottitleskip=\skip93
+\cftbeforetabskip=\skip94
+\cfttabindent=\skip95
+\cfttabnumwidth=\skip96
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\titlesec\titles
+ec.sty"
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box33
+\beforetitleunit=\skip97
+\aftertitleunit=\skip98
+\ttl@plus=\dimen141
+\ttl@minus=\dimen142
+\ttl@toksa=\toks32
+\titlewidth=\dimen143
+\titlewidthlast=\dimen144
+\titlewidthfirst=\dimen145
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyvrb\fancyv
+rb.sty"
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count138
+\FV@InFile=\read1
+\FV@TabBox=\box34
+\c@FancyVerbLine=\count139
+\FV@StepNumber=\count140
+\FV@OutFile=\write3
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count141
+\float@exts=\toks33
+\float@box=\box35
+\@float@everytoks=\toks34
+\@floatcapt=\box36
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\footmisc\footmi
+sc.sty"
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks35
+\footnotemargin=\dimen146
+\c@pp@next@reset=\count142
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
+.
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\alltt.sty"
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquot
+es.sty"
+Package: csquotes 2016/07/14 v5.1h context-sensitive quotations (JAW)
+\csq@reset=\count143
+\csq@gtype=\count144
+\csq@glevel=\count145
+\csq@qlevel=\count146
+\csq@maxlvl=\count147
+\csq@tshold=\count148
+\csq@ltx@everypar=\toks36
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquot
+es.def"
+File: csquotes.def 2016/07/14 v5.1h csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquot
+es.cfg"
+File: csquotes.cfg 
+)
+Package csquotes Info: Enabling multilingual quotes.
+Package csquotes Info: Redefining alias 'english' -> 'english/american'.
+)
+Package csquotes Info: Allocating character ".
+\c@myequations=\count149
+\cftbeforemyequationsskip=\skip99
+\cftmyequationsindent=\skip100
+\cftmyequationsnumwidth=\skip101
+\c@equdepth=\count150
+\cftbeforeequtitleskip=\skip102
+\cftafterequtitleskip=\skip103
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
+
+
+Package csquotes Warning: No multilingual support.
+(csquotes)                Cannot enable multilingual quotes on input line 67.
+
+("CPEN 411 Notes.aux")
+\openout1 = `"CPEN 411 Notes.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf
+.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count151
+\scratchdimen=\dimen147
+\scratchbox=\box37
+\nofMPsegments=\count152
+\nofMParguments=\count153
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count154
+\MPscratchDim=\dimen148
+\MPnumerator=\count155
+\makeMPintoPDFobject=\count156
+\everyMPtoPDFconversion=\toks38
+) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+\c@maskedRefs=\count157
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\apacite\english
+.apc"
+File: english.apc 2013/07/21 v6.03 apacite language file
+LaTeX Info: Redefining \BPBI on input line 129.
+LaTeX Info: Redefining \BHBI on input line 130.
+)
+Package csquotes Info: Making character " active on input line 67.
+ [0
+
+{C:/Users/Charles Clayton/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (
+"CPEN 411 Notes.toc" [1] [2] [3])
+\tf@toc=\write4
+\openout4 = `"CPEN 411 Notes.toc"'.
+
+ [4] ("CPEN 411 Notes.lof" [5])
+\tf@lof=\write5
+\openout5 = `"CPEN 411 Notes.lof"'.
+
+
+("CPEN 411 Notes.lot")
+\tf@lot=\write6
+\openout6 = `"CPEN 411 Notes.lot"'.
+
+ ("CPEN 411 Notes.equ" [6])
+\tf@equ=\write7
+\openout7 = `"CPEN 411 Notes.equ"'.
+
+ [7]
+
+Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}]
+. Rerun may be required (or you may have forgotten to use commands like \gls) o
+n input line 99.
+
+[1] [2] [3] [4]
+<img/PerformanceSimulator.png, id=52, 251.43938pt x 70.01157pt>
+File: img/PerformanceSimulator.png Graphic file (type png)
+
+<use img/PerformanceSimulator.png>
+Package pdftex.def Info: img/PerformanceSimulator.png used on input line 265.
+(pdftex.def)             Requested size: 227.62204pt x 63.37944pt.
+ [5 <./img/PerformanceSimulator.png>]
+[6] <img/ArithGeo.png, id=60, 306.01828pt x 113.67468pt>
+File: img/ArithGeo.png Graphic file (type png)
+
+<use img/ArithGeo.png>
+Package pdftex.def Info: img/ArithGeo.png used on input line 340.
+(pdftex.def)             Requested size: 312.9803pt x 116.26578pt.
+ [7 <./img/ArithGeo.png>] [8] [9] [10] [11]
+Overfull \hbox (14.49707pt too wide) in paragraph at lines 485--486
+[]$[]  \OMS/cmsy/m/n/10 !  []  !  []$ 
+ []
+
+<img/InstructionCycle.png, id=78, 304.13625pt x 355.3275pt>
+File: img/InstructionCycle.png Graphic file (type png)
+
+<use img/InstructionCycle.png>
+Package pdftex.def Info: img/InstructionCycle.png used on input line 496.
+(pdftex.def)             Requested size: 170.71652pt x 199.45374pt.
+ [12]
+Overfull \hbox (16.21498pt too wide) in paragraph at lines 517--533
+ [][] 
+ []
+
+
+Overfull \hbox (8.98865pt too wide) in paragraph at lines 538--554
+ [][] 
+ []
+
+[13 <./img/InstructionCycle.png>]
+Overfull \hbox (16.21498pt too wide) in paragraph at lines 571--589
+ [][] 
+ []
+
+<img/Rtype.png, id=86, 249.93375pt x 47.42719pt>
+File: img/Rtype.png Graphic file (type png)
+ <use img/Rtype.png>
+Package pdftex.def Info: img/Rtype.png used on input line 600.
+(pdftex.def)             Requested size: 227.62204pt x 43.19498pt.
+ [14]
+<img/Itype.png, id=91, 251.06297pt x 49.30922pt>
+File: img/Itype.png Graphic file (type png)
+ <use img/Itype.png>
+Package pdftex.def Info: img/Itype.png used on input line 609.
+(pdftex.def)             Requested size: 227.62204pt x 44.70741pt.
+
+<img/Jtype.png, id=92, 249.93375pt x 48.93282pt>
+File: img/Jtype.png Graphic file (type png)
+ <use img/Jtype.png>
+Package pdftex.def Info: img/Jtype.png used on input line 618.
+(pdftex.def)             Requested size: 227.62204pt x 44.56624pt.
+
+<img/TranslatedInto.png, id=93, 274.40016pt x 73.39922pt>
+File: img/TranslatedInto.png Graphic file (type png)
+
+<use img/TranslatedInto.png>
+Package pdftex.def Info: img/TranslatedInto.png used on input line 632.
+(pdftex.def)             Requested size: 227.62204pt x 60.88773pt.
+ [15 <./img/Rtype.png> <./img/Itype.png> <./img/Jtype.png>] [16 <./img/Translat
+edInto.png>]
+<img/ISAClasses.png, id=103, 345.16454pt x 216.05719pt>
+File: img/ISAClasses.png Graphic file (type png)
+
+<use img/ISAClasses.png>
+Package pdftex.def Info: img/ISAClasses.png used on input line 720.
+(pdftex.def)             Requested size: 256.0748pt x 160.29189pt.
+ [17]
+<img/Endian.png, id=108, 561.22173pt x 305.26547pt>
+File: img/Endian.png Graphic file (type png)
+ <use img/Endian.png>
+Package pdftex.def Info: img/Endian.png used on input line 736.
+(pdftex.def)             Requested size: 227.62204pt x 123.80882pt.
+
+Overfull \hbox (6.94391pt too wide) in paragraph at lines 744--745
+\OT1/cmr/m/n/10 In many ar-chi-tec-tures, par-tic-u-larly RISC ar-chi-tec-tures
+, ad-dresses must be aligned.
+ []
+
+[18 <./img/ISAClasses.png>]
+<img/MemoryAlignment.png, id=112, 440.0189pt x 232.24266pt>
+File: img/MemoryAlignment.png Graphic file (type png)
+
+<use img/MemoryAlignment.png>
+Package pdftex.def Info: img/MemoryAlignment.png used on input line 753.
+(pdftex.def)             Requested size: 312.9803pt x 165.19464pt.
+ [19 <./img/Endian.png> <./img/MemoryAlignment.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 793.
+
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 793.
+ [20]
+<img/InstructionFetch.png, id=120, 228.10219pt x 178.79297pt>
+File: img/InstructionFetch.png Graphic file (type png)
+
+<use img/InstructionFetch.png>
+Package pdftex.def Info: img/InstructionFetch.png used on input line 840.
+(pdftex.def)             Requested size: 170.71652pt x 133.8161pt.
+ [21]
+<img/ALU.png, id=124, 471.26062pt x 176.53453pt>
+File: img/ALU.png Graphic file (type png)
+ <use img/ALU.png>
+Package pdftex.def Info: img/ALU.png used on input line 856.
+(pdftex.def)             Requested size: 312.9803pt x 117.24313pt.
+
+<img/LoadsAndStores.png, id=125, 348.92859pt x 202.88297pt>
+File: img/LoadsAndStores.png Graphic file (type png)
+
+<use img/LoadsAndStores.png>
+Package pdftex.def Info: img/LoadsAndStores.png used on input line 869.
+(pdftex.def)             Requested size: 227.62204pt x 132.34909pt.
+ [22 <./img/InstructionFetch.png> <./img/ALU.png>]
+<img/Branch.png, id=129, 331.6139pt x 242.02922pt>
+File: img/Branch.png Graphic file (type png)
+ <use img/Branch.png>
+Package pdftex.def Info: img/Branch.png used on input line 884.
+(pdftex.def)             Requested size: 284.52756pt x 207.67203pt.
+
+<img/ALUandLoadStore.png, id=130, 440.0189pt x 210.41109pt>
+File: img/ALUandLoadStore.png Graphic file (type png)
+
+<use img/ALUandLoadStore.png>
+Package pdftex.def Info: img/ALUandLoadStore.png used on input line 900.
+(pdftex.def)             Requested size: 341.43306pt x 163.27238pt.
+ [23 <./img/LoadsAndStores.png>]
+Overfull \hbox (4.0276pt too wide) in paragraph at lines 904--905
+[]\OT1/cmr/m/n/10 Recall that some-times load in-struc-tions use dis-place-ment
+ like \OT1/cmtt/m/n/10 LD R1, R2(R9)\OT1/cmr/m/n/10 .
+ []
+
+[24 <./img/Branch.png> <./img/ALUandLoadStore.png>]
+<img/WithBranchJumps.png, id=138, 524.71031pt x 355.3275pt>
+File: img/WithBranchJumps.png Graphic file (type png)
+
+<use img/WithBranchJumps.png>
+Package pdftex.def Info: img/WithBranchJumps.png used on input line 914.
+(pdftex.def)             Requested size: 341.43306pt x 231.22037pt.
+ [25 <./img/WithBranchJumps.png>]
+<img/SingleCycleMIPS.png, id=142, 592.83984pt x 481.8pt>
+File: img/SingleCycleMIPS.png Graphic file (type png)
+
+<use img/SingleCycleMIPS.png>
+Package pdftex.def Info: img/SingleCycleMIPS.png used on input line 928.
+(pdftex.def)             Requested size: 341.43306pt x 277.48865pt.
+
+<img/Pipelining.png, id=143, 426.09187pt x 304.51265pt>
+File: img/Pipelining.png Graphic file (type png)
+
+<use img/Pipelining.png>
+Package pdftex.def Info: img/Pipelining.png used on input line 938.
+(pdftex.def)             Requested size: 256.0748pt x 183.01566pt.
+ [26 <./img/SingleCycleMIPS.png>]
+<img/FloatingPoint.png, id=147, 426.09187pt x 228.855pt>
+File: img/FloatingPoint.png Graphic file (type png)
+
+<use img/FloatingPoint.png>
+Package pdftex.def Info: img/FloatingPoint.png used on input line 956.
+(pdftex.def)             Requested size: 284.52756pt x 152.8292pt.
+ [27 <./img/Pipelining.png>]
+<img/FloatingPointPipe.png, id=151, 360.97359pt x 280.79906pt>
+File: img/FloatingPointPipe.png Graphic file (type png)
+
+<use img/FloatingPointPipe.png>
+Package pdftex.def Info: img/FloatingPointPipe.png used on input line 968.
+(pdftex.def)             Requested size: 227.62204pt x 177.06715pt.
+ [28 <./img/FloatingPoint.png> <./img/FloatingPointPipe.png>] <img/PipeliningMI
+PS.png, id=155, 758.08218pt x 432.11438pt>
+File: img/PipeliningMIPS.png Graphic file (type png)
+
+<use img/PipeliningMIPS.png>
+Package pdftex.def Info: img/PipeliningMIPS.png used on input line 1008.
+(pdftex.def)             Requested size: 341.43306pt x 194.6211pt.
+
+<img/PipeliningMIPSRegs.png, id=156, 511.9125pt x 345.16454pt>
+File: img/PipeliningMIPSRegs.png Graphic file (type png)
+
+<use img/PipeliningMIPSRegs.png>
+Package pdftex.def Info: img/PipeliningMIPSRegs.png used on input line 1017.
+(pdftex.def)             Requested size: 312.9803pt x 211.02933pt.
+ [29] [30 <./img/PipeliningMIPS.png> <./img/PipeliningMIPSRegs.png>]
+Overfull \hbox (15.91576pt too wide) in paragraph at lines 1044--1055
+ [][] 
+ []
+
+[31]
+Overfull \hbox (2.84166pt too wide) in paragraph at lines 1089--1090
+[]$\OML/cmm/m/it/10 Execution time[] \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 IC\OT1
+/cmr/m/n/10 )(\OML/cmm/m/it/10 CPI\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 Cycle time
+\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 IC\OT1/cmr/m/n/10 )(1 + 0\OML/cmm/m/it/10
+ :\OT1/cmr/m/n/10 40)(\OML/cmm/m/it/10 Cycle time\OT1/cmr/m/n/10 )$ 
+ []
+
+[32] [33] [34]
+<img/MulticycleOperations.png, id=179, 427.5975pt x 378.66469pt>
+File: img/MulticycleOperations.png Graphic file (type png)
+
+<use img/MulticycleOperations.png>
+Package pdftex.def Info: img/MulticycleOperations.png used on input line 1191.
+(pdftex.def)             Requested size: 199.16928pt x 176.3777pt.
+ [35]
+<img/PipelinedFU.png, id=184, 766.73953pt x 404.26031pt>
+File: img/PipelinedFU.png Graphic file (type png)
+
+<use img/PipelinedFU.png>
+Package pdftex.def Info: img/PipelinedFU.png used on input line 1209.
+(pdftex.def)             Requested size: 341.43306pt x 180.02173pt.
+ [36 <./img/MulticycleOperations.png> <./img/PipelinedFU.png>] [37] <img/HOLB.p
+ng, id=191, 526.59235pt x 256.33266pt>
+File: img/HOLB.png Graphic file (type png)
+
+<use img/HOLB.png>
+Package pdftex.def Info: img/HOLB.png used on input line 1268.
+(pdftex.def)             Requested size: 227.62204pt x 110.80367pt.
+ [38 <./img/HOLB.png>] [39] [40] [41] [42]
+<img/ROB.png, id=208, 580.79485pt x 314.29922pt>
+File: img/ROB.png Graphic file (type png)
+ <use img/ROB.png>
+Package pdftex.def Info: img/ROB.png used on input line 1426.
+(pdftex.def)             Requested size: 284.52756pt x 153.97438pt.
+ [43 <./img/ROB.png>] [44]
+Overfull \hbox (38.546pt too wide) in paragraph at lines 1504--1520
+ [][] 
+ []
+
+
+Overfull \hbox (3.88058pt too wide) in paragraph at lines 1528--1529
+\OT1/cmr/m/it/10 Jumps \OT1/cmr/m/n/10 are un-con-di-tional changes in con-trol
+, and \OT1/cmr/m/it/10 branches \OT1/cmr/m/n/10 are con-di-tional changes
+ []
+
+[45] [46] [47]
+Overfull \hbox (15.91576pt too wide) in paragraph at lines 1593--1604
+ [][] 
+ []
+
+[48] [49] [50] [51]
+File: img/PipelinedFU.png Graphic file (type png)
+ <use img/PipelinedFU.png>
+Package pdftex.def Info: img/PipelinedFU.png used on input line 1732.
+(pdftex.def)             Requested size: 341.43306pt x 180.02173pt.
+ [52] [53] [54] [55] [56] [57]
+[58] [59] [60] [61] [62] <img/Cache.png, id=274, 298.11375pt x 224.71454pt>
+File: img/Cache.png Graphic file (type png)
+
+<use img/Cache.png>
+Package pdftex.def Info: img/Cache.png used on input line 2057.
+(pdftex.def)             Requested size: 227.62204pt x 171.5803pt.
+ [63 <./img/Cache.png>]
+<img/CacheHierarchy.png, id=278, 238.64156pt x 176.53453pt>
+File: img/CacheHierarchy.png Graphic file (type png)
+
+<use img/CacheHierarchy.png>
+Package pdftex.def Info: img/CacheHierarchy.png used on input line 2108.
+(pdftex.def)             Requested size: 284.52756pt x 210.49081pt.
+ [64] [65 <./img/CacheHierarchy.png>]
+<img/FAC.png, id=286, 210.7875pt x 103.13531pt>
+File: img/FAC.png Graphic file (type png)
+ <use img/FAC.png>
+Package pdftex.def Info: img/FAC.png used on input line 2165.
+(pdftex.def)             Requested size: 284.52756pt x 139.21877pt.
+ [66]
+<img/Miss.png, id=290, 162.9839pt x 42.5339pt>
+File: img/Miss.png Graphic file (type png)
+ <use img/Miss.png>
+Package pdftex.def Info: img/Miss.png used on input line 2181.
+(pdftex.def)             Requested size: 227.62204pt x 59.40752pt.
+
+<img/MemoryState.png, id=291, 162.9839pt x 53.44969pt>
+File: img/MemoryState.png Graphic file (type png)
+
+<use img/MemoryState.png>
+Package pdftex.def Info: img/MemoryState.png used on input line 2184.
+(pdftex.def)             Requested size: 227.62204pt x 74.65367pt.
+ [67 <./img/FAC.png> <./img/Miss.png> <./img/MemoryState.png>] <img/Update.png,
+ id=295, 170.13562pt x 100.12407pt>
+File: img/Update.png Graphic file (type png)
+
+<use img/Update.png>
+Package pdftex.def Info: img/Update.png used on input line 2191.
+(pdftex.def)             Requested size: 227.62204pt x 133.96234pt.
+ [68 <./img/Update.png>]
+<img/BlockOffset.png, id=299, 457.33359pt x 274.02374pt>
+File: img/BlockOffset.png Graphic file (type png)
+
+<use img/BlockOffset.png>
+Package pdftex.def Info: img/BlockOffset.png used on input line 2220.
+(pdftex.def)             Requested size: 199.16928pt x 119.33734pt.
+ [69 <./img/BlockOffset.png>]
+<img/direct.png, id=303, 361.72641pt x 277.78781pt>
+File: img/direct.png Graphic file (type png)
+ <use img/direct.png>
+Package pdftex.def Info: img/direct.png used on input line 2257.
+(pdftex.def)             Requested size: 227.62204pt x 174.80377pt.
+
+[70 <./img/direct.png>] <img/dmc.png, id=307, 371.88937pt x 86.19704pt>
+File: img/dmc.png Graphic file (type png)
+
+<use img/dmc.png>
+Package pdftex.def Info: img/dmc.png used on input line 2275.
+(pdftex.def)             Requested size: 170.71652pt x 39.56955pt.
+ <img/dmch.png, id=308, 473.14265pt x 458.83922pt>
+File: img/dmch.png Graphic file (type png)
+
+<use img/dmch.png>
+Package pdftex.def Info: img/dmch.png used on input line 2288.
+(pdftex.def)             Requested size: 284.52756pt x 275.92876pt.
+ [71 <./img/dmc.png>]
+<img/sac.png, id=313, 504.38437pt x 424.58624pt>
+File: img/sac.png Graphic file (type png)
+ <use img/sac.png>
+Package pdftex.def Info: img/sac.png used on input line 2304.
+(pdftex.def)             Requested size: 312.9803pt x 263.4675pt.
+ [72 <./img/dmch.png>] [73 <./img/sac.png>]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2429.
+
+ [74] [75]
+<img/reuse.png, id=327, 241.27641pt x 230.73703pt>
+File: img/reuse.png Graphic file (type png)
+ <use img/reuse.png>
+Package pdftex.def Info: img/reuse.png used on input line 2501.
+(pdftex.def)             Requested size: 227.62204pt x 217.68498pt.
+ [76 <./img/reuse.png>] <img/hits.png, id=331, 359.09157pt x 246.5461pt>
+File: img/hits.png Graphic file (type png)
+
+<use img/hits.png>
+Package pdftex.def Info: img/hits.png used on input line 2523.
+(pdftex.def)             Requested size: 284.52756pt x 195.36366pt.
+ [77 <./img/hits.png>]
+<img/misses.png, id=336, 328.97906pt x 193.84921pt>
+File: img/misses.png Graphic file (type png)
+ <use img/misses.png>
+Package pdftex.def Info: img/misses.png used on input line 2549.
+(pdftex.def)             Requested size: 284.52756pt x 167.6595pt.
+
+[78] <img/blocksize.png, id=340, 242.40562pt x 154.70297pt>
+File: img/blocksize.png Graphic file (type png)
+
+<use img/blocksize.png>
+Package pdftex.def Info: img/blocksize.png used on input line 2560.
+(pdftex.def)             Requested size: 227.62204pt x 145.27443pt.
+ [79 <./img/misses.png> <./img/blocksize.png>]
+Overfull \hbox (11.5034pt too wide) detected at line 2574
+\OML/cmm/m/it/10 CPUtime \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 IC [] CycleTime
+ []
+
+[80] [81] [82] <img/vm.png, id=353, 243.15843pt x 154.70297pt>
+File: img/vm.png Graphic file (type png)
+
+<use img/vm.png>
+Package pdftex.def Info: img/vm.png used on input line 2657.
+(pdftex.def)             Requested size: 256.0748pt x 162.91972pt.
+ [83
+
+] <img/ptts.png, id=358, 254.82703pt x 231.86626pt>
+File: img/ptts.png Graphic file (type png)
+
+<use img/ptts.png>
+Package pdftex.def Info: img/ptts.png used on input line 2669.
+(pdftex.def)             Requested size: 284.52756pt x 258.90298pt.
+ [84 <./img/vm.png> <./img/ptts.png>]
+<img/sparse.png, id=362, 202.13016pt x 314.67563pt>
+File: img/sparse.png Graphic file (type png)
+ <use img/sparse.png>
+Package pdftex.def Info: img/sparse.png used on input line 2683.
+(pdftex.def)             Requested size: 170.71652pt x 265.77579pt.
+
+[85 <./img/sparse.png>] <img/lookaside.png, id=367, 290.58563pt x 203.25937pt>
+File: img/lookaside.png Graphic file (type png)
+
+<use img/lookaside.png>
+Package pdftex.def Info: img/lookaside.png used on input line 2701.
+(pdftex.def)             Requested size: 312.9803pt x 218.93996pt.
+ [86 <./img/lookaside.png>]
+<img/flow.png, id=371, 318.43968pt x 231.48984pt>
+File: img/flow.png Graphic file (type png)
+ <use img/flow.png>
+Package pdftex.def Info: img/flow.png used on input line 2716.
+(pdftex.def)             Requested size: 312.9803pt x 227.51901pt.
+ [87 <./img/flow.png>] <img/RAM.png, id=375, 385.0636pt x 331.99031pt>
+File: img/RAM.png Graphic file (type png)
+ <use img/RAM.png>
+Package pdftex.def Info: img/RAM.png used on input line 2745.
+(pdftex.def)             Requested size: 227.62204pt x 196.24744pt.
+
+[88] <img/SRAM.png, id=379, 208.52907pt x 134.37703pt>
+File: img/SRAM.png Graphic file (type png)
+ <use img/SRAM.png>
+Package pdftex.def Info: img/SRAM.png used on input line 2764.
+(pdftex.def)             Requested size: 142.26378pt x 91.68068pt.
+
+<img/Multiport.png, id=380, 326.34422pt x 265.74281pt>
+File: img/Multiport.png Graphic file (type png)
+ <use img/Multiport.png>
+Package pdftex.def Info: img/Multiport.png used on input line 2774.
+(pdftex.def)             Requested size: 227.62204pt x 185.3618pt.
+
+[89 <./img/RAM.png>] <img/RF.png, id=385, 208.52907pt x 187.45032pt>
+File: img/RF.png Graphic file (type png)
+
+<use img/RF.png>
+Package pdftex.def Info: img/RF.png used on input line 2784.
+(pdftex.def)             Requested size: 170.71652pt x 153.46712pt.
+ [90 <./img/SRAM.png> <./img/Multiport.png>]
+<img/DRAM.png, id=389, 371.51297pt x 211.91672pt>
+File: img/DRAM.png Graphic file (type png)
+ <use img/DRAM.png>
+Package pdftex.def Info: img/DRAM.png used on input line 2799.
+(pdftex.def)             Requested size: 227.62204pt x 129.84134pt.
+ [91 <./img/RF.png> <./img/DRAM.png>] <img/CAM.png, id=394, 218.69203pt x 234.1
+247pt>
+File: img/CAM.png Graphic file (type png)
+
+<use img/CAM.png>
+Package pdftex.def Info: img/CAM.png used on input line 2825.
+(pdftex.def)             Requested size: 142.26378pt x 152.30428pt.
+ <img/CAMs.png, id=395, 267.24844pt x 171.26485pt>
+File: img/CAMs.png Graphic file (type png)
+
+<use img/CAMs.png>
+Package pdftex.def Info: img/CAMs.png used on input line 2836.
+(pdftex.def)             Requested size: 170.71652pt x 109.4079pt.
+ [92] [93 <./img/CAM.png> <./img/CAMs.png>]
+<img/flags.png, id=402, 327.47343pt x 77.53969pt>
+File: img/flags.png Graphic file (type png)
+ <use img/flags.png>
+Package pdftex.def Info: img/flags.png used on input line 2853.
+(pdftex.def)             Requested size: 312.9803pt x 74.1083pt.
+ [94 <./img/flags.png>] [95] [96]
+File: img/flags.png Graphic file (type png)
+ <use img/flags.png>
+Package pdftex.def Info: img/flags.png used on input line 2936.
+(pdftex.def)             Requested size: 312.9803pt x 74.1083pt.
+
+<img/fence.png, id=413, 904.50421pt x 199.11891pt>
+File: img/fence.png Graphic file (type png)
+ <use img/fence.png>
+Package pdftex.def Info: img/fence.png used on input line 2956.
+(pdftex.def)             Requested size: 312.9803pt x 68.89966pt.
+ [97 <./img/fence.png>] <img/release.png, id=417, 744.53156pt x 154.70297pt>
+File: img/release.png Graphic file (type png)
+
+<use img/release.png>
+Package pdftex.def Info: img/release.png used on input line 2972.
+(pdftex.def)             Requested size: 312.9803pt x 65.0338pt.
+
+<img/reorderingdiagrams.png, id=418, 913.16156pt x 260.84953pt>
+File: img/reorderingdiagrams.png Graphic file (type png)
+
+<use img/reorderingdiagrams.png>
+Package pdftex.def Info: img/reorderingdiagrams.png used on input line 2991.
+(pdftex.def)             Requested size: 341.43306pt x 97.53174pt.
+ [98 <./img/release.png> <./img/reorderingdiagrams.png>] <img/store.png, id=422
+, 835.99828pt x 197.23688pt>
+File: img/store.png Graphic file (type png)
+
+<use img/store.png>
+Package pdftex.def Info: img/store.png used on input line 3004.
+(pdftex.def)             Requested size: 312.9803pt x 73.84325pt.
+ [99 <./img/store.png>]
+Overfull \hbox (1.97272pt too wide) in paragraph at lines 3035--3036
+[]\OT1/cmr/m/n/10 Each pro-ces-sor's cache is con-nected to shared mem-ory and 
+each other through
+ []
+
+<img/cachecontrol.png, id=426, 395.22656pt x 344.78813pt>
+File: img/cachecontrol.png Graphic file (type png)
+
+<use img/cachecontrol.png>
+Package pdftex.def Info: img/cachecontrol.png used on input line 3040.
+(pdftex.def)             Requested size: 170.71652pt x 148.92941pt.
+ [100 <./img/cachecontrol.png>]
+Overfull \hbox (14.7976pt too wide) in paragraph at lines 3048--3058
+[][] 
+ []
+
+<img/MSI.png, id=430, 366.9961pt x 298.49016pt>
+File: img/MSI.png Graphic file (type png)
+ <use img/MSI.png>
+Package pdftex.def Info: img/MSI.png used on input line 3086.
+(pdftex.def)             Requested size: 227.62204pt x 185.13484pt.
+
+Overfull \hbox (13.69447pt too wide) in paragraph at lines 3093--3109
+ [][] 
+ []
+
+[101] [102 <./img/MSI.png>] [103]
+<img/flynn.png, id=441, 412.16484pt x 302.63063pt>
+File: img/flynn.png Graphic file (type png)
+ <use img/flynn.png>
+Package pdftex.def Info: img/flynn.png used on input line 3159.
+(pdftex.def)             Requested size: 227.62204pt x 167.13078pt.
+ [104 <./img/flynn.png>] <img/vliw.png, id=445, 431.36156pt x 112.92188pt>
+File: img/vliw.png Graphic file (type png)
+
+<use img/vliw.png>
+Package pdftex.def Info: img/vliw.png used on input line 3191.
+(pdftex.def)             Requested size: 284.52756pt x 74.48558pt.
+ [105] [106 <./img/vliw.png>] [107]
+<img/vliw2.png, id=457, 434.74922pt x 172.39406pt>
+File: img/vliw2.png Graphic file (type png)
+ <use img/vliw2.png>
+Package pdftex.def Info: img/vliw2.png used on input line 3319.
+(pdftex.def)             Requested size: 341.43306pt x 135.39801pt.
+ [108]
+[109 <./img/vliw2.png>] <img/simds.png, id=464, 411.41203pt x 188.95593pt>
+File: img/simds.png Graphic file (type png)
+
+<use img/simds.png>
+Package pdftex.def Info: img/simds.png used on input line 3364.
+(pdftex.def)             Requested size: 284.52756pt x 130.67958pt.
+ <img/simdt.png, id=465, 179.92218pt x 254.07422pt>
+File: img/simdt.png Graphic file (type png)
+
+<use img/simdt.png>
+Package pdftex.def Info: img/simdt.png used on input line 3374.
+(pdftex.def)             Requested size: 85.35826pt x 120.53917pt.
+ [110 <./img/simds.png>] [111 <./img/simdt.png>]
+<img/CPUvsGPU.png, id=472, 450.55829pt x 168.63pt>
+File: img/CPUvsGPU.png Graphic file (type png)
+ <use img/CPUvsGPU.png>
+Package pdftex.def Info: img/CPUvsGPU.png used on input line 3428.
+(pdftex.def)             Requested size: 284.52756pt x 106.49475pt.
+
+[112 <./img/CPUvsGPU.png>] <img/VLIW3.png, id=476, 331.2375pt x 98.61844pt>
+File: img/VLIW3.png Graphic file (type png)
+
+<use img/VLIW3.png>
+Package pdftex.def Info: img/VLIW3.png used on input line 3443.
+(pdftex.def)             Requested size: 256.0748pt x 76.2434pt.
+ <img/SIMD3.png, id=477, 306.01828pt x 110.28703pt>
+File: img/SIMD3.png Graphic file (type png)
+
+<use img/SIMD3.png>
+Package pdftex.def Info: img/SIMD3.png used on input line 3451.
+(pdftex.def)             Requested size: 256.0748pt x 92.2921pt.
+ [113 <./img/VLIW3.png> <./img/SIMD3.png>]
+<img/SIMT.png, id=482, 328.60266pt x 103.88812pt>
+File: img/SIMT.png Graphic file (type png)
+ <use img/SIMT.png>
+Package pdftex.def Info: img/SIMT.png used on input line 3461.
+(pdftex.def)             Requested size: 256.0748pt x 80.95947pt.
+ [114 <./img/SIMT.png>] <img/warps.png, id=486, 353.06906pt x 138.5175pt>
+File: img/warps.png Graphic file (type png)
+
+<use img/warps.png>
+Package pdftex.def Info: img/warps.png used on input line 3510.
+(pdftex.def)             Requested size: 256.0748pt x 100.46382pt.
+ [115 <./img/warps.png>]
+<img/warpreg.png, id=490, 272.14172pt x 245.41687pt>
+File: img/warpreg.png Graphic file (type png)
+ <use img/warpreg.png>
+Package pdftex.def Info: img/warpreg.png used on input line 3527.
+(pdftex.def)             Requested size: 199.16928pt x 179.60968pt.
+
+[116 <./img/warpreg.png>] <img/GPU.png, id=494, 375.27704pt x 222.4561pt>
+File: img/GPU.png Graphic file (type png)
+
+<use img/GPU.png>
+Package pdftex.def Info: img/GPU.png used on input line 3551.
+(pdftex.def)             Requested size: 227.62204pt x 134.93088pt.
+ <img/gpucore.png, id=495, 374.52422pt x 146.42203pt>
+File: img/gpucore.png Graphic file (type png)
+
+<use img/gpucore.png>
+Package pdftex.def Info: img/gpucore.png used on input line 3560.
+(pdftex.def)             Requested size: 227.62204pt x 88.9911pt.
+ [117 <./img/GPU.png> <./img/gpucore.png>]
+<img/gpucore2.png, id=499, 379.04109pt x 124.21407pt>
+File: img/gpucore2.png Graphic file (type png)
+ <use img/gpucore2.png>
+Package pdftex.def Info: img/gpucore2.png used on input line 3568.
+(pdftex.def)             Requested size: 284.52756pt x 93.2418pt.
+
+[118 <./img/gpucore2.png>] [119]
+<img/reconvg.png, id=507, 136.25906pt x 151.69171pt>
+File: img/reconvg.png Graphic file (type png)
+ <use img/reconvg.png>
+Package pdftex.def Info: img/reconvg.png used on input line 3625.
+(pdftex.def)             Requested size: 142.26378pt x 158.38522pt.
+
+[120 <./img/reconvg.png>] <img/banks.png, id=511, 240.9pt x 95.6072pt>
+File: img/banks.png Graphic file (type png)
+
+<use img/banks.png>
+Package pdftex.def Info: img/banks.png used on input line 3658.
+(pdftex.def)             Requested size: 142.26378pt x 56.46172pt.
+ [121 <./img/banks.png>] [122] [123]
+No file "CPEN 411 Notes".bbl.
+Missing character: There is no ‚ in font cmbx10!
+Missing character: There is no Ä in font cmbx10!
+Missing character: There is no ú in font cmbx10!
+Missing character: There is no ‚ in font cmbx10!
+Missing character: There is no Ä in font cmbx10!
+Missing character: There is no ù in font cmbx10!
+[124] [125]
+Underfull \hbox (badness 10000) in paragraph at lines 3809--3809
+
+ []
+
+[126] [127]
+Underfull \hbox (badness 10000) in paragraph at lines 3846--3846
+
+ []
+
+[128] [129] [130] [131] [132] ("CPEN 411 Notes.aux") ) 
+Here is how much of TeX's memory you used:
+ 8649 strings out of 493335
+ 129208 string characters out of 3139228
+ 259685 words of memory out of 3000000
+ 11909 multiletter control sequences out of 15000+200000
+ 13009 words of font info for 48 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 46i,12n,40p,1952b,358s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmbx7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmtt8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmtt9.pfb>
+Output written on "CPEN 411 Notes.pdf" (140 pages, 8659356 bytes).
+PDF statistics:
+ 622 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 381 words of extra memory for PDF output out of 10000 (max. 10000000)
+

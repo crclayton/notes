@@ -1,0 +1,138 @@
+\documentclass{IEEEtran}
+\usepackage{filecontents}
+% automatically convert "" to ``''
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+
+\title{\small \textit{What I know about...} \\ \Huge How a CPU Works}
+\author{\textbf{Charles Clayton} \\ \small \textit{Last updated:} \today}
+
+\begin{document}\maketitle
+
+
+\section{Introduction}
+
+Computers aren't really that smart, but they're way better than people at certain things like mathematical computations. The problem is that they need to be told very clearly and painstakingly what to do and how to do it. Programmers tell them how to do these things by writing code. 
+
+But that doesn't explain how a computer, which is a bunch of pieces of metal and silicon and doesn't have any moving parts, can take those words and make them into reality. 
+
+For instance, to create this animation, I wrote the following lines of code in the Python language:
+
+\scriptsize
+\begin{verbatim}
+    circle = topics.geometry.Circle()
+                   .highlight(VS_COLORS.turquoise)
+                   
+    square = topics.characters.TextMobject("This animation")
+                   .highlight(VS_COLORS.violet)
+                   .shift(10*LEFT)
+    self.play(*(
+         animations.GrowFromCenter(circle),
+         transforms.ApplyMethod(square.shift, 10*RIGHT)
+    ), run_time=3)      
+\end{verbatim}
+\normalsize
+
+But how did feeding that code into a computer turn into the video you're watching?
+
+\section{Instruction Set Architecture}
+
+Well, just as I could describe an animation, there are lots of different types and levels of coding languages that can describe all sorts of behaviour. Some of this code is easy for people to write and understand. 
+
+\scriptsize
+\begin{verbatim}
+         x = factorial(10)
+\end{verbatim}
+\normalsize
+
+But in order for a computer to execute it, it needs to be compiled into something called assembly language. \medskip
+
+\scriptsize
+\begin{verbatim}
+         LOAD  R1, #10     
+         LOAD  R2, #1       
+     L1: MUL.D R2, R2, R1   
+         SUB.D R1, R1, #1      
+         BNEZ  R1, L1
+\end{verbatim}
+\normalsize
+
+Assembly is harder to understand, but looks simple because it is made up of very basic instructions that only do one thing, like subtract two values, multiply two values, or load a single piece of information from memory.  \medskip
+
+There are only 60 or so of these instructions, and these make up something called the instruction set architecture (ISA). These instructions are the only things that a computer can actually do. Everything else, from playing movies to (???), is executed by being simplified into a series of these simple instructions. \medskip
+
+\section{Machine Code}
+
+Okay, so we haven't actually gotten very far to answering our question yet. People wrote programs called compilers, to convert code that's easy to write into code that's harder to writer. We're sill left with the question of how the program executes the code. \medskip
+
+The first problem is that computers can't read this code. Pieces of metal and silicon don't know how to read words or even what words are. However, they do know what voltage is. So instead of using Latin characters which have 26 characters and Arabic numerals which have ten characters, we use binary which only has two characters, 0 and 1, and we tell these to the hardware by representing the zeros as some voltage and ones as no voltage. \medskip
+
+ The nice thing about assembly code is that it can be directly translated into something called machine code, which is just ones and zeros. \medskip
+
+As an aside, you've probably heard people talking about "ones and zeros" before, but what does that mean? Humans use a base-10 counting system, because we decided can distinguish between 10 different levels. After we get up to 10 levels, we just decide to roll it over and start counting again. \medskip
+
+Computers can only distinguish between two levels: either there's no voltage on a wire, which we call 0, or there's some voltage, which we call 1. This is a base-2 system, binary. \medskip
+
+When we translate our assembly into machine code, we identify our 60 instructions by numbering them instruction \texttt{0}, \texttt{1}, \texttt{2}, \texttt{3}, \texttt{4}, etc. So in binary, these are represented as \texttt{000000}, \texttt{000001}, \texttt{000010}, \texttt{000011}, \texttt{000100}, etc. We do the same with our operands, the chunks of data we're doing operations on. So each line of assembly code is represented in machine code as 32 ones and zeros. \medskip
+
+\scriptsize
+\begin{verbatim}
+      000001011010000001011010
+      010110101001010111011111
+      000001000000010010101000
+      111101010111011010001111
+      101000101101110110000000
+\end{verbatim}
+\normalsize
+
+
+\section{Program Counter}
+
+This sequence of ones and zeros representing instructions is then stored in the computer's memory. The computer knows what instruction to execute using a register called the program counter, which stores the memory address of the instruction being executed. After the instruction is complete, the program counter is incremented to point at the next memory location. \medskip 
+
+\scriptsize
+\begin{verbatim}
+      000001011010000001011010
+      010110101001010111011111
+      000001000000010010101000   <-  PC
+      111101010111011010001111
+      101000101101110110000000
+\end{verbatim}
+\normalsize
+
+In the case of loops or conditional instructions, the PC can be modified to point back and redo a previous instruction or to hop over instructions that don't need to be executed. \medskip
+
+\section{Stages}
+
+There are five stages to completing each instruction: Instruction Fetch, Instruction Decode, Execute, Memory Access, Write-Back.
+
+Each stage is completed entirely in hardware. 
+
+\subsection{Fetch}
+
+I'll talk in more detail about how memory works and how data is fetched from it another time, but at this point suffice it to say that the computer grabs the instruction code from the memory location pointed at by the PC and stores it in a register called the Instruction Register, IR.  
+
+\subsection{Decode}
+
+The decode hardware here will use the ones and zeros in the instruction register to forward the operands to the corresponding functional unit. Functional units are pieces of hardware that execute a task like add, multiply, or compare. \medskip
+
+
+\subsection{Execute}
+
+The execute takes place in the functional unit. These are built using some clever design with logic gates, which are blocks of hardware that will give a high or low voltage based on inputs of high or low voltages. 
+
+
+\subsection{Memory Access}
+
+If the instruction is to load a value from memory or to store a value into memory, that will happen here.
+
+\subsection{Write-back}
+
+After the instruction is complete, the value output from the functional unit will be written to the destination register identified by the instruction.
+
+
+\bibliographystyle{ieeetran}
+
+\bibliography{References}
+\end{document}
+

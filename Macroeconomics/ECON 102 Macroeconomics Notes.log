@@ -1,0 +1,788 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  1 DEC 2016 11:49
+entering extended mode
+**"./ECON 102 Macroeconomics Notes.tex"
+("ECON 102 Macroeconomics Notes.tex"
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen103
+\extrarowheight=\dimen104
+\NC@list=\toks14
+\extratabsurround=\skip43
+\backup@length=\skip44
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\bookta
+bs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen105
+\lightrulewidth=\dimen106
+\cmidrulewidth=\dimen107
+\belowrulesep=\dimen108
+\belowbottomsep=\dimen109
+\aboverulesep=\dimen110
+\abovetopsep=\dimen111
+\cmidrulesep=\dimen112
+\cmidrulekern=\dimen113
+\defaultaddspace=\dimen114
+\@cmidla=\count87
+\@cmidlb=\count88
+\@aboverulesep=\dimen115
+\@belowrulesep=\dimen116
+\@thisruleclass=\count89
+\@lastruleclass=\count90
+\@thisrulewidth=\dimen117
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 96.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count91
+))
+\Gin@req@height=\dimen118
+\Gin@req@width=\dimen119
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\apacite\apacite
+.sty"
+Package: apacite 2013/07/21 v6.03 APA citation
+\c@BibCnt=\count92
+\bibleftmargin=\skip45
+\bibindent=\skip46
+\bibparsep=\skip47
+\bibitemsep=\skip48
+\biblabelsep=\skip49
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspa
+ce.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\tocbibind\tocbi
+bind.sty"
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has section divisions on input line 50.
+
+
+Package tocbibind Note: Using section or other style headings.
+
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\appendix\append
+ix.sty"
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count93
+\c@@ppsavesec=\count94
+\c@@ppsaveapp=\count95
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\base
+\glossaries.sty"
+Package: glossaries 2016/06/09 v4.25 (NLCT)
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks16
+\XKV@tempa@toks=\toks17
+)
+\XKV@depth=\count96
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\mfirstuc\mfirst
+uc.sty"
+Package: mfirstuc 2015/12/17 v2.02 (NLCT)
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolb
+ox.sty"
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count97
+)
+\@glsmfirst=\toks18
+\@glsmrest=\toks19
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\textcase\textca
+se.sty"
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\xfor\xfor.sty"
+Package: xfor 2009/02/05 v1.05 (NLCT)
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\datatool\datato
+ol-base.sty"
+Package: datatool-base 2016/01/18 v2.25 (NLCT)
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2016/03/10 v2.15b AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen120
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen121
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count98
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count99
+\leftroot@=\count100
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count101
+\DOTSCASE@=\count102
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen122
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count103
+\c@MaxMatrixCols=\count104
+\dotsspace@=\muskip10
+\c@parentequation=\count105
+\dspbrk@lvl=\count106
+\tag@help=\toks21
+\row@=\count107
+\column@=\count108
+\maxfields@=\count109
+\andhelp@=\toks22
+\eqnshift@=\dimen123
+\alignsep@=\dimen124
+\tagshift@=\dimen125
+\tagwidth@=\dimen126
+\totwidth@=\dimen127
+\lineht@=\dimen128
+\@envbody=\toks23
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\substr\substr.s
+ty"
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count110
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\datatool\datato
+ol-fp.sty"
+Package: datatool-fp 2016/01/18 v2.25 (NLCT)
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp.sty"
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\defpattern.s
+ty"
+Package: defpattern 1994/10/12
+\actioncount=\count111
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-basic.sty
+"
+Package: fp-basic 1996/05/13
+\FP@xs=\count112
+\FP@xia=\count113
+\FP@xib=\count114
+\FP@xfa=\count115
+\FP@xfb=\count116
+\FP@rega=\count117
+\FP@regb=\count118
+\FP@regs=\count119
+\FP@times=\count120
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-addons.st
+y"
+Package: fp-addons 1995/03/15
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-snap.sty"
+Package: fp-snap 1995/04/05
+) ("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-exp.sty
+"
+Package: fp-exp 1995/04/03
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-trigo.sty
+"
+Package: fp-trigo 1995/04/14
+) ("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-pas.sty
+"
+Package: fp-pas 1994/08/29
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-random.st
+y"
+Package: fp-random 1995/02/23
+\FPseed=\count121
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-eqn.sty"
+Package: fp-eqn 1995/04/03
+) ("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-upn.sty
+"
+Package: fp-upn 1996/10/21
+) ("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-eval.st
+y"
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks25
+\@dtl@tmpcount=\count122
+\dtl@tmplength=\skip53
+\dtl@sortresult=\count123
+\@dtl@numgrpsepcount=\count124
+\@dtl@datatype=\count125
+\dtl@codeA=\count126
+\dtl@codeB=\count127
+\@dtl@foreach@level=\count128
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\base
+\glossaries-compatible-307.sty"
+Package: glossaries-compatible-307 2016/06/09 v4.25 (NLCT)
+)
+\gls@level=\count129
+\@gls@tmpb=\toks26
+\gls@tmplen=\skip54
+\glskeylisttok=\toks27
+\glslabeltok=\toks28
+\glsshorttok=\toks29
+\glslongtok=\toks30
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styl
+es\glossary-hypernav.sty"
+Package: glossary-hypernav 2016/06/09 v4.25 (NLCT)
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styl
+es\glossary-list.sty"
+Package: glossary-list 2016/06/09 v4.25 (NLCT)
+\glslistdottedwidth=\skip55
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styl
+es\glossary-long.sty"
+Package: glossary-long 2016/06/09 v4.25 (NLCT)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip56
+\LTright=\skip57
+\LTpre=\skip58
+\LTpost=\skip59
+\LTchunksize=\count130
+\LTcapwidth=\dimen129
+\LT@head=\box28
+\LT@firsthead=\box29
+\LT@foot=\box30
+\LT@lastfoot=\box31
+\LT@cols=\count131
+\LT@rows=\count132
+\c@LT@tables=\count133
+\c@LT@chunks=\count134
+\LT@p@ftn=\toks31
+)
+\glsdescwidth=\skip60
+\glspagelistwidth=\skip61
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styl
+es\glossary-super.sty"
+Package: glossary-super 2016/06/09 v4.25 (NLCT)
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\supertabular\su
+pertabular.sty"
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count135
+\ST@wd=\dimen130
+\ST@rightskip=\skip62
+\ST@leftskip=\skip63
+\ST@parfillskip=\skip64
+\ST@pageleft=\dimen131
+\ST@headht=\dimen132
+\ST@tailht=\dimen133
+\ST@pagesofar=\dimen134
+\ST@pboxht=\dimen135
+\ST@lineht=\dimen136
+\ST@stretchht=\dimen137
+\ST@prevht=\dimen138
+\ST@toadd=\dimen139
+\ST@dimen=\dimen140
+\ST@pbox=\box32
+))
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styl
+es\glossary-tree.sty"
+Package: glossary-tree 2016/06/09 v4.25 (NLCT)
+\glstreeindent=\skip65
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\parskip.sty"
+Package: parskip 2001/04/09 non-zero parskip adjustments
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grffile.sty"
+Package: grffile 2016/05/16 v1.17 Extended file name support for graphics (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grffile Info: Option `multidot' is set to `true'.
+Package grffile Info: Option `extendedchars' is set to `false'.
+Package grffile Info: Option `space' is set to `true'.
+Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 486.
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\tocloft\tocloft
+.sty"
+Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 44.
+\cftparskip=\skip66
+\cftbeforetoctitleskip=\skip67
+\cftaftertoctitleskip=\skip68
+\cftbeforepartskip=\skip69
+\cftpartnumwidth=\skip70
+\cftpartindent=\skip71
+\cftbeforesecskip=\skip72
+\cftsecindent=\skip73
+\cftsecnumwidth=\skip74
+\cftbeforesubsecskip=\skip75
+\cftsubsecindent=\skip76
+\cftsubsecnumwidth=\skip77
+\cftbeforesubsubsecskip=\skip78
+\cftsubsubsecindent=\skip79
+\cftsubsubsecnumwidth=\skip80
+\cftbeforeparaskip=\skip81
+\cftparaindent=\skip82
+\cftparanumwidth=\skip83
+\cftbeforesubparaskip=\skip84
+\cftsubparaindent=\skip85
+\cftsubparanumwidth=\skip86
+\cftbeforeloftitleskip=\skip87
+\cftafterloftitleskip=\skip88
+\cftbeforefigskip=\skip89
+\cftfigindent=\skip90
+\cftfignumwidth=\skip91
+\c@lofdepth=\count136
+\c@lotdepth=\count137
+\cftbeforelottitleskip=\skip92
+\cftafterlottitleskip=\skip93
+\cftbeforetabskip=\skip94
+\cfttabindent=\skip95
+\cfttabnumwidth=\skip96
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\titlesec\titles
+ec.sty"
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box33
+\beforetitleunit=\skip97
+\aftertitleunit=\skip98
+\ttl@plus=\dimen141
+\ttl@minus=\dimen142
+\ttl@toksa=\toks32
+\titlewidth=\dimen143
+\titlewidthlast=\dimen144
+\titlewidthfirst=\dimen145
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquot
+es.sty"
+Package: csquotes 2016/07/14 v5.1h context-sensitive quotations (JAW)
+\csq@reset=\count138
+\csq@gtype=\count139
+\csq@glevel=\count140
+\csq@qlevel=\count141
+\csq@maxlvl=\count142
+\csq@tshold=\count143
+\csq@ltx@everypar=\toks33
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquot
+es.def"
+File: csquotes.def 2016/07/14 v5.1h csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquot
+es.cfg"
+File: csquotes.cfg 
+)
+Package csquotes Info: Enabling multilingual quotes.
+Package csquotes Info: Redefining alias 'english' -> 'english/american'.
+)
+Package csquotes Info: Allocating character ".
+\c@myequations=\count144
+\cftbeforemyequationsskip=\skip99
+\cftmyequationsindent=\skip100
+\cftmyequationsnumwidth=\skip101
+\c@equdepth=\count145
+\cftbeforeequtitleskip=\skip102
+\cftafterequtitleskip=\skip103
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
+
+
+Package csquotes Warning: No multilingual support.
+(csquotes)                Cannot enable multilingual quotes on input line 60.
+
+("ECON 102 Macroeconomics Notes.aux")
+\openout1 = `"ECON 102 Macroeconomics Notes.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf
+.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count146
+\scratchdimen=\dimen146
+\scratchbox=\box34
+\nofMPsegments=\count147
+\nofMParguments=\count148
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count149
+\MPscratchDim=\dimen147
+\MPnumerator=\count150
+\makeMPintoPDFobject=\count151
+\everyMPtoPDFconversion=\toks35
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+\c@maskedRefs=\count152
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\apacite\english
+.apc"
+File: english.apc 2013/07/21 v6.03 apacite language file
+LaTeX Info: Redefining \BPBI on input line 129.
+LaTeX Info: Redefining \BHBI on input line 130.
+)
+Package csquotes Info: Making character " active on input line 60.
+ [0
+
+{C:/Users/Charles Clayton/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (
+"ECON 102 Macroeconomics Notes.toc" [1] [2] [3])
+\tf@toc=\write3
+\openout3 = `"ECON 102 Macroeconomics Notes.toc"'.
+
+ [4]
+("ECON 102 Macroeconomics Notes.lof")
+\tf@lof=\write4
+\openout4 = `"ECON 102 Macroeconomics Notes.lof"'.
+
+ ("ECON 102 Macroeconomics Notes.lot")
+\tf@lot=\write5
+\openout5 = `"ECON 102 Macroeconomics Notes.lot"'.
+
+
+("ECON 102 Macroeconomics Notes.equ" [5])
+\tf@equ=\write6
+\openout6 = `"ECON 102 Macroeconomics Notes.equ"'.
+
+ [6]
+
+Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}]
+. Rerun may be required (or you may have forgotten to use commands like \gls) o
+n input line 88.
+
+[1]
+<Img/2016-07-15 23_19_30-OneNote ‎- OneNote.png, id=37, 656.0761pt x 346.6701
+5pt>
+File: Img/2016-07-15 23_19_30-OneNote ‎- OneNote.png Graphic file (type png)
+ <use Img/2016-07-15 23_19_30-OneNote ‎- OneNote.png>
+Package pdftex.def Info: Img/2016-07-15 23_19_30-OneNote ‎- OneNote.png used 
+on input line 134.
+(pdftex.def)             Requested size: 284.52756pt x 150.34537pt.
+ [2 <./Img/2016-07-15 23_19_30-OneNote ‎- OneNote.png>] [3] [4] [5]
+<Img/2016-07-15 23_19_48-OneNote ‎- OneNote.png, id=51, 1003.12265pt x 502.12
+593pt>
+File: Img/2016-07-15 23_19_48-OneNote ‎- OneNote.png Graphic file (type png)
+ <use Img/2016-07-15 23_19_48-OneNote ‎- OneNote.png>
+Package pdftex.def Info: Img/2016-07-15 23_19_48-OneNote ‎- OneNote.png used 
+on input line 240.
+(pdftex.def)             Requested size: 341.43306pt x 170.9121pt.
+ [6] [7 <./Img/2016-07-15 23_19_48-OneNote ‎- OneNote.png>]
+Overfull \hbox (34.16745pt too wide) in paragraph at lines 282--283
+\OT1/cmr/m/n/10 The fac-tors of pro-duc-tion are Labour, Land, Cap-tial, and Te
+ch-nol-ogy/Entrepreneurship.
+ []
+
+[8] [9] [10] [11]
+<Img/2016-07-15 23_20_23-OneNote ‎- OneNote.png, id=71, 425.33907pt x 589.828
+6pt>
+File: Img/2016-07-15 23_20_23-OneNote ‎- OneNote.png Graphic file (type png)
+ <use Img/2016-07-15 23_20_23-OneNote ‎- OneNote.png>
+Package pdftex.def Info: Img/2016-07-15 23_20_23-OneNote ‎- OneNote.png used 
+on input line 393.
+(pdftex.def)             Requested size: 199.16928pt x 276.19347pt.
+ [12] [13 <./Img/2016-07-15 23_20_23-OneNote ‎- OneNote.png>]
+<Img/2016-07-15 23_20_36-OneNote ‎- OneNote.png, id=80, 533.74406pt x 596.227
+5pt>
+File: Img/2016-07-15 23_20_36-OneNote ‎- OneNote.png Graphic file (type png)
+ <use Img/2016-07-15 23_20_36-OneNote ‎- OneNote.png>
+Package pdftex.def Info: Img/2016-07-15 23_20_36-OneNote ‎- OneNote.png used 
+on input line 461.
+(pdftex.def)             Requested size: 199.16928pt x 222.48393pt.
+ [14] [15 <./Img/2016-07-15 23_20_36-OneNote ‎- OneNote.png>]
+<Img/2016-07-15 23_20_56-OneNote ‎- OneNote.png, id=88, 884.93109pt x 382.805
+16pt>
+File: Img/2016-07-15 23_20_56-OneNote ‎- OneNote.png Graphic file (type png)
+ <use Img/2016-07-15 23_20_56-OneNote ‎- OneNote.png>
+Package pdftex.def Info: Img/2016-07-15 23_20_56-OneNote ‎- OneNote.png used 
+on input line 495.
+(pdftex.def)             Requested size: 312.9803pt x 135.39151pt.
+ [16 <./Img/2016-07-15 23_20_56-OneNote ‎- OneNote.png>]
+<Img/2016-07-15 23_21_11-OneNote ‎- OneNote.png, id=92, 783.67781pt x 395.602
+97pt>
+File: Img/2016-07-15 23_21_11-OneNote ‎- OneNote.png Graphic file (type png)
+ <use Img/2016-07-15 23_21_11-OneNote ‎- OneNote.png>
+Package pdftex.def Info: Img/2016-07-15 23_21_11-OneNote ‎- OneNote.png used 
+on input line 508.
+(pdftex.def)             Requested size: 284.52756pt x 143.63026pt.
+ [17 <./Img/2016-07-15 23_21_11-OneNote ‎- OneNote.png>] [18]
+<Img/2016-07-15 23_21_29-OneNote ‎- OneNote.png, id=100, 376.02985pt x 293.97
+328pt>
+File: Img/2016-07-15 23_21_29-OneNote ‎- OneNote.png Graphic file (type png)
+ <use Img/2016-07-15 23_21_29-OneNote ‎- OneNote.png>
+Package pdftex.def Info: Img/2016-07-15 23_21_29-OneNote ‎- OneNote.png used 
+on input line 560.
+(pdftex.def)             Requested size: 170.71652pt x 133.46648pt.
+ [19 <./Img/2016-07-15 23_21_29-OneNote ‎- OneNote.png>]
+<Img/2016-07-15 23_21_39-OneNote ‎- OneNote.png, id=104, 415.92891pt x 552.18
+797pt>
+File: Img/2016-07-15 23_21_39-OneNote ‎- OneNote.png Graphic file (type png)
+ <use Img/2016-07-15 23_21_39-OneNote ‎- OneNote.png>
+Package pdftex.def Info: Img/2016-07-15 23_21_39-OneNote ‎- OneNote.png used 
+on input line 579.
+(pdftex.def)             Requested size: 227.62204pt x 302.18768pt.
+ [20 <./Img/2016-07-15 23_21_39-OneNote ‎- OneNote.png>]
+<Img/2016-07-15 23_21_59-OneNote ‎- OneNote.png, id=108, 564.98578pt x 576.65
+437pt>
+File: Img/2016-07-15 23_21_59-OneNote ‎- OneNote.png Graphic file (type png)
+ <use Img/2016-07-15 23_21_59-OneNote ‎- OneNote.png>
+Package pdftex.def Info: Img/2016-07-15 23_21_59-OneNote ‎- OneNote.png used 
+on input line 616.
+(pdftex.def)             Requested size: 312.9803pt x 319.44862pt.
+ [21] [22 <./Img/2016-07-15 23_21_59-OneNote ‎- OneNote.png>] [23]
+<Img/23-2.png, id=118, 324.8386pt x 512.66531pt>
+File: Img/23-2.png Graphic file (type png)
+ <use Img/23-2.png>
+Package pdftex.def Info: Img/23-2.png used on input line 677.
+(pdftex.def)             Requested size: 170.71652pt x 269.43492pt.
+ [24 <./Img/23-2.png>] <Img/23-3.png, id=123, 322.20375pt x 512.66531pt>
+File: Img/23-3.png Graphic file (type png)
+
+<use Img/23-3.png>
+Package pdftex.def Info: Img/23-3.png used on input line 709.
+(pdftex.def)             Requested size: 170.71652pt x 271.64091pt.
+
+Overfull \hbox (15.05397pt too wide) in paragraph at lines 717--718
+[]\OT1/cmr/m/n/10 An in-crease in au-tonomous ag-gre-gate ex-pen-di-ture shifts
+ AE up and AD right. 
+ []
+
+[25] [26 <./Img/23-3.png>] <Img/23-4.png, id=130, 800.9925pt x 273.27094pt>
+File: Img/23-4.png Graphic file (type png)
+
+<use Img/23-4.png>
+Package pdftex.def Info: Img/23-4.png used on input line 733.
+(pdftex.def)             Requested size: 312.9803pt x 106.77954pt.
+ [27 <./Img/23-4.png>]
+Overfull \hbox (32.8364pt too wide) in paragraph at lines 772--772
+|[]\OT1/cmr/bx/n/14.4 Adjustment Pro-cess (Short-Run to Long-Run)| 
+ []
+
+[28]
+Underfull \hbox (badness 7064) in paragraph at lines 808--808
+[]|\OT1/cmr/bx/n/8 Adjustment Pro-
+ []
+
+
+Overfull \hbox (4.22993pt too wide) in paragraph at lines 810--810
+[]|\OT1/cmr/m/n/8 Assumptions| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 817--817
+[]|\OT1/cmr/m/n/8 Why We
+ []
+
+
+Underfull \hbox (badness 5260) in paragraph at lines 817--817
+[]|\OT1/cmr/m/n/8 See how gaps are
+ []
+
+
+Overfull \hbox (1.39401pt too wide) in paragraph at lines 825--826
+\OT1/cmr/m/n/10 curves. Po-ten-tial out-put is as-sumed to be con-stant, so $\O
+ML/cmm/m/it/10 Y[]$ \OT1/cmr/m/n/10 is a ver-ti-cal line. 
+ []
+
+[29] <Img/24-1.png, id=143, 638.385pt x 248.05171pt>
+File: Img/24-1.png Graphic file (type png)
+ <use Img/24-1.png>
+Package pdftex.def Info: Img/24-1.png used on input line 858.
+(pdftex.def)             Requested size: 312.9803pt x 121.61073pt.
+
+[30 <./Img/24-1.png>] <Img/24-2.png, id=148, 620.69391pt x 287.57437pt>
+File: Img/24-2.png Graphic file (type png)
+
+<use Img/24-2.png>
+Package pdftex.def Info: Img/24-2.png used on input line 891.
+(pdftex.def)             Requested size: 312.9803pt x 145.0067pt.
+ [31 <./Img/24-2.png>]
+<Img/24-3.png, id=152, 817.55438pt x 354.19829pt>
+File: Img/24-3.png Graphic file (type png)
+ <use Img/24-3.png>
+Package pdftex.def Info: Img/24-3.png used on input line 904.
+(pdftex.def)             Requested size: 312.9803pt x 135.5966pt.
+
+<Img/24-4.png, id=153, 859.33546pt x 323.33296pt>
+File: Img/24-4.png Graphic file (type png)
+ <use Img/24-4.png>
+Package pdftex.def Info: Img/24-4.png used on input line 918.
+(pdftex.def)             Requested size: 312.9803pt x 117.76146pt.
+ [32 <./Img/24-3.png>] [33 <./Img/24-4.png>] [34] [35] [36] [37] [38] [39] [40]
+ [41]
+[42] [43] [44] [45] [46] [47] [48] [49] [50] [51]
+Overfull \hbox (0.94409pt too wide) in paragraph at lines 1456--1457
+[]\OT1/cmr/bx/n/10 No mon-e-tary val-i-da-tion \OT1/cmr/m/n/10 -- Ex-cess labou
+r de-mand in-creases wages, which
+ []
+
+[52] [53] [54] [55] [56] [57]
+Overfull \hbox (0.94492pt too wide) in paragraph at lines 1675--1676
+[]\OT1/cmr/m/n/10 There are two main ac-counts, the cur-rent ac-count and the c
+ap-i-tal ac-count. 
+ []
+
+[58] [59] [60] [61] [62] [63] [64] [65] [66] ("ECON 102 Macroeconomics Notes.bb
+l"
+
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
+) [67
+
+] [68]
+Underfull \hbox (badness 10000) in paragraph at lines 1930--1931
+
+ []
+
+[69] [70] ("ECON 102 Macroeconomics Notes.aux") ) 
+Here is how much of TeX's memory you used:
+ 7915 strings out of 493335
+ 118926 string characters out of 3139228
+ 251797 words of memory out of 3000000
+ 11261 multiletter control sequences out of 15000+200000
+ 11640 words of font info for 41 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 46i,17n,40p,1976b,281s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmm
+i12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on "ECON 102 Macroeconomics Notes.pdf" (77 pages, 2258104 bytes)
+.
+PDF statistics:
+ 342 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+

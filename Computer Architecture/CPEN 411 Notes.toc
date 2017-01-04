@@ -1,0 +1,158 @@
+\contentsline {section}{\numberline {1}Fundamentals of Computer Design}{1}
+\contentsline {subsection}{\numberline {1.1}Tasks of the Computer Designer}{1}
+\contentsline {subsubsection}{\numberline {1.1.1}Make the Common Case Fast}{1}
+\contentsline {subsubsection}{\numberline {1.1.2}Take Advantage of Parallelism}{1}
+\contentsline {subsubsection}{\numberline {1.1.3}Principle of Locality}{2}
+\contentsline {subsubsection}{\numberline {1.1.4}Amdahl's Law}{2}
+\contentsline {subsubsection}{\numberline {1.1.5}The Iron Law of Processor Performance}{3}
+\contentsline {subsection}{\numberline {1.2}Computer Performance}{4}
+\contentsline {subsubsection}{\numberline {1.2.1}How to Measure CPI}{4}
+\contentsline {subsubsection}{\numberline {1.2.2}Metrics of Performance}{5}
+\contentsline {subsubsection}{\numberline {1.2.3}Evaluating Performance}{6}
+\contentsline {subsubsection}{\numberline {1.2.4}Comparing and Summarizing Performance}{6}
+\contentsline {subsubsection}{\numberline {1.2.5}Power}{8}
+\contentsline {subsection}{\numberline {1.3}Integrated Circuits Cost}{9}
+\contentsline {subsection}{\numberline {1.4}Technology Trends}{12}
+\contentsline {subsection}{\numberline {1.5}Levels of Representation}{12}
+\contentsline {subsubsection}{\numberline {1.5.1}Fundamental Execution Cycle}{12}
+\contentsline {subsection}{\numberline {1.6}MIPS}{12}
+\contentsline {subsubsection}{\numberline {1.6.1}Example MIPS64 Instructions}{13}
+\contentsline {subsubsection}{\numberline {1.6.2}Branches}{14}
+\contentsline {subsubsection}{\numberline {1.6.3}Instruction Encoding}{14}
+\contentsline {subsubsection}{\numberline {1.6.4}Registers}{16}
+\contentsline {subsubsection}{\numberline {1.6.5}Memory}{16}
+\contentsline {subsubsection}{\numberline {1.6.6}Elements of an ISA}{16}
+\contentsline {subsubsection}{\numberline {1.6.7}ISA Classes}{17}
+\contentsline {subsubsection}{\numberline {1.6.8}Memory Addressing}{18}
+\contentsline {subsubsection}{\numberline {1.6.9}Memory Alignment}{18}
+\contentsline {section}{\numberline {2}Pipelining}{21}
+\contentsline {subsection}{\numberline {2.1}Steps in Instruction Processing}{21}
+\contentsline {subsubsection}{\numberline {2.1.1}Instruction Fetch}{21}
+\contentsline {subsubsection}{\numberline {2.1.2}R-type ALU}{22}
+\contentsline {subsubsection}{\numberline {2.1.3}Loads and Stores/Memory}{23}
+\contentsline {subsubsection}{\numberline {2.1.4}Conditional Branches}{23}
+\contentsline {subsection}{\numberline {2.2}Putting it all Together}{24}
+\contentsline {subsubsection}{\numberline {2.2.1}Combining the ALU and the Load/Store}{24}
+\contentsline {subsubsection}{\numberline {2.2.2}Combining with Branch/Jumps}{25}
+\contentsline {subsubsection}{\numberline {2.2.3}A Full Single-Cycle MIPS64}{25}
+\contentsline {subsection}{\numberline {2.3}Actual Pipelining}{26}
+\contentsline {subsubsection}{\numberline {2.3.1}Example -- Floating Point Multiplier}{27}
+\contentsline {subsection}{\numberline {2.4}Desirable Traits of Pipelining}{29}
+\contentsline {subsection}{\numberline {2.5}Pipelining MIPS}{29}
+\contentsline {subsubsection}{\numberline {2.5.1}Hazards}{31}
+\contentsline {subsection}{\numberline {2.6}Dependencies}{33}
+\contentsline {subsubsection}{\numberline {2.6.1}True Dependency}{33}
+\contentsline {subsubsection}{\numberline {2.6.2}Name Dependency}{33}
+\contentsline {subsubsection}{\numberline {2.6.3}Output Dependency}{34}
+\contentsline {subsection}{\numberline {2.7}Multicycle Operations}{35}
+\contentsline {subsection}{\numberline {2.8}Pipelined Function Units}{36}
+\contentsline {subsubsection}{\numberline {2.8.1}In-order Scoreboard for Multicycle Pipelines}{37}
+\contentsline {paragraph}{\numberline {2.8.1.1}Algorithm}{37}
+\contentsline {section}{\numberline {3}Out-of-Order Execution}{38}
+\contentsline {subsection}{\numberline {3.1}Decode Instruction}{38}
+\contentsline {subsection}{\numberline {3.2}Scoreboards}{39}
+\contentsline {subsubsection}{\numberline {3.2.1}Scoreboard Algorithm}{39}
+\contentsline {subsubsection}{\numberline {3.2.2}Scoreboard Components}{39}
+\contentsline {section}{\numberline {4}Register-Renaming}{40}
+\contentsline {subsection}{\numberline {4.1}Tomasulo algorithm}{40}
+\contentsline {section}{\numberline {5}In-order commit and multiple issue}{41}
+\contentsline {subsection}{\numberline {5.1}Exceptions}{41}
+\contentsline {subsubsection}{\numberline {5.1.1}In-order pipeline}{41}
+\contentsline {subsubsection}{\numberline {5.1.2}Out-of-order commit}{42}
+\contentsline {subsection}{\numberline {5.2}Speculative Execution}{42}
+\contentsline {subsection}{\numberline {5.3}Completion and commit}{43}
+\contentsline {subsubsection}{\numberline {5.3.1}Reorder Buffer (ROB)}{43}
+\contentsline {section}{\numberline {6}Instruction Set Architecture (ISA)}{44}
+\contentsline {subsection}{\numberline {6.1}Classifications of ISAs}{44}
+\contentsline {subsubsection}{\numberline {6.1.1}Internal Storage}{44}
+\contentsline {subsubsection}{\numberline {6.1.2}Number of Operands}{45}
+\contentsline {subsection}{\numberline {6.2}Memory Addressing}{45}
+\contentsline {subsection}{\numberline {6.3}Addressing Modes}{45}
+\contentsline {subsection}{\numberline {6.4}Control Flow}{46}
+\contentsline {subsection}{\numberline {6.5}Encoding an Instruction Set}{46}
+\contentsline {subsection}{\numberline {6.6}MIPS}{47}
+\contentsline {section}{\numberline {7}Pipelining}{47}
+\contentsline {subsection}{\numberline {7.1}Classic 5-Stage Pipeline for a RISC Processor}{47}
+\contentsline {subsection}{\numberline {7.2}Pipeline Hazards}{49}
+\contentsline {subsubsection}{\numberline {7.2.1}Forwarding}{49}
+\contentsline {subsubsection}{\numberline {7.2.2}Branch Hazards}{50}
+\contentsline {subsection}{\numberline {7.3}Pipeline Control}{51}
+\contentsline {subsection}{\numberline {7.4}Exceptions}{51}
+\contentsline {subsection}{\numberline {7.5}Multicycle Operations}{52}
+\contentsline {subsubsection}{\numberline {7.5.1}Hazards and Forwarding in Longer Latency Pipelines}{53}
+\contentsline {subsubsection}{\numberline {7.5.2}Maintaining Precise Exceptions}{54}
+\contentsline {subsection}{\numberline {7.6}Dynamically Scheduled Pipelines}{55}
+\contentsline {subsubsection}{\numberline {7.6.1}Scoreboard}{55}
+\contentsline {section}{\numberline {8}Instruction-Level Parallelism}{57}
+\contentsline {subsection}{\numberline {8.1}Advanced Branch Prediction}{57}
+\contentsline {subsection}{\numberline {8.2}Dynamic Scheduling using Tomasulo's Algorithm}{58}
+\contentsline {subsubsection}{\numberline {8.2.1}Register-renaming}{58}
+\contentsline {subsection}{\numberline {8.3}Hardware-Based Speculation}{61}
+\contentsline {section}{\numberline {9}Caches}{63}
+\contentsline {subsection}{\numberline {9.1}Available Technologies}{64}
+\contentsline {subsection}{\numberline {9.2}What to Keep in a Cache}{65}
+\contentsline {subsubsection}{\numberline {9.2.1}Temporal Locality}{66}
+\contentsline {subsubsection}{\numberline {9.2.2}Spatial Locality}{68}
+\contentsline {subsubsection}{\numberline {9.2.3}Direct Mapped Cache}{70}
+\contentsline {subsubsection}{\numberline {9.2.4}Set-Associative Cache}{72}
+\contentsline {subsubsection}{\numberline {9.2.5}Reuse Distance}{75}
+\contentsline {subsubsection}{\numberline {9.2.6}Replacement Policy}{76}
+\contentsline {subsubsection}{\numberline {9.2.7}Cache Misses}{78}
+\contentsline {subsection}{\numberline {9.3}Cache Performance Impact}{80}
+\contentsline {section}{\numberline {10}Virtual Memory}{83}
+\contentsline {section}{\numberline {11}Memory Technologies}{88}
+\contentsline {subsection}{\numberline {11.1}Random Access Addressing}{88}
+\contentsline {subsubsection}{\numberline {11.1.1}SRAM}{89}
+\contentsline {subsubsection}{\numberline {11.1.2}DRAM}{91}
+\contentsline {subsection}{\numberline {11.2}Associative Lookup Addressing}{92}
+\contentsline {subsubsection}{\numberline {11.2.1}CAM}{92}
+\contentsline {section}{\numberline {12}Memory Consistency}{93}
+\contentsline {subsection}{\numberline {12.1}Memory Consistency Model}{94}
+\contentsline {subsubsection}{\numberline {12.1.1}Sequential Consistency (SC)}{95}
+\contentsline {subsection}{\numberline {12.2}Weak Ordering (WO)}{96}
+\contentsline {subsection}{\numberline {12.3}Release Consistency (RC)}{97}
+\contentsline {subsection}{\numberline {12.4}Total Store Ordering (TSO)}{99}
+\contentsline {subsection}{\numberline {12.5}Store Atomicity}{99}
+\contentsline {section}{\numberline {13}Coherence}{99}
+\contentsline {subsection}{\numberline {13.1}Modified, Shared, Invalid (MSI) Protocol}{100}
+\contentsline {subsection}{\numberline {13.2}Directories}{102}
+\contentsline {subsubsection}{\numberline {13.2.1}Directory MSI Protocol}{103}
+\contentsline {section}{\numberline {14}VLIW and SIMD}{104}
+\contentsline {subsection}{\numberline {14.1}Very Long Instruction Word (VLIW)}{105}
+\contentsline {subsubsection}{\numberline {14.1.1}Loop Unrolling}{106}
+\contentsline {subsubsection}{\numberline {14.1.2}Register Renaming}{107}
+\contentsline {subsubsection}{\numberline {14.1.3}Software Pipelining/Instruction Reorder}{107}
+\contentsline {subsubsection}{\numberline {14.1.4}Limitations}{108}
+\contentsline {subsection}{\numberline {14.2}SIMD Instruction Encoding}{109}
+\contentsline {subsubsection}{\numberline {14.2.1}Spatial SIMD -- Array Processor}{110}
+\contentsline {subsubsection}{\numberline {14.2.2}Temporal SIMD -- Vector Processor}{110}
+\contentsline {subsubsection}{\numberline {14.2.3}Problems with SIMD}{110}
+\contentsline {section}{\numberline {15}GPUs}{112}
+\contentsline {subsection}{\numberline {15.1}Warps}{115}
+\contentsline {subsection}{\numberline {15.2}Challenges}{116}
+\contentsline {subsection}{\numberline {15.3}Architecture}{117}
+\contentsline {subsubsection}{\numberline {15.3.1}Fetch and Decode}{118}
+\contentsline {subsubsection}{\numberline {15.3.2}Instruction Issue}{119}
+\contentsline {subsubsection}{\numberline {15.3.3}Branch Divergence}{119}
+\contentsline {subsubsection}{\numberline {15.3.4}GPU Register Files}{121}
+\contentsline {subsubsection}{\numberline {15.3.5}Operand Collector}{122}
+\contentsline {subsubsection}{\numberline {15.3.6}Scalar Registers and Execution Units}{122}
+\contentsline {subsubsection}{\numberline {15.3.7}GPU Memory Systems}{122}
+\contentsline {section}{Appendix}{124}
+\contentsline {subsection}{\numberline {A}Tutorial 1}{124}
+\contentsline {subsubsection}{\numberline {A.1}Amdahl's Law}{124}
+\contentsline {paragraph}{\numberline {A.1.1}Assuming 80\% of a program could be parallelized perfectly (executing on N cores, speedup is N). If you have a 32-core computer, what's the speedup you could get compared with the single core machine? If you have infinite number of cores, what's the maximum speedup?}{124}
+\contentsline {paragraph}{\numberline {A.1.2}Ben Bitdiddle believes he can improve program in problem 1 by building an \csqQQ {34}asymmetric\csqQQ {34} multicore processor that combines several “normal” cores with complex \csqQQ {34}supercores\csqQQ {34} that are 4X larger but also 2X faster. His overall chip design contains one supercore and 12 normal cores, and is area-equivalent to 16 normal cores. What's the maximum speedup Ben can achieve? $ \\ Fraction_{serial} = 0.8 \\ SU_{serial} = 2 \\ Fraction_{parallel} = 0.8 \\ SU_{parallel} = 14$}{124}
+\contentsline {paragraph}{\numberline {A.1.3}Assuming in a program, memory operations currently take 30\% of execution time. A new widget called \csqQQ {34}cache\csqQQ {34} speeds up 80\% memory operations by a factor of 4. A second new widget called \csqQQ {34}L2 cache\csqQQ {34} speeds up the remaining memory operations by a factor of 2. After applying both of these two widgets, what's the total speedup?}{125}
+\contentsline {subsubsection}{\numberline {A.2}Iron Law}{125}
+\contentsline {paragraph}{\numberline {A.2.1}After you profile a program running on a computer system, you find that 35\% instructions are memory operations, 55\% are ALU operations and 10\% are branch instructions. The number of cycles these three kinds of instructions need are 10, 7 and 5 respectively. Please calculate the CPI of this program.}{125}
+\contentsline {paragraph}{\numberline {A.2.2} Just assuming that we can do two optimizations for the system of problem A.2.1. (a) A better compiler could be used to reduce the number of instructions by 15\%. (b) A higher-performance CPU could be used to reduce the number of cycles for ALU operations to 5. Moreover, clock cycle time is reduced by 10\%. Which kind of optimization has shorter execution time?}{126}
+\contentsline {subsection}{\numberline {B}Tutorial 2}{127}
+\contentsline {subsubsection}{\numberline {B.1}Costs}{127}
+\contentsline {paragraph}{\numberline {B.1.1}You will be selling a range of chips from your factory, and you need to decide how much capacity to dedicate to each chip. Your Woods chip will be 150$\mathbf {mm^2}$ and will make a profit of \$20 per defect-free chip. Your Markon chip will be 250$\mathbf {mm^2}$ and will make a profit of \$25 per defect-free chip. Each wafer has a 300 mm diameter and an estimated defect rate of .30 per $\mathbf {cm^2}$. Alpha = 4 \\ \\(1) What profit do you make on each wafer of Woods chip? \\(2) What profit do you make on each wafer of Markon chip? \\(3) Which chip should you produce in this facility? \\(4) If your demand is 50,000 Woods chips per month and 25,000 Markon chips per month, and your facility can fabricate 150 wafers a month, how many wafers should you make of each chip?}{127}
+\contentsline {paragraph}{\numberline {B.1.2}An engineer at AMD suggests that, since the yield of Opteron processor chips is so poor, you might make chips more cheaply if you placed an extra core on the die and only threw out chips on which both processors had failed. We will solve this exercise by viewing the yield as a probability of no defects occurring in a certain area given the defect rate. Calculate probabilities based on each Opteron core separately (this may not be entirely accurate, since the yield equation is based on empirical evidence rather than a mathematical calculation relating the probabilities of finding errors in different portions of the chip). The die size is 199$\mathbf {mm^2}$ and estimated defect rate is .75/$\mathbf {cm^2}$.\\ \\ (1) What is the probability that a defect will occur on no more than one of the two processor cores? \\ (2) If the old chip cost \$20 dollars per chip, what will the cost be of the new chip, taking into account the new area and yield?}{128}
+\contentsline {paragraph}{\numberline {B.1.3}Your company's internal studies show that a single-core system is sufficient for the demand on your processing power; however, you are exploring whether you could save power by using dual cores. \\(1) Assume your application is 80\% parallelizable. By how much could you decrease the frequency and get the same performance? \\(2) Assume that the voltage may be decreased linearly with the frequency. How much dynamic power would the dual-core system require as compared to the single-core system?}{129}
+\contentsline {subsection}{\numberline {C}Tutorial 3}{130}
+\contentsline {subsubsection}{\numberline {C.1}ISA}{130}
+\contentsline {paragraph}{\numberline {C.1.1}For the following assume the values A, B, C, D and E reside in memory. Also assume that instruction operation codes are represented in 8-bits, memory addresses are 64-bits and register addresses are 6-bits. For each instruction set architecture: Stack, Accumulator, Register-Memory, Load/Store, how many addresses, or names, appear for each instruction for the code to compute C=A+B, and what is the total code size?}{130}
+\contentsline {paragraph}{\numberline {C.1.2}Invent your own assembly language mnemonics, and for each architecture (stack, accumulator, reg-mem, reg-reg) write the best equivalent assembly code for this high-level language code sequence: A=B+C; B=A+C; D=A-B;}{131}

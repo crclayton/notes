@@ -1,0 +1,88 @@
+\contentsline {section}{\numberline {1}Path to VLSI Systems}{1}
+\contentsline {section}{\numberline {2}CMOS Manufacturing}{2}
+\contentsline {section}{\numberline {3}Introduction to SystemVerilog}{2}
+\contentsline {section}{\numberline {4}MOSFETs}{2}
+\contentsline {subsection}{\numberline {4.1}PN Junctions}{2}
+\contentsline {subsection}{\numberline {4.2}MOS Operating Modes}{3}
+\contentsline {subsection}{\numberline {4.3}nMOS Transistor}{4}
+\contentsline {subsubsection}{\numberline {4.3.1}MOSFET Modes of Operation}{5}
+\contentsline {paragraph}{\numberline {4.3.1.1}Linear Mode}{6}
+\contentsline {paragraph}{\numberline {4.3.1.2}Saturated}{7}
+\contentsline {subsubsection}{\numberline {4.3.2}Shockley Model}{7}
+\contentsline {subsubsection}{\numberline {4.3.3}Designing Actual Transistors}{8}
+\contentsline {subsection}{\numberline {4.4}pMOS Transistor}{8}
+\contentsline {subsection}{\numberline {4.5}MOS Capacitance}{9}
+\contentsline {subsubsection}{\numberline {4.5.1}Diffusion Capacitance}{9}
+\contentsline {subsubsection}{\numberline {4.5.2}Gate Capacitance}{10}
+\contentsline {section}{\numberline {5}Pass Gate}{14}
+\contentsline {subsection}{\numberline {5.1}nMOS Pass Gate}{15}
+\contentsline {subsection}{\numberline {5.2}pMOS Pass Gate}{16}
+\contentsline {section}{\numberline {6}Inverter}{16}
+\contentsline {subsection}{\numberline {6.1}Operating Regions}{17}
+\contentsline {subsection}{\numberline {6.2}Beta Ratio}{17}
+\contentsline {subsection}{\numberline {6.3}Noise Margins}{18}
+\contentsline {subsection}{\numberline {6.4}Inverter Delay}{19}
+\contentsline {section}{\numberline {7}Static CMOS Logic}{20}
+\contentsline {subsection}{\numberline {7.1}Preferred Capacitor Placement}{22}
+\contentsline {subsection}{\numberline {7.2}Sizing for Equal Rise/Fall Timing}{23}
+\contentsline {subsection}{\numberline {7.3}Equivalent Circuits and Elmore Delay}{25}
+\contentsline {section}{\numberline {8}MOSFET Non-idealities}{27}
+\contentsline {subsection}{\numberline {8.1}Leakage}{28}
+\contentsline {subsubsection}{\numberline {8.1.1}Subthreshold Leakage}{28}
+\contentsline {section}{\numberline {9}CMOS Fabrication and Layout}{28}
+\contentsline {subsection}{\numberline {9.1}Fabrication}{28}
+\contentsline {subsection}{\numberline {9.2}Layout}{28}
+\contentsline {subsubsection}{\numberline {9.2.1}Stick Diagrams}{29}
+\contentsline {subsubsection}{\numberline {9.2.2}Finding an Euler Trail}{32}
+\contentsline {section}{\numberline {10}Combinational Logic Families}{32}
+\contentsline {subsection}{\numberline {10.1}Pseudo-NMOS}{33}
+\contentsline {subsection}{\numberline {10.2}Dynamic Logic}{35}
+\contentsline {subsubsection}{\numberline {10.2.1}Monotonicity}{36}
+\contentsline {subsection}{\numberline {10.3}Domino Logic}{37}
+\contentsline {subsection}{\numberline {10.4}Pass-Transistor Logic}{38}
+\contentsline {section}{\numberline {11}Sequential Logic}{39}
+\contentsline {subsection}{\numberline {11.1}Latches}{40}
+\contentsline {subsubsection}{\numberline {11.1.1}Dynamic Latches}{40}
+\contentsline {subsubsection}{\numberline {11.1.2}Static Latches}{41}
+\contentsline {subsubsection}{\numberline {11.1.3}Clocked Inverter/$\mathbf {C^2MOS}$ Latch}{42}
+\contentsline {subsection}{\numberline {11.2}Flip-Flops}{43}
+\contentsline {subsubsection}{\numberline {11.2.1}Reset}{44}
+\contentsline {subsubsection}{\numberline {11.2.2}Enable}{44}
+\contentsline {subsection}{\numberline {11.3}Timing Definitions}{45}
+\contentsline {subsubsection}{\numberline {11.3.1}Setup Time (Max-Delay) Failure}{47}
+\contentsline {subsubsection}{\numberline {11.3.2}Hold Time (Min-Delay) Failure}{47}
+\contentsline {subsection}{\numberline {11.4}Sequencing Methods}{48}
+\contentsline {subsubsection}{\numberline {11.4.1}Flip-Flop Sequencing}{48}
+\contentsline {subsubsection}{\numberline {11.4.2}2-Phase Latch Sequencing}{49}
+\contentsline {subsubsection}{\numberline {11.4.3}Pulsed Latch Sequencing}{50}
+\contentsline {subsection}{\numberline {11.5}Time Borrowing}{51}
+\contentsline {subsection}{\numberline {11.6}Clock Skew}{52}
+\contentsline {section}{\numberline {12}Volatile Memory}{53}
+\contentsline {subsection}{\numberline {12.1}Memory Array Architecture}{54}
+\contentsline {subsection}{\numberline {12.2}SRAM}{55}
+\contentsline {subsubsection}{\numberline {12.2.1}SRAM Read}{56}
+\contentsline {subsubsection}{\numberline {12.2.2}SRAM Write}{57}
+\contentsline {subsubsection}{\numberline {12.2.3}SRAM Sizing}{57}
+\contentsline {subsubsection}{\numberline {12.2.4}SRAM Layout}{58}
+\contentsline {subsection}{\numberline {12.3}Row Decoder}{59}
+\contentsline {subsection}{\numberline {12.4}Column Circuitry}{61}
+\contentsline {subsubsection}{\numberline {12.4.1}Sense Amplifiers}{61}
+\contentsline {subsubsection}{\numberline {12.4.2}Column Multiplexing}{62}
+\contentsline {subsection}{\numberline {12.5}DRAM}{64}
+\contentsline {subsection}{\numberline {12.6}CAM}{66}
+\contentsline {section}{\numberline {13}Non-Volatile Memory}{66}
+\contentsline {subsection}{\numberline {13.1}NOR-ROM}{67}
+\contentsline {subsection}{\numberline {13.2}NAND-ROM}{67}
+\contentsline {subsection}{\numberline {13.3}EPROM}{68}
+\contentsline {section}{\numberline {14}Programmable Logic Array (PLA)}{70}
+\contentsline {section}{\numberline {15}Power Distribution}{71}
+\contentsline {section}{\numberline {16}Chip Failures}{73}
+\contentsline {subsection}{\numberline {16.1}Variation}{73}
+\contentsline {subsubsection}{\numberline {16.1.1}Process}{73}
+\contentsline {subsubsection}{\numberline {16.1.2}Spatial}{73}
+\contentsline {subsubsection}{\numberline {16.1.3}Aging}{73}
+\contentsline {section}{Appendix}{74}
+\contentsline {subsection}{\numberline {A}Questions}{74}
+\contentsline {subsubsection}{\numberline {A.1}Convert this state transition table to a PLA}{74}
+\contentsline {subsubsection}{\numberline {A.2}A chip draws 24W from a 1.2V supply. The power supply impedance is 5m$\Omega $. What is the IR drop?}{74}
+\contentsline {subsubsection}{\numberline {A.3}A 1.2V chip switches from an idle mode consuming 5W to a full-power mode consuming 53W. The transition takes 10 clock cycles at 1GHz. The supply inductance is 0.1nH. What is the L(di/dt) droop?}{74}

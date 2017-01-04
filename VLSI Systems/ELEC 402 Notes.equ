@@ -1,0 +1,22 @@
+\contentsline {myequations}{\numberline {1}Terminal Voltages in MOSFET}{5}
+\contentsline {myequations}{\numberline {2}Drain to source current in linear}{6}
+\contentsline {myequations}{\numberline {3}Resistance of nMOS in Linear Mode}{7}
+\contentsline {myequations}{\numberline {4}Transconductance coefficient, $\beta $}{7}
+\contentsline {myequations}{\numberline {5}Drain-source current in saturation}{7}
+\contentsline {myequations}{\numberline {6}Shockley Model of nMOS transistor}{7}
+\contentsline {myequations}{\numberline {7}Shockley Model of pMOS transistor}{9}
+\contentsline {myequations}{\numberline {8}Gate capacitance}{11}
+\contentsline {myequations}{\numberline {9}Pass Gate of nMOS}{15}
+\contentsline {myequations}{\numberline {10}Pass Gate of nMOS}{16}
+\contentsline {myequations}{\numberline {11}Noise Margins}{19}
+\contentsline {myequations}{\numberline {14}Pseudo-NMOS Voltage Swing}{33}
+\contentsline {myequations}{\numberline {15}Pseudo-NMOS output voltage}{34}
+\contentsline {myequations}{\numberline {16}Setup Time Condition}{47}
+\contentsline {myequations}{\numberline {17}Hold Time Condition}{48}
+\contentsline {myequations}{\numberline {18}FF Sequencing Timing Constraints}{49}
+\contentsline {myequations}{\numberline {19}2-Phase Latch Sequencing Timing Constraints}{50}
+\contentsline {myequations}{\numberline {20}Borrowing Time}{52}
+\contentsline {myequations}{\numberline {21}Flip-flop Clock Skew Equations}{53}
+\contentsline {myequations}{\numberline {22}2-Phase Latch Clock Skew Equations}{53}
+\contentsline {myequations}{\numberline {23}SRAM Sizing Restrictions}{57}
+\contentsline {myequations}{\numberline {24}Bitline Voltage Swing}{64}

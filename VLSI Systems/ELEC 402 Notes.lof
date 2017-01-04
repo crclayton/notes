@@ -1,0 +1,79 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces Accumulation of an nMOS}}{3}
+\contentsline {figure}{\numberline {2}{\ignorespaces Depletion of an nMOS}}{4}
+\contentsline {figure}{\numberline {3}{\ignorespaces Inversion of an nMOS}}{4}
+\contentsline {figure}{\numberline {4}{\ignorespaces nMOS Transistor}}{5}
+\contentsline {figure}{\numberline {5}{\ignorespaces Shockley/Square-Law Model of a Real Transistor}}{6}
+\contentsline {figure}{\numberline {6}{\ignorespaces pMOS Transistor}}{8}
+\contentsline {figure}{\numberline {7}{\ignorespaces Effective Length}}{10}
+\contentsline {figure}{\numberline {8}{\ignorespaces Merged Transistor Diffusions}}{10}
+\contentsline {figure}{\numberline {9}{\ignorespaces Gate Capacitance}}{11}
+\contentsline {figure}{\numberline {10}{\ignorespaces CMOS Inverter}}{14}
+\contentsline {figure}{\numberline {11}{\ignorespaces nMOS Pass Filter (Vdd)}}{15}
+\contentsline {figure}{\numberline {12}{\ignorespaces nMOS Pass Filter (0V)}}{15}
+\contentsline {figure}{\numberline {13}{\ignorespaces IV Curve for pMOS (blue) and nMOS (green)}}{17}
+\contentsline {figure}{\numberline {14}{\ignorespaces IV Curve for pMOS (blue) and nMOS (green)}}{17}
+\contentsline {figure}{\numberline {15}{\ignorespaces Beta Ratio/Skew}}{18}
+\contentsline {figure}{\numberline {16}{\ignorespaces High and Low Noise Margins}}{19}
+\contentsline {figure}{\numberline {17}{\ignorespaces Points of VOH and VOL from the DC transfer characteristic}}{19}
+\contentsline {figure}{\numberline {18}{\ignorespaces Measurements of Inverter Delay}}{20}
+\contentsline {figure}{\numberline {19}{\ignorespaces CMOS PUN and PDN}}{21}
+\contentsline {figure}{\numberline {20}{\ignorespaces CMOS NAND2 Gate (Left) and NOR2 Gate (Right)}}{22}
+\contentsline {figure}{\numberline {21}{\ignorespaces Less Capacitance on the Output Rail (Right) is Better}}{22}
+\contentsline {figure}{\numberline {22}{\ignorespaces Sizing for NAND3 and NOR3}}{23}
+\contentsline {figure}{\numberline {23}{\ignorespaces CMOS and Sizing for Y=$\neg $(D+A(B+C))}}{24}
+\contentsline {figure}{\numberline {24}{\ignorespaces Equivalent Circuits for nMOS and pMOS}}{25}
+\contentsline {figure}{\numberline {25}{\ignorespaces CMOS Elmore's Delay}}{26}
+\contentsline {figure}{\numberline {26}{\ignorespaces A Simple Standard Cell Library}}{29}
+\contentsline {figure}{\numberline {27}{\ignorespaces Inverter Circuit, Stick Diagram, and Layout}}{30}
+\contentsline {figure}{\numberline {28}{\ignorespaces O3AI Stick Diagram}}{31}
+\contentsline {figure}{\numberline {29}{\ignorespaces Euler Trails and Stick Diagram}}{32}
+\contentsline {figure}{\numberline {30}{\ignorespaces Pseudo-NMOS Inverter, NAND2, and NOR2}}{34}
+\contentsline {figure}{\numberline {31}{\ignorespaces Dynamic-Logic Inverter, NAND2, and NOR2}}{35}
+\contentsline {figure}{\numberline {32}{\ignorespaces Dynamic-Logic Inverter, NAND2, and NOR2}}{35}
+\contentsline {figure}{\numberline {33}{\ignorespaces Dynamic Gate (Domino) with a Keeper}}{36}
+\contentsline {figure}{\numberline {34}{\ignorespaces Monotonocity Violation with Dynamic Logic}}{37}
+\contentsline {figure}{\numberline {35}{\ignorespaces Sequential Domino AND Gates}}{37}
+\contentsline {figure}{\numberline {36}{\ignorespaces 2-Input Mux with CMOS (Left), Pass-Transistor Logic (Right)}}{38}
+\contentsline {figure}{\numberline {37}{\ignorespaces Finite State Machine and Pipeline Sequential Logic}}{39}
+\contentsline {figure}{\numberline {38}{\ignorespaces Difference Between Latch and Flip-Flop}}{40}
+\contentsline {figure}{\numberline {39}{\ignorespaces Dynamic Latches}}{41}
+\contentsline {figure}{\numberline {40}{\ignorespaces Static Latches}}{41}
+\contentsline {figure}{\numberline {41}{\ignorespaces C2MOS Latch}}{42}
+\contentsline {figure}{\numberline {42}{\ignorespaces Transmission Gate}}{42}
+\contentsline {figure}{\numberline {43}{\ignorespaces Dynamic and Static Flip-Flops}}{43}
+\contentsline {figure}{\numberline {44}{\ignorespaces Synchronous/Asynchronous Reset Flip-Flops}}{44}
+\contentsline {figure}{\numberline {45}{\ignorespaces Mux/Clock-gating Enabled Flip-Flops}}{45}
+\contentsline {figure}{\numberline {46}{\ignorespaces Combinational and Propagation Delay}}{45}
+\contentsline {figure}{\numberline {47}{\ignorespaces Clock-to-Q, Setup, and Hold Times of a FF}}{46}
+\contentsline {figure}{\numberline {48}{\ignorespaces Clock-to-Q, D-to-Q, Setup, and Hold Times of a Latch}}{46}
+\contentsline {figure}{\numberline {49}{\ignorespaces Setup Time}}{47}
+\contentsline {figure}{\numberline {50}{\ignorespaces Hold Time}}{48}
+\contentsline {figure}{\numberline {51}{\ignorespaces Flip-Flop Sequencing}}{49}
+\contentsline {figure}{\numberline {52}{\ignorespaces 2-Phase Transparent Latch Sequencing}}{49}
+\contentsline {figure}{\numberline {53}{\ignorespaces Pulsed-Latch Sequencing Hold Time}}{50}
+\contentsline {figure}{\numberline {54}{\ignorespaces Pulsed-Latch Sequencing}}{51}
+\contentsline {figure}{\numberline {55}{\ignorespaces Time-Borrowing Latch Sequencing}}{51}
+\contentsline {figure}{\numberline {56}{\ignorespaces Worst Case Scenario for Setup Time}}{52}
+\contentsline {figure}{\numberline {57}{\ignorespaces Worst Case Scenario for Hold Time}}{53}
+\contentsline {figure}{\numberline {58}{\ignorespaces Memory Array}}{55}
+\contentsline {figure}{\numberline {59}{\ignorespaces SRAM Cell}}{56}
+\contentsline {figure}{\numberline {60}{\ignorespaces SRAM Read ($Q_o=0, \overline {Q}_o=1$)}}{56}
+\contentsline {figure}{\numberline {61}{\ignorespaces SRAM Write ($Q_o=0, \overline {Q}_o=1$)}}{57}
+\contentsline {figure}{\numberline {62}{\ignorespaces SRAM Sizing}}{58}
+\contentsline {figure}{\numberline {63}{\ignorespaces SRAM Layout ($>90nm$)}}{58}
+\contentsline {figure}{\numberline {64}{\ignorespaces SRAM Tile ($>90nm$)}}{59}
+\contentsline {figure}{\numberline {65}{\ignorespaces SRAM Layout ($\le 90nm$)}}{59}
+\contentsline {figure}{\numberline {66}{\ignorespaces CMOS Row Decoder}}{60}
+\contentsline {figure}{\numberline {67}{\ignorespaces Pseudo-NMOS Row Decoder}}{60}
+\contentsline {figure}{\numberline {68}{\ignorespaces Row Decoder Layout}}{61}
+\contentsline {figure}{\numberline {69}{\ignorespaces Clocked Sense Amplifier}}{62}
+\contentsline {figure}{\numberline {70}{\ignorespaces 8:1 Tree Decoder Multiplexer}}{63}
+\contentsline {figure}{\numberline {71}{\ignorespaces SRAM Architecture Overview}}{63}
+\contentsline {figure}{\numberline {72}{\ignorespaces DRAM Cell}}{64}
+\contentsline {figure}{\numberline {73}{\ignorespaces NOR-ROM and Dot Diagram}}{67}
+\contentsline {figure}{\numberline {74}{\ignorespaces NAND-ROM and Dot Diagram}}{68}
+\contentsline {figure}{\numberline {75}{\ignorespaces Floating Gate Transistor}}{69}
+\contentsline {figure}{\numberline {76}{\ignorespaces PLA of $s=a\overline {b}\overline {c}+\overline {a}b\overline {c}+\overline {a}\overline {b}c+abc$ and $c=ab+bc+ac$}}{70}
+\contentsline {figure}{\numberline {77}{\ignorespaces AND-OR (left) and NOR-NOR (right) PLAs}}{70}
+\contentsline {figure}{\numberline {78}{\ignorespaces PLA Schematic and Layout}}{71}
+\contentsline {figure}{\numberline {79}{\ignorespaces Power Supply Network}}{72}

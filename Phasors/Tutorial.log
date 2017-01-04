@@ -1,0 +1,226 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  26 AUG 2016 17:00
+entering extended mode
+**./Tutorial.tex
+(Tutorial.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\extsizes\extart
+icle.cls"
+Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\exscale.sty"
+Package: exscale 2014/09/29 v2.1h Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 57.
+\big@size=\dimen102
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen103
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\apacite\apacite
+.sty"
+Package: apacite 2013/07/21 v6.03 APA citation
+\c@BibCnt=\count87
+\bibleftmargin=\skip43
+\bibindent=\skip44
+\bibparsep=\skip45
+\bibitemsep=\skip46
+\biblabelsep=\skip47
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspa
+ce.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen104
+\Gm@wd@mp=\dimen105
+\Gm@odd@mp=\dimen106
+\Gm@even@mp=\dimen107
+\Gm@layoutwidth=\dimen108
+\Gm@layoutheight=\dimen109
+\Gm@layouthoffset=\dimen110
+\Gm@layoutvoffset=\dimen111
+\Gm@dimlist=\toks15
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\was\gensymb.sty
+"
+Package: gensymb 2003/07/02 v1.0 (WaS)
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquot
+es.sty"
+Package: csquotes 2016/07/14 v5.1h context-sensitive quotations (JAW)
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolb
+ox.sty"
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count91
+)
+\csq@reset=\count92
+\csq@gtype=\count93
+\csq@glevel=\count94
+\csq@qlevel=\count95
+\csq@maxlvl=\count96
+\csq@tshold=\count97
+\csq@ltx@everypar=\toks16
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquot
+es.def"
+File: csquotes.def 2016/07/14 v5.1h csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\csquotes\csquot
+es.cfg"
+File: csquotes.cfg 
+)
+Package csquotes Info: Enabling multilingual quotes.
+Package csquotes Info: Redefining alias 'english' -> 'english/american'.
+)
+Package csquotes Info: Allocating character ".
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... none found.
+
+
+Package csquotes Warning: No multilingual support.
+(csquotes)                Cannot enable multilingual quotes on input line 17.
+
+(Tutorial.aux)
+\openout1 = `Tutorial.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+\c@maskedRefs=\count98
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\apacite\english
+.apc"
+File: english.apc 2013/07/21 v6.03 apacite language file
+LaTeX Info: Redefining \BPBI on input line 129.
+LaTeX Info: Redefining \BHBI on input line 130.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=-37.0pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \celsius on input line 17.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 17.
+
+
+Package gensymb Warning: Not defining \perthousand.
+
+LaTeX Info: Redefining \ohm on input line 17.
+Package gensymb Info: Using \Omega for \ohm on input line 17.
+
+Package gensymb Warning: Not defining \micro.
+
+Package csquotes Info: Making character " active on input line 17.
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <7> on input line 26.
+[0
+
+{C:/Users/Charles Clayton/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <6> on input line 48.
+[1
+
+] [2] [3] [4]
+No file Tutorial.bbl.
+(Tutorial.aux) ) 
+Here is how much of TeX's memory you used:
+ 2164 strings out of 493335
+ 32101 string characters out of 3139228
+ 104961 words of memory out of 3000000
+ 5711 multiletter control sequences out of 15000+200000
+ 10352 words of font info for 37 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 25i,7n,32p,817b,187s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
+x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
+i12.pfb>
+Output written on Tutorial.pdf (5 pages, 117408 bytes).
+PDF statistics:
+ 58 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

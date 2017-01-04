@@ -1,0 +1,890 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  6 JUL 2016 13:30
+entering extended mode
+**"./ECON 101 Notes.tex"
+("ECON 101 Notes.tex"
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen103
+\extrarowheight=\dimen104
+\NC@list=\toks14
+\extratabsurround=\skip43
+\backup@length=\skip44
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\bookta
+bs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen105
+\lightrulewidth=\dimen106
+\cmidrulewidth=\dimen107
+\belowrulesep=\dimen108
+\belowbottomsep=\dimen109
+\aboverulesep=\dimen110
+\abovetopsep=\dimen111
+\cmidrulesep=\dimen112
+\cmidrulekern=\dimen113
+\defaultaddspace=\dimen114
+\@cmidla=\count87
+\@cmidlb=\count88
+\@aboverulesep=\dimen115
+\@belowrulesep=\dimen116
+\@thisruleclass=\count89
+\@lastruleclass=\count90
+\@thisrulewidth=\dimen117
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/05/09 v1.0r Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 96.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count91
+))
+\Gin@req@height=\dimen118
+\Gin@req@width=\dimen119
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\apacite\apacite
+.sty"
+Package: apacite 2013/07/21 v6.03 APA citation
+\c@BibCnt=\count92
+\bibleftmargin=\skip45
+\bibindent=\skip46
+\bibparsep=\skip47
+\bibitemsep=\skip48
+\biblabelsep=\skip49
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\setspace\setspa
+ce.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\tocbibind\tocbi
+bind.sty"
+Package: tocbibind 2010/10/13 v1.5k extra ToC listings
+Package tocbibind Info: The document has section divisions on input line 50.
+
+
+Package tocbibind Note: Using section or other style headings.
+
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\appendix\append
+ix.sty"
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count93
+\c@@ppsavesec=\count94
+\c@@ppsaveapp=\count95
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\base
+\glossaries.sty"
+Package: glossaries 2016/06/09 v4.25 (NLCT)
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks16
+\XKV@tempa@toks=\toks17
+)
+\XKV@depth=\count96
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\mfirstuc\mfirst
+uc.sty"
+Package: mfirstuc 2015/12/17 v2.02 (NLCT)
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolb
+ox.sty"
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count97
+)
+\@glsmfirst=\toks18
+\@glsmrest=\toks19
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\textcase\textca
+se.sty"
+Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\xfor\xfor.sty"
+Package: xfor 2009/02/05 v1.05 (NLCT)
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\datatool\datato
+ol-base.sty"
+Package: datatool-base 2016/01/18 v2.25 (NLCT)
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2016/03/10 v2.15b AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks20
+\ex@=\dimen120
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen121
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count98
+LaTeX Info: Redefining \frac on input line 199.
+\uproot@=\count99
+\leftroot@=\count100
+LaTeX Info: Redefining \overline on input line 297.
+\classnum@=\count101
+\DOTSCASE@=\count102
+LaTeX Info: Redefining \ldots on input line 394.
+LaTeX Info: Redefining \dots on input line 397.
+LaTeX Info: Redefining \cdots on input line 518.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen122
+LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
+\macc@depth=\count103
+\c@MaxMatrixCols=\count104
+\dotsspace@=\muskip10
+\c@parentequation=\count105
+\dspbrk@lvl=\count106
+\tag@help=\toks21
+\row@=\count107
+\column@=\count108
+\maxfields@=\count109
+\andhelp@=\toks22
+\eqnshift@=\dimen123
+\alignsep@=\dimen124
+\tagshift@=\dimen125
+\tagwidth@=\dimen126
+\totwidth@=\dimen127
+\lineht@=\dimen128
+\@envbody=\toks23
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks24
+LaTeX Info: Redefining \[ on input line 2739.
+LaTeX Info: Redefining \] on input line 2740.
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\substr\substr.s
+ty"
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count110
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\datatool\datato
+ol-fp.sty"
+Package: datatool-fp 2016/01/18 v2.25 (NLCT)
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp.sty"
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\defpattern.s
+ty"
+Package: defpattern 1994/10/12
+\actioncount=\count111
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-basic.sty
+"
+Package: fp-basic 1996/05/13
+\FP@xs=\count112
+\FP@xia=\count113
+\FP@xib=\count114
+\FP@xfa=\count115
+\FP@xfb=\count116
+\FP@rega=\count117
+\FP@regb=\count118
+\FP@regs=\count119
+\FP@times=\count120
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-addons.st
+y"
+Package: fp-addons 1995/03/15
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-snap.sty"
+Package: fp-snap 1995/04/05
+) ("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-exp.sty
+"
+Package: fp-exp 1995/04/03
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-trigo.sty
+"
+Package: fp-trigo 1995/04/14
+) ("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-pas.sty
+"
+Package: fp-pas 1994/08/29
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-random.st
+y"
+Package: fp-random 1995/02/23
+\FPseed=\count121
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-eqn.sty"
+Package: fp-eqn 1995/04/03
+) ("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-upn.sty
+"
+Package: fp-upn 1996/10/21
+) ("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\fp\fp-eval.st
+y"
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks25
+\@dtl@tmpcount=\count122
+\dtl@tmplength=\skip53
+\dtl@sortresult=\count123
+\@dtl@numgrpsepcount=\count124
+\@dtl@datatype=\count125
+\dtl@codeA=\count126
+\dtl@codeB=\count127
+\@dtl@foreach@level=\count128
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\base
+\glossaries-compatible-307.sty"
+Package: glossaries-compatible-307 2016/06/09 v4.25 (NLCT)
+)
+\gls@level=\count129
+\@gls@tmpb=\toks26
+\gls@tmplen=\skip54
+\glskeylisttok=\toks27
+\glslabeltok=\toks28
+\glsshorttok=\toks29
+\glslongtok=\toks30
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styl
+es\glossary-hypernav.sty"
+Package: glossary-hypernav 2016/06/09 v4.25 (NLCT)
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styl
+es\glossary-list.sty"
+Package: glossary-list 2016/06/09 v4.25 (NLCT)
+\glslistdottedwidth=\skip55
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styl
+es\glossary-long.sty"
+Package: glossary-long 2016/06/09 v4.25 (NLCT)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip56
+\LTright=\skip57
+\LTpre=\skip58
+\LTpost=\skip59
+\LTchunksize=\count130
+\LTcapwidth=\dimen129
+\LT@head=\box28
+\LT@firsthead=\box29
+\LT@foot=\box30
+\LT@lastfoot=\box31
+\LT@cols=\count131
+\LT@rows=\count132
+\c@LT@tables=\count133
+\c@LT@chunks=\count134
+\LT@p@ftn=\toks31
+)
+\glsdescwidth=\skip60
+\glspagelistwidth=\skip61
+)
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styl
+es\glossary-super.sty"
+Package: glossary-super 2016/06/09 v4.25 (NLCT)
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\supertabular\su
+pertabular.sty"
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count135
+\ST@wd=\dimen130
+\ST@rightskip=\skip62
+\ST@leftskip=\skip63
+\ST@parfillskip=\skip64
+\ST@pageleft=\dimen131
+\ST@headht=\dimen132
+\ST@tailht=\dimen133
+\ST@pagesofar=\dimen134
+\ST@pboxht=\dimen135
+\ST@lineht=\dimen136
+\ST@stretchht=\dimen137
+\ST@prevht=\dimen138
+\ST@toadd=\dimen139
+\ST@dimen=\dimen140
+\ST@pbox=\box32
+))
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\glossaries\styl
+es\glossary-tree.sty"
+Package: glossary-tree 2016/06/09 v4.25 (NLCT)
+\glstreeindent=\skip65
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\parskip.sty"
+Package: parskip 2001/04/09 non-zero parskip adjustments
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grffile.sty"
+Package: grffile 2016/05/16 v1.17 Extended file name support for graphics (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package grffile Info: Option `multidot' is set to `true'.
+Package grffile Info: Option `extendedchars' is set to `false'.
+Package grffile Info: Option `space' is set to `true'.
+Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 486.
+)
+("ECON 101 Notes.aux")
+\openout1 = `"ECON 101 Notes.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 192.
+LaTeX Font Info:    ... okay on input line 192.
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf
+.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count136
+\scratchdimen=\dimen141
+\scratchbox=\box33
+\nofMPsegments=\count137
+\nofMParguments=\count138
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count139
+\MPscratchDim=\dimen142
+\MPnumerator=\count140
+\makeMPintoPDFobject=\count141
+\everyMPtoPDFconversion=\toks33
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+\c@maskedRefs=\count142
+
+("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\latex\apacite\english
+.apc"
+File: english.apc 2013/07/21 v6.03 apacite language file
+LaTeX Info: Redefining \BPBI on input line 129.
+LaTeX Info: Redefining \BHBI on input line 130.
+) [0
+
+{C:/Users/Charles Clayton/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (
+"ECON 101 Notes.toc" [1] [2] [3])
+\tf@toc=\write3
+\openout3 = `"ECON 101 Notes.toc"'.
+
+ [4] ("ECON 101 Notes.lof")
+\tf@lof=\write4
+\openout4 = `"ECON 101 Notes.lof"'.
+
+
+("ECON 101 Notes.lot" [5])
+\tf@lot=\write5
+\openout5 = `"ECON 101 Notes.lot"'.
+
+ [6]
+Overfull \hbox (1.22554pt too wide) in paragraph at lines 218--218
+[]\OT1/cmr/m/n/10 What to con-sume? What to pro-duce? What
+ []
+
+[7]
+Overfull \hbox (1.11255pt too wide) in paragraph at lines 218--218
+[]\OT1/cmr/m/n/10 Deciding what is pro-duced (al-lo-ca-tion of re-sources) and 
+what
+ []
+
+[8] [1]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 258.
+
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 258.
+ [2] [3]
+[4] [5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 354--355
+
+ []
+
+<demand_supply_demand_pricechange1.png, id=57, 459.96844pt x 391.83891pt>
+File: demand_supply_demand_pricechange1.png Graphic file (type png)
+
+<use demand_supply_demand_pricechange1.png>
+Package pdftex.def Info: demand_supply_demand_pricechange1.png used on input li
+ne 358.
+(pdftex.def)             Requested size: 170.71652pt x 145.43253pt.
+ [7 <./demand_supply_demand_pricechange1.png>] <qd-shifts.jpg, id=63, 990.70125
+pt x 396.7322pt>
+File: qd-shifts.jpg Graphic file (type jpg)
+
+<use qd-shifts.jpg>
+Package pdftex.def Info: qd-shifts.jpg used on input line 388.
+(pdftex.def)             Requested size: 369.88582pt x 148.1204pt.
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 388--389
+ [][] 
+ []
+
+[8] [9 <./qd-shifts.jpg>]
+<demand-and-supply-equilbrium.png, id=71, 463.7325pt x 383.18156pt>
+File: demand-and-supply-equilbrium.png Graphic file (type png)
+
+<use demand-and-supply-equilbrium.png>
+Package pdftex.def Info: demand-and-supply-equilbrium.png used on input line 47
+5.
+(pdftex.def)             Requested size: 170.71652pt x 141.06163pt.
+ [10]
+<tax-incidence-supply-demand-diagrams.png, id=76, 642.90187pt x 591.33421pt>
+File: tax-incidence-supply-demand-diagrams.png Graphic file (type png)
+
+<use tax-incidence-supply-demand-diagrams.png>
+Package pdftex.def Info: tax-incidence-supply-demand-diagrams.png used on input
+ line 511.
+(pdftex.def)             Requested size: 341.43306pt x 314.0553pt.
+ [11 <./demand-and-supply-equilbrium.png>] [12 <./tax-incidence-supply-demand-d
+iagrams.png>]
+Overfull \hbox (23.1843pt too wide) in paragraph at lines 536--537
+\OT1/cmr/m/n/10 the rel-a-tive change in price. Rel-a-tive change is de-fined a
+s $[] = []$. 
+ []
+
+<elasticity.PNG, id=85, 647.04234pt x 269.88329pt>
+File: elasticity.PNG Graphic file (type png)
+ <use elasticity.PNG>
+Package pdftex.def Info: elasticity.PNG used on input line 545.
+(pdftex.def)             Requested size: 369.88582pt x 154.27982pt.
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 545--546
+ [][] 
+ []
+
+<elastic-inelastic-time-diagrams.png, id=86, 642.14906pt x 290.20921pt>
+File: elastic-inelastic-time-diagrams.png Graphic file (type png)
+
+<use elastic-inelastic-time-diagrams.png>
+Package pdftex.def Info: elastic-inelastic-time-diagrams.png used on input line
+ 554.
+(pdftex.def)             Requested size: 369.88582pt x 167.16568pt.
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 554--555
+ [][] 
+ []
+
+[13] [14 <./elasticity.PNG> <./elastic-inelastic-time-diagrams.png>]
+<Demand_Elacticity.png, id=99, 336.13078pt x 362.85562pt>
+File: Demand_Elacticity.png Graphic file (type png)
+
+<use Demand_Elacticity.png>
+Package pdftex.def Info: Demand_Elacticity.png used on input line 606.
+(pdftex.def)             Requested size: 227.62204pt x 245.7198pt.
+ [15] [16 <./Demand_Elacticity.png>]
+<Shifts-in-Demand-Supply-Curves.png, id=108, 636.12656pt x 297.36093pt>
+File: Shifts-in-Demand-Supply-Curves.png Graphic file (type png)
+
+<use Shifts-in-Demand-Supply-Curves.png>
+Package pdftex.def Info: Shifts-in-Demand-Supply-Curves.png used on input line 
+633.
+(pdftex.def)             Requested size: 369.88582pt x 172.90504pt.
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 633--634
+ [][] 
+ []
+
+[17 <./Shifts-in-Demand-Supply-Curves.png>] [18]
+<black-market.png, id=116, 685.8122pt x 263.10797pt>
+File: black-market.png Graphic file (type png)
+ <use black-market.png>
+Package pdftex.def Info: black-market.png used on input line 700.
+(pdftex.def)             Requested size: 369.88582pt x 141.90756pt.
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 700--701
+ [][] 
+ []
+
+[19 <./black-market.png>] <dwsl.jpg, id=121, 664.73344pt x 260.09673pt>
+File: dwsl.jpg Graphic file (type jpg)
+
+<use dwsl.jpg>
+Package pdftex.def Info: dwsl.jpg used on input line 719.
+(pdftex.def)             Requested size: 369.88582pt x 144.72844pt.
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 719--720
+ [][] 
+ []
+
+[20 <./dwsl.jpg>] [21]
+<diminishing-total-utility.png, id=128, 426.46828pt x 522.45187pt>
+File: diminishing-total-utility.png Graphic file (type png)
+
+<use diminishing-total-utility.png>
+Package pdftex.def Info: diminishing-total-utility.png used on input line 757.
+(pdftex.def)             Requested size: 199.16928pt x 243.99788pt.
+ [22 <./diminishing-total-utility.png>]
+[23] <market-demand-curve.png, id=136, 590.205pt x 174.2761pt>
+File: market-demand-curve.png Graphic file (type png)
+
+<use market-demand-curve.png>
+Package pdftex.def Info: market-demand-curve.png used on input line 796.
+(pdftex.def)             Requested size: 284.52756pt x 84.01587pt.
+
+Overfull \hbox (1.36392pt too wide) in paragraph at lines 802--802
+[]\OT1/cmr/bx/n/12 Income and Sub-sti-tu-tion Ef-fects of Price Changes 
+ []
+
+[24 <./market-demand-curve.png>]
+<sub-inc-normal-good.png, id=140, 336.88359pt x 276.28218pt>
+File: sub-inc-normal-good.png Graphic file (type png)
+
+<use sub-inc-normal-good.png>
+Package pdftex.def Info: sub-inc-normal-good.png used on input line 822.
+(pdftex.def)             Requested size: 227.62204pt x 186.67633pt.
+ [25] [26 <./sub-inc-normal-good.png>]
+<sub-inc-inf-gif.png, id=147, 554.07pt x 221.70328pt>
+File: sub-inc-inf-gif.png Graphic file (type png)
+
+<use sub-inc-inf-gif.png>
+Package pdftex.def Info: sub-inc-inf-gif.png used on input line 839.
+(pdftex.def)             Requested size: 398.33858pt x 159.38942pt.
+
+Overfull \hbox (53.33858pt too wide) in paragraph at lines 839--840
+ [][] 
+ []
+
+<consumer-surplus.png, id=148, 331.2375pt x 265.74281pt>
+File: consumer-surplus.png Graphic file (type png)
+
+<use consumer-surplus.png>
+Package pdftex.def Info: consumer-surplus.png used on input line 854.
+(pdftex.def)             Requested size: 227.62204pt x 182.61258pt.
+ [27 <./sub-inc-inf-gif.png>] [28 <./consumer-surplus.png>] <indif-map.png, id=
+156, 318.8161pt x 252.56859pt>
+File: indif-map.png Graphic file (type png)
+ <use indif-map.png>
+Package pdftex.def Info: indif-map.png used on input line 882.
+(pdftex.def)             Requested size: 227.62204pt x 180.32309pt.
+
+[29 <./indif-map.png>] <indif-bl.png, id=160, 327.09703pt x 252.56859pt>
+File: indif-bl.png Graphic file (type png)
+
+<use indif-bl.png>
+Package pdftex.def Info: indif-bl.png used on input line 902.
+(pdftex.def)             Requested size: 227.62204pt x 175.7601pt.
+ [30 <./indif-bl.png>]
+<income-price-consumption-lines.png, id=164, 587.57016pt x 225.46735pt>
+File: income-price-consumption-lines.png Graphic file (type png)
+
+<use income-price-consumption-lines.png>
+Package pdftex.def Info: income-price-consumption-lines.png used on input line 
+917.
+(pdftex.def)             Requested size: 341.43306pt x 131.01884pt.
+ [31 <./income-price-consumption-lines.png>]
+<substitution-effect-with-bl-indif-curve.png, id=168, 699.36281pt x 316.18124pt
+>
+File: substitution-effect-with-bl-indif-curve.png Graphic file (type png)
+ <use substitution-effect-with-bl-indif-curve.png>
+Package pdftex.def Info: substitution-effect-with-bl-indif-curve.png used on in
+put line 930.
+(pdftex.def)             Requested size: 341.43306pt x 154.36087pt.
+ [32 <./substitution-effect-with-bl-indif-curve.png>] [33] <MOAC.png, id=175, 4
+53.19313pt x 510.78328pt>
+File: MOAC.png Graphic file (type png)
+
+<use MOAC.png>
+Package pdftex.def Info: MOAC.png used on input line 973.
+(pdftex.def)             Requested size: 256.0748pt x 288.61647pt.
+ [34] [35 <./MOAC.png>]
+<cost-lines.png, id=183, 328.60266pt x 423.08063pt>
+File: cost-lines.png Graphic file (type png)
+ <use cost-lines.png>
+Package pdftex.def Info: cost-lines.png used on input line 998.
+(pdftex.def)             Requested size: 227.62204pt x 293.0686pt.
+
+[36 <./cost-lines.png>] [37]
+<1030 diseconomies of scale.PNG, id=190, 372.64218pt x 280.79906pt>
+File: 1030 diseconomies of scale.PNG Graphic file (type png)
+
+<use 1030 diseconomies of scale.PNG>
+Package pdftex.def Info: 1030 diseconomies of scale.PNG used on input line 1034
+.
+(pdftex.def)             Requested size: 227.62204pt x 171.51854pt.
+ [38 <./1030 diseconomies of scale.PNG>]
+<1033 SRAC LRAC.PNG, id=195, 295.85532pt x 227.34938pt>
+File: 1033 SRAC LRAC.PNG Graphic file (type png)
+
+<use 1033 SRAC LRAC.PNG>
+Package pdftex.def Info: 1033 SRAC LRAC.PNG used on input line 1053.
+(pdftex.def)             Requested size: 227.62204pt x 174.92079pt.
+ [39 <./1033 SRAC LRAC.PNG>]
+<1064 Isoquants.PNG, id=200, 382.80516pt x 295.85532pt>
+File: 1064 Isoquants.PNG Graphic file (type png)
+
+<use 1064 Isoquants.PNG>
+Package pdftex.def Info: 1064 Isoquants.PNG used on input line 1077.
+(pdftex.def)             Requested size: 227.62204pt x 175.92097pt.
+ [40] [41 <./1064 Isoquants.PNG>] [42]
+<1119 profits.PNG, id=212, 441.52454pt x 535.2497pt>
+File: 1119 profits.PNG Graphic file (type png)
+ <use 1119 profits.PNG>
+Package pdftex.def Info: 1119 profits.PNG used on input line 1130.
+(pdftex.def)             Requested size: 227.62204pt x 275.93843pt.
+
+<1119 supply AVC.PNG, id=213, 623.70515pt x 256.70906pt>
+File: 1119 supply AVC.PNG Graphic file (type png)
+
+<use 1119 supply AVC.PNG>
+Package pdftex.def Info: 1119 supply AVC.PNG used on input line 1140.
+(pdftex.def)             Requested size: 312.9803pt x 128.82033pt.
+ [43 <./1119 profits.PNG>]
+<1125 short run profits normal loss.PNG, id=218, 579.66562pt x 190.08516pt>
+File: 1125 short run profits normal loss.PNG Graphic file (type png)
+
+<use 1125 short run profits normal loss.PNG>
+Package pdftex.def Info: 1125 short run profits normal loss.PNG used on input l
+ine 1152.
+(pdftex.def)             Requested size: 369.88582pt x 121.29442pt.
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 1152--1153
+ [] 
+ []
+
+[44 <./1119 supply AVC.PNG> <./1125 short run profits normal loss.PNG>]
+<1139 entry of firms.PNG, id=224, 572.89032pt x 276.6586pt>
+File: 1139 entry of firms.PNG Graphic file (type png)
+
+<use 1139 entry of firms.PNG>
+Package pdftex.def Info: 1139 entry of firms.PNG used on input line 1171.
+(pdftex.def)             Requested size: 284.52756pt x 137.40445pt.
+
+<1144 exit of firms.PNG, id=225, 573.64313pt x 286.44516pt>
+File: 1144 exit of firms.PNG Graphic file (type png)
+
+<use 1144 exit of firms.PNG>
+Package pdftex.def Info: 1144 exit of firms.PNG used on input line 1181.
+(pdftex.def)             Requested size: 284.52756pt x 142.07707pt.
+ [45 <./1139 entry of firms.PNG>]
+<LRAC SRAC.PNG, id=230, 501.37312pt x 372.26578pt>
+File: LRAC SRAC.PNG Graphic file (type png)
+ <use LRAC SRAC.PNG>
+Package pdftex.def Info: LRAC SRAC.PNG used on input line 1212.
+(pdftex.def)             Requested size: 227.62204pt x 169.00629pt.
+ [46 <./1144 exit of firms.PNG>]
+Overfull \hbox (10.76468pt too wide) in paragraph at lines 1227--1227
+[]\OT1/cmr/bx/n/14.4 Monopolies, Car-tels, Price Dis-crim-i-na-tion 
+ []
+
+[47 <./LRAC SRAC.PNG>]
+<1193 monopolist profits.PNG, id=240, 351.18703pt x 524.71031pt>
+File: 1193 monopolist profits.PNG Graphic file (type png)
+
+<use 1193 monopolist profits.PNG>
+Package pdftex.def Info: 1193 monopolist profits.PNG used on input line 1241.
+(pdftex.def)             Requested size: 170.71652pt x 255.07666pt.
+
+<1202 monopolies profits losses.PNG, id=241, 612.41296pt x 202.50656pt>
+File: 1202 monopolies profits losses.PNG Graphic file (type png)
+
+<use 1202 monopolies profits losses.PNG>
+Package pdftex.def Info: 1202 monopolies profits losses.PNG used on input line 
+1255.
+(pdftex.def)             Requested size: 369.88582pt x 122.30826pt.
+
+Overfull \hbox (24.88582pt too wide) in paragraph at lines 1255--1256
+ [] 
+ []
+
+[48] [49 <./1193 monopolist profits.PNG> <./1202 monopolies profits losses.PNG>
+] <1210 dwsl.PNG, id=250, 505.13719pt x 382.80516pt>
+File: 1210 dwsl.PNG Graphic file (type png)
+ <use 1210 dwsl.PNG>
+Package pdftex.def Info: 1210 dwsl.PNG used on input line 1268.
+(pdftex.def)             Requested size: 227.62204pt x 172.50021pt.
+
+[50 <./1210 dwsl.PNG>] [51] [52]
+Overfull \hbox (7.77464pt too wide) in paragraph at lines 1322--1322
+[]\OT1/cmr/bx/n/14.4 Imperfect Com-pe-ti-tion and Game The-ory 
+ []
+
+[53] [54] [55] <11-2 imperfect profits.PNG, id=271, 268.37766pt x 236.75954pt>
+File: 11-2 imperfect profits.PNG Graphic file (type png)
+
+<use 11-2 imperfect profits.PNG>
+Package pdftex.def Info: 11-2 imperfect profits.PNG used on input line 1373.
+(pdftex.def)             Requested size: 227.62204pt x 200.8058pt.
+
+<11-2 imperfect normmal profits.PNG, id=272, 365.11406pt x 322.95656pt>
+File: 11-2 imperfect normmal profits.PNG Graphic file (type png)
+
+<use 11-2 imperfect normmal profits.PNG>
+Package pdftex.def Info: 11-2 imperfect normmal profits.PNG used on input line 
+1382.
+(pdftex.def)             Requested size: 227.62204pt x 201.33977pt.
+ [56 <./11-2 imperfect profits.PNG>]
+[57 <./11-2 imperfect normmal profits.PNG>]
+<11-3 payoff matrix.PNG, id=281, 410.2828pt x 352.69266pt>
+File: 11-3 payoff matrix.PNG Graphic file (type png)
+
+<use 11-3 payoff matrix.PNG>
+Package pdftex.def Info: 11-3 payoff matrix.PNG used on input line 1409.
+(pdftex.def)             Requested size: 227.62204pt x 195.67139pt.
+ [58 <./11-3 payoff matrix.PNG>]
+<11-20 both dominant.PNG, id=287, 573.26672pt x 261.22594pt>
+File: 11-20 both dominant.PNG Graphic file (type png)
+
+<use 11-20 both dominant.PNG>
+Package pdftex.def Info: 11-20 both dominant.PNG used on input line 1431.
+(pdftex.def)             Requested size: 227.62204pt x 103.7232pt.
+ [59 <./11-20 both dominant.PNG>]
+<11-21 one dominant.PNG, id=292, 560.0925pt x 278.54062pt>
+File: 11-21 one dominant.PNG Graphic file (type png)
+
+<use 11-21 one dominant.PNG>
+Package pdftex.def Info: 11-21 one dominant.PNG used on input line 1439.
+(pdftex.def)             Requested size: 227.62204pt x 113.19934pt.
+File: 11-20 both dominant.PNG Graphic file (type png)
+ <use 11-20 both dominant.PNG>
+Package pdftex.def Info: 11-20 both dominant.PNG used on input line 1448.
+(pdftex.def)             Requested size: 227.62204pt x 103.7232pt.
+
+<11-25.PNG, id=293, 604.50844pt x 277.035pt>
+File: 11-25.PNG Graphic file (type png)
+ <use 11-25.PNG>
+Package pdftex.def Info: 11-25.PNG used on input line 1456.
+(pdftex.def)             Requested size: 227.62204pt x 104.3148pt.
+ [60 <./11-21 one dominant.PNG>] [61 <./11-25.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 1497--1497
+[]|\OT1/cmr/bx/n/10 Monopolistic
+ []
+
+
+Underfull \hbox (badness 1824) in paragraph at lines 1497--1498
+[]|\OT1/cmr/bx/n/10 Perfect Com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1499--1499
+[]|\OT1/cmr/bx/n/10 Market
+ []
+
+
+Overfull \hbox (1.74165pt too wide) in paragraph at lines 1502--1502
+[]|\OT1/cmr/bx/n/10 Entry/Exit| 
+ []
+
+
+Overfull \hbox (18.53375pt too wide) in paragraph at lines 1489--1509
+ [][] 
+ []
+
+[62] [63] [64] [65] [66] [67] [68] [69] [70] [71]
+No file "ECON 101 Notes".bbl.
+("ECON 101 Notes.aux") ) 
+Here is how much of TeX's memory you used:
+ 7882 strings out of 493335
+ 128195 string characters out of 3139228
+ 239950 words of memory out of 3000000
+ 11249 multiletter control sequences out of 15000+200000
+ 10507 words of font info for 38 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 46i,11n,50p,1961b,345s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
+x12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+y10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on "ECON 101 Notes.pdf" (80 pages, 4607360 bytes).
+PDF statistics:
+ 378 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 196 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,73 @@
+\contentsline {figure}{\numberline {1}{\ignorespaces Performance simulator}}{5}
+\contentsline {figure}{\numberline {2}{\ignorespaces Arithmetic Mean vs. Geometric Mean}}{7}
+\contentsline {figure}{\numberline {3}{\ignorespaces Instruction Cycle}}{13}
+\contentsline {figure}{\numberline {4}{\ignorespaces R-type encoding}}{15}
+\contentsline {figure}{\numberline {5}{\ignorespaces I-type encoding}}{15}
+\contentsline {figure}{\numberline {6}{\ignorespaces J-type encoding}}{15}
+\contentsline {figure}{\numberline {7}{\ignorespaces ISA Classes}}{18}
+\contentsline {figure}{\numberline {8}{\ignorespaces Big vs. Little Endian}}{19}
+\contentsline {figure}{\numberline {9}{\ignorespaces Memory Alignment}}{19}
+\contentsline {figure}{\numberline {10}{\ignorespaces Instruction Fetch}}{22}
+\contentsline {figure}{\numberline {11}{\ignorespaces ALU}}{22}
+\contentsline {figure}{\numberline {12}{\ignorespaces Data Memory}}{23}
+\contentsline {figure}{\numberline {13}{\ignorespaces Conditional Branches}}{24}
+\contentsline {figure}{\numberline {14}{\ignorespaces ALU and Load/Store}}{24}
+\contentsline {figure}{\numberline {15}{\ignorespaces ALU and Load/Store}}{25}
+\contentsline {figure}{\numberline {16}{\ignorespaces Single-Cycle MIPS64}}{26}
+\contentsline {figure}{\numberline {17}{\ignorespaces Pipelining Analogy}}{27}
+\contentsline {figure}{\numberline {18}{\ignorespaces Unpipelined Floating-Point Multiplier}}{28}
+\contentsline {figure}{\numberline {19}{\ignorespaces Pipelined Floating-Point Multiplier}}{28}
+\contentsline {figure}{\numberline {20}{\ignorespaces Pipelining MIPS}}{30}
+\contentsline {figure}{\numberline {21}{\ignorespaces Pipelining MIPS with Registers and Control Signals}}{30}
+\contentsline {figure}{\numberline {22}{\ignorespaces Multicycle Operations}}{36}
+\contentsline {figure}{\numberline {23}{\ignorespaces Multicycle Operations}}{36}
+\contentsline {figure}{\numberline {24}{\ignorespaces Head of the line blocking}}{38}
+\contentsline {figure}{\numberline {25}{\ignorespaces Reorder Buffer}}{43}
+\contentsline {figure}{\numberline {26}{\ignorespaces Multicycle Operations}}{53}
+\contentsline {figure}{\numberline {27}{\ignorespaces Caches in an Intel Broadwell}}{63}
+\contentsline {figure}{\numberline {28}{\ignorespaces Cache Hierarchy}}{65}
+\contentsline {figure}{\numberline {29}{\ignorespaces Fully Associative Cache}}{67}
+\contentsline {figure}{\numberline {30}{\ignorespaces Block Offset}}{69}
+\contentsline {figure}{\numberline {31}{\ignorespaces Direct Mapped Cache}}{70}
+\contentsline {figure}{\numberline {32}{\ignorespaces Offset, Index, and Tag of a Direct Mapped Cache}}{71}
+\contentsline {figure}{\numberline {33}{\ignorespaces Direct Mapped Cache Hardware Implementation}}{72}
+\contentsline {figure}{\numberline {34}{\ignorespaces Set-Associative Cache}}{73}
+\contentsline {figure}{\numberline {35}{\ignorespaces Reuse Distance}}{76}
+\contentsline {figure}{\numberline {36}{\ignorespaces Latency of Difference Cache Levels}}{77}
+\contentsline {figure}{\numberline {37}{\ignorespaces The Effect of Cache Size on the Miss Rate}}{79}
+\contentsline {figure}{\numberline {38}{\ignorespaces The Effect of Cache Block Size on the Miss Rate}}{79}
+\contentsline {figure}{\numberline {39}{\ignorespaces Virtual Memory Mapping}}{84}
+\contentsline {figure}{\numberline {40}{\ignorespaces Page Table Translation Structure}}{84}
+\contentsline {figure}{\numberline {41}{\ignorespaces Multi-level Page Tables}}{85}
+\contentsline {figure}{\numberline {42}{\ignorespaces Multi-level Page Tables}}{86}
+\contentsline {figure}{\numberline {43}{\ignorespaces Memory Access Translation Flowchart}}{87}
+\contentsline {figure}{\numberline {44}{\ignorespaces RAM Data Array}}{89}
+\contentsline {figure}{\numberline {45}{\ignorespaces SRAM Cell}}{90}
+\contentsline {figure}{\numberline {46}{\ignorespaces Multiport SRAM Cell}}{90}
+\contentsline {figure}{\numberline {47}{\ignorespaces RF Cell}}{91}
+\contentsline {figure}{\numberline {48}{\ignorespaces DRAM Cell}}{91}
+\contentsline {figure}{\numberline {49}{\ignorespaces CAM Cell}}{93}
+\contentsline {figure}{\numberline {50}{\ignorespaces CAM Structure}}{93}
+\contentsline {figure}{\numberline {51}{\ignorespaces Flags between threads}}{94}
+\contentsline {figure}{\numberline {52}{\ignorespaces Flags between threads}}{97}
+\contentsline {figure}{\numberline {53}{\ignorespaces Fence operations}}{97}
+\contentsline {figure}{\numberline {54}{\ignorespaces Release consistency fence operations}}{98}
+\contentsline {figure}{\numberline {55}{\ignorespaces SC, WO, and RC reordering diagrams}}{98}
+\contentsline {figure}{\numberline {56}{\ignorespaces Store Atomicity}}{99}
+\contentsline {figure}{\numberline {57}{\ignorespaces Cache Controller}}{100}
+\contentsline {figure}{\numberline {58}{\ignorespaces MSI Protocol State Machine}}{102}
+\contentsline {figure}{\numberline {59}{\ignorespaces Flynn's Taxonomy}}{104}
+\contentsline {figure}{\numberline {60}{\ignorespaces VLIW}}{106}
+\contentsline {figure}{\numberline {61}{\ignorespaces VLIW Scheduling}}{109}
+\contentsline {figure}{\numberline {62}{\ignorespaces Spatial SIMD}}{110}
+\contentsline {figure}{\numberline {63}{\ignorespaces Temporal SIMD}}{111}
+\contentsline {figure}{\numberline {64}{\ignorespaces GPU vs. GPU Area}}{112}
+\contentsline {figure}{\numberline {65}{\ignorespaces VLIW}}{113}
+\contentsline {figure}{\numberline {66}{\ignorespaces SIMD}}{113}
+\contentsline {figure}{\numberline {67}{\ignorespaces SIMT}}{114}
+\contentsline {figure}{\numberline {68}{\ignorespaces Warps}}{115}
+\contentsline {figure}{\numberline {69}{\ignorespaces Warp Registers}}{116}
+\contentsline {figure}{\numberline {70}{\ignorespaces Generic GPU Architecture}}{117}
+\contentsline {figure}{\numberline {71}{\ignorespaces Generic GPU Core Elements}}{117}
+\contentsline {figure}{\numberline {72}{\ignorespaces Inside an NVidia-style GPU Core}}{118}
+\contentsline {figure}{\numberline {73}{\ignorespaces Reconvergence Stack}}{120}

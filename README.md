@@ -1,3 +1,5 @@
+
+<h1>Notes</h1>
 <p>
 As much as I wish I did, I don't absorb information like a sponge. So in order to really retain what I learn
 and solidify my understanding, I need to write it down. But the positive of this is that I tend to be really

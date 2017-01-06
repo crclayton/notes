@@ -1,0 +1,55 @@
+\BOOKMARK [1][-]{Doc-Start}{Course Overview}{}% 1
+\BOOKMARK [1][-]{section.1}{Scraping with Selenium}{}% 2
+\BOOKMARK [2][-]{subsection.1.1}{What Makes Up A Website}{section.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.1.1}{Using the Chrome Developer tools}{subsection.1.1}% 4
+\BOOKMARK [3][-]{subsubsection.1.1.2}{HTML Tags}{subsection.1.1}% 5
+\BOOKMARK [3][-]{subsubsection.1.1.3}{CSS Classes}{subsection.1.1}% 6
+\BOOKMARK [3][-]{subsubsection.1.1.4}{JavaScript Queries}{subsection.1.1}% 7
+\BOOKMARK [3][-]{subsubsection.1.1.5}{CSS Selectors}{subsection.1.1}% 8
+\BOOKMARK [3][-]{subsubsection.1.1.6}{XPaths}{subsection.1.1}% 9
+\BOOKMARK [2][-]{subsection.1.2}{Using the Selenium Module}{section.1}% 10
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Setting Up A WebDriver}{subsection.1.2}% 11
+\BOOKMARK [3][-]{subsubsection.1.2.2}{Automating the Browser}{subsection.1.2}% 12
+\BOOKMARK [4][-]{subsubsubsection.1.2.2.1}{Debugging with the Console}{subsubsection.1.2.2}% 13
+\BOOKMARK [3][-]{subsubsection.1.2.3}{Downloading Files}{subsection.1.2}% 14
+\BOOKMARK [3][-]{subsubsection.1.2.4}{Using a Headless Browser \(PhantomJS\)}{subsection.1.2}% 15
+\BOOKMARK [1][-]{section.2}{Parsing with BeautifulSoup 4}{}% 16
+\BOOKMARK [2][-]{subsection.2.1}{Requesting HTML}{section.2}% 17
+\BOOKMARK [3][-]{subsubsection.2.1.1}{urllib2 preview}{subsection.2.1}% 18
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Requests}{subsection.2.1}% 19
+\BOOKMARK [3][-]{subsubsection.2.1.3}{wget}{subsection.2.1}% 20
+\BOOKMARK [2][-]{subsection.2.2}{BeautifulSoup Objects}{section.2}% 21
+\BOOKMARK [2][-]{subsection.2.3}{BeautifulSoup Queries}{section.2}% 22
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Comparison To JS/Selenium Queries}{subsection.2.3}% 23
+\BOOKMARK [3][-]{subsubsection.2.3.2}{Nested Selectors}{subsection.2.3}% 24
+\BOOKMARK [3][-]{subsubsection.2.3.3}{Regular Expressions Basics}{subsection.2.3}% 25
+\BOOKMARK [2][-]{subsection.2.4}{Inevitable Roadblocks}{section.2}% 26
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Server-side vs. Client-side Websites}{subsection.2.4}% 27
+\BOOKMARK [3][-]{subsubsection.2.4.2}{UTF-8 Encoding}{subsection.2.4}% 28
+\BOOKMARK [3][-]{subsubsection.2.4.3}{Login Pages}{subsection.2.4}% 29
+\BOOKMARK [1][-]{section.3}{Fetching with urlib2}{}% 30
+\BOOKMARK [2][-]{subsection.3.1}{Using the Developer Tools Network Tab}{section.3}% 31
+\BOOKMARK [2][-]{subsection.3.2}{Bypassing the Browser}{section.3}% 32
+\BOOKMARK [3][-]{subsubsection.3.2.1}{URL Query Strings}{subsection.3.2}% 33
+\BOOKMARK [3][-]{subsubsection.3.2.2}{HTTP Requests}{subsection.3.2}% 34
+\BOOKMARK [4][-]{subsubsubsection.3.2.2.1}{GET}{subsubsection.3.2.2}% 35
+\BOOKMARK [4][-]{subsubsubsection.3.2.2.2}{POST}{subsubsection.3.2.2}% 36
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Retrieving Files}{subsection.3.2}% 37
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Demo with WireShark}{subsection.3.2}% 38
+\BOOKMARK [2][-]{subsection.3.3}{Authentication}{section.3}% 39
+\BOOKMARK [2][-]{subsection.3.4}{Refused/Timed out Connections}{section.3}% 40
+\BOOKMARK [1][-]{section.4}{Beginning New Projects}{}% 41
+\BOOKMARK [2][-]{subsection.4.1}{Defining the Goal}{section.4}% 42
+\BOOKMARK [2][-]{subsection.4.2}{Identifying the Obstacles}{section.4}% 43
+\BOOKMARK [2][-]{subsection.4.3}{Selecting the Right Tool}{section.4}% 44
+\BOOKMARK [2][-]{subsection.4.4}{Avoiding Pitfalls}{section.4}% 45
+\BOOKMARK [1][-]{section.5}{Example Project Demo}{}% 46
+\BOOKMARK [2][-]{subsection.5.1}{Accomplishing our Goal With Selenium}{section.5}% 47
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Walkthrough of Process}{subsection.5.1}% 48
+\BOOKMARK [3][-]{subsubsection.5.1.2}{Strengths and Limitations}{subsection.5.1}% 49
+\BOOKMARK [2][-]{subsection.5.2}{Accomplishing our Goal With BeautifulSoup}{section.5}% 50
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Walkthrough of Process}{subsection.5.2}% 51
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Strengths and Limitations}{subsection.5.2}% 52
+\BOOKMARK [2][-]{subsection.5.3}{Accomplishing our Goal With urllib2}{section.5}% 53
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Walkthrough of Process}{subsection.5.3}% 54
+\BOOKMARK [3][-]{subsubsection.5.3.2}{Strengths and Limitations}{subsection.5.3}% 55

@@ -1,0 +1,347 @@
+\documentclass{article}
+\usepackage{array, booktabs, graphicx, apacite, setspace, tocbibind, lipsum}
+\usepackage[titletoc,toc,title]{appendix}
+\usepackage[toc,section=section]{glossaries}
+\usepackage[parfill]{parskip}
+
+% format appendix numbering
+\renewcommand\appendix{\par
+  \setcounter{section}{0}
+  \setcounter{subsection}{0}
+  \setcounter{figure}{0}
+  \setcounter{table}{0}
+  \renewcommand\thesection{Appendix \Alph{section}}
+  \renewcommand\thefigure{\Alph{section}\arabic{figure}}
+  \renewcommand\thetable{\Alph{section}\arabic{table}}
+}
+
+% bold typewriter
+\usepackage{lmodern}
+\ttfamily
+\fontseries{b}\selectfont
+
+% renames "Contents" to "Table of Contents"
+\renewcommand\contentsname{Course Overview}
+
+
+% define subsubsubsection
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+
+\titleclass{\subsubsubsection}{straight}[\subsection]
+
+\newcounter{subsubsubsection}[subsubsection]
+\renewcommand\thesubsubsubsection{\thesubsubsection.\arabic{subsubsubsection}}
+\renewcommand\theparagraph{\thesubsubsubsection.\arabic{paragraph}} % optional; useful if paragraphs are to be numbered
+
+\titleformat{\subsubsubsection}
+  {\normalfont\normalsize\bfseries}{\thesubsubsubsection}{1em}{}
+\titlespacing*{\subsubsubsection}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\makeatletter
+\renewcommand\paragraph{\@startsection{paragraph}{5}{\z@}%
+  {3.25ex \@plus1ex \@minus.2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\renewcommand\subparagraph{\@startsection{subparagraph}{6}{\parindent}%
+  {3.25ex \@plus1ex \@minus .2ex}%
+  {-1em}%
+  {\normalfont\normalsize\bfseries}}
+\def\toclevel@subsubsubsection{4}
+\def\toclevel@paragraph{5}
+\def\toclevel@paragraph{6}
+\def\l@subsubsubsection{\@dottedtocline{4}{7em}{4em}}
+\def\l@paragraph{\@dottedtocline{5}{10em}{5em}}
+\def\l@subparagraph{\@dottedtocline{6}{14em}{6em}}
+\makeatother
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+
+
+
+\usepackage[top=1.5in, bottom=1.9in, left=1.75in, right=1.75in]{geometry}
+
+
+\begin{document}
+
+% ------------------------------ %
+% -------- FRONT MATTER -------- %
+% ------------------------------ %
+
+% title page w/o page numbers
+
+\title{Automation and Webscraping With Python}
+\author{Charles Clayton}
+\date{\today}
+\maketitle
+
+\thispagestyle{empty}
+
+\pagenumbering{roman}
+\setcounter{page}{0}
+
+% auto-generated front matter w/ roman page numbering
+
+\singlespacing			\pagebreak
+\tableofcontents		\pagebreak
+
+
+% ----------------------------- %
+% -------- MAIN MATTER -------- %
+% ----------------------------- %
+
+\pagenumbering{arabic}
+\onehalfspacing
+
+
+\section{Scraping with \texttt{Selenium}}
+
+In order to scrape data from a website, we have to first understand what makes up a website and how data on a website is organized. Once we know this, we can tell our script the location of the data we're interested in so that it can grab it for us. 
+
+\subsection{What Makes Up A Website}
+
+A web page is made out of three core elements: \textbf{HTML}, \textbf{CSS}, and \textbf{JavaScript}. HTML is mostly in charge of the content and structure of the website -- like all the text and images, and the different parts of a page. 
+
+\begin{verbatim}
+<h1>Hello, World!</h1>
+\end{verbatim}
+
+ CSS is in charge of the style of the website and layout of the website -- such as the colours, fonts, and what content is next to or overtop of what. 
+ 
+ \begin{verbatim}
+ h1 {
+  color:red;
+  text-align:center;
+}
+ \end{verbatim}
+ 
+ JavaScript is in charge of the interactivity of a webpage -- popups, timeouts, reactions to clicks and mouse movements, and so on. 
+ 
+\begin{verbatim}
+document.onclick = () =>
+  alert("You clicked!");
+ \end{verbatim} 
+ 
+This is a good overview, but in reality the functionality of these different languages can overlap somewhat. For instance both CSS and JavaScript can be used to create animations; both CSS and HTML can be used to enforce page layout; and interactivity can be achieved with different kinds of languages called server-side languages, like C\#, PHP, and Python, which we will discuss later.
+
+
+
+\subsubsection{Using the Chrome Developer tools}
+
+To explore these elements, you can use your browser's developer tools. In this course, we will be using the Chrome browser -- but all modern browsers will have analogous functionality.
+
+To open developer tools, right-click the page and choose the \textbf{Inspect} context-menu item. Alternatively, you can press \textbf{F12}. Let's poke around a website and see some examples of HTML, CSS, and JavaScript in action.
+
+\url{https://github.com/crclayton/invoicing/commits/master}.
+
+\subsubsection{HTML Tags}
+
+So here we can see that HTML is structured into \textbf{tags}, that look like so: 
+
+ \verb|<tag>content</tag>|.
+ 
+ Where \texttt{<tag>} begins the content, and \verb|</tag>| with the forward-slash ends the content within.
+  
+Some common tags are \texttt{p} for paragraph, \texttt{div} for page division, \texttt{h1, h2, etc.} for headers, \texttt{a} for links, and \texttt{li} for list items. Even without any styling, a browser will look at these tags and make educated guesses for how to display the content within them. 
+
+Here's a comprehensive list of  the tags a website may have: \url{http://www.w3schools.com/tags/default.asp}.
+
+Tags also have attributes, also called properties. These just specify more information about the tag other than its content. For instance, a \texttt{input} tag has an attribute which can specify whether it will input a date, a password, plain-text, just a check-mark, and so on.
+
+\url{https://codepen.io/pen/}.
+
+\begin{verbatim}
+<input type="text" value="Input"\>
+\end{verbatim}
+
+Different tags have different attributes, but the most common attributes are the \textbf{id} and the \textbf{class} attributes. An id is unique to a tag, and allows it to be directly identified. 
+
+\begin{verbatim}
+.demo {
+  background:lime;
+  font-size:large;
+}
+\end{verbatim}
+
+A class isn't unique, and is usually used to assign a common CSS style to all tags of that class. 
+
+\subsubsection{CSS Classes}
+
+Tags can have multiple classes. The helpful thing about classes when webscraping isn't that they identify common styles, it's that we can use them to locate the data we want. If there are repeating tags containing the data we want, we can be fairly confident they will have a common class. 
+
+For instance, take a look at this GitHub commit log.
+
+\url{https://github.com/crclayton/invoicing/commits/master}. 
+
+If I was interested in downloading a record of all the commit messages and who posted them, I could see that all messages all within an \texttt{a} tag and all authors are stored in a \texttt{span} tag. However, there are lots of other tags that are links  and spans on this page that aren't commit messages, so we have to be more precise.
+
+But since all the commit messages look the same, and all the authors look the same, we know that they probably have the same class. 
+
+And sure enough, each link with a commit message has a class \texttt{message}, and each commit author has a class \texttt{commit-author}.
+
+Now we can use this to go through the page and gather the data in each tag with those classes.
+
+\subsubsection{JavaScript Queries}
+
+We can locate the tags we want using JavaScript queries and CSS selectors. 
+
+I'm going to use JavaScript in the developer tools console to demonstrate some queries. 
+
+Although we won't be using JavaScript when we do our scraping, the way we identify the tags we want is the same in both Python and JavaScript, and it is faster to debug to make sure we are getting exactly what it is we want within the browser.
+
+Using JavaScript, we can call the method \texttt{document.getElementsByClassName()}. and this will return a list of all those tags. You can see the other types of queries using the ID or another attribute called the Name.
+
+If you expand out the list, you can hover over the items and see their corresponding location on the page.
+
+\subsubsection{CSS Selectors}
+
+A more powerful technique for these queries is using something called CSS selectors. 
+
+If you want to find something by the tag, just enter the tag. If you want to find something by a class name, enter the class preceded with a period. If you want to find something by the id, enter the id preceded by a pound-sign. 
+
+For instance
+
+\verb|document.querySelector("#fork-destination-box")|
+
+and 
+
+\verb|document.getElementById("fork-destination-box")|
+
+Perform the same function, however, with CSS selectors we can nest queries more easily, specifying tags of a certain class within a tag with a certain ID, with an attribute that equals a certain value.
+
+
+Consider the following example. Here we identify the tag by the id, then identify a tag within that tag, one of its descendants, by the class, then identify a tag within that tag by the tag type. 
+
+\begin{verbatim}
+document.querySelector("#fork-destination-box .fork-select-fragment img")
+\end{verbatim}
+
+Here's a comprehensive list of CSS selectors. The more adept you are at using these queries to precisely identify the data you want, the more streamlined and elegant your scraping can be.
+
+\url{http://www.w3schools.com/cssref/css_selectors.asp}
+
+\subsubsection{XPaths}
+
+When all else fails. If there are no ids, no names, no classes, no attributes we can use. You may be able to use an XPath, which identifies a tag by its position in the HTML hierarchy. These aren't ideal because if a website makes a small change like adding or removing an element, this query may be broken. Whereas style and tag selectors are more robust. 
+
+For now, that will be all the web-development we will cover. However, I cannot stress enough the importance of familiarizing yourself with these queries as it can greatly simplify your code from code that looks something like this:
+
+\begin{verbatim}
+images = []
+for e in browser.find_elements_by_class_name("example"):
+    for i in e.find_elements_by_tag_name("img"):
+        if "foo" in i.get_attribute("alt"):
+            images.append(i)
+\end{verbatim}
+
+To code that looks something like this:
+
+\begin{verbatim}
+images = browser.find_element_by_css_selector(".example > img[alt~=foo]")
+\end{verbatim}
+
+
+
+\subsection{Using the Selenium Module}
+
+\subsubsection{Setting Up A WebDriver}
+
+\subsubsection{Automating the Browser}
+
+\subsubsubsection{Debugging with the Console}
+
+\subsubsection{Downloading Files}
+
+\subsubsection{Using a Headless Browser (PhantomJS)}
+
+\section{Parsing with \texttt{BeautifulSoup 4}}
+
+\subsection{Requesting HTML}
+
+\subsubsection{\texttt{urllib2} preview}
+
+\subsubsection{\texttt{Requests}}
+
+\subsubsection{\texttt{wget}}
+
+\subsection{\texttt{BeautifulSoup} Objects}
+
+\subsection{\texttt{BeautifulSoup} Queries}
+
+\subsubsection{Comparison To JS/Selenium Queries}
+
+\subsubsection{Nested Selectors}
+
+\subsubsection{Regular Expressions Basics}
+
+\subsection{Inevitable Roadblocks}
+
+\subsubsection{Server-side vs. Client-side Websites}
+
+\subsubsection{UTF-8 Encoding}
+
+\subsubsection{Login Pages}
+
+\section{Fetching with \texttt{urlib2}}
+
+\subsection{Using the Developer Tools Network Tab}
+
+\subsection{Bypassing the Browser}
+
+\subsubsection{URL Query Strings}
+
+\subsubsection{HTTP Requests}
+
+\subsubsubsection{\texttt{GET}}
+
+\subsubsubsection{\texttt{POST}}
+
+\subsubsection{Retrieving Files}
+
+\subsubsection{Demo with WireShark}
+
+\subsection{Authentication}
+
+\subsection{Refused/Timed out Connections}
+
+
+
+\section{Beginning New Projects}
+
+\subsection{Defining the Goal}
+
+\subsection{Identifying the Obstacles}
+
+\subsection{Selecting the Right Tool}
+
+\subsection{Avoiding Pitfalls}
+
+\section{Example Project Demo}
+
+\subsection{Accomplishing our Goal With \texttt{Selenium}}
+
+\subsubsection{Walkthrough of Process}
+
+\subsubsection{Strengths and Limitations}
+
+
+\subsection{Accomplishing our Goal With \texttt{BeautifulSoup}}
+
+\subsubsection{Walkthrough of Process}
+
+\subsubsection{Strengths and Limitations}
+
+
+\subsection{Accomplishing our Goal With \texttt{urllib2}}
+
+\subsubsection{Walkthrough of Process}
+
+\subsubsection{Strengths and Limitations}
+
+
+
+
+\end{document}

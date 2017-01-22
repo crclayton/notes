@@ -1,55 +1,58 @@
 \contentsline {section}{Course Overview}{i}{Doc-Start}
 \contentsline {section}{\numberline {1}Scraping with \texttt {Selenium}}{1}{section.1}
-\contentsline {subsection}{\numberline {1.1}What Makes Up A Website}{1}{subsection.1.1}
-\contentsline {subsubsection}{\numberline {1.1.1}Using the Chrome Developer tools}{2}{subsubsection.1.1.1}
-\contentsline {subsubsection}{\numberline {1.1.2}HTML Tags}{2}{subsubsection.1.1.2}
-\contentsline {subsubsection}{\numberline {1.1.3}CSS Classes}{3}{subsubsection.1.1.3}
-\contentsline {subsubsection}{\numberline {1.1.4}JavaScript Queries}{3}{subsubsection.1.1.4}
-\contentsline {subsubsection}{\numberline {1.1.5}CSS Selectors}{4}{subsubsection.1.1.5}
-\contentsline {subsubsection}{\numberline {1.1.6}XPaths}{5}{subsubsection.1.1.6}
-\contentsline {subsection}{\numberline {1.2}Using the Selenium Module}{7}{subsection.1.2}
-\contentsline {subsubsection}{\numberline {1.2.1}Setting Up A WebDriver}{7}{subsubsection.1.2.1}
-\contentsline {subsubsection}{\numberline {1.2.2}Automating the Browser}{7}{subsubsection.1.2.2}
-\contentsline {subsubsubsection}{\numberline {1.2.2.1}Debugging with the Console}{7}{subsubsubsection.1.2.2.1}
-\contentsline {subsubsection}{\numberline {1.2.3}Downloading Files}{7}{subsubsection.1.2.3}
-\contentsline {subsubsection}{\numberline {1.2.4}Using a Headless Browser (PhantomJS)}{7}{subsubsection.1.2.4}
-\contentsline {section}{\numberline {2}Parsing with \texttt {BeautifulSoup 4}}{7}{section.2}
-\contentsline {subsection}{\numberline {2.1}Requesting HTML}{7}{subsection.2.1}
-\contentsline {subsubsection}{\numberline {2.1.1}\texttt {urllib2} preview}{7}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}\texttt {Requests}}{7}{subsubsection.2.1.2}
-\contentsline {subsubsection}{\numberline {2.1.3}\texttt {wget}}{7}{subsubsection.2.1.3}
-\contentsline {subsection}{\numberline {2.2}\texttt {BeautifulSoup} Objects}{7}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}\texttt {BeautifulSoup} Queries}{7}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Comparison To JS/Selenium Queries}{7}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Nested Selectors}{7}{subsubsection.2.3.2}
-\contentsline {subsubsection}{\numberline {2.3.3}Regular Expressions Basics}{7}{subsubsection.2.3.3}
-\contentsline {subsection}{\numberline {2.4}Inevitable Roadblocks}{7}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}Server-side vs. Client-side Websites}{7}{subsubsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.2}UTF-8 Encoding}{7}{subsubsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.3}Login Pages}{7}{subsubsection.2.4.3}
-\contentsline {section}{\numberline {3}Fetching with \texttt {urlib2}}{7}{section.3}
-\contentsline {subsection}{\numberline {3.1}Using the Developer Tools Network Tab}{7}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Bypassing the Browser}{7}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}URL Query Strings}{7}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}HTTP Requests}{7}{subsubsection.3.2.2}
-\contentsline {subsubsubsection}{\numberline {3.2.2.1}\texttt {GET}}{7}{subsubsubsection.3.2.2.1}
-\contentsline {subsubsubsection}{\numberline {3.2.2.2}\texttt {POST}}{7}{subsubsubsection.3.2.2.2}
-\contentsline {subsubsection}{\numberline {3.2.3}Retrieving Files}{7}{subsubsection.3.2.3}
-\contentsline {subsubsection}{\numberline {3.2.4}Demo with WireShark}{7}{subsubsection.3.2.4}
-\contentsline {subsection}{\numberline {3.3}Authentication}{7}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Refused/Timed out Connections}{7}{subsection.3.4}
-\contentsline {section}{\numberline {4}Beginning New Projects}{7}{section.4}
-\contentsline {subsection}{\numberline {4.1}Defining the Goal}{7}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Identifying the Obstacles}{7}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Selecting the Right Tool}{7}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Avoiding Pitfalls}{7}{subsection.4.4}
-\contentsline {section}{\numberline {5}Example Project Demo}{7}{section.5}
-\contentsline {subsection}{\numberline {5.1}Accomplishing our Goal With \texttt {Selenium}}{7}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Walkthrough of Process}{7}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}Strengths and Limitations}{7}{subsubsection.5.1.2}
-\contentsline {subsection}{\numberline {5.2}Accomplishing our Goal With \texttt {BeautifulSoup}}{7}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Walkthrough of Process}{7}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}Strengths and Limitations}{7}{subsubsection.5.2.2}
-\contentsline {subsection}{\numberline {5.3}Accomplishing our Goal With \texttt {urllib2}}{7}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Walkthrough of Process}{7}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Strengths and Limitations}{7}{subsubsection.5.3.2}
+\contentsline {subsection}{\numberline {1.1}When to Use Web Scraping}{1}{subsection.1.1}
+\contentsline {subsubsection}{\numberline {1.1.1}Before you Begin}{2}{subsubsection.1.1.1}
+\contentsline {subsection}{\numberline {1.2}What Makes Up A Website}{2}{subsection.1.2}
+\contentsline {subsubsection}{\numberline {1.2.1}Using the Chrome Developer tools}{3}{subsubsection.1.2.1}
+\contentsline {subsubsection}{\numberline {1.2.2}HTML Tags}{3}{subsubsection.1.2.2}
+\contentsline {subsubsection}{\numberline {1.2.3}CSS Classes}{4}{subsubsection.1.2.3}
+\contentsline {subsubsection}{\numberline {1.2.4}JavaScript Queries}{5}{subsubsection.1.2.4}
+\contentsline {subsubsection}{\numberline {1.2.5}CSS Selectors}{5}{subsubsection.1.2.5}
+\contentsline {subsubsection}{\numberline {1.2.6}XPaths}{6}{subsubsection.1.2.6}
+\contentsline {subsection}{\numberline {1.3}Using the Selenium Module}{7}{subsection.1.3}
+\contentsline {subsubsection}{\numberline {1.3.1}Setting Up A WebDriver}{7}{subsubsection.1.3.1}
+\contentsline {subsubsection}{\numberline {1.3.2}Automating the Browser}{8}{subsubsection.1.3.2}
+\contentsline {subsubsubsection}{\numberline {1.3.2.1}Debugging with the Console}{8}{subsubsubsection.1.3.2.1}
+\contentsline {subsection}{\numberline {1.4}Ethics}{10}{subsection.1.4}
+\contentsline {subsubsection}{\numberline {1.4.1}Using a Headless Browser (PhantomJS)}{11}{subsubsection.1.4.1}
+\contentsline {section}{\numberline {2}Parsing with \texttt {BeautifulSoup 4}}{13}{section.2}
+\contentsline {subsection}{\numberline {2.1}Requesting HTML}{13}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}\texttt {urllib2} preview}{13}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}\texttt {Requests}}{13}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}\texttt {wget}}{13}{subsubsection.2.1.3}
+\contentsline {subsection}{\numberline {2.2}\texttt {BeautifulSoup} Objects}{13}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}\texttt {BeautifulSoup} Queries}{13}{subsection.2.3}
+\contentsline {subsubsection}{\numberline {2.3.1}Comparison To JS/Selenium Queries}{13}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}Nested Selectors}{13}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.3}Regular Expressions Basics}{13}{subsubsection.2.3.3}
+\contentsline {subsection}{\numberline {2.4}Inevitable Roadblocks}{13}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Server-side vs. Client-side Websites}{13}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}UTF-8 Encoding}{13}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Login Pages}{13}{subsubsection.2.4.3}
+\contentsline {section}{\numberline {3}Fetching with \texttt {urlib2}}{13}{section.3}
+\contentsline {subsection}{\numberline {3.1}Using the Developer Tools Network Tab}{13}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Bypassing the Browser}{13}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}URL Query Strings}{13}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}HTTP Requests}{13}{subsubsection.3.2.2}
+\contentsline {subsubsubsection}{\numberline {3.2.2.1}\texttt {GET}}{13}{subsubsubsection.3.2.2.1}
+\contentsline {subsubsubsection}{\numberline {3.2.2.2}\texttt {POST}}{13}{subsubsubsection.3.2.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Retrieving Files}{13}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Demo with WireShark}{13}{subsubsection.3.2.4}
+\contentsline {subsection}{\numberline {3.3}Authentication}{13}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Refused/Timed out Connections}{13}{subsection.3.4}
+\contentsline {section}{\numberline {4}Beginning New Projects}{13}{section.4}
+\contentsline {subsection}{\numberline {4.1}Responsible Scraping}{13}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Defining the Goal}{13}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Identifying the Obstacles}{13}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Selecting the Right Tool}{13}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Avoiding Pitfalls}{13}{subsection.4.5}
+\contentsline {section}{\numberline {5}Example Project Demo}{13}{section.5}
+\contentsline {subsection}{\numberline {5.1}Accomplishing our Goal With \texttt {Selenium}}{13}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Walkthrough of Process}{13}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Strengths and Limitations}{13}{subsubsection.5.1.2}
+\contentsline {subsection}{\numberline {5.2}Accomplishing our Goal With \texttt {BeautifulSoup}}{13}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Walkthrough of Process}{13}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}Strengths and Limitations}{13}{subsubsection.5.2.2}
+\contentsline {subsection}{\numberline {5.3}Accomplishing our Goal With \texttt {urllib2}}{13}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Walkthrough of Process}{13}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Strengths and Limitations}{13}{subsubsection.5.3.2}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  3 JAN 2017 17:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  22 JAN 2017 13:01
 entering extended mode
 **"./Automation and Webscraping With Python.tex"
 ("Automation and Webscraping With Python.tex"
@@ -696,40 +696,47 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
  [2]
 LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 100.
- [1] [2] [3]
-Overfull \hbox (21.89886pt too wide) in paragraph at lines 220--220
+(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 99.
+ [1] [2] [3] [4] [5]
+Overfull \hbox (21.89886pt too wide) in paragraph at lines 251--251
 []\OT1/lmtt/m/n/10 document.querySelector("#fork-destination-box .fork-select-f
 ragment img")[] 
  []
 
-[4]
-Overfull \hbox (21.89886pt too wide) in paragraph at lines 244--244
+
+Overfull \hbox (21.89886pt too wide) in paragraph at lines 275--275
 []\OT1/lmtt/m/n/10 images = browser.find_element_by_css_selector(".example > im
 g[alt~=foo]")[] 
  []
 
+[6] [7] [8] [9]
+Overfull \hbox (6.14891pt too wide) in paragraph at lines 408--408
+[]    \OT1/lmtt/m/n/10 titles = browser.find_elements_by_css_selector("a.title.
+outbound")[] 
+ []
+
+[10]
 LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 270.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 347.
-[5] [6]
-Overfull \vbox (814.85408pt too high) has occurred while \output is active []
+(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 455.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 534.
+ [11] [12]
+Overfull \vbox (674.31288pt too high) has occurred while \output is active []
 
 
-[7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 347.
+[13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 534.
  ("Automation and Webscraping With Python.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 347.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 347.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 534.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 534.
 Package rerunfilecheck Info: File `"Automation and Webscraping With Python".out
 ' has not changed.
-(rerunfilecheck)             Checksum: BE633725D913DD3A5732209C8707AB6E;4201.
+(rerunfilecheck)             Checksum: 19107E12E70CEBD608AE47AF77473C70;4403.
  ) 
 Here is how much of TeX's memory you used:
- 11284 strings out of 493335
- 168050 string characters out of 3139228
- 422939 words of memory out of 3000000
- 14537 multiletter control sequences out of 15000+200000
+ 11297 strings out of 493335
+ 168201 string characters out of 3139228
+ 422945 words of memory out of 3000000
+ 14541 multiletter control sequences out of 15000+200000
  42067 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,6n,35p,1985b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -740,10 +747,10 @@ e1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx
  Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /lm/lmtk10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "Automation and Webscraping With Python.pdf" (10 pages, 25388
-7 bytes).
+Output written on "Automation and Webscraping With Python.pdf" (16 pages, 27144
+2 bytes).
 PDF statistics:
- 373 PDF objects out of 1000 (max. 8388607)
- 65 named destinations out of 1000 (max. 500000)
- 441 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 419 PDF objects out of 1000 (max. 8388607)
+ 74 named destinations out of 1000 (max. 500000)
+ 465 words of extra memory for PDF output out of 10000 (max. 10000000)
 

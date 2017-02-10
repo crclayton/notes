@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  22 JAN 2017 13:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  25 JAN 2017 10:10
 entering extended mode
 **"./Automation and Webscraping With Python.tex"
 ("Automation and Webscraping With Python.tex"
@@ -715,27 +715,27 @@ Overfull \hbox (6.14891pt too wide) in paragraph at lines 408--408
 outbound")[] 
  []
 
-[10]
+[10] [11] [12]
 LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 455.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 534.
- [11] [12]
+(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 499.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 578.
+ [13] [14]
 Overfull \vbox (674.31288pt too high) has occurred while \output is active []
 
 
-[13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 534.
+[15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 578.
  ("Automation and Webscraping With Python.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 534.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 534.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 578.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 578.
 Package rerunfilecheck Info: File `"Automation and Webscraping With Python".out
 ' has not changed.
 (rerunfilecheck)             Checksum: 19107E12E70CEBD608AE47AF77473C70;4403.
  ) 
 Here is how much of TeX's memory you used:
- 11297 strings out of 493335
- 168201 string characters out of 3139228
- 422945 words of memory out of 3000000
+ 11299 strings out of 493335
+ 168215 string characters out of 3139228
+ 421945 words of memory out of 3000000
  14541 multiletter control sequences out of 15000+200000
  42067 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -747,10 +747,10 @@ e1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx
  Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /lm/lmtk10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "Automation and Webscraping With Python.pdf" (16 pages, 27144
-2 bytes).
+Output written on "Automation and Webscraping With Python.pdf" (18 pages, 27599
+3 bytes).
 PDF statistics:
- 419 PDF objects out of 1000 (max. 8388607)
- 74 named destinations out of 1000 (max. 500000)
+ 427 PDF objects out of 1000 (max. 8388607)
+ 76 named destinations out of 1000 (max. 500000)
  465 words of extra memory for PDF output out of 10000 (max. 10000000)
 

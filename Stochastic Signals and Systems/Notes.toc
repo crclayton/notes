@@ -1,0 +1,16 @@
+\contentsline {section}{\numberline {1}Probability}{1}
+\contentsline {subsection}{\numberline {1.1}Some results to use}{1}
+\contentsline {section}{\numberline {2}Conditional Probability}{3}
+\contentsline {subsection}{\numberline {2.1}Screening Tests}{4}
+\contentsline {subsection}{\numberline {2.2}Independence}{7}
+\contentsline {section}{\numberline {3}Random Variables}{8}
+\contentsline {section}{\numberline {4}Random Vectors}{9}
+\contentsline {section}{Appendix}{10}
+\contentsline {subsection}{\numberline {A}Tutorial 1 (Lena)}{10}
+\contentsline {subsection}{\numberline {B}Tutorial 2 (Yang)}{10}
+\contentsline {subsection}{\numberline {C}Tutorial 3 (Lena)}{10}
+\contentsline {subsubsection}{\numberline {C.1}Random Variables Revisited}{10}
+\contentsline {subsubsection}{\numberline {C.2}Uniform Distribution}{11}
+\contentsline {subsubsection}{\numberline {C.3}Exponential Distribution}{11}
+\contentsline {subsubsection}{\numberline {C.4}Normal Distribution}{13}
+\contentsline {subsubsection}{\numberline {C.5}Failure Rates}{17}

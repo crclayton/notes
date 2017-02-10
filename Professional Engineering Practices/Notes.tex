@@ -1,0 +1,440 @@
+\documentclass{article}
+\usepackage{array, booktabs, graphicx, apacite, setspace}
+\usepackage[titletoc,toc,title]{appendix}
+\usepackage[toc,section=section]{glossaries}
+\usepackage{tocloft}
+\usepackage{titlesec}
+\usepackage{fancyvrb}
+\usepackage{float} % for strict figure placement  with option [H]
+\usepackage[bottom]{footmisc} % to glue footnote to bottom of page
+\usepackage{alltt} % for bold typewriter
+\usepackage{amsthm} % for proof environment
+\usepackage{ragged2e} % to undo \centering
+
+% set section indentation
+\setcounter{secnumdepth}{4}
+
+
+% add space between paragraphs
+\setlength{\parskip}{\baselineskip}
+
+
+% format \paragraph{example} as a subsubsubsection
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+
+% automatically convert "" to ``''
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+
+
+% define list of equations
+\newcommand{\listequationsname}{\Large{List of Equations}}
+\newlistof{myequations}{equ}{\listequationsname}
+\newcommand{\myequations}[1]{
+   \addcontentsline{equ}{myequations}{\protect\numberline{\theequation}#1}
+}
+\setlength{\cftmyequationsnumwidth}{2.3em}
+\setlength{\cftmyequationsindent}{1.5em}
+
+
+% format appendix numbering
+\renewcommand\appendix{\par
+  \setcounter{section}{0}
+  \setcounter{subsection}{0}
+  \setcounter{figure}{0}
+  \setcounter{table}{0}
+  \renewcommand\thesection{Appendix \Alph{section}}
+  \renewcommand\thefigure{\Alph{section}\arabic{figure}}
+  \renewcommand\thetable{\Alph{section}\arabic{table}}
+}
+
+
+% -------- GLOSSARY ENTRIES -------- %
+\makenoidxglossaries
+
+\newglossaryentry{random experiment}{
+	name={Random experiment},
+	description={Definition of the word}
+}
+
+
+% renames "Contents" to "Table of Contents"
+\renewcommand\contentsname{Table of Contents}
+
+\newcommand{\eqn}[1]{\myequations{#1} \centering  \small \textit{#1} \normalsize \justify  }
+
+\newcommand{\var}{\sigma^2}
+
+\newcommand{\n}[1]{\overline{#1}}
+
+
+\begin{document}
+
+% -------------------------------------- %
+% ------------ FRONT MATTER ------------ %
+% -------------------------------------- %
+
+% -------- TITLE PAGE -------- %
+
+\title{\huge APSC 450 \\ \Large \medskip Professional Engineering Practices}
+\author{Charles Clayton}
+\date{\today}
+\maketitle
+`
+\thispagestyle{empty}
+
+\pagenumbering{roman}
+\setcounter{page}{0}
+
+
+% -------- TABLE OF CONTENTS/LISTS -------- %
+
+\singlespacing			\pagebreak
+\tableofcontents		\pagebreak
+
+\listoffigures		
+\listoftables
+\listofmyequations
+\pagebreak
+
+
+% -------- GLOSSARY -------- %
+
+\printnoidxglossaries	\pagebreak
+
+
+% ----------------------------- %
+% -------- MAIN MATTER -------- %
+% ----------------------------- %
+
+\pagenumbering{arabic}
+
+
+There is more to engineering than technology -- there are elements of law, business, safety, psychology, philosophy, and more that professional engineers should be aware of.
+
+\section{APEGBC}
+
+\subsection{Becoming an EIT}
+
+Engineering in BC is self-regulated by APEGBC under the \textit{Engineers and Geoscientists Act}. In order to undertake engineering projects in BC you must be licensed by APEGBC.
+
+First you must be a student APEGBC member and complete an undergraduate degree in engineering. 
+
+To apply to be an EIT, you must pay the \$472.50 application fee\footnote{Waived if you apply within 12 months of graduation}, complete the online application, provide ID signed by a P.Eng, and send all transcripts from post-secondary institutions to APEGBC. Thereafter there are \$232.05 yearly membership fees. The application  takes about two weeks to process. You do not need to be currently employed to be an EIT.
+
+\subsection{Becoming a P.Eng}
+Then you must complete four-years of relevant work experience as an EIT under the supervision of a P.Eng, must have had at least one-year of work experience in Canada, and complete a Law and Ethics Seminar and complete the Professional Practice Exam (PPE) which is 3-hours long including a 1-hour long essay.
+
+You will also have to report your work experience using APEGBC's online competency experience program. Then you can be a P. Eng and practice engineering in BC. You will need a minimum of four references, one of which will share the same discipline of practice. These can include clients and consultants -- references must be knowledgeable about your work.
+
+
+\subsection{Professionalism}
+
+The APEGBC Code of Ethics states: \begin{quote}Members and
+licensees shall act at all times with fairness, courtesy
+and good faith to their associates, employers,
+employees and clients, and with fidelity to the public
+needs. They shall uphold the values of truth, honesty
+and trustworthiness and safeguard human life and
+welfare and the environment.
+\end{quote}
+
+Professionalism can matter with respect to competency, conflict of interest, confidentiality, use of company documentation, respect for privacy, environmental responsibility, cultural sensitivity, equity, discrimination, harassment, occupational health and safety, etc.
+
+Engineers are responsible to demonstrate professionalism and adhere to the APEGBC Code of Ethics.
+
+\subsubsection{Protection of the Public}
+
+APEGBC Code of Ethics states:  \begin{quote}Hold paramount the safety,
+health and welfare of the public, the protection of the
+environment and promote health and safety within the
+workplace
+\end{quote}
+
+
+\subsubsection{Serving the public interest}
+
+Reduce negative societal, economic, and environmental externalities, even when these imply reduced private profits.
+
+\subsection{Self-Regulation}
+
+Rather than be regulated by government, engineers in BC are self-regulated, which means that the regulation body is comprised of the members themselves. APEGBC is given the powers to regulation through the Engineers \& Geoscientists Act. 
+
+Self-regulation may be withdrawn and government regulation introduced, as in the case of the British Columbia College of Teachers or Engineering in Quebec.
+
+APEGBC and other provincial assocations are members of Engineers Canada, which includes the Canadian Engineering Accreditation Board and the Canadian Engineering Qualifications Board, which are responsible for national standards of engineering programs and qualifications.
+
+\subsection{Governance}
+
+APEGBC is governed by a council of 13 elected members, and 4 members appointed by Lieutenant Governor. The council includes a President and VP with one-year terms.
+
+
+\section{Legal System and Torts}
+
+\subsection{Common Law}
+
+All of Canada other than Quebec operates under something called Common Law. Quebec operates under Civil Law. 
+
+Common law is not written down as a body of rules (legislation). Rather it is judge-made law that is developed case-by-case. It was inherited from the British Empire, and common law is the first major source of law in Canada.
+
+
+\subsection{Legislation}
+
+Canada negotiated independence from the British Empire in 1867 and wrote its constitution. The constitution gives Canada the power to create/legislate its own laws to supplement or replace common law. Legislation  consists of the constitution, acts, and statutes, and is the second major source  of law in Canada.
+
+In 1982, Canada enacted the Charter of Rights and Freedoms, which gave some power back to the courts.
+
+Some legislation that effects engineering includes, Health and Safety (Workers Compensation Act), intellectual property rights, construction regulations/codes/bylaws, environmental protection, business practices/consumer protection.
+
+Legislation is divided between Federal Jurisdiction and Provincial Jurisdiction. All criminal law, that relating to imprisoning people, is under federal jurisdiction.
+
+Legislation starts with a bill proposed by a minister or an MP, and then must be passed by the house of commons and the senate. Then it must receive royal assent and become a statute.
+
+\subsubsection{Regulations}
+
+Regulations are a subset of legislation that can be enacted without parliament by people/committees given the authority under an Act. Regulations are usually related to technical areas where parliament does not have requisite knowledge. These can be enacted and modified more quickly.
+
+You can find and read legislation on \texttt{bclaws.ca} or \texttt{canlii.org}.
+
+\subsection{Terminology}
+
+The \textbf{plaintiff}, $\pi$, is the person  who makes a claim in a lawsuit. The \textbf{defendant}, $\Delta$, is the person being sued by the plaintiff.
+
+An \textbf{appeal} can be taken when they lost a lawsuit and want the case to be considered by a higher level of court. The \textbf{appellant} is the person who makes the appeal. The \textbf{respondent} is the person who defends the appeal.
+
+A course proceeding/lawsuit is called an \textbf{action}. \textbf{Damages} are the amount of money awarded by a court to make up for a loss. \textbf{Personal property} is almost anything that has value and is not real estate.
+
+A \textbf{tort} is a wrongdoing that involves a breach of civil duty owed to another party. Basically, a wrong between people. A person will take another person to a court and the person who has been wronged can obtain compensation.
+
+A \textbf{crime} is a wrongdoing that involves a breach of duty prescribed by the state. This is a wrong between the state and a person, and the state will take the person to court to try to send them to jail. If someone commits a crime against you, you don't do anything. It's up to the state/police.
+
+Somethings, like punching someone, can be both. The tort is battery, for which the victim can get paid damages by the puncher. The crime is assault, for which the puncher can be punished by the state.
+
+\subsection{Torts}
+
+A tort has three elements: \begin{enumerate}
+\item Breach of established common law duty
+\item Intent\footnote{Usually, negligence isn't exactly intentional}
+\item Harm/losses/damage
+\end{enumerate}
+
+The point of a tort is to restore the plaintiff to the way they were before the tort happened by way of compensation. The plaintiff cannot get more out of the law suit (damages) than they had before. In especially bad cases, the court may award \textit{aggravated} or \textit{punitive} damages. If there is no harm, then you will be awarded no damages.
+
+
+
+If the damages are less than \$25k, then you will go to small-claims provincial court. You will pay our own legal fees if you win/lose.
+
+With torts, the burden of proof is on the plaintiff, who must prove "on a balance of probabilities" ($> 50\%$ likelihood) that they were wronged. Note that criminal law has the much higher of "beyond a reasonable doubt". In tort law, the plaintiff can make their case with circumstantial law -- things that would make people  \textit{think} that the defendant is guilty.
+
+The focus of a tort is on the plaintiff, whereas the focus of a crime is on the offender. 
+
+\subsection{Court Structure}
+
+Provincial courts and federal courts have different jurisdictions as defined in the constitution. 
+
+Appeals courts exist to reconsider cases to determine if to pass them on to the provincial or the federal supreme courts.
+
+BC Provincial court has jurisdiction for criminal law, family law, small claims, traffic infractions, and bylaw matters. The BC Supreme court, by definition, covers everything not allocated to provincial court. 
+
+\section{Ethics}
+
+Ethics deal with choices made by people related to right/wrong, good/evil, justice. They refer to societal and cultural customs of behaviour, whereas morals concern individual standards of right and wrong. Ethics don't have any proof of being correct, but rather are based upon agreed standards of conduct in a society.
+
+Many laws are based on ethical principles, concerning crimes and equity, whereas other laws such at tax laws are simply practical. 
+
+The APEGBC code of ethics is as follows (simplification in bold).
+
+\begin{enumerate}
+\item \textbf{Public interest}
+
+Hold paramount the safety, health and welfare of the
+public, protection of the environment and health and
+safety within the workplace. 
+\item \textbf{Know your limits}
+
+Accept responsibility for professional assignments only
+when qualified by training or experience.
+\item \textbf{Don't fake it}
+
+Provide an opinion on a professional subject only when
+based on adequate knowledge and honest conviction.
+
+\item \textbf{Conflict of interest
+}
+
+Act as faithful agents of clients or employers, maintain
+confidentiality and avoid conflicts of interest. Where
+conflicts arise, fully disclose the circumstances without
+delay to the employer or client
+
+\item \textbf{Respect your value}
+
+Uphold the principle of appropriate and adequate
+compensation for the performance of engineering work.
+
+\item \textbf{Lifelong learning}
+
+ Keep informed in order to maintain competence. Strive to advance the body of knowledge. Provide opportunities
+for professional development of associates.
+
+\item \textbf{Do unto others...}
+
+Act with fairness, courtesy and good faith towards
+clients, colleagues and others. Give credit where due.
+Accept and give honest and fair professional comment.
+
+\item \textbf{Stand your ground}
+
+Present clearly to employers and clients the possible
+consequences if professional decisions or judgments are
+overruled or disregarded.
+
+\item \textbf{Be brave (whistleblowing)}
+
+ Report to the Association or other appropriate agencies
+any hazardous, illegal or unethical professional decisions
+or practices by engineers or others.
+
+\item \textbf{Spread the word}
+
+ Extend public knowledge and appreciation of
+engineering. Protect it from misrepresentation and
+misunderstanding.
+
+\end{enumerate}
+
+Four practical philosophical theories:
+
+\begin{enumerate}
+\item Aristotle -- Actions are right if they support good character traits (virtues). Virtue ethics consider an action correct if the action is honest, demonstrates loyalty to community or employer, is believed to be responsible, and avoids extremes (is a compromise).
+
+\item Locke -- Each person has rights which need to be respected. These include freedoms of conscience, religion, thought, expression, and so on; democratic rights; legal rights, such as life, liberty, and security; and equity rights such as rights against discrimination.
+
+\item Kant -- Every person must discharge duties. Duties are obligations and rules of conduct.
+
+\item Mill - Utilitarianism is governed by the maximum benefit for the greatest number of people 
+
+\end{enumerate}
+
+\section{Negligence}
+
+Remember that most torts required \textit{intent}. However, negligence only requires the following:
+
+\begin{enumerate}
+\item The defendant ($\Delta$) owes the plaintiff ($\pi$) a duty of care 
+\item $\Delta$ did not meet the requisite standard of care
+\item The $\Delta$'s breach of the standard caused harm or loss to the $\pi$
+\end{enumerate}
+
+\subsection{Duty of care}
+
+There is a duty of care when it is "reasonably foreseeable" that harm could occur. Once a duty of care has been established for a given situation by a previous case, by common law it sets a precedent for all future situations of a similar nature. Engineers owe a duty of care to clients, customers, and the public.
+
+Note that legal activity does not immediately imply failure to meet a duty of care. If it's a sunny day and you have lots of visibility on a clear rode, you can be speeding and still meeting the standard of care. If it's an icy snow storm and you're driving the speed limit, you may still not be meeting the standard of care.
+
+The standard of care for engineers is that:
+
+\begin{quote}
+A practising engineer or
+geoscientist must exercise the same degree of
+skill and possess the same level of knowledge
+that is generally expected of other members of
+the profession with the same training and
+experience.
+\end{quote}
+
+So junior engineers are held to a different standard than senior engineers. Junior engineers are not expected to know everything, but they are expected to ask for help from senior engineers in situations where they have insufficient knowledge.
+
+\subsection{Causation}
+
+In order to be negligent, there does not need to direct causation to the harm. To test for causation, you can use the \textit{but for} test -- "would the harm have occurred but for the actions of the defendant?"
+
+\subsection{Damages}
+
+Damages are designed co compensate for the loss suffered. The damages can be reduced if there is \textbf{contributory negligence}, which means the plaintiff is somewhat at fault for the incident. These can include failure to mitigate damages.
+
+\subsection{Liability}
+
+\textbf{Vicarious liability} is that an employer is often liable for the actions  of their employee in the line of work. Though an employer is usually not liable for \textit{contractors}. An employer may still sue the engineer to recover any losses. Engineers may get insurance to cover this.
+
+\textbf{Third-party liability} is where liability can extend to people with whom the defendant had no contact or contract with, but that were effected by the negligence.
+
+To be \textbf{jointly liable} means that each party are each liable up to the full amount, but if one party pays then the other party cannot be sued to pay as well. To be \textbf{severally liable} is where both parties are liable only for their respective obligations.  
+
+\textbf{Joint and several} liability means that it us up to the defendants to sort out their respective proportions of the damages, but each party is liable up to the full amount of the damages. If  one defendant doesn't have enough money to pay their share of the damages, the other defendants have to make it up.
+
+\subsection{Limitation Period}
+
+The limitation act says that a claim cannot be brought to court for most things further than 2 years from the day it was discovered in BC. There are some exceptions, for instance if the wrongdoer acknowledges the wrongdoing then the 2 year period resets.
+
+
+\section{Conflict of Interest}
+
+A situation in which a professional has a special interest that influences the objective exercise of professional duties.
+
+These special interests are anything that render a professional's judgment less reliable than it would otherwise be. These include: \begin{enumerate}
+\item Self interest, such as \begin{enumerate}
+\item career goals
+\item financial gain
+\item reputation
+\end{enumerate}
+\item financial relationships with family or friends
+\item loyalty to a group
+\item emotional connection
+\end{enumerate}
+
+As a professional, engineers have a duty to maintain confidentiality; remain impartial in decisions, evaluations, and design choices; fiduciary duties -- the highest standard of care, those whereby the engineer has been given the utmost trust by an individual.
+
+Engineers are trusted to remain reliable and make unbiased decisions. Failure to do so results in damage to reputation, career, employer, and the profession, and may result in criminal or civil charges.
+
+The APEGBC Code of Ethics states than professional engineers shall... \begin{quote}
+Act	 as	 faithful	 agents	 of	 their	 clients	 or	 employers,	
+maintain	confiden2ality	and	avoid	conflicts	of	interest	but,	
+where	such	conflict	arises,	fully	disclose	the	circumstances	
+without	delay	to	the	employer	or	client.
+\end{quote}
+
+So if a conflict of interest arises, first try to avoid it. If you cannot, disclose it to your employer and client. Finally, recuse it (disqualify yourself from related decisions).
+
+\subsection{Whistleblowing}
+
+Whistleblowing is raising a concern about wrongdoing within an organization -- such as misconduct, or dishonest/illegal activities. The whisteblower is fulfilling their duty to safeguard the public and exercising the right to disclose wrongdoing.
+
+Internal whistleblowing is where the employee goes over the head of their immediate supervisor. External whisteblowing is where the employee reports the wrongdoing to the media, third-party experts, or law-enforcement.
+
+In order for whistleblowing to be justified: \begin{enumerate}
+\item The matter must be important -- that is, failure to act will harm the public or environment
+\item The whistleblower must have proof or first-hand knowledge and relevant expertise
+\item Other actions within the power of the employee have been exhausted
+\end{enumerate}
+
+\newpage
+
+
+%--------------------------------%
+
+
+
+
+
+
+
+\newpage
+\bibliography{references}
+\bibliographystyle{apacite} 
+\pagebreak
+
+
+% -------- APPENDIX -------- %
+\appendix
+\onehalfspacing
+\section*{Appendix}
+\addcontentsline{toc}{section}{Appendix}
+\renewcommand{\thesubsection}{\Alph{subsection}}
+
+
+\end{document}

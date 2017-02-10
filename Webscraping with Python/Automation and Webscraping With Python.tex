@@ -421,19 +421,63 @@ We'll discuss encoding in more detail in later videos.
 
 \subsection{Ethics}
 
-This leads us to a point where we should discuss the ethics of webscraping. It's important to remember that people run these websites, and that it costs them money to service requests. We only went through five pages, but reddit was forced to service far more data faster than it expects from a typical user. Imagine if we had decided to run our script across the first 100 pages -- this would an aggressive scraper and we would be imposing an irresponsibly large workload on reddit, disrupting their business.
+In the last video we saw that we can use selenium to automate the browser to load and interact with websites very quickly. However, by not being responsible with your webscrapers, your script can be harmful. This leads us to a point where we should discuss the ethics of webscraping. 
+
+- In this video, we will discuss why it's important to be mindful of the workload your scraper is putting on a website.
+
+- We will discuss the possible consequences of webscrcaping irresponsibly. 
+
+- And we will touch on how to mitigate your webscraper's harm and alternative solutions to webscraping.
+
+\textbf{Effects}
+
+It's important to remember that people run these websites in good faith. First of all, it can cost them time and money to collect the data you are web scraping. If you are scraping non-public information for redistribution, you may be liable to copyright infringement claims.
+
+On a more technical side, recall that it costs a business money to host a website and run servers to respond to HTTP requests. 
+
+
+
+In our example, we only went through three pages, but reddit was forced to service far more data faster than it expects from a typical user. Imagine if we had decided to run our script across the first 100 pages -- this would an aggressive scraper and we would be imposing an irresponsibly large workload on the website's servers, disrupting their business.
+
+Furthermore, many websites use ad revenue to pay for their services, if you're using an aggressive web scraper and ignoring the ads, this is the internet equivalent of walking into a cafe and without buying anything, taking all the free napkins and all the condiment packets.
 
 First and foremost, this is unkind. Case closed.
 
-Beyond that, some scraping is against the terms and conditions of certain websites. If you're found to be scraping aggressively, a website can easily detect this and you are likely to find yourself blocked from certain websites. The simplest way to prevent this, is to impose delays in your script. Sure, it'll take longer, but run it at night and you won't notice any difference and you won't be hogging the throughput of the website. Moreover, you won't find yourself blocked and your scraper broken. 
+\textbf{Consequences}
 
-Finally, you aren't going to find yourself coding around captchas.
+But beyond that, just like a cafe is likely to throw you out and ban you from the restaurant, a website is likely to take action against you.
 
-The law revolving around webscraping is complicated, varies by country, is somewhat subjective, and challenging to enforce. The best advice is to be considerate, imagine you were the one running the website, and use common sense.
+Web scraping is against the terms and conditions of certain websites. If you're found to be scraping aggressively, a website can easily detect this and you are likely to find yourself blocked from certain websites.
 
-Where possible, using an API -- an application program interface -- is a wise alternative to traversing the HTML. These are mechanisms by which a website will allow you to make queries directly to the server, without using the middle-man as a browser.
+If not blocked completely, a website may detect heavy traffic and confront you with CAPTCHAs, which ostensibly stands for Completely Automated Public Turing test to tell Computer and Humans Apart. It's extremely unlikely you will be able to circumvent one of these, and it will break your script.
 
-We will examine APIs in a later section.
+\textbf{Suggestions}
+
+The simplest way to avoid scraping aggressively is to impose delays in your script. Sure, it'll take longer, but if you run it at night and you won't notice any difference and you won't be hogging the throughput of the website. Moreover, you won't find yourself blocked and your scraper broken. It's also a good idea to run your script at off-peak hours when the website is experiencing lower traffic, such as nights or weekends.
+
+Before you even write your script, search the website's terms and conditions for words such as "scrape", scraping, "mine", mining, "extract", extracting, and so on. If you're unsure, there is no harm in contacting a website's administrator or webmaster. They might even be able to provide you with the data you're trying to extract, or inform you of another solution that is less likely to put stress on the website.
+
+For instance, using an API -- an application program interface. APIs are a wise alternative to webscraping if possible. These are mechanisms by which a website will allow you to make queries for data directly to the server, bypassing the need to use the browser and traverse the HTML at all.
+
+We will examine APIs the volume fetching with urllib2.
+
+
+The law revolving around webscraping is complicated, varies by country, and is challenging to enforce. The best advice is to be considerate, imagine you were the one running the website, and use common sense.
+
+
+\textbf{Summary}
+
+In this section, we covered when and why web scraping is a practical tool. 
+
+We then looked at how websites are built and how data on them is structured in HTML, then we learned how to use CSS selectors to identify and gather specific data on a website, and how to develop the selectors with the developer tools.
+
+We then introduced the selenium module, and we used Python to control a webdriver to gather data from a website. We will revisit selenium in more detail in the course Advanced Python Web Scraping.
+
+Finally we discussed some strategies to web scrape responsibly and ethically.
+
+\textbf{Next}
+
+Now that we have a handle on web scraping using a browser, we're going to shift gears and focus on doing this all in Python with the BeautifulSoup module.
 
 \subsubsection{Using a Headless Browser (PhantomJS)}
 

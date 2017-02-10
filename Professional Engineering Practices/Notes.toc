@@ -1,0 +1,25 @@
+\contentsline {section}{\numberline {1}APEGBC}{1}
+\contentsline {subsection}{\numberline {1.1}Becoming an EIT}{1}
+\contentsline {subsection}{\numberline {1.2}Becoming a P.Eng}{1}
+\contentsline {subsection}{\numberline {1.3}Professionalism}{1}
+\contentsline {subsubsection}{\numberline {1.3.1}Protection of the Public}{2}
+\contentsline {subsubsection}{\numberline {1.3.2}Serving the public interest}{2}
+\contentsline {subsection}{\numberline {1.4}Self-Regulation}{2}
+\contentsline {subsection}{\numberline {1.5}Governance}{3}
+\contentsline {section}{\numberline {2}Legal System and Torts}{3}
+\contentsline {subsection}{\numberline {2.1}Common Law}{3}
+\contentsline {subsection}{\numberline {2.2}Legislation}{3}
+\contentsline {subsubsection}{\numberline {2.2.1}Regulations}{4}
+\contentsline {subsection}{\numberline {2.3}Terminology}{4}
+\contentsline {subsection}{\numberline {2.4}Torts}{5}
+\contentsline {subsection}{\numberline {2.5}Court Structure}{5}
+\contentsline {section}{\numberline {3}Ethics}{6}
+\contentsline {section}{\numberline {4}Negligence}{7}
+\contentsline {subsection}{\numberline {4.1}Duty of care}{8}
+\contentsline {subsection}{\numberline {4.2}Causation}{8}
+\contentsline {subsection}{\numberline {4.3}Damages}{8}
+\contentsline {subsection}{\numberline {4.4}Liability}{9}
+\contentsline {subsection}{\numberline {4.5}Limitation Period}{9}
+\contentsline {section}{\numberline {5}Conflict of Interest}{9}
+\contentsline {subsection}{\numberline {5.1}Whistleblowing}{10}
+\contentsline {section}{Appendix}{12}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  8 FEB 2017 14:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  15 FEB 2017 15:44
 entering extended mode
 **./Notes.tex
 (Notes.tex
@@ -630,17 +630,17 @@ Overfull \hbox (49.0563pt too wide) in paragraph at lines 191--192
 -struc-tion reg-u-la-tions/codes/bylaws,
  []
 
-[3] [4] [5] [6] [7] [8] [9] [10] [11]
+[3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14]
 No file Notes.bbl.
-[12] (Notes.aux) ) 
+[15] (Notes.aux) ) 
 Here is how much of TeX's memory you used:
  8359 strings out of 493335
  124138 string characters out of 3139228
- 257967 words of memory out of 3000000
+ 259967 words of memory out of 3000000
  11697 multiletter control sequences out of 15000+200000
  10442 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,8n,40p,1941b,246s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,8n,40p,1941b,223s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pf
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pr
@@ -652,9 +652,9 @@ blic/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
 i10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
 
-Output written on Notes.pdf (15 pages, 169707 bytes).
+Output written on Notes.pdf (18 pages, 177260 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
+ 104 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

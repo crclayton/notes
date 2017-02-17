@@ -488,31 +488,141 @@ I recommend writing your script using Chrome to debug, but once you have a worki
 
 \section{Parsing with \texttt{BeautifulSoup 4}}
 
+Now that we have seen some basic Python web-scraping using Selenium, it is time to look into more streamlined solutions. Instead of depending on external resources like webdrivers and parsing within the browser, which can be quite slow, we will now move the entire process to python, parsing the HTML using the BeautifulSoup module.
+
 \subsection{Requesting HTML}
 
-\subsubsection{\texttt{urllib2} preview}
+BeautifulSoup is only an HTML parser, it does not fetch the HTML from the website, so first we will have to look at methods of doing this. 
+
 
 \subsubsection{\texttt{Requests}}
 
+The \verb|requests| module makes this as quick and easy as possible.
+
+\begin{verbatim}
+url = r"https://en.wikipedia.org/wiki/List_of_battles_by_casualties"
+response = requests.get(url)
+\end{verbatim}
+
+If you provided a valid URL, now probably now have the response HTML no problem. But it's a good idea to first make sure that there weren't any problems by checking the status code. You've probably all heard of the famous 404 response for when a web-site isn't found, but for a successful query, the response code is 200.
+
+\begin{verbatim}
+if response.status_code != 200:
+    print("Failed to get HTML: ", response.status_code, response.reason)
+    exit()    
+\end{verbatim}
+
+Other codes to be aware of are...
+
+Also, to be transparent, I'm going to identify myself in the header of the request we're sending to this server. That way if the website owner gets unusual traffic from our webscraper they can determine the cause and the source.
+
+\subsubsection{\texttt{urllib2} preview}
+
+Another commonly used HTTP request module is \texttt{urllib}. In this tutorial, I'm using Python 3, but if you're using Python 2 the module will be \verb|urllib2|.
+
+Similarly, a basic query for the HTML is the following:
+
+
+
 \subsubsection{\texttt{wget}}
+
+If instead of grabbing the HTML from a website in real-time during the execution of your script, you want to download an entire website then look at the HTML from files, a very common tool for this is \texttt{wget}.
+
+\texttt{wget} can recursively download an entire website, downloading the provided page, then downloading all pages it links to and all the files that it depends on. 
+
+Then you can use Python to load your HTML from the downloaded files like so:
+
+Although \texttt{wget} can be quite aggressive and put a lot of demand on a website, if you're debugging a script that repeatedly loads lots of pages, it's probably a good idea to download the entire page once and then debug and re-run your script on local files.
+
+\subsection{Parsers}
+
+By default, BeautifulSoup uses the HTML parser that's native to Python's standard library, but you can use other parsers for different reasons.
+
+Slightly  slower, but a much more forgiving HTML parser that emulates more how browsers operate is the \texttt{html5lib} library. Some websites have invalid HTML, and modern browsers are forgiving and pretty much figure out what it's supposed to be and add missing close tags and so on. We will which we can install using pip:
+
+ \texttt{pip install html5lib}
 
 \subsection{\texttt{BeautifulSoup} Objects}
 
+\subsubsection{Tags}
+
+Tags have names, which are properties. These have read and write permissions, but for the most part we will only be reading.
+
+All tags have attributes, which are in a dictionary so you can access attributes like a normal python dictionary. However if the attributes tag doesn't have the given key, you'll get a keyerror, so it's safer better to use the \texttt{get()} method which will return a \texttt{None} if the key doesn't exist.
+
 \subsection{\texttt{BeautifulSoup} Queries}
 
-\subsubsection{Comparison To JS/Selenium Queries}
+Since we've talked about using CSS queries, those are still the best tool for the job when querying using \texttt{BeautifulSoup}. You can still determine the queries you would like to use using the Chrome developer tools console, or by experimenting in a Python console, but it'll be a little less readable when parsing long HTML in the console.
 
-\subsubsection{Nested Selectors}
+We can use CSS selectors to select all tags matching the query by using \verb|soup.select()| and to select only the first match with \verb|soup.select_one()|.
+
+This will prevent us writing code that looks like this: 
+
+\begin{verbatim}
+matches = []
+divs = soup.find_all("div", recursive=False)
+for d in divs: 
+    if d.get("class") == "foo":
+        matches.append(list(d.children)[0])
+\end{verbatim}
+
+And instead write code that looks like this:
+
+\verb|matches = soup.select("div > .foo:first-child")|
+
+
 
 \subsubsection{Regular Expressions Basics}
 
+If you're a regular expression whiz, you can also use regular expressions as your queries using the \texttt{re} module like so:
+
+\verb|soup.find_all(re.compile("..."))|
+ 
+\verb|soup.find_all(id=re.compile(), class_=re.compile("..."))|
+
+Note here that you can specify the attribute you're querying on with \verb|find_all|, but \verb|class| is a reserved keyword in Python, so you'll have to use \verb|_class|.
+
+\subsection{What to do now}
+
+Store it in a pandas dataframe. Output it to a CSV. Graph with matplotlib.
+
 \subsection{Inevitable Roadblocks}
+
+\begin{verbatim}
+from bs4.diagnose import diagnose
+data = open("bad.html").read()
+diagnose(data)
+\end{verbatim}
 
 \subsubsection{Server-side vs. Client-side Websites}
 
+Now, there are different kinds of websites. Server-side websites will generate the HTML that makes up the whole page over at the server, then it will send you the HTML already rendered.
+
+Client-side websites will send you some HTML, but they'll also send you code that then runs on your computer in the browser, which creates the rest of the website.
+
+When using selenium, this wasn't a problem because we're using a browser, so this browser will run the client-side code that generates the rest of the website and we can scrape it. But with these requests, we're grabbing the HTML directly from the server, so if there's extra code that's suppose to fill out the rest of the website, we won't see that.
+
+To determine if a website is client-side or server-side, one of the easiest things to do is compare the source code and the elements of a website. In Chrome, right-click a page and press view-source, and then right-click and press inspect element and look at the whole body. If these things are totally different, then the website is probably running client-side code.
+
 \subsubsection{UTF-8 Encoding}
 
+\texttt{from bs4 import UnicodeDammit}
+
+For quotes:
+\verb|smart_quotes_to=|
+
+For newlines:
+\verb|UnicodeDammit.detwingle()|
+
 \subsubsection{Login Pages}
+
+\subsection{Demo}
+
+Let's first look at: \url{https://en.wikipedia.org/wiki/List_of_battles_and_other_violent_events_by_death_toll}.
+
+First thing we see is that the tables probably have this class \verb|.wikitable|. And there's seven of them.
+
+
 
 \section{Fetching with \texttt{urlib2}}
 

@@ -1,0 +1,32 @@
+\documentclass{article}
+\usepackage{tocloft}    % for list of equations
+\usepackage{ragged2e}   % to undo \centering
+\usepackage{hyperref}   % to make references hyperlinks
+\usepackage{glossaries} 
+
+% define list of equations
+\newcommand{\listequationsname}{\Large{List of Equations}}
+\newlistof{myequations}{equ}{\listequationsname}
+\newcommand{\myequations}[1]{
+   \addcontentsline{equ}{myequations}{\protect\numberline{\theequation}#1}
+}
+\setlength{\cftmyequationsnumwidth}{2.3em}
+\setlength{\cftmyequationsindent}{1.5em}
+
+% command to box, label, reference, and 
+% include noteworthy equation in list of equations
+\newcommand{\noteworthy}[2]{
+\begin{align} \label{#2} \ensuremath{\boxed{#1}} \end{align} 
+\myequations{#2} \centering \small \textit{#2} \normalsize \justify }
+
+\begin{document}
+
+\listofmyequations \pagebreak
+
+\noteworthy{P(\bigcup_{n=1}^n A_n) \leq \sum_{n=1}^n P(A_n)}{Boole's inequality}
+
+Where the events $A_n$ are disjoint, then the inequality 
+in equation \ref{Boole's inequality} becomes an equality.
+
+
+\end{document}

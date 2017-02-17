@@ -1,16 +1,44 @@
-\contentsline {section}{\numberline {1}Probability}{1}
-\contentsline {subsection}{\numberline {1.1}Some results to use}{1}
-\contentsline {section}{\numberline {2}Conditional Probability}{3}
-\contentsline {subsection}{\numberline {2.1}Screening Tests}{4}
-\contentsline {subsection}{\numberline {2.2}Independence}{7}
-\contentsline {section}{\numberline {3}Random Variables}{8}
-\contentsline {section}{\numberline {4}Random Vectors}{9}
-\contentsline {section}{Appendix}{10}
-\contentsline {subsection}{\numberline {A}Tutorial 1 (Lena)}{10}
-\contentsline {subsection}{\numberline {B}Tutorial 2 (Yang)}{10}
-\contentsline {subsection}{\numberline {C}Tutorial 3 (Lena)}{10}
-\contentsline {subsubsection}{\numberline {C.1}Random Variables Revisited}{10}
-\contentsline {subsubsection}{\numberline {C.2}Uniform Distribution}{11}
-\contentsline {subsubsection}{\numberline {C.3}Exponential Distribution}{11}
-\contentsline {subsubsection}{\numberline {C.4}Normal Distribution}{13}
-\contentsline {subsubsection}{\numberline {C.5}Failure Rates}{17}
+\contentsline {section}{\numberline {1}Probability}{1}{section.1}
+\contentsline {subsection}{\numberline {1.1}Some results to use}{1}{subsection.1.1}
+\contentsline {section}{\numberline {2}Conditional Probability}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Screening Tests}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Independence}{8}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Reliability}{9}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Conditional Independence}{11}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Sequential Bayes' Formula}{12}{subsection.2.5}
+\contentsline {section}{\numberline {3}Random Variables}{13}{section.3}
+\contentsline {subsection}{\numberline {3.1}Discrete Random Variables}{14}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Probability Mass Function (pmf)}{14}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Cumulative Distribution Function (cdf)}{14}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}Expected Value}{15}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}Law of Large Numbers}{16}{subsubsection.3.1.4}
+\contentsline {subsubsection}{\numberline {3.1.5}Linear Operator}{16}{subsubsection.3.1.5}
+\contentsline {subsubsection}{\numberline {3.1.6}Moments}{17}{subsubsection.3.1.6}
+\contentsline {subsubsection}{\numberline {3.1.7}Mean, Variance, Standard Deviation}{17}{subsubsection.3.1.7}
+\contentsline {subsubsection}{\numberline {3.1.8}Properties of the Mean}{20}{subsubsection.3.1.8}
+\contentsline {subsubsection}{\numberline {3.1.9}Properties of the Variance}{21}{subsubsection.3.1.9}
+\contentsline {subsubsection}{\numberline {3.1.10}Binomial Random Variables}{21}{subsubsection.3.1.10}
+\contentsline {subsubsection}{\numberline {3.1.11}Poisson Random Variables}{23}{subsubsection.3.1.11}
+\contentsline {subsection}{\numberline {3.2}Continuous Random Variables}{26}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}PDF and CDF}{26}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Mean and Variance}{28}{subsubsection.3.2.2}
+\contentsline {subsection}{\numberline {3.3}Uniformly Distributed Random Variables}{28}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}PDF and CDF}{28}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Mean and Variance}{29}{subsubsection.3.3.2}
+\contentsline {subsection}{\numberline {3.4}Exponential Random Variables}{31}{subsection.3.4}
+\contentsline {subsubsection}{\numberline {3.4.1}PDF and CDF}{31}{subsubsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.2}Mean and Variance}{32}{subsubsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.3}Failure Rate}{33}{subsubsection.3.4.3}
+\contentsline {subsection}{\numberline {3.5}Normal Distribution}{34}{subsection.3.5}
+\contentsline {subsubsection}{\numberline {3.5.1}Standard Normal Distribution}{34}{subsubsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.2}General Normal Random Variables}{35}{subsubsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.3}Summary}{36}{subsubsection.3.5.3}
+\contentsline {section}{Appendix}{37}{subsubsection.3.5.3}
+\contentsline {subsection}{\numberline {A}Tutorial 1 (Lena)}{37}{subsection.0.1}
+\contentsline {subsection}{\numberline {B}Tutorial 2 (Yang)}{40}{subsection.0.2}
+\contentsline {subsection}{\numberline {C}Tutorial 3 (Lena)}{46}{subsection.0.3}
+\contentsline {subsubsection}{\numberline {C.1}Random Variables Revisited}{46}{subsubsection.0.3.1}
+\contentsline {subsubsection}{\numberline {C.2}Uniform Distribution}{47}{subsubsection.0.3.2}
+\contentsline {subsubsection}{\numberline {C.3}Exponential Distribution}{47}{subsubsection.0.3.3}
+\contentsline {subsubsection}{\numberline {C.4}Normal Distribution}{48}{subsubsection.0.3.4}
+\contentsline {subsubsection}{\numberline {C.5}Failure Rates}{52}{subsubsection.0.3.5}

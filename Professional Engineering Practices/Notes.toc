@@ -22,4 +22,16 @@
 \contentsline {subsection}{\numberline {4.5}Limitation Period}{9}
 \contentsline {section}{\numberline {5}Conflict of Interest}{9}
 \contentsline {subsection}{\numberline {5.1}Whistleblowing}{10}
-\contentsline {section}{Appendix}{12}
+\contentsline {section}{\numberline {6}Persuasive Communication}{11}
+\contentsline {section}{\numberline {7}Employment Law}{11}
+\contentsline {subsection}{\numberline {7.1}Sources of Employment Law}{11}
+\contentsline {subsection}{\numberline {7.2}Minimum standards}{12}
+\contentsline {subsection}{\numberline {7.3}Occupational Health and Safety}{12}
+\contentsline {subsection}{\numberline {7.4}Human Rights}{12}
+\contentsline {subsection}{\numberline {7.5}Ending the employment relationship}{12}
+\contentsline {subsubsection}{\numberline {7.5.1}Just Cause}{13}
+\contentsline {subsubsection}{\numberline {7.5.2}Wrongful Dismissal Damages}{13}
+\contentsline {subsubsection}{\numberline {7.5.3}Constructive Dismissal}{13}
+\contentsline {subsubsection}{\numberline {7.5.4}Duty to Mitigate}{13}
+\contentsline {subsubsection}{\numberline {7.5.5}Non-competition and Non-solicitation agreements}{13}
+\contentsline {section}{Appendix}{15}

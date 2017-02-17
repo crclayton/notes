@@ -1,3 +1,8 @@
+% 4 questions
+% 2 random variables at the same time
+% know means/lambdas -- know cdf/pmfs prolly
+% new random variables, calculate shit with integrals/differentials
+
 \documentclass{article}
 \usepackage{array, booktabs, graphicx, apacite, setspace}
 \usepackage[titletoc,toc,title]{appendix}
@@ -10,6 +15,11 @@
 \usepackage{alltt} % for bold typewriter
 \usepackage{amsthm} % for proof environment
 \usepackage{ragged2e} % to undo \centering
+\usepackage{amssymb}
+\usepackage[shortlabels]{enumitem} % to enumerate things as (a)
+\usepackage{mathtools} % for autobracket
+\usepackage{hyperref} % to make table of contents hyperlinks
+\usepackage{cancel} % to cancel components of LaTeX
 
 % set section indentation
 \setcounter{secnumdepth}{4}
@@ -52,6 +62,7 @@
   \renewcommand\thetable{\Alph{section}\arabic{table}}
 }
 
+\graphicspath{{img/}}
 
 % -------- GLOSSARY ENTRIES -------- %
 \makenoidxglossaries
@@ -65,11 +76,25 @@
 % renames "Contents" to "Table of Contents"
 \renewcommand\contentsname{Table of Contents}
 
-\newcommand{\eqn}[1]{\myequations{#1} \centering  \small \textit{#1} \normalsize \justify  }
-
 \newcommand{\var}{\sigma^2}
 
 \newcommand{\n}[1]{\overline{#1}}
+
+% command to box, label, and include equation in list of equations
+\newcommand{\noteworthy}[2]{
+\begin{align}
+\label{#2}
+\ensuremath{\boxed{#1}}
+\end{align} 
+\myequations{#2}
+\centering \small \textit{#2} \normalsize \justify  }
+
+\newcommand{\deriv}[3][]{
+  \ensuremath{\frac{\partial^{#1} {#2}}{\partial {#3}^{#1}}}}
+
+% auto-sized \left(, \right) brackets 
+\DeclarePairedDelimiter\autobracket{(}{)}
+\newcommand{\br}[1]{\autobracket*{#1}}
 
 
 \begin{document}
@@ -127,32 +152,22 @@ For disjoint events $A_n$, the probability of the union of the events will be th
 
 \subsection{Some results to use}
 
-\begin{equation}P(\overline{A}) = 1-P(A)
-\end{equation}
-\eqn{Probability of complement}
-\begin{equation}A \subset B \implies P(A) \leq P(B)
-\end{equation}
-\eqn{Probability of subset}
-\begin{equation}P(A \cup B) = P(A) + P(B) - P(A \cap B)
-\end{equation}
-\eqn{Probability of union}
+\noteworthy{P(\overline{A}) = 1-P(A)}{Probability of complement}
+\noteworthy{A \subset B \implies P(A) \leq P(B)
+}{Probability of subset}
+\noteworthy{P(A \cup B) = P(A) + P(B) - P(A \cap B)}{Probability of union}
 
 Intuitively, (3) makes sense because if you have two Venn diagrams that overlap  somewhat, to determine the area of the entire area, you add the two circles $A$ and $B$ together, then subtract the overlapping area ($A \cap B$) because when you add $A$ and $B$ you count that area twice.
 
-\begin{equation} P(\bigcup_{n=1}^n A_n) \leq \sum_{n=1}^n P(A_n) 
-\end{equation} 
-\eqn{Boole's inequality}
+\noteworthy{ P(\bigcup_{n=1}^n A_n) \leq \sum_{n=1}^n P(A_n) }{Boole's inequality}
 
-Recall that where the events $A_n$ are disjoint, then the inequality becomes an equality.
+Where the events $A_n$ are disjoint, then the inequality in equation \ref{Boole's inequality} becomes an equality.
 
-\begin{equation}P(A) = \frac{\text{\# of outcomes in}\ A}{\text{\# of outcomes in}\ \Omega}
-\end{equation}
-\eqn{Probability of equally likely outcomes}
+\noteworthy{P(A) = \frac{\text{\# of outcomes in}\ A}{\text{\# of outcomes in}\ \Omega}}{Probability of equally likely outcomes}
 
 The number of ways you can choose $k$ items from a set of $n$ items. 
-\begin{equation}{ n \choose k } = \frac{n!}{k!(n-k)!}
-\end{equation}
-\eqn{Combinatorial formula}
+
+\noteworthy{{ n \choose k } = \frac{n!}{k!(n-k)!}}{Combinatorial formula}
 
 \subsubsection*{Example}
 
@@ -172,15 +187,12 @@ So the probability of getting all 6 correct is 1/15,890,700 = 0.0000000063
 
 The idea here is that although the outcome can be any element in the sample space, $\Omega$, the range of possible outcomes can be narrowed down with the help of partial information, called a \textbf{conditioning event}. For instance, if we know that the beer we brewed is a weak beer, this is a conditioning event and we can narrow down the outcome from $[1-4\%]$.
 
-Where $P(A)$ is the event of interest and $B$ is the partial information. \begin{equation} P(A|B) = P(A)\ \text{given}\ B = \frac{P(A \cap B)}{P(B)} 
-\end{equation}
-\begin{equation} P(A \cup C | B) = P(A|B) + P(C|B) - P(A \cap C|B)
-\end{equation}
-\begin{equation} P(A \cap B) = P(A)P(B|A) = P(B)P(A|B)
-\end{equation}
-\begin{equation} P(A | B) = 1 - P(\n{A} | B)
-\end{equation}
-\eqn{Conditional probabilities}
+Where $P(A)$ is the event of interest and $B$ is the partial information. 
+
+$$\boxed{P(A|B) = P(A)\ \text{given}\ B = \frac{P(A \cap B)}{P(B)}}$$  
+$$\boxed{P(A \cup C | B)  = P(A|B) + P(C|B) - P(A \cap C|B)}$$
+$$\boxed{P(A \cap B)  = P(A)P(B|A) = P(B)P(A|B)}$$
+\noteworthy{P(A | B)  = 1 - P(\n{A} | B) }{Conditional probabilities}
 
 Our previous results still hold with conditional probabilities:
 $$ P(\Omega | B) = 1 $$
@@ -198,15 +210,10 @@ $$ = \frac{P(A \cap B)}{P(B)} = \frac{P([80,100] \cap [70,100])}{P([70,100])} = 
 
 Conditional probability can be used for screening tests. If the test is positive, the condition is present. Consider testing manufactured items for defects. The item can be defective, $D$, or non-defective $\overline{D}$. 
 
-If an item is defective, the probability that the test will sense that (test positive) is the \textbf{sensitivity} of the test. This is how often your test will sense the defect. \begin{equation}
-\text{Sensitivity} = P(B|D)
-\end{equation}
+If an item is defective, the probability that the test will sense that (test positive) is the \textbf{sensitivity} of the test. This is how often your test will sense the defect. \noteworthy{P(B|D)}{Sensitivity}
 
-If an item is non-defective, the probability that the test will be negative is called the \textbf{specificity}. \begin{equation}
-\text{Specificity} = (P(\n{B}|\n{D})
-\end{equation}
-
-
+If an item is non-defective, the probability that the test will be negative is called the \textbf{specificity}. \noteworthy{
+P(\n{B}|\n{D})}{Specificity}
 
 \subsubsection*{Example}
 
@@ -228,15 +235,12 @@ The probability of the test being incorrect (false positive + false negative): $
 ---
 
 
-The screening test formula can summarized with the Bayes' Formula. \begin{equation}
-P(D|B) = \frac{P(D \cap B)}{P(B)} = \frac{P(B|D)P(D)}{P(B|D)P(D) + P(B|\n{D})P(\n{D})}
-\end{equation}
-\eqn{Simple Form Bayes' Formula}
+The screening test formula can summarized with the Bayes' Formula. \noteworthy{
+P(D|B) = \frac{P(D \cap B)}{P(B)} = \frac{P(B|D)P(D)}{P(B|D)P(D) + P(B|\n{D})P(\n{D})}}{Simple Form of Bayes' Formula}
 
-Generalized, the formula looks like so: \begin{equation}
-P(D_i|B) = \frac{P(D_i \cap B)}{P(B)} = \frac{P(B|D_i)P(D_i)}{\sum_{j=1}^k P(B|D_j)P(D_j)}
-\end{equation}
-\eqn{General Form Bayes' Formula}
+Generalized, the formula looks like so: \noteworthy{
+P(D_i|B) = \frac{P(D_i \cap B)}{P(B)} = \frac{P(B|D_i)P(D_i)}{\sum_{j=1}^k P(B|D_j)P(D_j)}}
+{General Form of Bayes' Formula}
 
 Where $D_1$, $D_2$ $\dots$ $D_k$ is a \textbf{partition} of sample space $\Omega$, meaning each $D_i$ is disjoint ($D_i \cap D_j = \emptyset$ for $i \neq j$) and each outcome in the sample space is accounted for ($D_1 \cup D_2 \cup \dots \cup D_k = \Omega$).
 
@@ -280,14 +284,566 @@ The probability of error is then: $$ P(D_4|B) + P(D_1|\n{B}) + P(D_2|\n{B}) + P(
 
 \subsection{Independence}
 
-When $A$ and $B$ are independent events, the probability of $A$ intersect $B$ is the product of their probabilities:  $$A\ \text{and}\ B\ \text{are independent} \iff P(A \cap B) = P(A)P(B)$$\eqn{Condition for independence}
-If $A$ and $B$ are independent, then: $$P(A|B) = P(A)\ \text{and}\ P(B|A) = P(B)$$\eqn{Conditional probabilities with independence}
+When $A$ and $B$ are independent events, the probability of $A$ intersect $B$ is the product of their probabilities:  \noteworthy{A\ \text{and}\ B\ \text{are independent} \iff P(A \cap B) = P(A)P(B)}{Condition for independence}
+If $A$ and $B$ are independent, then: \noteworthy{P(A|B) = P(A)\ \text{and}\ P(B|A) = P(B)}{Conditional probabilities with independence}
 Note that if events $A$ and $B$ are disjoint (mutually exclusive) or $A$ is a true subset of $B$ then they are dependent: $$ A \cap B = \emptyset \implies A\ \text{and}\ B\ \text{are not independent}$$
 $$ A \subset B  \implies A\ \text{and}\ B\ \text{are not independent}$$
 So in order to be independent, $A$ and $B$ must have some overlap, but one must not be completely within the other.
 
+\subsubsection*{Example}
+
+Suppose $\Omega = \{1,2,3,4,5,6,7,8,9,10\}$, and $A=${1,2,3,4,5} and $B=${2,4,6,8}.
+
+If $p$ is equally likely for each number, are $A$ and $B$ independent? What if $p(i) = \frac{i}{55}$?
+
+---
+
+If all numbers are equally likely, then: $$P(A \cap B) = P(\{2,4\}) = \frac{2}{10} = 0.2$$
+Now note that: $$P(A)P(B) = \frac{5}{10} \times \frac{4}{10} = 0.2$$
+And so $A$ and $B$ are independent.
+
+If $P(i) = \frac{i}{55}$, then: $$P(A \cap B) = P(\{2, 4\}) = \frac{2+4}{55} = 0.10909$$ Whereas: $$P(A)P(B) = \frac{1+2+3+4+5}{55} \times \frac{2+4+6+8}{55} = \frac{15}{55} \times \frac{20}{55} = 0.99174$$ And so $A$ and $B$ are not independent.
+
+---
+
+For more than three events, say events $A_1$, $A_2$, $\dots$ $A_n$, the condition for independence is:  
+
+For all $1 \leq i_1 < i_2 < \dots < i_k \leq n$ and all $1 \leq k \leq n$
+\noteworthy{P(A_{i_1}) \cap P(A_{i_2}) \cap \dots \cap P(A_{i_k}) = P(A_{i_1}) P(A_{i_2}) \dots P(A_{i_k})}{General condition for independence}
+
+Meaning that if $n=3$, the following by itself is insufficient: $$P(A_1 \cap A_2 \cap A_3) = P(A_1) P(A_2) P(A_3)$$ The following are also required conditions: $$P(A_1 \cap A_2 ) = P(A_1) P(A_2)$$ $$P(A_1 \cap A_3) = P(A_1) P(A_3)$$ $$P( A_2 \cap A_3) =  P(A_2) P(A_3)$$
+
+\subsection{Reliability}
+
+\subsubsection*{Example}
+
+Suppose we have three components $a,b,c$, where $A,B,C$ are the probability that each component works. We assume $A$, $B$, and $C$ are independent.
+
+Where $P(A) = P(B) = P(C) = 0.95$, calculate the reliability of the system:
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.5]{Series.png}
+\end{figure}
+$$P(\text{System works}) = P(A \cap B \cap C) =P(A)P(B)P(C) = 0.95^3 = 0.857$$
+
+
+Now calculate the reliability of the system:
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.5]{Parallel.png}
+\end{figure}
+\begin{align*}P(\text{System works}) & = 1- P(\text{System fails}) \\
+& = 1 - P(\overline{A} \cap \overline{B} \cap \overline{C}) \\
+& = 1 - P(\overline{A})P( \overline{B} )P( \overline{C}) \\
+& = 1 - (1-0.95)^3 \\
+& = 0.99988 
+\end{align*}
+
+---
+
+\subsubsection*{Example}
+
+Now suppose$P(A) = P(B) = P(C) = P(D) = 0.95$, calculate the reliability of the system: \begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.5]{Subs.png}
+\end{figure}
+
+\begin{align*}
+P(\text{System works}) & = P(\text{Subsys I works} \cap \text{Subsys II works}) \\
+& = P(\text{Subsys I works}) P(\text{Subsys II works}) \\
+& = (1-P(\overline{A} \cap \overline{B})) (1-P(\overline{C} \cap \overline{D}))\\
+& = (1-0.5^2) (1-0.5^2)\\
+& = 0.99501
+\end{align*}
+
+\subsection{Conditional Independence}
+
+Events $T_1$, $T_2$, $\dots$ $T_n$ are conditionally independent if: 
+
+For all $1 \leq i_1 < i_2 < \dots < i_k \leq n$ and all $1 \leq k \leq n$
+\noteworthy{P(T_{i_1} \cap T_{i_2} \cap \dots \cap T_{i_k} | B) = P(T_{i_1} |B) P(T_{i_2}|B) \dots P(T_{i_k}|B)}{Condition for conditional independence}
+Which, similarly to the condition for independence of multiple events, say where $n=3$, the  following by itself is insufficient: $$P(T_1 \cap T_2 \cap T_3 |B) = P(T_1|B) P(T_2|B) P(T_3|B)$$ The following are also required conditions: $$P(T_1 \cap T_2 |B) = P(T_1|B) P(T_2|B)$$ $$P(T_1 \cap T_3 |B) = P(T_1|B) P(T_3|B)$$ $$P(T_2 \cap T_3 |B) = P(T_2|B) P(T_3|B)$$ 
+
+Note here that mathematically, conditional independence \textit{does not} imply unconditional independence and vice-versa. However, in practice this can usually be assumed even though there exist counterexamples. So in this course:
+
+If there is conditional independence on $B$, you may assume conditional independence on $\overline{B}$.
+
+We will use this this assumption in developing the sequential Bayes' formula.
+
+\subsection{Sequential Bayes' Formula}
+
+Let $S_i$ be the outcome of the $i$th test, where the outcome can either be positive or negative.
+
+Let $I_k$ be $S_1 \cap S_2 \cap \dots \cap S_k$, ie. the summary of information available after test $k$. Also let $P(E)$ be the probability that part is positive (so the part is defective).
+
+Then set: \begin{align*}
+\pi_0 & = P(E)  \\
+\pi_1 & = P(E|I_1) = P(E|S_1) \\
+\pi_2 & = P(E|I_2) = P(E|S_1 \cap S_2) \\
+\pi_3 & = P(E|I_3) = P(E|S_1 \cap S_2 \cap S_3) 
+\end{align*}
+And so on. Assume that $S_1$, $S_2$, $\dots$, $S_n$ are conditionally independent on $E$ and $\overline{E}$. 
+
+Then for $k = 1,2, \dots, n$:
+
+\noteworthy{\pi_k = \frac{P(S_k|E) \pi_{k-1}}{P(S_k|E) \pi_{k-1} + P(S_k|\overline{E})(1-\pi_{k-1})}}{Bayes' Updating Probability Formula}
+
+Note that this is an iterative process, whereby $\pi_k$ is calculated from $\pi_{k-1}$.
+
+In pseudo-code, the computation would look something like this: \begin{verbatim}
+S  = (1, 0, 1, 0...) // test results
+n  = n               // number of tests
+pi =                 // probability of a defect
+
+pi[0] = pi
+
+for k=1 to n:
+
+   if S[k] == 1: 
+       a = p[k]
+       b = q[k]
+   
+   if S[k] == 0:
+       a = 1 - p[k]
+       b = 1 - q[k]
+       
+   pi[k] = a*pi[k-1] / ( a*pi[k-1] + b(1-pi[k-1] )
+\end{verbatim}
+
+// todo: insert spam example 56/61 here
+
 
 \section{Random Variables}
+
+The first point to note here is that random variables is a bad name. These are not variables, they're functions.
+
+A random variable, denoted by an upper-case letter, is a function defined on the sample  space to the reals: $$X: \Omega \rightarrow \mathbb{R}$$. 
+Where the input is the resulting event from sample space, $\omega$, and the possible value $X$ is a real number, the lower-case letter, $x$.
+$$X(\omega) = x$$
+
+For instance, consider the experiment flipping a coin 10 times:
+\begin{enumerate}
+\item The sample space $\Omega$ is all possible sequences of ten heads  and tails.
+\item The outcome $\omega$ could be the possible result $(HTTHHTTTHT)$.
+\item The random variable $X$ could be defined as the number of heads in the outcome, and so $X(\omega) = 4$.
+\item The random variable $Y$  could be defined as the largest run of tails in the outcome, and so $Y(\omega) = 3$.
+\end{enumerate}
+
+
+The event: "the random variable $X$ takes the value $x$" is mathematically represented as $X=x$, which means \{$\omega: X(\omega) = x$\}. 
+
+This is used for probabilities, where we could say $P(x = X)$ for $x>5$ where the event is that the outcome of the random variable $X$ is greater than 5, and here we can compute the probability of this event.
+
+\subsection{Discrete Random Variables}
+
+A random variable is discrete when its range is either \textit{finite}, such as \{0,1,2,$\dots$,100\}, or \textit{countable} (as in denumerable/countably infinite), such as \{1,2,3,$\dots$\}.
+
+\subsubsection{Probability Mass Function (pmf)}
+
+The \textit{pmf} of a discrete random variable $X$ gives the probability of occurance for each possible value $x$ of $X$. Denoted by a lower-case function letter.
+\noteworthy{f(x) = P(X=x)}{pmf}
+
+Properties of the pmf:
+\begin{enumerate}
+\item $0 \leq f(x) \leq 1$
+\item $\sum f(x) = 1$
+\item $P(X \in A) = \sum {x \in A} f(x)$ --- if $X$ is a subset of real numbers, then the probability of that equals the sum of those $f(x)$
+\end{enumerate}
+
+\subsubsection{Cumulative Distribution Function (cdf)}
+
+Usually just called the distribution function, this is the probability that a random value is less or equal to a given value, denoted by an upper-case function letter.
+
+\noteworthy{F(x) = P(X \leq x) = \sum_{k \leq x} f(k)}{cdf}
+
+\begin{enumerate}
+\item $0 \leq F(x) \leq 1$
+\item $F(x)$ is non-decreasing
+\item $F(-\infty) = 0$, $F(\infty=1)$
+\item $P(a < X \leq b) = F(b) - F(a)$
+\item $f(k) = F(k) - F(k-1)$
+\end{enumerate}
+
+\subsubsection*{Example}
+
+Say the following cdf and pmf are given by the table: \begin{table}[ht!]
+\centering
+\begin{tabular}{ccc}
+\toprule
+$x$ & $f(x)$ & $F(x)$ \\
+\midrule
+0 & 0.15 & 0.15 \\
+1 & 0.25 & 0.40 \\
+2 & 0.30 & 0.70 \\
+3 & 0.20 & 0.90 \\
+4 & 0.10 & 1.00 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+What is the value for $P(1 < X \leq 3)$? $P(1 \leq X < 3)$?
+
+---
+
+$$P(1 < X \leq 3) = F(3) - F(1) = 0.90 - 0.40 = 0.50$$
+With, $P(1 \leq X < 3)$, note that our cdf properties have the $\leq$ as the upper-bound. But since we know these values are discrete, we can convert the inclusion-exclusion form to an exclusion-inclusion form:
+$$P(1 \leq X < 3) = P(0 < X \leq 2) = F(2) - F(0) = 0.70 - 0.15 = 0.55 $$
+
+//todo: example 20/97, and 21/97
+
+\subsubsection{Expected Value}
+
+This is another kind of misleading name, really this is the mean. For instance, if our options are \{0,1,2,3,4\} and they are all equally possible, the expected value is 3.5 but we will never actually expect this value. 
+
+The expected value of a random variable $X$ is denoted as $E(g(X))$, where it is the weighted average of the function $g(X)$.
+
+$$E(g(X)) = \sum_{x} g(x) f(x) $$
+
+The more likely values of $g(x)$ have larger values of $f(x)$ and thus have more weight. Since $E(g(x))$ is considered a "typical value" of $g(x)$, it can be used to summarized $g(X)$.
+
+\subsubsection{Law of Large Numbers}
+
+The law of large numbers merely states that as the number of events increases to infinity, the average value goes to the expected value.
+
+\noteworthy{\text{As } n \rightarrow \infty,\ \ \ \ \ \text{Avg}(X) = \frac{1}{n}(X_1 + X_2 + \dots + X_n) \rightarrow E(X)}{Law of Large Numbers}
+
+This should be fairly obvious. The longer you flip a coin, the more likely it is the number of heads will be approximately equal to the number of tails.
+
+\subsubsection{Linear Operator}
+
+The expected value operator $E$ is a linear operator, meaning that it has a distributive quality, whereby: $$E(X + Y) = E(X) + E(Y)$$
+This means that it does not depend on the probability distributions for $X$ and $Y$.
+
+Additionally, constants can be factored out of the operator, and therefore the $E$ of a constant is just the constant: \begin{align*}
+E(a + bX) & = E(a) + E(bX) \\
+& = aE(1) + bE(X) \\
+& = a + bE(X)
+\end{align*}
+
+
+\subsubsection{Moments}
+
+???
+
+\subsubsection{Mean, Variance, Standard Deviation}
+
+Mean: \noteworthy{\mu = E(X) = \sum x f(x)}{Mean from pmf}
+Variance: \noteworthy{\sigma^2 = \text{Var}(X) = E \br{(X-\mu)^2} = \sum (x-\mu)^2 f(x)}{Variance from pmf}
+Standard deviation: $$ \sigma = \sqrt{ \sum (x-\mu)^2 f(x) }$$
+
+When calculating the variance by hand, you can use: \noteworthy{ \sigma^2 = E(X^2) - E(X)^2 = \mu_2 - \mu^2 }{Variance approximation}
+
+\subsubsection*{Example}
+
+Take the following table: \begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.5]{T1.png}
+\end{figure}
+
+Calculate the mean, standard deviation, and variance.
+
+---
+
+Mean: $$\mu = E(X) = \sum x f(x) = 0.25 + 0.60 + 0.60  + 0.40 = \boxed{1.85}$$
+
+$$\mu_2 = \sum x^2 f(x) = 0.25 + 1.20 + 1.80 + 1.60 = 4.85 $$
+Variance: $$\sigma^2 = \text{Var}(X) = \mu_2 - \mu^2 = 4.85 - 1.85^2 = \boxed{1.4275}$$
+Standard deviation: $$ \sigma = \sqrt{ 1.4275 } = \boxed{1.1948}$$
+
+---
+
+\subsubsection*{Example}
+
+For $x = 1,2, \dots, 10$: $$f(x) = \frac{1}{2.928968} \times  \frac{1}{x}$$ 
+
+Calculate the mean, standard deviation, and variance. 
+
+---
+
+$$\mu = \sum x f(x) = \sum_{x=1}^{10} x \frac{1}{2.928968x} = \sum_{x=1}^{10} \frac{1}{2.928968}  =\frac{10}{2.928968} = \boxed{3.4142}$$
+$$\mu_2 = \sum x^2 f(x) = \sum_{x=1}^{10} \frac{x}{2.928968}  =\frac{55}{2.928968} = \boxed{18.77855}$$
+$$\sigma^2 = \mu_2 - \mu^2 = 18.77855 - 3.4142^2 = \boxed{7.1218}$$
+$$\sigma =  \boxed{2.6687}$$
+
+\subsubsection*{Example}
+
+Where the pmf is: $$f(x) = \begin{cases}
+(1-p)^2 & x=0 \\
+2p(1-p)^2 & x=1 \\
+p^2 & x=2 \\
+\end{cases}$$
+
+Calculate the expected value, variance, and standard deviation. 
+
+---
+
+$$\mu = \sum xf(x) = 0(1-p)^2 + 1(2p(1-p)) + 2(p^2) = 2p(1-p) + 2p^2 = \boxed{2p}$$
+$$\mu_2 = \sum x^2 f(x) = 0(1-p)^2 + 1(2p(1-p)) + 4(p^2) = 2p(1-p) + 4p^2 = 2p + 2p^2$$
+$$\sigma^2 = \mu_2 - \mu^2 = (2p+2p^2) - (2p)^2 = \boxed{2p -2p^2}$$
+$$\sigma =  \boxed{\sqrt{2p -2p^2}}$$
+
+--- 
+
+\subsubsection*{Example}
+
+An urn contains $n$ chips numbered 1 through $n$. We draw $k$ chips (1<$k$<$n$) without replacement. Let $Y$ represent the highest number among those drawn. \begin{enumerate}[(a)]
+\item What is the range of $Y$?
+\item Find $F_Y(y)$
+\item Find $f_Y(y)$
+\item Suppose $n=20$ and $k=5$. Calculate the mean, variance, and standard deviation for $Y$.
+\end{enumerate}
+
+---
+
+(a) Suppose the first selection was the smallest possible value, 1. Then the value of $Y$ would be 1. Then for the second selection, the next smallest value would be 2. This would continue, and so because there is no replacement, the smallest possible value for $Y$ is the $k$th chip. The largest possible selection is $n$. So the range is $\boxed{\{k,k+1, \dots, n\}}$.
+
+(b) $F(y)$ is 
+
+(c) $f(y)$ is
+
+(d)
+
+//todo
+
+\subsubsection{Properties of the Mean}
+
+The mean minimizes the Mean Square Error: $$ S(t) = E[X-t)^2] \geq E[(X - \mu)^2] = \text{Var}(X), \ \ \ \, \text{for all } t$$
+
+\begin{proof}
+Recall that $E(a + bX) = a + bE(X)$ for constants $a$, $b$.
+\begin{align*}
+S(t) & = E(X^2 + t^2 - 2Xt) \\
+& = E(X^2) + t^2 - 2\mu t \\
+S'(t) & = 2t-2\mu = 0 \implies t = \mu \\
+S''(\mu) & = 2 > 0 \ \ \ (\mu\ \text{is a minimizer})
+\end{align*} \end{proof}
+\subsubsection{Properties of the Variance}
+
+\begin{align*}
+Var(a + bX) & = E[a + bX - E(a + bX) ]^2 \\
+& = E[a + bX -a - E(bX) ]^2 \\
+& = E[bX - bE(X) ]^2 \\
+& = E[b^2(X - E(X))^2 ] \\
+& = b^2 E[(X - E(X))^2 ] \\
+& = b^2 Var(X)
+\end{align*}
+
+Therefore: \noteworthy{Var(a + bX) = b^2 Var(X)}{Property of Variance}
+
+Additionally: $$\text{StdDev}(a + bX) = |b|\text{StdDev}(X)$$
+
+
+\subsubsection{Binomial Random Variables}
+
+Let $A$ be an occurrence we want to monitor. We'll call the occurrence  of $A$ a success, and the non-occurrence a failure, and $p=P(A)$ where $p$ is the probability of success
+
+The number of instances of $A$ that are monitored (\textit{independent} trials) is $n$, where the outcome could either be a success or a failure. The number of successes is: $$X \sim Bin(n,p)$$
+
+The range of $X$ is zero to the number of possible successes: $$\text{Range} = \{0,1,2, \dots, n\}$$
+
+The density of a \textbf{binomial random variable} is (assumes independence): \noteworthy{P(X = x) = f(x) = {n \choose x} p^x (1-p)^{n-x},\ \ \ \ \ x = 0,1,2, \dots, n}{cdf of a Binomial Random Variable}
+
+Recall where: $${n \choose x} = \frac{n!}{x!(n-x)!}$$
+
+This is a random variable, so it has a moment-generating function (??? get clarity of moment generating functions): $$M(t) = (1-p + pe^t)^n$$ 
+$$M'(t) = \deriv{}{t}{M(t)} = n(1-p+pe^t)^{n-1} pe^t$$
+$$M''(t) = n(n-1)(1-p+pe^t)^{n-1} p^2e^{2t} + n(1-p+pe^t)^{n-1} pe^t$$
+
+The mean, $\mu = M'(0) = n(1-p+pe^0)^{n-1}pe^0 = np$, and so the mean is the number of trials multiplied by the probability of success: \noteworthy{\mu =  M'(0) = E(X) = np} {Mean of a Binomial Random Variable}
+
+And: $$\mu_2 = n(n-1)p^2 + np$$
+
+The variance is $\sigma^2 = M''(0) - M'(0)^2 = \mu_2 - \mu^2$: \noteworthy{\sigma^2 = np(1-p)}{Variance of a Binomial Random Variable}
+Note that the variance is maximized where $p=0.5$, because if $p=0.9$, there are mostly successes and if $p=0.1$, there are mostly failures.
+
+\subsubsection*{Example}
+
+Suppose that finding oil when digging at certain locations has a probability $p=0.10$ (geologically determined locations).
+\begin{enumerate}[(a)]
+\item How many wells should we dig to find oil with probability larger than or equal to 0.95?
+\item How many wells should we dig to obtain at least 2 successful wells with probability larger than or equal to 0.95?
+\end{enumerate}
+---
+
+Assume that each well is independent, then $ X \sim Bin(n, 0.10)$ is the number of wells with oil where $n$ is the number of dug wells.
+\begin{enumerate}[(a)]
+\item The probability of finding oil is $P(X > 0)$. 
+\begin{align*}P(X > 0) & = 1 - P(X = 0) \\
+& = 1 - {n \choose 0} p^0 (1-p)^{n-0} \\
+& = 1 - (1 - 0.10)^n \\
+& = 0.95 
+\end{align*}
+Solving for $n \rightarrow n = 28.43$, so must dig at least $\boxed{29}$ wells.
+
+\item \begin{align*}
+0.95 & = P(X \geq 2) \\
+& = P(X > 1) \\
+& = 1 - P(X = 1) - P(X = 0) \\
+& = 1 - \br{{n \choose 1} p^1 (1-p)^{n-1}} - \br{{n \choose 0} p^0 (1-p)^{n-0}}  \\
+& = 1 -  \br{n 0.10 (1-0.10)^{n-1}} - (1-0.10)^{n}
+\end{align*}
+Solving for $n \rightarrow \boxed{n = 49}$.
+
+\end{enumerate}
+
+
+\subsubsection{Poisson Random Variables}
+
+Let's say we want to count the number of occurrences of  certain event $A$, that has a typical rate of occurrences per time period (or per area), $\lambda$. The quantity of interest is $X$, the number of occurrences.
+$$X \sim \mathcal{P}(\lambda)$$
+
+For a \textbf{Poisson random variable} is, the probability of $k$ occurrences in the interval [0,$t$] is written as: $$P(k; t)$$ 
+
+With Poisson random variables we make the following assumptions: \begin{enumerate}
+\item Occurrences in disjoint time intervals are independent
+\item There is \textbf{proportionality}, meaning: $$P(1;t) = \lambda t + o(t), \ \ \ \text{where} \lim_{t\rightarrow0} \frac{o(t)}{t} = 0$$
+
+Here, $o(t)$ represents the order, and this means that $o(t)$ goes to zero faster than $t$.  (??? what's the significance of this?)
+
+\item Events are \textbf{rare events}, meaning that events are sparse and have at most 1 occurrence of $A$ in a  small period of time: $$1-P(0;t) - P(1;t) = \sum_{k=2}^{\infty} P(k;t) = o(t)$$
+\end{enumerate}
+
+For Poisson, $X$ represents the number of occurrences over the range $\{0,1,2,\dots\}$
+
+The pmf of a Poisson: \noteworthy{f(x) = P(X=x) = \frac{e^{-\lambda}\lambda^x}{x!}, \ \ \ \ \ \ x = 0, 1, 2, \dots}{pmf of Poisson Random Variable}
+
+The moment generating function: $$M(t) = e^{\lambda(e^t -1 )}$$ 
+
+The mean: \noteworthy{\mu = M'(0) = E(X) = \lambda}{Mean of Poisson Random Variable}
+
+And the variance: \noteworthy{\sigma^2 = M''(0) - M'(0)^2 = Var(X) = \lambda}{Variance of Poisson Random Variable}
+
+Note that with a Poisson random variable, $\mu = \sigma^2 = \lambda$. When looking at real data, if your mean and variance are very close and events can be considered rare, you might be able  to model your system with the Poisson distribution -- if not, it could be overly or underly spaced and you cannot use Poisson.
+
+\subsubsection*{Example}
+
+Suppose that the number of earthquakes over 5.0 on the Richter scale in a given area is a Poisson random variable and there are on average 3.6 of these earthquakes per year.
+
+\begin{enumerate}[(a)]
+\item What is the probability of having at least 2 earthquakes over 5.0 during the next 6 months?
+\item What is the probability of having 1 earthquake over 5.0 next month?
+\item What is the probability of waiting more than 3 months for the next earthquake over 5.0?
+\end{enumerate}
+
+---
+
+We know: $$Y \sim \mathcal{P}(\lambda)$$ 
+And $\lambda$ = 3.6/year = 0.3/month = 1.8/(6-months) = 0.9/(3-months)
+
+\begin{enumerate}[(a)]
+\item The probability of having at least two earth quakes in the next six months, here we use the $\lambda$ = 1.8/(6-months) to keep the interval consistent.
+\begin{align*}
+P(X \geq 2) & = P(X > 1) \\
+& = 1 - P(X=1) - P(X = 0) \\
+& = 1 - \frac{e^{-\lambda}\lambda^1}{1!} - \frac{e^{-\lambda}\lambda^0}{0!}\\
+& = 1 - 1.8e^{-1.8} - e^{-1.8} = \boxed{0.53716}
+\end{align*}
+\item Here we use $\lambda=0.3$/month. \begin{align*} 
+P(X = 1) & =  \frac{e^{-\lambda}\lambda^x}{x!} = \frac{e^{-0.3}0.3^1}{1!} = \boxed{0.22225}
+\end{align*}
+\item  The probability of waiting more than three months is the same as the probability that there are no earthquakes in a rate of \# earthquakes per three months, so $\lambda = 0.9$/month. \begin{align*} 
+P(\text{Waiting > 3 months}) & =  P(X = 0) \\
+& = \frac{e^{-\lambda}\lambda^x}{x!} \\
+& = \frac{e^{-0.9}0.9^0}{0!} = \boxed{0.40657} 
+\end{align*}
+\end{enumerate}
+
+Poisson random variables are memoryless, so it doesn't matter where we start. The probability that no earthquakes happen in the next three months is the same as the probability that no earthquakes happen in the three months after that, and so on.
+
+
+
+
+
+
+
+
+\subsection{Continuous Random Variables}
+
+A random variable is continous when its range is an interval, such as (0,1). 
+
+\subsubsection{PDF and CDF}
+
+Some properties of the density of a continuous random variable are the following: \begin{enumerate}
+\item The function is non-negative: $$ f(x) \geq 0$$
+\item The function integrates to one: $$ \int_{-\infty}^{\infty} f(x) dx = 1 $$
+\item The integral of a range can be used to compete probabilities: $$P(a < X < b) = \int_a^b f(x) dx$$
+\end{enumerate}
+
+Some  properties of the distribution function of a continuous random variable are the following:
+\begin{enumerate}
+\item The probability of a value greater than a given $x$ is the cdf: \noteworthy{F(x) = P(X \leq x) = \int_{-\infty}^{x} f(t) dt}{cdf of continuous random variable}
+\item The cdf can be used to compute the probability of a range $P(a < X < b)$. Because $\int_{a}^b f(x) dx = \int_{-\infty}^b f(x) dx - \int_{a}^\infty f(x) dx$, we can show: \noteworthy{P(a < X < b) = \int_{a}^b f(x) dx = F(b) - F(a)}{Probability of range of continuous random variable}
+ Here the probability is the difference between the area under the upper limit of the curve minus the area under the lower limit of the curve. 
+ 
+ Note that it doesn't matter whether the inequalities are $<$ or $\leq$ because as equation (\ref{Probability of exact value with continuous random variable}) shows, $P(X = a) = P(X = b) = 0$, so: $$P(a < X < b) = P(a \leq X \leq b)$$
+\end{enumerate}
+
+\textbf{Note:} Although for discrete random variables, we had $f(x) = P(X = x)$, but this is not true of continuous random variables. For continuous random variables: \noteworthy{P(X = x) = \int_x^x f(t) dt = 0, \ \ \ \  \ \ \text{for all x}}{Probability of exact value with continuous random variable} And so $f(x) \neq P(X = x)$. In fact, we often have $f(x) > 1$. However, for a very small $\delta > 0$, we can approximate: $$ P(x < X < x + \delta) = \int_x^{x+\delta} f(t) dt \approx f(x) \delta $$
+
+Also, note that: \noteworthy{F'(x) = \deriv{}{x}{\int_{-\infty}^x f(t) dt}= f(x)}{pdf from cdf of continuous random variable}
+
+
+\subsubsection{Mean and Variance}
+
+\noteworthy{\mu = \int_{-\infty}^{\infty} x f(x) dx}{Mean of continuous random variable}
+
+\noteworthy{\var = \int_{-\infty}^{\infty} (x - \mu)^2 f(x) dx = \int_{-\infty}^{\infty} x^2 f(x) dx - \mu^2 = \mu_2 - \mu^2}{Variance of continuous random variable}
+
+\subsection{Uniformly Distributed Random Variables}
+
+Uniform random variables are probably the simplest there are. Here, everything has the same density on a given interval, so each value in the interval has the same probability. This is very powerful in simulation.
+
+The notation for a uniform random variable, where $\alpha$ is the lower limit and $\beta$ is the upper limit, is: $$ X \sim Unif(\alpha, \beta) $$
+
+\subsubsection{PDF and CDF}
+
+The probability density function of a uniform random variable visually looks like a horizontal line, and is defined as: \noteworthy{f(x) = \begin{cases} 
+0 & x \leq \alpha \\ 
+(\beta-\alpha)^{-1} & \alpha < x < \beta \\ 
+0 & x \geq \beta 
+\end{cases}}{pdf of uniform random variable}
+
+And the distribution function visually looks like a linear increase from $\alpha$ to $\beta$, and is 0 before and 1 after. It is defined as: 
+\noteworthy{F(x) = \int_\alpha^x f(t) dt = \begin{cases} 
+0 & x \leq \alpha \\ 
+(x-\alpha)/(\beta-\alpha)  & \alpha < x < \beta \\ 
+1 & x \geq \beta 
+\end{cases}}{cdf of uniform random variable}
+
+But from now on we'll ignore the domain $x \leq \alpha$ and $x \geq \beta$, and so: \noteworthy{P(a < X < b) = F(b) - F(a) = \frac{b-a}{\beta - \alpha}}{Probability of range of uniform random variable}
+
+
+When you are told for example that $X ~ \sim \text{Unif}(0, 1)$, this means:  $$f_X(x) = 1 \ \ \ \ \ \text{for}\ 0 \leq x \leq 1 $$ $$F_X(x) = x \ \ \ \ \ \text{for}\ 0 \leq x \leq 1 $$
+
+\subsubsection{Mean and Variance}
+
+The mean of a uniform random variable is simply the average of the upper and lower limit: \noteworthy{\mu = \frac{1}{\beta-\alpha} \int_{\alpha}^\beta x dx = \frac{\alpha + \beta}{2}}{Mean of a uniform random variable}
+And the second mean is: $$\mu_2 = \frac{1}{\beta-\alpha} \int_{\alpha}^\beta x^2 dx = \frac{\beta^2 + \alpha^2 + \alpha\beta}{3}$$
+And so the variance is: \noteworthy{\var = \mu_2 - \mu^2 = \frac{(\beta - \alpha)^2}{12}}{Variance of uniform random variable}
+
+\subsubsection*{Example}
+Suppose that $X$ is Unif(0, 10). Calculate $P(X>3)$ and $P(X > 5|X >2)$.
+
+---
+
+So $\alpha = 0$, $\beta=10$, and $x=3$.
+
+\begin{align*}
+P(X > 3) & = 1 - F(3) \\
+& = 1 - \frac{x-\alpha}{\beta-\alpha} \\
+& = 1 - \frac{3-0}{10 - 0}  = \boxed{0.7} \\
+\end{align*}
+
+Now $\alpha = 0$, $\beta=10$, and $x=5$.
+
+\begin{align*}
+P(X > 5 | X > 2) & = \frac{P(X>5 \cap X>2)}{P(X>2)} \\
+& = \frac{P(X>5)}{P(X>2)} & \text{In order for both to be true,}\ X>5 \\
+& = \frac{1 - F(5)}{1 - F(2)} \\
+& = \frac{1 - \frac{5-0}{10-0}}{1 - \frac{2-0}{10-0}} = \boxed{0.625} \\
+\end{align*}
+
 
 \subsubsection*{Example}
 
@@ -299,19 +855,137 @@ Since $X$ is Unif(0,1), then:  $$ f_X(x) = 1,\ 0 \leq x \leq 1 $$ $$ F_X(x) = x,
 
 Notice that the range of $Y$ is $(0, \infty)$, so for $y < 0$: $$ F_Y(y) = 0$$
 
+
+
+---
+
 For $y > 0$: \begin{equation} 
 \begin{split} F_Y(y) & =  P(Y \leq y) \\ 
 & = P( -\ln(X) \leq y)  \\
 & = P(X \geq e^{-y}) \\
 & = 1 - F_X(e^{-y}) \\ 
-& = 1 - e^{-y} 
+& = \boxed{1 - e^{-y}} 
 \end{split} 
 \end{equation}
 
-Similarly, for $y > 0$: $$ f_Y(y) = F'_Y(y) = \frac{\partial}{\partial y} (1- e^{-y}) = e^{-y} $$
+Similarly, for $y > 0$: $$ f_Y(y) = F'_Y(y) = \frac{\partial}{\partial y} (1- e^{-y}) = \boxed{e^{-y}} $$
 
-|
-\section{Random Vectors}
+\subsection{Exponential Random Variables}
+
+Exponential random variables are used to model the waiting time until the occurrence of a certain event. Exponential density functions have the input rate of occurrence, $\lambda$ = \# of occurrences/time intervals,  and the notation for an exponential random variable is: $$X \sim Exp(\lambda)$$
+
+\subsubsection{PDF and CDF}
+
+The density function for an exponential random variable is: \noteworthy{f(x) = \begin{cases} \lambda e^{-\lambda x} & x > 0 \\ 0 & \text{otherwise} \end{cases}}{pdf for exponential random variable}
+
+And similarly for $x \leq 0$, $F(x) = 0$. For $x>0$, the distribution function is: \noteworthy{P(X \leq x) = F(x) =  \int_0^x e^{-\lambda t} dt  = 1- e^{-\lambda x}}{cdf for exponential random variable}
+
+\subsubsection{Mean and Variance}
+
+The mean of an exponential random variable is: \noteworthy{\mu = \frac{1}{\lambda}}{Mean of exponential random variable} And the variance: \noteworthy{\var = \frac{1}{\lambda^2}}{Variance of exponential random variable}
+
+Note that: \noteworthy{Exp(\lambda) = \frac{-\ln{(Unif(0,1))}}{\lambda}}{Exponential from uniform random variable}
+
+Note that exponential random variables are memoryless, so they have a constant probability.  Where $X \sim Exp(\lambda)$: $$P(X > h) = P(X > h+x\ |\ X > x) =    e^{-\lambda h} $$ So at age $x$, the probability of surviving $h$ additional units is the same for all ages $x$.
+
+\subsubsection{Failure Rate}
+
+\noteworthy{\lambda(x) = \frac{f(x)}{1-F(x)} = - \deriv{}{x}{\ln[1-F(x)]}}{Failure rate}
+
+If the failure rate increases, it means the system wears out over time. Exponential random variables are the only type of random variable in the continuous domain that have a constant failure rate. $$\lambda(x) \delta \approx P(X \leq x + \delta\ |\ X > x), \ \ \ \ \ \ \ \text{for a small}\ \delta $$
+
+Given the failure rate, from (\ref{Failure rate}), we can calculate the distribution function: \noteworthy{F(x) = 1 - e^{-\int_0^x \lambda(t) dt}}{cdf from failure rate}
+
+For a constant failure rate, where $\lambda(x)=k$: $$ F(x) = 1 - e^{-kx} $$
+
+An increasing failure rate is often used in engineering. For instance, the Weibull distribution is where $\lambda(x) =x$ and is often used to demonstrate where there is a linear increase in failure rate: \noteworthy{F(x) = 1 - e^{-\frac{1}{2}x^2}}{Weibull distribution}
+
+For a decreasing failure rate, for example where $\lambda(x) = \frac{1}{1+x}$:  $$F(x) = 1 - e^{-\int_0^x \frac{1}{1+t} dt} = 1 - e^{-[\ln{(x+1) - \ln{(1)]}}}= 1 - \frac{1}{x+1} = \frac{x}{x+1} $$
+
+\subsection{Normal Distribution}
+
+\subsubsection{Standard Normal Distribution}
+
+The standard normal random variable is denoted by $Z$. The standard normal density is where $\mu=0$ and $\var=1$: \noteworthy{\varphi(z) = \frac{1}{\sqrt{2\pi}} e^{-\frac{1}{2}z^2}}{Standard normal density function}
+
+Standard normal distribution function: \noteworthy{P(Z \leq z) = \Phi(z) = \int_{-\infty}^z \varphi(t) dt}{Standard normal distribution function}
+
+$\Phi(z)$ cannot be calculated in closed form, meaning it can't be calculated in a finite number of operations, so you'll usually either look it up in a table or use a computer, such \verb|pnorm(z)| in $R$. The normal density function is symmetrical, therefore: \noteworthy{\Phi(z) = 1 - \Phi(-z)}{Symmetry formula} \noteworthy{\mu = E(Z) = \int_{-\infty}^{\infty} z \varphi(z) dz = 0}{Mean of standard normal distribution} \noteworthy{\var = Var(Z) = \int_{-\infty}^{\infty} z^2 \varphi(z) dz = 1}{Variance of standard normal distribution}
+
+\subsubsection{General Normal Random Variables}
+
+The notation for a normal random variable is: $$X \sim N(\mu, \var)$$
+
+You can create a non-standard normal distribution with measurements $X_1$, $X_2$, $\dots$, $X_n$ from a standard normal distribution $Z_1$, $Z_2$, $\dots$, $Z_n$, where: $$ X_i = \mu + \sigma Z_i \ \ \ \ \ \ \ i =1,2,\dots,n $$ 
+
+And because $E(Z)=0$ and $Var(Z)=1$ for the standard normal variable $Z$: $$\boxed{E(X) = E(\mu + \sigma Z) = \mu + \cancelto{0}{\sigma E(Z)} = \mu}$$ $$\boxed{Var(X) = Var(\mu + \sigma Z) = \sigma^2 \cancelto{1}{Var(Z)} = \var}$$
+
+The distribution function for $X$ is: \begin{align*}
+F(x) & = P(X \leq x) \\ 
+& = P \br{ \frac{X-\mu}{\sigma} \leq \frac{x-\mu}{\sigma} } \\
+& = P \br{ Z \leq \frac{x-\mu}{\sigma} }  \end{align*} \noteworthy{F(x) = \Phi \br{\frac{x-\mu}{\sigma}}}{cdf of normal random variable}
+
+The density function for $X$ is: \noteworthy{f(x) = F'(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\br{\frac{x-\mu}{\sigma}}^2}}{pdf of normal random variable}
+
+
+\subsubsection*{Example}
+
+Let $Z \sim N(0, 1)$ and calculate: \begin{enumerate}[(a)]
+\item $P(0.10 \leq Z \leq 0.35)$
+\item $P(Z > 1.25)$
+\item $P(Z > -1.20)$
+\item Find $c$ such that $P(Z > c) = 0.05$
+\item Find $c$ such that $P(|Z| < c) = 0.95$
+\end{enumerate} 
+
+
+
+
+
+Get cdf from pdf. 
+
+Get probabilities, variance, expected value. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsubsection{Summary}
+
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{lll}
+\toprule
+ \textbf{What we know} & \textbf{What to determine} & \textbf{What model to use} \\
+ \midrule
+ Occurrences with a probability of success & Number of successes & Binomial \\
+  Rate of occurrence & Number of occurrences & Poisson \\
+   &  & Uniform \\
+
+  Rate of occurrence  & Waiting time until occurrence & Exponential \\
+
+  \bottomrule
+\end{tabular}
+\end{table}
+
+
 
 
 
@@ -340,9 +1014,293 @@ Similarly, for $y > 0$: $$ f_Y(y) = F'_Y(y) = \frac{\partial}{\partial y} (1- e^
 \addcontentsline{toc}{section}{Appendix}
 \renewcommand{\thesubsection}{\Alph{subsection}}
 
+
 \subsection{Tutorial 1 (Lena)}
 
+\subsubsection*{Example 1}
+
+Where $A$ and $B$ are events and:
+
+$$P(A) = \frac{3}{4};\ P(B)=\frac{1}{3}$$
+
+Show:
+
+$$\frac{1}{12} \leq P(A \cap B) \leq \frac{1}{3}$$
+
+
+---
+
+First thing to note is that the intersection cannot be larger than the smallest $P$, so this is the upper bound: $$P(A \cap B) \leq \frac{1}{3}$$
+
+From the inclusion-exclusion, $P(A \cap B) = P(A) + P(B) - P(A \cup B)$. Since $0 \leq P(A \cup B) \leq 1$, then the minimum bound is where $P(A \cup B) = 1$ and: $$P(A \cap B) \geq P(A) + P(B) - 1 = \frac{1}{3} + \frac{3}{4} - 1 = \frac{1}{12}$$
+
+
+\subsubsection*{Example 2}
+
+Prove: $$P(\cup_{n=1}^k A_n) \leq \sum_{n=1}^{n} P(A_n)$$
+
+---
+
+\begin{proof}[Proof]
+
+Consider the base case, $n=2$. By the inclusion-exclusion principle:
+$$P(\cup_{i=1}^2 A_i) = P(A_1 \cup A_2) = P(A_1) + P(A_2) - P(A_1 \cap A_2)$$
+Since $P(A_1 \cap A_2) \geq 0$, then  $$P(\cup_{i=1}^2 A_i) \leq P(A_1) + P(A_2) 
+ = \sum_{i=1}^{2} P(A_i)$$
+Induction hypothesis, for $k \in \mathbb{N}$: $$P(\cup_{i=1}^k A_i) \leq \sum_{i=1}^{k} P(A_i)$$
+For $k+1$, by the inclusion-exclusion principle:
+
+
+$$P ( \cup_{i=1}^{k+1} A_i ) = P(\cup^k_{i=1} A_i \cup A_{k+i}) \leq P(\cup_{i=1}^k A_i) + P(A_{k+1})$$ $$ \leq \sum_{i=1}^k P(A_i) + P(A_{k+1}) = \sum_{i=1}^{k+1} P(A_i) $$
+  
+\end{proof}
+
+\subsubsection*{Problem 1.1}
+
+\begin{enumerate}[(a)]
+
+\item $P(\overline{B}) = 1 - P(B) = \frac{2}{3}$
+
+\item $P(A \cup \overline{B}) = P(A) + P(\overline{B}) - P(A \cap \overline{B}) \rightarrow P(A) = P(A \cap B) + P(A \cap \overline{B})$
+
+\item $P(\overline{A} \cap B) \rightarrow P(B) = P(A \cap B) + P(\overline{B} \cap \overline{A})$
+
+\item $P(\overline{A} \cup B) = P(\overline{A}) + P(B) - P(\overline{A} \cap B)$
+
+\end{enumerate}
+
+
+\subsubsection*{Problem 1.3}
+
+$A$, $B$, and $C$ are mutually exclusive, so they are not independent. Additionally, they have no intersections.
+
+
+\begin{enumerate}[(a)]
+
+\item $P(A \cup B \cup C) = P(A) + P(B) + P(C)$
+
+\item $P(\overline{A} \cup \overline{B}) = 1$
+
+\item $P(\overline{A} \cap \overline{B}) = 1 - P(A) - P(B)$ 
+
+
+\end{enumerate}
+
+\subsubsection*{1.4}
+
+\begin{enumerate}[(a)]
+
+\item $P(A_{good}) = \frac{3}{5}$
+
+\item $$P(B_{good} | A_{good}) = \frac{P(B_{good} \cap A_{good})}{P(A_{good})} = \frac{\frac{{3 \choose 2}}{{5 \choose 2}}}{\frac{3}{5}} = \frac{\frac{3}{10}}{\frac{3}{5}} = \frac{1}{2}$$
+
+$$P(B_{good} | A_{bad}) = \frac{P(B_{good} \cap A_{bad})}{P(A_{bad})} = \frac{1}{2} \times \frac{\frac{{3 \choose 1}{2 \choose 1}}{{5 \choose 2}}}{1 - \frac{3}{5}} = \frac{1}{2} \times \frac{\frac{3}{5}}{1 - \frac{3}{5}} = \frac{3}{4}$$
+
+Times by 1/2 because we only want the case, $B_{good}$ and $A_{bad}$.
+
+\item 
+
+\item $$P(A_{good} \cap B_{good}) = \frac{{3 \choose 2}}{{5 \choose 2}}$$
+
+\item $$P(B_{good}) = P(B_{good} \cap A_{good}) + P(B_{good} \cap A_{bad}) = \frac{{3 \choose 2}}{{5 \choose 2}} +  \frac{\frac{1}{2} \times {3 \choose 1}{2 \choose 1}}{{5 \choose 2}}$$
+
+\end{enumerate}
+
+\subsubsection*{Problem 1.5}
+
+\begin{enumerate}[(a)]
+
+\item $$P(\{ balls\ are\ red\}) = \frac{{7 \choose 2}}{{15 \choose 2}}$$
+
+\item $$P(\{ both\ same\ colour\}) = \frac{1}{{15 \choose 2}}$$
+
+\item $$P(\{ 2nd\ is\ green\})  = P(G_2 | G_1)P(G_1) + P(G_2|B_1)P(B_1) + P(G_2|R_1)P(R_1)$$
+
+$$\frac{4}{14} + \frac{5}{15} + \frac{5}{14} \times \frac{10}{15}$$
+
+\end{enumerate}
+
+
+
 \subsection{Tutorial 2 (Yang)}
+
+\subsubsection*{1.9}
+
+10 keys $\rightarrow$ 1 correct. No replacement.
+
+Define $A_i = \{ $ $i$th attempt works $\}$
+
+\begin{enumerate}[(a)]
+\item $P(A_1) = \frac{1}{10}$
+\item $P(A_2) = P(A_1^c \cap A_2) = P(A_2|A_1^c) P(A_1^c) = \frac{1}{9} \frac{9}{10} = \frac{1}{10}$
+
+Alternatively, $P(A_2) = P(A_1 \cap A_2) + P(A_1^c \cap A_2)$ where $P(A_1 \cap A_2)$ because only 1 can be correct.
+
+\item $P(A_i) = P(A_1^c \cap \dots \cap A_{i-1}^c \cap A_i) = P(A_i | A_1^c \cap \dots \cap A_{i-1}^c) \times P(A_{i-1}^c | A_{i-2}^c \cap \dots \cap A_{1}^c) \dots P(A_1^c) = 1/10$
+
+\item 
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|cccc}
+\toprule
+\# of attempts & 1 & 2 & 3 & $\dots$ 10 \\
+\midrule
+$p_i$ & 1/10 & 1/10 & 1/10 & $\dots$ 1/10 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+$$
+E(x) = \sum_{i=1}^n x_i p_i = 1/10 + 2/10 + 3/10 + \dots + 10/10 = 55/10 = 5.5
+$$
+
+
+
+\end{enumerate}
+
+\subsubsection*{1.10}
+
+
+10 keys $\rightarrow$ 1 correct. Yes replacement.
+
+Define $A_i = \{ $ $i$th attempt works $\}$
+
+\begin{enumerate}[(a)]
+\item $P(A_1) = \frac{1}{10}$
+\item $P(A_2) = P(A_1^c \cap A_2) = P(A_2|A_1^c) P(A_1^c) = \frac{1}{10} \frac{9}{10} = \frac{9}{100}$
+
+
+\item Probability that all attempts up to $i$ didn't work and that $i$ did. 
+
+$P(A_i) = P(A_1^c \cap \dots \cap A_{i-1}^c \cap A_i) = (\frac{9}{10})^{i-1} \frac{1}{10}$
+
+\item  $x$ = \# of first successful attempts, $p_i = P(X = x)$
+
+\begin{table}[H]
+\centering
+\begin{tabular}{c|ccccc}
+\toprule
+$x_i$ & 1 & 2 & 3 & $\dots$ & $\infty$ \\
+\midrule
+$p_i$ & 1/10 & $(9/10)^1$ 1/10 & $(9/10)^2$ 1/10 & $\dots$ & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+$$
+E(x) = \sum_{i=1}^n x_i p_i = \sum_{i=1}^{\infty} i \left(\frac{9}{10}\right)^{i-1} \frac{1}{10}
+$$
+
+If doing infinite sum, probably need to be a geometric series. Might also be telescoping sum, but most likely geometric series.
+
+Geometric series: $\sum_{i=0}^{\infty} p^i = \frac{1}{1-p}$ where $|p|<1$.
+
+Differentiate w.r.t p: $$\sum_{i=0}^{\infty} i p^{i-1} = \frac{1}{(1-p)^2} $$
+
+ $$\sum_{i=1}^{\infty} i p^{i-1} = \frac{1}{(1-p)^2} $$
+
+Multiply both sides by $(1-p)$:  $$\sum_{i=1}^{\infty} i p^{i-1} (1-p) = \frac{1}{1-p} $$
+
+Since $p=9/10$: $$\frac{1}{1-p} = 10 $$
+
+So he will likely grab it on the 10th try.
+
+
+\end{enumerate}
+
+\subsubsection*{1.11}
+
+First some stuff to recall: 
+
+ Sensitivity is that if the patient is sick, the test will be positive. Specificity is that if the patient is not sick, that the test will be negative.
+ 
+Equation (0): $$P(A|B) = \frac{P(A \cap B)}{P(B)}$$ 
+
+Equation (1): $$P(A \cap B) = P(A|B) P(B) = P(B|A) P(A)$$
+
+Equation (2): $$P(A) = P(B|A) P(A) + P(B^c|A) P(A) $$
+
+Equation (3): $$ P(B|A) +P(B^c|A) = 1 $$
+
+Equation (4): 
+
+Conditional independence, events $A_1$ and $A_2$ are independent on B: $$ P(A_1 \cap A_2 | B) = P(A_1 | B) P(A_2 |B) $$
+
+General independence: $$P(A_1 \cap A_2) = P(A_1) P(A_2)$$
+
+---
+
+Given $E = \{$ patient is sick $\}$. $T_i = \{$ test result $i$ positive $\}$, $i=1,2,3,4,5$.
+
+$T_i$ are conditionally independent given $E$ and $E^c$.
+
+Known: $P(E)$, $P(T_i|E)$, $P(T_i^c|E^c)$
+
+$$P(T_i^c|E) = 1-P(T_i|E) \rightarrow $$
+
+\begin{enumerate}[(a)]
+
+\item $P(E|I_n)$, $I_n=T_1 \cap T2 \cap \dots \cap T_5$. From $\frac{(1)}{(2)}$.
+
+$$P(E|I_n) = \frac{P(E \cap I_n)}{P(I_n)}  \frac{P(I_n|E) P(E)}{P(I_n \cap E) + P(I_n \cap E^c}$$ 
+
+Look at notes online...
+
+$$ = \frac{P(T_1|E) \times \dots \times P(T_n|E) \times P(E)}{P(T_1|E) \dots } $$
+
+\item Sequential updates. $I_{k+1} = T_1 \cap T2 \cap ... T_k \cap T_{k+1}$.
+
+$$P(E|I_{k+1}) = \frac{P(E \cap I_{k+1})}{P(I_{k+1})}$$
+
+\textbf{Numerator}, from (1): $$ P(E \cap I_{k+1}) = P(I_{k+1} \cap E) = P(I_{k+1}|E)P(E)$$ $$= P(T_1 \cap T2 \cap ... T_k \cap T_{k+1} | E)P(E) $$
+$$= P(I_k \cap T_{k+1} | E)P(E) $$
+Because independent, from formula (4): $$= P(I_k | E)P(T_{k+1}|E)P(E) $$
+
+Unite $P(I_k|E)P(E) = P(I_k \cap E)$ from (1): $$ = P(I_k \cap E) P(T_{k+1}|E)$$ $$ = P(E | I_k) P(I_k) P(T_{k+1}|E)$$
+Call this result ($\star$).
+
+\textbf{Denominator}: $$P(I_{k+1}) = P(I_{k+1} \cap E) + P(I_{k+1} \cap E^c$$
+
+Conditioning on $E^c$:
+$$ P(I_{k+1} \cap E^c) = P(I_{k+1}|E^c) P(E^c)$$
+$$ = P(I_k \cap T_{k+1} | E^c) P(E^c) $$
+$$ = P(I_k | E^c) P(T_{k+1}|E^c) P(E^c)$$
+$$ = P(I_k \cap E^c) P(T_{k+1}|E^c)$$
+$$ = P(E^c|I_k) P(T_{k+1}|E^c) P(I_k)$$
+Call this result ($ \star \star $).
+
+Putting this all together: $$P(E|I_{k+1}) = \frac{(\star)}{(\star) + (\star \star)} = \frac{P(E | I_k) P(I_k) P(T_{k+1}|E)}{P(E | I_k) P(I_k) P(T_{k+1}|E) + P(E^c|I_k) P(T_{k+1}|E^c) P(I_k)}$$
+
+Canceling out $P(I_k)$, we get our update formula: $$P(E|I_{k+1}) = \frac{(\star)}{(\star star)} = \frac{P(E | I_k) P(T_{k+1}|E)}{P(E | I_k) P(T_{k+1}|E) + P(E^c|I_k) P(T_{k+1}|E^c) }$$
+
+\item 
+
+$P(E) = 0.005$, $P(T_i |E ) = 0.99$, $P(T_i^c | E^c) = 0.99$.
+
+Since this is our first test, we use just $P(E)$ as our history:
+
+Test 1 negative: $$  P(E|T_1^c) = \frac{P(E) P(T_1^c|E)}{P(E) P(T_1^c|E) + P(E^c) P(T_1^c |E^c)} = \frac{0.005 \times 0.01}{0.005 \times 0.01 + (1-0.005) \times 0.99} = 5.1(10)^{-5}$$
+
+Test 2 positive, so no complement over $T_2$. And $I_k = T_1^c$: $$ P(E|T_1^c \cap T_2) =\frac{P(E|T_1^c) P(T_2|E)}{P(E|T_1^c) P(T_2|E) + P(E^c|T_1^c) P(T_2|E^c)}$$ $$= \frac{5.1(10)^{-5} \times 0.99}{5.1(10)^{-5} \times 0.99 + (1-5.1(10)^{-5}) \times 0.01} = 0.005$$
+
+Best guess is still just the incidence of disease since the two tests contradict each other and neither is weighted more than the other.
+
+Test 3 positive: $$P(E|T_1^c \cap T_2 \cap T_3) =\frac{P(E|T_1^c \cap T_2) P(T_3|E)}{P(E|T_1^c \cap T_2) P(T_3|E) + P(E^c|T_1^c \cap T_2) P(T_3|E^c)} $$ $$ = \frac{0.005 \times 0.99}{0.005 \times 0.99 + (1-0.005) \times 0.01} = 0.332 $$
+
+Test 4 positive: $$P(E|T_1^c \cap T_2 \cap T_3 \cap T_4) $$ $$= \frac{0.332 \times 0.99}{0.332 \times 0.99 + (1-0.332) \times 0.01} = 0.9301 $$
+
+Test 5 positive: $$P(E|T_1^c \cap T_2 \cap T_3 \cap T_4 \cap T_5) = 0.9997 $$
+
+\subsubsection*{Aside}
+
+Difference between events and probabilities.
+
+Events: $P(A \cup B)$ works, $P(A+B)$ doesn't.
+
+Probabilities: $P(A) + P(B)$ works, $P(A) \cup P(B)$ doesn't. Probabilities are numbers, events aren't.
+
+\end{enumerate}
 
 \subsection{Tutorial 3 (Lena)}
 

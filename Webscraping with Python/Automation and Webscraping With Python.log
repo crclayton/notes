@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  25 JAN 2017 10:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  11 FEB 2017 20:29
 entering extended mode
 **"./Automation and Webscraping With Python.tex"
 ("Automation and Webscraping With Python.tex"
@@ -715,28 +715,46 @@ Overfull \hbox (6.14891pt too wide) in paragraph at lines 408--408
 outbound")[] 
  []
 
-[10] [11] [12]
+[10] [11] [12] [13]
+Overfull \hbox (16.64888pt too wide) in paragraph at lines 513--513
+[]    \OT1/lmtt/m/n/10 print("Failed to get HTML: ", response.status_code, resp
+onse.reason)[] 
+ []
+
+[14]
 LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 499.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 578.
- [13] [14]
-Overfull \vbox (674.31288pt too high) has occurred while \output is active []
+(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 545.
+
+Overfull \hbox (9.23305pt too wide) in paragraph at lines 557--558
+[]\OT1/lmr/m/n/10 We can use CSS se-lec-tors to se-lect all tags match-ing the 
+query by us-ing []\OT1/lmtt/m/n/10 soup.select()
+ []
+
+[15] [16]
+Overfull \hbox (0.68643pt too wide) in paragraph at lines 621--622
+\OT1/lmr/m/n/10 Let's first look at: []$\OT1/lmtt/m/n/10 https :// en [] .wikip
+edia [] .org / wiki / List [] []of [] []battles [] []and [] []other []
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 688.
+[17] [18]
+Overfull \vbox (261.20316pt too high) has occurred while \output is active []
 
 
-[15]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 578.
+[19]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 688.
  ("Automation and Webscraping With Python.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 578.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 578.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 688.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 688.
 Package rerunfilecheck Info: File `"Automation and Webscraping With Python".out
 ' has not changed.
-(rerunfilecheck)             Checksum: 19107E12E70CEBD608AE47AF77473C70;4403.
+(rerunfilecheck)             Checksum: 150E6AB67EF4A11E2A7A749A680AEE79;4475.
  ) 
 Here is how much of TeX's memory you used:
- 11299 strings out of 493335
- 168215 string characters out of 3139228
- 421945 words of memory out of 3000000
- 14541 multiletter control sequences out of 15000+200000
+ 11307 strings out of 493335
+ 168293 string characters out of 3139228
+ 421948 words of memory out of 3000000
+ 14543 multiletter control sequences out of 15000+200000
  42067 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,6n,35p,1985b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -747,10 +765,10 @@ e1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx
  Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /lm/lmtk10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "Automation and Webscraping With Python.pdf" (18 pages, 27599
-3 bytes).
+Output written on "Automation and Webscraping With Python.pdf" (22 pages, 28746
+0 bytes).
 PDF statistics:
- 427 PDF objects out of 1000 (max. 8388607)
- 76 named destinations out of 1000 (max. 500000)
- 465 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 457 PDF objects out of 1000 (max. 8388607)
+ 82 named destinations out of 1000 (max. 500000)
+ 481 words of extra memory for PDF output out of 10000 (max. 10000000)
 

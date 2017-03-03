@@ -3,7 +3,7 @@
 % know means/lambdas -- know cdf/pmfs prolly
 % new random variables, calculate shit with integrals/differentials
 
-\documentclass{article}
+\documentclass{report}
 \usepackage{array, booktabs, graphicx, apacite, setspace}
 \usepackage[titletoc,toc,title]{appendix}
 \usepackage[toc,section=section]{glossaries}
@@ -137,6 +137,10 @@
 % ----------------------------- %
 
 \pagenumbering{arabic}
+
+\chapter{Intro From Statistics Department}
+
+\newpage 
 
 \section{Probability}
 
@@ -523,8 +527,6 @@ E(a + bX) & = E(a) + E(bX) \\
 
 
 \subsubsection{Moments}
-
-???
 
 \subsubsection{Mean, Variance, Standard Deviation}
 
@@ -940,36 +942,42 @@ Let $Z \sim N(0, 1)$ and calculate: \begin{enumerate}[(a)]
 
 
 
+---
 
-
-Get cdf from pdf. 
-
-Get probabilities, variance, expected value. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\begin{enumerate}[(a)]
+\item \begin{align*}
+P(0.10 \leq Z \leq 0.35) & = \Phi(0.35) - \Phi(0.10) = \boxed{0.0970}
+\end{align*}
+\item \begin{align*}
+P(Z > 1.25) & = 1 - P(Z \leq 1.25) \\ 
+& = 1 - \Phi(1.25) = \boxed{0.1056}
+\end{align*}
+\item  \begin{align*}
+P(Z > -1.20) & = 1 - P(Z \leq -1.20) \\ 
+& = 1 - (1-\Phi(1.20)) = \boxed{0.8849}
+\end{align*}
+\item Find $c$ such that $P(Z > c) = 0.05$ \begin{align*}
+P(Z > c) & = 0.5 \\
+1 - P(Z \leq c) & = 0.5 \\
+ P(Z \leq c)  & = 0.95 \\
+ \Phi(c) & = 0.95  \\ 
+c  & = \Phi^{-1}(0.95)  = \boxed{1.644854}
+\end{align*}
+\item Find $c$ such that $P(|Z| < c) = 0.95$
+\begin{align*}
+P(-c < Z < c) & = 0.95 \\
+\Phi(c) - \Phi(-c) & = 0.95 \\
+\Phi(c) - (1-\Phi(c)) & = 0.95 \\
+2\Phi(c) & = 1.95 \\
+c & = \Phi^{-1}\br{\frac{1.95}{2}} = \boxed{1.959964}
+\end{align*}
+\end{enumerate} 
 
 \subsubsection{Summary}
 
 \begin{table}[H]
 \centering
+\caption{Summary of Probability Distribution Models}
 \small
 \begin{tabular}{lll}
 \toprule
@@ -985,12 +993,27 @@ Get probabilities, variance, expected value.
 \end{tabular}
 \end{table}
 
+**** WHOLE BUNCH OF MISSING STUFF NOT INCLUDED ON MIDTERM ****
 
-
-
-
+\chapter{Stochastic Signals and Systems Applied to EE}
 
 \newpage
+
+
+Construction of the event-space definition is the most challenging task, both in industry and in academia. 
+
+% Examples
+
+Independence is not pair-wise independence.
+
+% Conditional
+
+Set's say with have A given B. Let's say you're trying to estimate impedance, your random variable A 
+
+For electrical systems it's a Gaussian noise system. When you get a current it's billions and trillions of random electron movements, and we just average it all out. 
+
+% rational inattention 
+
 
 
 %--------------------------------%
@@ -1502,5 +1525,41 @@ We solved this on the fly. Don't take it as gospel.
 
 $$1-\exp(- \int_{0}^{m} \lambda(t) dt) = 0.5$$
 \end{enumerate}
+
+\subsection{Midterm Review Session}
+
+Let's take a look at the moment generating function for a binomial distribution, $$Y \sim Bin(n,p)$$.
+
+You should know, the moment generating function is: $$M(t) = (1-p+pe^t)$$ 
+
+To get the expected value, take: $$E(X) = M'(0) = \deriv{}{t}{} M(t) = n(1-p+pe^t)^{n-1}pe^t = np$$
+
+Using two random variables, $X \sim B(n_1,p)$ and $Y \sim B(n_2,p)$. $X$ is number of successes in $n_1$ trials and $Y$ is number of successes in $n_2$ trials.
+
+Number of successes in $n_1+n_2$ trials is $(n_1 +n_2)p$.
+
+Using moment generating function,  $$S = X +Y$$ $$M_s(t) = E(e^{t(X+Y)}) = E(e^{tx}e^{ty}) = (1-p+pe^t)^{n_1}(1-p+pe^t)^{n_2}$$ $$M_s'(0) = (n_1+n_2)p$$
+
+Some probability formulas:
+
+$$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$
+$$P(A|B) = P(A \cap B)/P(B) $$
+$$P(A \cap B) = P(A)P(B|A)$$
+$$P(A) = P(A \cap B) + P(A \cap \overline{B})$$
+
+Independence:
+
+$$P(A \cap B) = P(A)P(B)$$
+Reliability of system. In series, and. In parallel, minus and with complements.
+
+
+Given non-standard normal, turn into standard using $x-\mu/\sigma$.
+$$0.90 = P((X - \mu)/\sigma < 0.5/\sigma ) = P(|Z| < 0.5/\sigma) $$
+
+Failure rate: $$\lambda(x) = 3x^2$$
+
+$$F(x) = 1-e^{-\int_0^x( 3t^2 )dt} = 1-e^{-x^3} $$
+
+$$P(X > 1)$$
 
 \end{document}

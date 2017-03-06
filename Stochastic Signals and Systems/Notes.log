@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  27 FEB 2017 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  3 MAR 2017 15:51
 entering extended mode
 **./Notes.tex
 (Notes.tex
@@ -824,19 +824,19 @@ it/10 D[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D
  :\OT1/cmr/m/n/10 98) = []
  []
 
-[8] [9] <img/Series.png, id=292, 343.2825pt x 67.75313pt>
+[8] [9] <img/Series.png, id=327, 343.2825pt x 67.75313pt>
 File: img/Series.png Graphic file (type png)
  <use img/Series.png>
 Package pdftex.def Info: img/Series.png used on input line 330.
 (pdftex.def)             Requested size: 171.64082pt x 33.87646pt.
 
-[10] <img/Parallel.png, id=299, 148.68047pt x 248.42813pt>
+[10] <img/Parallel.png, id=334, 148.68047pt x 248.42813pt>
 File: img/Parallel.png Graphic file (type png)
 
 <use img/Parallel.png>
 Package pdftex.def Info: img/Parallel.png used on input line 338.
 (pdftex.def)             Requested size: 74.34004pt x 124.21376pt.
- <img/Subs.png, id=300, 302.63063pt x 185.19188pt>
+ <img/Subs.png, id=335, 302.63063pt x 185.19188pt>
 File: img/Subs.png Graphic file (type png)
 
 <use img/Subs.png>
@@ -863,7 +863,7 @@ Overfull \hbox (0.35233pt too wide) in paragraph at lines 493--495
 n-vert the inclusion-
  []
 
-[16] [17] <img/T1.png, id=349, 330.10828pt x 164.11313pt>
+[16] [17] <img/T1.png, id=384, 330.10828pt x 164.11313pt>
 File: img/T1.png Graphic file (type png)
  <use img/T1.png>
 Package pdftex.def Info: img/T1.png used on input line 543.
@@ -882,23 +882,64 @@ Overfull \hbox (68.4554pt too wide) in paragraph at lines 982--994
  [][] 
  []
 
-
-Overfull \hbox (3.8113pt too wide) in paragraph at lines 996--997
-\OT1/cmr/m/n/10 **** WHOLE BUNCH OF MISS-ING STUFF NOT IN-CLUDED ON MIDTERM
+[38]
+Overfull \hbox (8.68674pt too wide) detected at line 1037
+\OT1/cmr/m/n/10  = \OML/cmm/m/it/10 Cov[] \OT1/cmr/m/n/10 = [] = []
  []
 
-[38]
+[39] [40]
+Overfull \hbox (1.90388pt too wide) detected at line 1082
+\OML/cmm/m/it/10 F[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; x[]\OT1/cmr/m/n/10 )
+ = \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[] \OMS/cmsy/m/n/10  \
+OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10 \ \OML/cmm/m/it/10 X[] \OMS/cmsy/m/n/10  
+\OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML
+/cmm/m/it/10 X[] \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 x[]\OT1/cmr/m/n/10 )\OML/c
+mm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[] \OMS/cmsy/m/n/10  \OML/cmm/m
+/it/10 x[]\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 x[]x[]
+ []
+
+[41]
+Overfull \hbox (4.38123pt too wide) detected at line 1128
+\OML/cmm/m/it/10 F[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; x[]\OT1/cmr/m/n/10 )
+ = [][] [][] [](\OML/cmm/m/it/10 t[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 t[]\OT1
+/cmr/m/n/10 )\OML/cmm/m/it/10 dt[]dt[] \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10 ;  
+     x[]; x[] \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 [0\OML/cmm/m/it/10 ; \OT1/cmr/
+m/n/10 1]
+ []
+
+
+Overfull \hbox (28.95357pt too wide) detected at line 1141
+\OML/cmm/m/it/10 E\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[]; X[]\OT1/cmr/m/n/10 ) =
+ [][] [][] \OML/cmm/m/it/10 x[]x[]f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; x[]
+\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx[]dx[] \OT1/cmr/m/n/10 = [][] [][] \OML/cmm
+/m/it/10 x[]x[][]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; x[]\OT1/cmr/m/n/10 )\OM
+L/cmm/m/it/10 dx[]dx[] \OT1/cmr/m/n/10 =
+ []
+
+[42]
+Overfull \hbox (34.53845pt too wide) detected at line 1190
+\OML/cmm/m/it/10 Cov\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Y\OT1/cmr/m/n/10 ) = \OML
+/cmm/m/it/10 E\OT1/cmr/m/n/10 ((\OML/cmm/m/it/10 Y \OMS/cmsy/m/n/10   \OML/cmm/
+m/it/10 E\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Y\OT1/cmr/m/n/10 ))(\OML/cmm/m/it/10
+ Y \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 E\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Y\OT1
+/cmr/m/n/10 ))[]) = \OML/cmm/m/it/10 E\OT1/cmr/m/n/10 ((\OML/cmm/m/it/10 AX \OT
+1/cmr/m/n/10 + \OML/cmm/m/it/10 B \OMS/cmsy/m/n/10   \OT1/cmr/m/n/10 (\OML/cmm/
+m/it/10 A[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 B\OT1/cmr/m/n/10 ))(\OML/cmm/m/
+it/10 AX \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 B \OMS/cmsy/m/n/10   \OT1/cmr/m/n/1
+0 (\OML/cmm/m/it/10 A[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 B\OT1/cmr/m/n/10 )[
+]))
+ []
+
+[43] [44]
 Chapter 2.
-[39
+[45
 
-] [40]
+] [46]
 No file Notes.bbl.
+[47
 
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 1037.
-
-[41] [42] [43]
-Overfull \hbox (0.39067pt too wide) detected at line 1140
+] [48] [49]
+Overfull \hbox (0.39067pt too wide) detected at line 1379
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 2\OML/cmm/
 m/it/10 nd is green\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 P\OT1
 /cmr/m/n/10 (\OML/cmm/m/it/10 G[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 G[]\OT1/cmr
@@ -910,29 +951,29 @@ t/10 G[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 R[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10
  P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 R[]\OT1/cmr/m/n/10 )
  []
 
-[44] [45] [46] [47]
-Overfull \hbox (35.88525pt too wide) detected at line 1296
+[50] [51] [52] [53]
+Overfull \hbox (35.88525pt too wide) detected at line 1535
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 E\OMS/cmsy/m/n/10 j\OML/cmm
 /m/it/10 I[]\OT1/cmr/m/n/10 ) = [] = []
  []
 
-[48]
-Overfull \hbox (89.21713pt too wide) detected at line 1306
+[54]
+Overfull \hbox (89.21713pt too wide) detected at line 1545
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 E\OMS/cmsy/m/n/10 j\OML/cmm
 /m/it/10 T[]\OT1/cmr/m/n/10 ) = [] = [] = 5\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 1(
 10)[]
  []
 
-[49] [50] [51] [52]
-Overfull \hbox (13.2532pt too wide) in paragraph at lines 1403--1404
+[55] [56] [57] [58]
+Overfull \hbox (13.2532pt too wide) in paragraph at lines 1642--1643
 []\OT1/cmr/m/n/10 Specific case we'll of-ten see is \OT1/cmr/bx/n/10 stan-dard 
 nor-mal\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 Z$\OT1/cmr/m/n/10 . At which $\OML/c
 mm/m/it/10 Z \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 N\OT1/cmr/m/n/10 (0\OML/cmm/m/
 it/10 ; \OT1/cmr/m/n/10 1)\OML/cmm/m/it/10 ;   \OT1/cmr/m/n/10 =
  []
 
-[53] [54] [55] [56]
-Overfull \hbox (0.66872pt too wide) detected at line 1520
+[59] [60] [61] [62]
+Overfull \hbox (0.66872pt too wide) detected at line 1759
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X > \OT1/cmr/m/n/10 0\OML/c
 mm/m/it/10 :\OT1/cmr/m/n/10 5) = 1 \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 P\OT1/cm
 r/m/n/10 (\OML/cmm/m/it/10 X \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 0\OML/cmm/m/it/
@@ -942,25 +983,25 @@ r/m/n/10 (\OML/cmm/m/it/10 X \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 0\OML/cmm/m/it/
 /it/10 e[]dt\OT1/cmr/m/n/10 ))
  []
 
-[57] [58]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1565.
- [59]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1565.
+[63] [64] [65] [66] [67]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1945.
+ [68]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1945.
  (Notes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1565.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1565.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1945.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1945.
 
 Package rerunfilecheck Info: File `Notes.out' has not changed.
-(rerunfilecheck)             Checksum: 72DDE4222504E75FE8F43E9CD7925910;1529.
+(rerunfilecheck)             Checksum: 4A5C5FCC132FF890FBA89A377942FFF5;2067.
  ) 
 Here is how much of TeX's memory you used:
- 13392 strings out of 493335
- 201281 string characters out of 3139228
- 364823 words of memory out of 3000000
- 16395 multiletter control sequences out of 15000+200000
+ 13437 strings out of 493335
+ 201814 string characters out of 3139228
+ 365823 words of memory out of 3000000
+ 16404 multiletter control sequences out of 15000+200000
  16382 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,19n,40p,1941b,627s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,19n,40p,1941b,568s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTe
@@ -981,9 +1022,9 @@ fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Notes.pdf (64 pages, 551369 bytes).
+Output written on Notes.pdf (73 pages, 583513 bytes).
 PDF statistics:
- 758 PDF objects out of 1000 (max. 8388607)
- 258 named destinations out of 1000 (max. 500000)
- 189 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 859 PDF objects out of 1000 (max. 8388607)
+ 294 named destinations out of 1000 (max. 500000)
+ 245 words of extra memory for PDF output out of 10000 (max. 10000000)
 

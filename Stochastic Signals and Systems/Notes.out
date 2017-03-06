@@ -13,9 +13,16 @@
 \BOOKMARK [2][-]{subsection.1.3.3}{Uniformly Distributed Random Variables}{section.1.3}% 13
 \BOOKMARK [2][-]{subsection.1.3.4}{Exponential Random Variables}{section.1.3}% 14
 \BOOKMARK [2][-]{subsection.1.3.5}{Normal Distribution}{section.1.3}% 15
-\BOOKMARK [0][-]{chapter.2}{Stochastic Signals and Systems Applied to EE}{}% 16
-\BOOKMARK [1][-]{section*.1}{Appendix}{chapter.2}% 17
-\BOOKMARK [2][-]{subsection.2.0.1}{Tutorial 1 \(Lena\)}{chapter.2}% 18
-\BOOKMARK [2][-]{subsection.2.0.2}{Tutorial 2 \(Yang\)}{chapter.2}% 19
-\BOOKMARK [2][-]{subsection.2.0.3}{Tutorial 3 \(Lena\)}{chapter.2}% 20
-\BOOKMARK [2][-]{subsection.2.0.4}{Midterm Review Session}{chapter.2}% 21
+\BOOKMARK [1][-]{section.1.4}{Random Vectors}{chapter.1}% 16
+\BOOKMARK [2][-]{subsection.1.4.1}{Continuous Random Vectors}{section.1.4}% 17
+\BOOKMARK [2][-]{subsection.1.4.2}{Coorelation}{section.1.4}% 18
+\BOOKMARK [2][-]{subsection.1.4.3}{Joint distributions, marginals, conditionals}{section.1.4}% 19
+\BOOKMARK [2][-]{subsection.1.4.4}{Covariance and Correlation}{section.1.4}% 20
+\BOOKMARK [2][-]{subsection.1.4.5}{Multivariance Normal}{section.1.4}% 21
+\BOOKMARK [0][-]{chapter.2}{Stochastic Signals and Systems Applied to EE}{}% 22
+\BOOKMARK [1][-]{chapter*.1}{Appendix}{chapter.2}% 23
+\BOOKMARK [2][-]{subsection.2.0.1}{Tutorial 1 \(Lena\)}{chapter*.1}% 24
+\BOOKMARK [2][-]{subsection.2.0.2}{Tutorial 2 \(Yang\)}{chapter*.1}% 25
+\BOOKMARK [2][-]{subsection.2.0.3}{Tutorial 3 \(Lena\)}{chapter*.1}% 26
+\BOOKMARK [2][-]{subsection.2.0.4}{Midterm Review Session}{chapter*.1}% 27
+\BOOKMARK [2][-]{subsection.2.0.5}{In-Class Tutorial}{chapter*.1}% 28

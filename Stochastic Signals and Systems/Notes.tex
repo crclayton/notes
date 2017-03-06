@@ -993,7 +993,245 @@ c & = \Phi^{-1}\br{\frac{1.95}{2}} = \boxed{1.959964}
 \end{tabular}
 \end{table}
 
-**** WHOLE BUNCH OF MISSING STUFF NOT INCLUDED ON MIDTERM ****
+
+\section{Random Vectors}
+
+\subsection{Continuous Random Vectors}
+
+$X_1$ and $X_2$ are random variables, that may or may not be independent. 
+$$\text{Random vector},\ X = {X_1 \choose X_2}$$
+
+Random vectors also have pdf, called \textit{joint pdf} or \textit{joint density}. 
+$$f_{X1,X2} (x1, x2)$$
+
+Properties of joint pdf:
+
+\begin{itemize}
+\item Non-negative -- $f_{X1,X2} (x1, x2) \geq 0$ for all $x_1 \in R$ and $x_2 \in R$
+\item $$\int_{-\infty}^\infty\int_{-\infty}^\infty f_{X1,X2} (x1, x2) dx_1 dx_2 = 1$$
+\end{itemize}
+
+Joint cdf, $F_{X_1, X_2}(x_1, x_2)$:
+
+\begin{itemize}
+\item $$F_{X_1, X_2}(x_1, x_2) = P(X_1 \leq x_1, X_2 \leq x_2) = \int_{-\infty}^{x_2}\int_{-\infty}^{x_1} f_{X1,X2} (t_1, t_2) dt_1 dt_2 $$
+
+\item $$\frac{\partial^2}{\partial x_1 \partial x_2} F_{X_1, X_2} (x_1, x_2) = f_{X_1, X_2}(x_1, x_2)$$
+\end{itemize}
+
+\subsubsection{Dependence and Independence}
+
+If and only if $X_1$ and $X_2$ are independent, then $$f_{X_1, X_2}(x_1, x_2) = f_{X_1}(x_1)f_{X_2}(x_2)$$
+
+Expectation and variance-covariance matrix:
+
+$$E  {X_1 \choose X_2}  == {E(X_1) \choose E(X_2)} = {\mu_1 \choose \mu_2}$$
+
+$$ \Sigma = Cov{X_1 \choose X_2} = \begin{bmatrix}
+\text{Cov}(X_1, X_1) & \text{Cov}(X_1, X_2) \\
+\text{Cov}(X_2, X_1) & \text{Cov}(X_2, X_2) \\
+\end{bmatrix} = 
+\begin{bmatrix}
+\text{Var}(X_1) & \text{Cov}(X_1, X_2) \\
+\text{Cov}(X_2, X_1) & \text{Var}(X_2) \\
+\end{bmatrix}  $$ 
+
+
+Covariance is $Cov(X_1, X_2) = E(X_1 X_2) - E(X_1) E(X_2)$, so: $$Cov(X_1, X_1) = E(X_1^2) - E(X_1)^2 = Var(X_1)$$
+
+Note that the variance-covariance matrix is symetrial because on the left-to-right diagonal it has variances and on the right-to-left diagonal they're the same.
+
+$$Cov(X1, X2) = E \{(X_1 - E(X_1)(X_2 - E(X_2) \}$$
+
+If the $X_1$ and $X_2$ are independent, $Cov(X_1, X_2) = 0$. But this in \textit{not} a biconditional.
+
+\begin{proof}
+$$E(X_1, X_2) = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty} X_1 X_2 f_{X_1, X_2}(x_1, x_2) dx_1 dx_2 $$
+
+$$ = \int_{-\infty}^{\infty}\int_{-\infty}^{\infty} x_1 f_{X_1} (x_1) x_2 f_{X_2} (x_2) dx_1 dx_2$$
+
+$$ = \int_{-\infty}^{\infty} x_1 f_{X_1} (x_1) dx_1\int_{-\infty}^{\infty}  x_2 f_{X_2} (x_2)  dx_2$$
+
+$$=E(X_1) E(X_2) = Cov(X_1, X_2) = E(X_1, X_2) - E(X_1)E(X_2) = 0$$
+
+Conditional distributions
+
+$$f_{X_1 | X_2 = x_2} (x_1, x_2) = \frac{f_{X_1, X_2}(x_1, x_2)}{f_{X_2}(x_2)}$$
+
+Marginal distributions:
+
+Individual distribution of $x_1$: $$f_{X_1} (x_1) = \int_{-\infty}^{\infty} f_{X_1, X_2} (x_1, x_2) dx_2$$
+
+\end{proof}
+
+\subsection*{Example 1}
+
+$X_1 \sim Unif(0,1)$, $X_2 \sim Unif(0,1)$, $X_1$ and $X_2$ are independent.
+
+$$f_{X_1}(x_1) = \frac{1}{1-0} = 1$$
+
+$$f_{X_2}(x_2) = \frac{1}{1-0} = 1$$
+
+\begin{enumerate}[(a)]
+\item Find the joint pdf of $X_1 \choose X_2$
+
+$$f_{X_1, X_2}(x_1, x_2) = 1 \times 1 = 1$$
+
+\item Find the joint cdf:
+
+$$F_{X_1, X_2}(x_1, x_2) = P(X_1 \leq x_1 \cap X_2 \leq x_2) = P(X_1 \leq x_1) P(X_2 \leq x_2) = x_1 x_2$$
+
+In general:
+$F_{X_1, X_2}(1, 1) = 1$, $F_{X_1, X_2}(0,0) = 0$, $F_{X_1, X_2}(\infty, \infty) = 1$, $F_{X_1, X_2}(-\infty, -\infty) = 0$.
+
+\item Find $E{X_1 \choose X_2}$:
+
+$$E{X_1 \choose X_2} = {E(X_1) \choose E(X_2)} = {0.5 \choose 0.5}$$
+
+\item Find $Cov(X_1, X_2) = \Sigma$
+
+
+$$ \Sigma = Cov{X_1 \choose X_2} = 
+\begin{bmatrix}
+\text{Var}(X_1) & \text{Cov}(X_1, X_2) \\
+\text{Cov}(X_2, X_1) & \text{Var}(X_2) \\
+\end{bmatrix} =  
+\begin{bmatrix}
+1/12 & 0 \\
+0 & 1/12 \\
+\end{bmatrix}
+$$ 
+
+Zeros from right-to-left diagonals because $X_1$ and $X_2$ are independent.
+
+\end{enumerate}
+
+\subsection*{Example 2}
+
+Joint pdf $f_{X_1, X_2} = c(x_1^2 + x_2^2)$, where $c$ is the normalization constant and $x_1, x_2 \in [0,1]$
+
+\begin{enumerate}[(a)]
+
+\item Find $c$
+
+$$ 1 = \int_0^1 \int_0^1 c(x_1^2 + x_2^2) dx_1 dx_2 $$
+$$  = c \int_0^1 \int_0^1 (x_1^2 + x_2^2) dx_1 dx_2 $$
+...
+$$  = 2/3(c), \ \ \ \ x_1, x_2 \in [0,1]  $$
+
+So $c$ = 3/2.
+
+$$f_{X_1 X_2} = \frac{3}{2}(x_1^2 + x_2^2) \ \ \ \ \ x_1, x_2 \in [0,1]$$
+
+\item Find joint cdf:
+
+$$F_{X_1X_2} (x_1, x_2) = \int_0^{x_1} \int_0^{x_2} \frac{3}{2}(t_1^2 + t_2^2) dt_1 dt_2 = \frac{x_1^3 x_2 + x_1 x_2^3}{2}, \ \ \ \ \ \ x_1, x_2 \in [0,1]$$
+
+\item Find the marginal pdf and cdf of $x_1$:
+
+$$f_{X_1}(x_1) = \int_0^1 \frac{3}{2} (x_1^2 + x_2^2) dx_2$$
+
+$$=\frac{3}{2} \br{ x_1^2 + \frac{1}{3} }, \ \ \ \ x_1, x_2 \in [0,1]$$
+
+$$F_{X_1}(x_1) = \int_{0}^{x_1} \br{ \frac{3}{2} x_1^2 + \frac{1}{2} } dx_1 = \frac{1}{2} x_1^3 + \frac{1}{2}x_1, \ \ \ \ x_1, x_2 \in [0,1]$$
+
+
+\item $Cov(X_1, X_2) = E(X_1, X_2) - E(X_1) E(X_2)  $
+
+$$E(X_1, X_2) = \int_0^1 \int_0^1 x_1 x_2 f_{X_1 X_2}(x_1, x_2) dx_1 dx_2  = \int_0^1 \int_0^1 x_1 x_2 \frac{3}{2}(x_1, x_2) dx_1 dx_2 = $$ 
+
+$$E(X_1) = \int_0^1 x_1 f_{X_1} (x_1) dx_1 = \int_0^1 \br{\frac{3}{2}x_1^3 + \frac{1}{2}x_1} dx_1 = \frac{5}{8} $$
+
+$$E(X_2) = E(X_1) = \frac{5}{8}$$
+
+$$Cov(X_1, X_2) = \frac{3}{8} - \br{\frac{5}{8}}^2 = \frac{-1}{64}$$
+
+\end{enumerate}
+
+
+
+$X_1$ and $X_2$ could be independent if $f_{X_1 X_2} = x_1 x_2$ because they can be products of their own parts. $f_{X_1 X_2} = x_1 x_2 + x_1$ could also be independent because you can factor it into $f_{X_1 X_2} = x_1(x_2 + 1)$. 
+
+If it's $f_{X_1 X_2} = x_1 x_2 + x_1 + x_2$ then you can't factor them, so they're not independent. 
+
+\subsection{Coorelation}
+
+
+This defines the strength of linear relationship between $X_1$ and $X_2$:
+$$r = \frac{Cov(X_1, X_2)}{\sqrt{Var(X_1)Var(X_2)}} = \frac{E(X_1, X_2) - E(X_1)E(X_2)}{\sqrt{E(X_1^2) - E(X_1)^2} \sqrt{E(X_2^2) - E(X_2)^2}}$$
+
+Correlation can only be between two variables. With more there can only be pairwise correlation.
+
+$$X_1 \text{and} X_2\ \text{are independent} \implies r=0$$
+
+$$X_1 \text{and} X_2\ \text{are independent and jointly normal} \iff  r=0$$
+
+$$ \Sigma_x = 
+\begin{bmatrix}
+\text{Var}(X_1) & \text{Cov}(X_1, X_2) \\
+\text{Cov}(X_2, X_1) & \text{Var}(X_2) \\
+\end{bmatrix} =  
+\begin{bmatrix}
+1 & 0 \\
+0 & 1 \\
+\end{bmatrix}
+$$ 
+
+$X \sim N(\mu_x, \Sigma_x)$
+
+Since there are 5 parameters, sometimes we write: $$X \sim N(\mu_1, \mu_2, \sigma_1^2, \sigma_2^2, r)$$
+
+$$f_{X_1 X_2} (x_1, x_2) = f_{X_1} (x_1) f_{X_2} (x_2) = \frac{1}{\sqrt{2\pi}}e^{\frac{-x_1^2}{2}} \frac{1}{\sqrt{2\pi}}e^{\frac{-x_2^2}{2}} = \frac{1}{2\pi}e^{\frac{-x_1^2 - x_2^2}{2}} $$
+
+The \textit{affine transform} is $Y=AX+B$ where $A$ is the deterministic 2x2 matrix and $B$ is a 2-dimensional vector.
+
+$$E(Y) = E(AX+B) = AE(X) + B = A \mu_x + B$$
+
+$$Cov(Y) = E( (Y-E(Y))(Y-E(Y))^T) = E( (AX+B - (A \mu_x + B))(AX+B - (A \mu_x + B)^T))$$
+
+$B$ cancels, so: 
+
+$$ = E(A(X-\mu_x)(X-\mu_x)^T A^T) = A E((x-\mu_x)(x-\mu_x)^T)A^T$$
+
+In our case, $B = ...$: $$E(Y) = A{0 \choose 0} + {\mu_1 \choose \mu_2} =  {\mu_1 \choose \mu_2}$$
+
+
+\subsection{Joint distributions, marginals, conditionals}
+
+
+Conditional distributions will be on final. Matrix multiplication.
+
+\subsection{Covariance and Correlation}
+
+
+
+\subsection{Multivariance Normal}
+
+These will come up on the final in Reuben's part.
+
+\textit{IID}, independently identically distributed.
+
+$X_1, X_2$ IID $N(0,1)$. $X_1 \sim N(0,1)$ and $X_2 \sim N(0,1)$.
+
+Consider $X = {X_1 \choose X_2}$ bivariate normal distrib. 
+
+$$E(X) = {E(X_1) \choose E(X_2)} = {0 \choose 0}$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \chapter{Stochastic Signals and Systems Applied to EE}
 
@@ -1016,6 +1254,8 @@ For electrical systems it's a Gaussian noise system. When you get a current it's
 
 
 
+s
+
 %--------------------------------%
 
 
@@ -1033,10 +1273,9 @@ For electrical systems it's a Gaussian noise system. When you get a current it's
 % -------- APPENDIX -------- %
 \appendix
 \onehalfspacing
-\section*{Appendix}
+\chapter*{Appendix}
 \addcontentsline{toc}{section}{Appendix}
 \renewcommand{\thesubsection}{\Alph{subsection}}
-
 
 \subsection{Tutorial 1 (Lena)}
 
@@ -1561,5 +1800,146 @@ Failure rate: $$\lambda(x) = 3x^2$$
 $$F(x) = 1-e^{-\int_0^x( 3t^2 )dt} = 1-e^{-x^3} $$
 
 $$P(X > 1)$$
+
+
+\subsection{In-Class Tutorial}
+
+\subsubsection{Binomial Random Variable}
+
+Models the number of successis in a sample of size $n$ with a replacement from a population of size $M$. It also works in $M$ is very, very large, $n << M$.
+
+\begin{enumerate}[(a)]
+
+\item Compute the $cdf$ of $f_X(x)$
+
+In the continuous cade, you can bring the discrete domain to the continuous domain using the dirac delta function. 
+
+$$F_X(x) = \int_{-\infty}^{x} f_X(t) \sum_{i=1}^n \delta(t-x_i) dt$$
+
+\item Compute the mean
+
+\end{enumerate}
+
+\subsubsection{Resistor Selection}
+
+Suppose we choose resistor $R$ from a batch of resistors with $\mu = 1000 \Omega$ and $\sigma = 200 \Omega$.
+
+To get these parameters, you can get a sample like so:
+
+Sample mean: $\hat{\mu} = 1/N \sum_{i=1}^N R_i $
+
+Sample variance: $\hat{var^2} = 1/N \sum_{i=1}^N (R_i - \mu)^2 $
+
+By the weak law of large numbers, if $N$ is sufficiently large, then $\hat{\mu} = \mu$ and $\sigma^2 = \hat{\sigma^2}$.
+
+\begin{enumerate}[(a)]
+\item With no further information, what is a reasonable distribution of $R$?
+
+---
+
+If you're given a mean and a variance, it's natural to assume that it's a normal distribution, but there is no actual reason to assume that. You should perform other statistical tests to confirm.
+
+But anyway, let's say $R \sim N(\mu, \var)$
+
+
+\item 
+
+$$P(900 < R \leq 1100) = \int_{900}^{1100} f_R(r) dr = erf(0.5) - erf(-0.5)$$ (???)
+
+\end{enumerate}
+
+\subsubsection{Failure Estimate}
+
+A company produces one defective chip for every five good chips. The defective chips have a time of failure $X$ that obeys the cumulative distribution function.
+
+$$F_{X|Y} (x|Y = 0) = (1-e^{-x/2})u(x)$$
+
+---
+
+Given information: 1 defective chip per 5 chips. $Y \in \{0,1\}$ is a binary random variable that specifies if the chip is defective or not. These, defective and non-defective, are two mutually exclusive events. $X \in (0, \infty)$ is the lifetime of the random variable.
+
+Conditional distributions:
+
+$$F_{X|Y}(x|y = 0) = (1 -e ^{-x^2/2}) u(x) $$
+
+$$F_{X|Y}(x|y = 1) = (1 -e ^{-x^2/10}) u(x) $$
+
+These are conditional Poisson distributions with of average rate of failure of 2 and 10.
+
+\begin{enumerate}[(a)]
+\item Compute cdf.
+---
+
+Events $A_1 = \{Y=0\}$ and $A_2 = \{Y=2\}$. Then  $P(A_1 \cap A_2) = 0, P(A_1 \cup A_2) = 1$, so $A_1 \cup A_2 = \Omega$.
+
+Define another event $B = $ \{any event... (???) \}.
+
+$P(B) = P(B|A_1) P(A_1) + P(B|A_2)P(A_2)$. 
+
+$B = B \cap \Omega = (B \cap A_1) \cup (B \cap A_2)$
+
+By definition, the intersection operator $B \cap A_i \subset A_i$.
+
+Since $(B \cap A_1) \cup (B \cap A_2) = \emptyset$, these events are mutually exclusive.
+
+From axiom of probibility and cond. probability, 
+
+$P(B) = P( (B \cap A_1) \cup (B \cap A_2) ) $ 
+
+$= P(B \cap A_1) + P(B \cap A_2) = P(B|A_1)P(A_1) + P(B|A-2)P(A_2)$.
+
+Putting it all together:
+
+$P(A_1) = P(Y=0) = 1/6$
+
+$P(A_2) = 1-P(A_1) = 5/6$
+
+\item Probability of failure around 6 months $P(x \leq 6) = 0.5 ... (???)$
+
+ 
+\end{enumerate}
+
+\subsubsection{Conditional Poisson}
+
+Let $X$ be a Poisson random variable with rate parameter $\lambda > 0$. 
+
+$f_X(x) = \frac{\lambda^x}{x!}e^{-\lambda}, \ \ \ \ x \in \{0,1,2...\}$
+
+Define the event $Y$ = \{x is even\} = \{0,2,4...\}
+
+\begin{enumerate}[(a)]
+\item Compute the conditional pdf
+
+---
+
+Use Baye's Rule, for conditional distribution:
+
+$$f_{X|Y} (x|y) = \frac{f_{XY} (x,y)}{f_Y(y)}$$
+
+$f_Y(y) = P( \text{\{x is even\}})$
+
+To make things easier, define $z =\{$x is odd$\}$ 
+
+$f_Z(z) = P( \text{\{x is odd\}})$
+
+
+Property of factorial sums and $f_Y(y) + f_Z(z) = 1$ ... (???) 
+
+$\rightarrow f_Y(y) = \frac{1}{2} (1 +e^{-2x})$
+
+Now we need an expression for the joint distribution $f_{XY} (x,y)$
+
+$f_{XY}(x,y) = P(X = x, X is even)$
+
+${X = x} \cap {X is even} = \emptyset$ if x is odd.
+
+${X = x} \cap {X is even} = \emptyset$ if x is odd. ...(???)
+
+Putting it together:
+
+...
+
+
+\end{enumerate}
 
 \end{document}

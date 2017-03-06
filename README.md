@@ -168,6 +168,10 @@ As much as I wish I did, I don't absorb information like a sponge. So in order t
 </p>
 </li>
 <li>
+<p><a target="_blank" href="https://github.com/crclayton/notes/blob/master/OOP%20With%20C%2B%2B/OOP%20With%20C%2B%2B.pdf">OOP with C++</a>
+</p>
+</li>
+<li>
 <p><a target="_blank" href="https://github.com/crclayton/notes/blob/master/Phasors/Tutorial.pdf">Phasors Tutorial</a>
 </p>
 </li>

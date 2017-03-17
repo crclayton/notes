@@ -8,6 +8,7 @@
 \usepackage[titletoc,toc,title]{appendix}
 \usepackage[toc,section=section]{glossaries}
 \usepackage{tocloft}
+\usepackage{braket} % for set bracks
 \usepackage{titlesec}
 \usepackage{fancyvrb}
 \usepackage{float} % for strict figure placement  with option [H]
@@ -77,6 +78,12 @@
 \renewcommand\contentsname{Table of Contents}
 
 \newcommand{\var}{\sigma^2}
+\newcommand{\jac}{\mathbf{\tilde{J}}}
+\newcommand{\ex}{\noindent\rule{\linewidth}{0.2pt}}
+
+
+%\newcommand{\ensuremath{21}}{\ensuremath{21}}
+
 
 \newcommand{\n}[1]{\overline{#1}}
 
@@ -92,9 +99,17 @@
 \newcommand{\deriv}[3][]{
   \ensuremath{\frac{\partial^{#1} {#2}}{\partial {#3}^{#1}}}}
 
-% auto-sized \left(, \right) brackets 
+% \br{} for auto-sized ( )  
 \DeclarePairedDelimiter\autobracket{(}{)}
 \newcommand{\br}[1]{\autobracket*{#1}}
+
+% \sqbr{} for auto-sized [ ]  
+\DeclarePairedDelimiter\autosquarebracket{[}{]}
+\newcommand{\sqbr}[1]{\autosquarebracket*{#1}}
+
+% \abs{} auto-sized absolute value 
+\DeclarePairedDelimiter\autoabs{|}{|}
+\newcommand{\abs}[1]{\autoabs*{#1}}
 
 
 \begin{document}
@@ -177,7 +192,7 @@ The number of ways you can choose $k$ items from a set of $n$ items.
 
 Consider the 6/49 lottery. There is a box with 50 balls numbers 0-49, and 6 balls are chosen at random. What are the odds that of the 6 numbers you choose, $x$ of those numbers are the picked balls.
 
----
+\ex
 
 The numerator is the number of possible combinations of draws that give you exactly $x$ matches. If you are matching $x$ numbers, then you are not matching $6-x$ numbers. So of 6 you will have to choose $x$, and of the remaining 44 you will have chosen $6-x$.
 
@@ -223,7 +238,7 @@ P(\n{B}|\n{D})}{Specificity}
 
 Say the sensitivity of your test is 0.95, the specificity is 0.99, and the probability of products actually being defective is $P(D)=0.02$. What is the probability that the test will be incorrect?
 
---- 
+\ex 
 
 Where $D$ indicates the item is defective, and $B$ indicates the test is positive: $$P(B|D) = 0.95,\ P(\n{B}|D) = 1 - 0.95 = 0.05$$
 $$P(\n{B}|\n{D}) = 0.99,\ P(B|\n{D}) = 1 - 0.99 = 0.01$$
@@ -236,7 +251,7 @@ Probability of item being defective if the test is negative (accurate  negative)
 
 The probability of the test being incorrect (false positive + false negative): $$ P(B \cap \n{D}) + P(\n{B} \cap D) = P(\n{D})P(B|\n{D}) + P(D)P(\n{B}|D) = (0.98)0.01 + (0.02)0.05 = \textbf{0.0108}$$
 
----
+\ex
 
 
 The screening test formula can summarized with the Bayes' Formula. \noteworthy{
@@ -268,7 +283,7 @@ And $P(B|D_1) = 0.95,\ P(B|D_2) = 0.96,\ P(B|D_3) = 0.99,\ P(B|D_4) = 0.01$
 
 What is the probability of testing positive? What is the probability component $c_1$ is defective when the test is positive? $c_2$? What is the probability that the item is defective when the test results negative? What is the probability both components are defective when the test results positive? What's the probability of a testing error?
 
----
+\ex
 
 Probability of testing positive: $$ P(B) = \sum_{i=1}^4 P(B|D_i)P(D_i) = 0.95(0.01) + 0.96(0.008) + 0.99(0.002) + 0.01(0.98) = \textbf{0.02896}$$
 
@@ -300,7 +315,7 @@ Suppose $\Omega = \{1,2,3,4,5,6,7,8,9,10\}$, and $A=${1,2,3,4,5} and $B=${2,4,6,
 
 If $p$ is equally likely for each number, are $A$ and $B$ independent? What if $p(i) = \frac{i}{55}$?
 
----
+\ex
 
 If all numbers are equally likely, then: $$P(A \cap B) = P(\{2,4\}) = \frac{2}{10} = 0.2$$
 Now note that: $$P(A)P(B) = \frac{5}{10} \times \frac{4}{10} = 0.2$$
@@ -308,7 +323,7 @@ And so $A$ and $B$ are independent.
 
 If $P(i) = \frac{i}{55}$, then: $$P(A \cap B) = P(\{2, 4\}) = \frac{2+4}{55} = 0.10909$$ Whereas: $$P(A)P(B) = \frac{1+2+3+4+5}{55} \times \frac{2+4+6+8}{55} = \frac{15}{55} \times \frac{20}{55} = 0.99174$$ And so $A$ and $B$ are not independent.
 
----
+\ex
 
 For more than three events, say events $A_1$, $A_2$, $\dots$ $A_n$, the condition for independence is:  
 
@@ -344,7 +359,7 @@ Now calculate the reliability of the system:
 & = 0.99988 
 \end{align*}
 
----
+\ex
 
 \subsubsection*{Example}
 
@@ -488,7 +503,7 @@ $x$ & $f(x)$ & $F(x)$ \\
 
 What is the value for $P(1 < X \leq 3)$? $P(1 \leq X < 3)$?
 
----
+\ex
 
 $$P(1 < X \leq 3) = F(3) - F(1) = 0.90 - 0.40 = 0.50$$
 With, $P(1 \leq X < 3)$, note that our cdf properties have the $\leq$ as the upper-bound. But since we know these values are discrete, we can convert the inclusion-exclusion form to an exclusion-inclusion form:
@@ -545,7 +560,7 @@ Take the following table: \begin{figure}[ht!]
 
 Calculate the mean, standard deviation, and variance.
 
----
+\ex
 
 Mean: $$\mu = E(X) = \sum x f(x) = 0.25 + 0.60 + 0.60  + 0.40 = \boxed{1.85}$$
 
@@ -553,7 +568,7 @@ $$\mu_2 = \sum x^2 f(x) = 0.25 + 1.20 + 1.80 + 1.60 = 4.85 $$
 Variance: $$\sigma^2 = \text{Var}(X) = \mu_2 - \mu^2 = 4.85 - 1.85^2 = \boxed{1.4275}$$
 Standard deviation: $$ \sigma = \sqrt{ 1.4275 } = \boxed{1.1948}$$
 
----
+\ex
 
 \subsubsection*{Example}
 
@@ -561,7 +576,7 @@ For $x = 1,2, \dots, 10$: $$f(x) = \frac{1}{2.928968} \times  \frac{1}{x}$$
 
 Calculate the mean, standard deviation, and variance. 
 
----
+\ex
 
 $$\mu = \sum x f(x) = \sum_{x=1}^{10} x \frac{1}{2.928968x} = \sum_{x=1}^{10} \frac{1}{2.928968}  =\frac{10}{2.928968} = \boxed{3.4142}$$
 $$\mu_2 = \sum x^2 f(x) = \sum_{x=1}^{10} \frac{x}{2.928968}  =\frac{55}{2.928968} = \boxed{18.77855}$$
@@ -578,14 +593,14 @@ p^2 & x=2 \\
 
 Calculate the expected value, variance, and standard deviation. 
 
----
+\ex
 
 $$\mu = \sum xf(x) = 0(1-p)^2 + 1(2p(1-p)) + 2(p^2) = 2p(1-p) + 2p^2 = \boxed{2p}$$
 $$\mu_2 = \sum x^2 f(x) = 0(1-p)^2 + 1(2p(1-p)) + 4(p^2) = 2p(1-p) + 4p^2 = 2p + 2p^2$$
 $$\sigma^2 = \mu_2 - \mu^2 = (2p+2p^2) - (2p)^2 = \boxed{2p -2p^2}$$
 $$\sigma =  \boxed{\sqrt{2p -2p^2}}$$
 
---- 
+\ex 
 
 \subsubsection*{Example}
 
@@ -596,7 +611,7 @@ An urn contains $n$ chips numbered 1 through $n$. We draw $k$ chips (1<$k$<$n$) 
 \item Suppose $n=20$ and $k=5$. Calculate the mean, variance, and standard deviation for $Y$.
 \end{enumerate}
 
----
+\ex
 
 (a) Suppose the first selection was the smallest possible value, 1. Then the value of $Y$ would be 1. Then for the second selection, the next smallest value would be 2. This would continue, and so because there is no replacement, the smallest possible value for $Y$ is the $k$th chip. The largest possible selection is $n$. So the range is $\boxed{\{k,k+1, \dots, n\}}$.
 
@@ -666,7 +681,8 @@ Suppose that finding oil when digging at certain locations has a probability $p=
 \item How many wells should we dig to find oil with probability larger than or equal to 0.95?
 \item How many wells should we dig to obtain at least 2 successful wells with probability larger than or equal to 0.95?
 \end{enumerate}
----
+
+\ex
 
 Assume that each well is independent, then $ X \sim Bin(n, 0.10)$ is the number of wells with oil where $n$ is the number of dug wells.
 \begin{enumerate}[(a)]
@@ -728,7 +744,7 @@ Suppose that the number of earthquakes over 5.0 on the Richter scale in a given 
 \item What is the probability of waiting more than 3 months for the next earthquake over 5.0?
 \end{enumerate}
 
----
+\ex
 
 We know: $$Y \sim \mathcal{P}(\lambda)$$ 
 And $\lambda$ = 3.6/year = 0.3/month = 1.8/(6-months) = 0.9/(3-months)
@@ -827,7 +843,7 @@ And so the variance is: \noteworthy{\var = \mu_2 - \mu^2 = \frac{(\beta - \alpha
 \subsubsection*{Example}
 Suppose that $X$ is Unif(0, 10). Calculate $P(X>3)$ and $P(X > 5|X >2)$.
 
----
+\ex
 
 So $\alpha = 0$, $\beta=10$, and $x=3$.
 
@@ -851,15 +867,14 @@ P(X > 5 | X > 2) & = \frac{P(X>5 \cap X>2)}{P(X>2)} \\
 
 Suppose that $X$ is Unif(0,1). Derive the distribution function and density function for $Y = -\ln(X)$. 
 
-|
+\ex
 
 Since $X$ is Unif(0,1), then:  $$ f_X(x) = 1,\ 0 \leq x \leq 1 $$ $$ F_X(x) = x,\ 0 \leq x \leq 1 $$
 
 Notice that the range of $Y$ is $(0, \infty)$, so for $y < 0$: $$ F_Y(y) = 0$$
 
 
-
----
+\ex
 
 For $y > 0$: \begin{equation} 
 \begin{split} F_Y(y) & =  P(Y \leq y) \\ 
@@ -940,9 +955,7 @@ Let $Z \sim N(0, 1)$ and calculate: \begin{enumerate}[(a)]
 \item Find $c$ such that $P(|Z| < c) = 0.95$
 \end{enumerate} 
 
-
-
----
+\ex
 
 \begin{enumerate}[(a)]
 \item \begin{align*}
@@ -1238,24 +1251,252 @@ $$E(X) = {E(X_1) \choose E(X_2)} = {0 \choose 0}$$
 \newpage
 
 
-Construction of the event-space definition is the most challenging task, both in industry and in academia. 
+This chapter covers how to use stochastic signals and systems in practical applications related to electrical engineering. 
+
+Important applications include \textit{telecommunications}, in which noise and interference create uncertainty and hamper the ability to be reliable; \textit{statistical signal processing}, including speech and image compression, reconstruction, transmission, recognition, as well as topics like \textit{machine learning}. 
+
+For example, even electrical systems behave in a Gaussian noise system. When you get a current it's billions and trillions of random electron movements, and we just average it all out when doing calculations like Ohm's Law.
+
+In physics and biology, quantum mechanics, molecular, electro-diffusive, and fractional dynamics all involve statistics, as does mathematical finance and economics.
+
+In all of these applications, construction of the event-space definition is the most challenging task, both in industry and in academia. 
 
 % Examples
 
-Independence is not pair-wise independence.
+%Independence is not pair-wise independence.
 
 % Conditional
 
-Set's say with have A given B. Let's say you're trying to estimate impedance, your random variable A 
+%Set's say with have A given B. Let's say you're trying to estimate impedance, your random variable A 
 
-For electrical systems it's a Gaussian noise system. When you get a current it's billions and trillions of random electron movements, and we just average it all out. 
 
 % rational inattention 
 
 
 
-s
+\section{Probability Review (TODO ??? ... GO THROUGH THESE EXAMPLES)}
 
+\subsection{Review of Random Variables}
+
+\subsubsection{Uniform Random Variables}
+
+\subsubsection{Exponential Random Variables}
+
+\subsubsection{Gaussian Random Variables}
+
+\subsubsection{Binomial Random Variables}
+
+\section{Transformations of Random Variables}
+
+Can move from any distribution to any other distribution through a series of transformations. These transformations have many applications including generating random variables, analysis of transformers, superposition of source signals from different sensors, and analysis.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[scale=0.35]{transformations.png}
+\caption{Transformation Relationships Between Distributions}
+\end{figure}
+
+There are three main methods of transformation:
+\begin{enumerate}[nosep, noitemsep]
+\item Univariate Transform
+\item Multivariate Transform
+\item Probability Integral Transform
+\end{enumerate}
+
+\subsection{Univariate Transform}
+
+This is a transformation for one variable. Suppose we have a random variable $X$ and we want to get the probability distribution of some function of $X$, we can do this. 
+
+ie. We have $X \sim f_X(x)$ and we want to get $f_Y(y)$ where $Y=g(X)$.
+
+
+To do this we have to make the assumption that $g(X)$ is a one-to-one/injective function, that is $y=g(x)$ has only one solution (passes the horizontal line test).
+
+Making that assumption, we can say $x = g^{-1}(y)$ (??? how to get from $g(x)$ to $g^{-1}(y)$, so we can solve for the cdf of $Y$ like so: \begin{align*}
+F_Y(y) = P(Y \leq y) & = P(g(X) \leq y) \\
+& = \int_{ \{x|g(x) \leq y\} } f_X(x) dx \\
+& = \int_{-\infty}^{g^{-1}(y)} f_X(x) dx\\
+\end{align*}
+
+\item The probability of a value greater than a given $x$ is the cdf: \noteworthy{F(x) = P(X \leq x) = \int_{-\infty}^{x} f(t) dt}{cdf of continuous random variable}
+
+
+Then determine the pdf by taking the derivative with respect to $y$: \begin{align*}
+f_Y(y) & = \deriv{}{y} F_Y(y) \\
+& = \deriv{}{y} \int_{-\infty}^{g^{-1}(y)} f_X(x) dx \\
+& = \sqbr{ f_X \br{ g^{-1}(y) } \deriv{}{y} g^{-1}(y) } - \cancelto{0}{\sqbr{ f(-\infty) \deriv{}{y} (-\infty) } } & \text{By Leibniz integral rule}  \\ 
+& = f_X \br{ g^{-1}(y) } \abs{ \frac{g^{-1}(y)}{dy} } & \text{Absolute because } f_Y(y) \geq 0  \\
+\end{align*}
+
+\noteworthy{f_Y(y) = f_X \br{ g^{-1}(y) } \abs{ \frac{g^{-1}(y)}{dy}}}{pdf of Y=g(X)}
+
+\subsubsection*{Example}
+
+Suppose we have a noiseless non-Inverting amplifier. It takes in a signal $x$ and outputs the signal $y=ax$. 
+
+If $x$ comes from Gaussian noise source $X \sim N(\mu, \var)$, what is the distribution of the output signal $f_Y(y)$?
+
+\ex
+
+Recall we make the assumption that $y=g(x)$, which means $g^{-1}(y) = x$, so: $$g^{-1}(y) = x = \frac{y}{a}$$
+
+Using (\ref{pdf of Y=g(X)}), we know: \begin{align*}
+f_Y(y) & = f_X \br{ g^{-1}(y) } \abs{ \frac{g^{-1}(y)}{dy}} \\
+& = f_X \br{ \frac{y}{a} } \abs{ \frac{\frac{y}{a}}{dy}} \\
+& = \frac{1}{a} f_X \br{ \frac{y}{a} }
+\end{align*} Plugging in $f_X(x) = \frac{1}{\sqrt{2\pi\var}} e^{\frac{-(x-\mu)^2}{2\var}}$ and simplifying, you get this relation: \begin{align*}
+f_Y(y) & = N(a\mu, a^2, \var)
+\end{align*}
+
+\ex 
+
+Now suppose $Y=g(X)$ is not injective, so we can't assume $x=g^{-1}(x)$, then how would we get $f_Y(y)$ given $f_X(x)$? Well, we could directly evaluate the following:
+
+$$ f_Y(y) = \deriv{}{y}{} \br{ \int_{\{x|g(x) \leq y\}} f_X(x) dx }$$
+
+But this is hard because we don't know what $\{x|g(x) \leq y\}$ is. So if $g(x)$ is not injective, then we can denote the $n$ roots of $y=g(x)$ by $\{X_i\}^n_{i=1}$. Then use the following, where $x_i = x_i(y)$:\noteworthy{f_Y(y) = \sum_{i=1}^n f_X(x_i) \abs{ \deriv{x_i}{y} }}{Univariate transformation relation}
+% =  \sum_{i=1}^n f_X(x_i) \abs{ \deriv{y}{x_i}}^{-1}
+
+\subsubsection*{Example}
+
+A non-inverting amplifier takes an input signal $x$ and outputs the signal $y=ax^2$.
+
+If $x$ comes from Gaussian noise $X \sim N(\mu, \var)$, what is the distribution of output signal $f_Y(y)$?
+
+\ex
+
+First determine the routes of $y=g(x) = ax^2$. \begin{align*}
+ x_1  = \sqrt{\frac{y}{a}} & & \deriv{x_1}{y} = \frac{1}{2y} \sqrt{\frac{y}{a}} \\
+ x_2  = -\sqrt{\frac{y}{a}} & & \deriv{x_2}{y} = -\frac{1}{2y} \sqrt{\frac{y}{a}}
+\end{align*}
+
+Now using (\ref{Univariate transformation relation}):\begin{align*}
+f_Y(y) & = \sum_{i=1}^n f_X(x_i) \abs{ \deriv{x_i}{y} } \\
+& =  f_X(x_1) \abs{ \deriv{x_1}{y} } + f_X(x_2) \abs{ \deriv{x_2}{y} } \\
+& =  f_X\br{\sqrt{\frac{y}{a}}} \sqbr{ \frac{1}{2y} \sqrt{\frac{y}{a}} } + f_X\br{-\sqrt{\frac{y}{a}}} \sqbr{\frac{1}{2y} \sqrt{\frac{y}{a}} } \\
+& = \frac{1}{2\sqrt{ya}} \sqbr{ f_X \br{\sqrt{\frac{y}{a}}} + f_X \br{-\sqrt{\frac{y}{a}}} }
+\end{align*}
+
+\ex
+
+
+
+
+\subsection{Multivariate Transform}
+
+Now given $V=g(X,Y)$, $h(X,Y)$, and $f_{XY}(x,y)$, we're going to learn how to get the joint pdf $f_{VW}(v,w)$.
+
+Theoretically we could do something like: $$ f_{VW}(v,w) = \deriv{}{v} \deriv{}{w} \iint\limits_{\{(x,y)\ |\ g(x,y) \leq v,\ h(x,y)\leq w \}} f_{XY}(x,y)dxdy $$
+
+But that's just ridiculous. It's impossible to visualize and begin defining event space here, so let's look at how to evaluate $f_{VW}(v,w)$ without needing explicit evaluation of multivariate integral limits:
+\noteworthy{f_{VM}(v,w) = \sum_{i=1}^n f_{XY}(x_i, y_i) \abs{ \jac_i } \ \ \ \  \text{where} \ \abs{ \jac_i } = \abs{ \deriv{\phi_i}{v_i}  \deriv{\psi_i}{w_i} - \deriv{\phi_i}{w_i}  \deriv{\psi_i}{v_i} }}{Multivariate transformation relation}
+Here the inverse-mappings of $(v,w)$ are given by $\{x_i = \psi_i(v,w),\ y_i=\phi_i(v,w)\}_{i=1}^n$, and $\abs{\jac}$ is the magnitude of the \textit{Jacobian}, which is equal to $A(\mathbb{R})/A(\mathbb{N})$.
+
+\subsubsection*{Example}
+$V = g(X,Y) = \sqrt{X^2 + Y^2}$ and $W = h(X,Y) = Y/X$.  
+
+If $X\sim N(0, \var)$ and $Y\sim N(0,\var)$ are independent distributions, evaluate (a) $f_{VW}(v,w)$, and (b) show $f_{VW}(v,w)$ is independent. 
+
+\ex
+
+Solving the system: \begin{align*}
+V  & = \sqrt{X^2 + Y^2} \\
+W  & = Y/X 
+\end{align*}
+We get solution 1: \begin{align*}
+x_1 = \phi_1(V,W)  & = \frac{V}{\sqrt{1 + W^2}} \\
+y_1 = \psi_1(V,W)  & = \frac{WV}{\sqrt{1 + W^2}} 
+\end{align*}
+And solution 2:
+\begin{align*}
+x_2 = \phi_2(V,W) & = \frac{-V}{\sqrt{1 + W^2}} \\
+y_2 = \psi_2(V,W) & = \frac{-WV}{\sqrt{1 + W^2}} 
+\end{align*}
+
+\begin{align*}
+\abs{ \jac_1 } 
+& = \abs{ \deriv{\phi_1}{v}  \deriv{\psi_1}{w} - \deriv{\phi_1}{w}  \deriv{\psi_1}{v} }  \\
+& = \abs{ \deriv{}{v}\br{\frac{V}{\sqrt{1 + W^2}}}   \deriv{}{w}\br{\frac{WV}{\sqrt{1 + W^2}} } - \deriv{}{w}\br{\frac{V}{\sqrt{1 + W^2}}}  \deriv{}{v}\br{\frac{WV}{\sqrt{1 + W^2}} } }  \\
+& = \abs{ \br{\frac{1}{\sqrt{1 + W^2}}}  \br{\frac{V}{(1 + W^2)^{3/2}} } - \br{\frac{-WV}{(1 + W^2)^{3/2}} } \br{\frac{W}{\sqrt{1 + W^2}} } }  \\
+\end{align*} 
+
+??? In his notes in \texttt{Lecture07hw.pdf} page 3, he says:  $$
+\deriv{y_1}{v} = \deriv{}{v} \br{\frac{wv}{1+w^2}} = \frac{w}{1+w^2} = 0?
+$$
+
+\ex
+\subsubsection*{Example}
+
+Let $X \sim N(\mu_x, \var_x)$, $Y \sim N(\mu_y, \var_y)$ be the random variables associated with two independent sensors that provide an estimate of the position of a target.
+
+A non-symmetric differential amplifier merges the signals, producing an estimate of the target's position. The noise of the estimate is given by $Z = aX-Y$ with $a \geq 0$. \begin{enumerate}[(a)]
+\item Compute the pdf of $Z$
+\item Evaluate $\mu_z$ and $\var_z$ using $f_Z(z)$
+\item What is the optimal $a$ for zero average noise? What's the noise variance of this $a$?
+\end{enumerate}
+
+\ex
+
+\begin{enumerate}[(a)]
+\item 
+\end{enumerate}
+
+\ex
+
+\subsection{Probability Integral Transform}
+
+You can use this to test if your dataset $\set{x_i}_{i=1}^n$ resulted from a certain distribution $f_X(x)$.
+
+You can use the chi-squared ($\mathcal{X}^2$) test to evaluate if your set is consistent with a uniform distribution. 
+
+Given a continuous random variable $Y = F_X(X)$, you can use the \textit{probability integral transform}
+
+
+
+
+
+
+
+
+
+\section{Generating Distributions}
+
+We can use computers to generate random numbers with a specified probability density. We do this to model real world parameters that vary with these probabilities.
+
+Stochastic means that you don't actually know exactly what a parameter's value is, you know with a certain probability what its range is.
+
+\subsection{Inverse Transform Algorithm (Discrete Random Variables)}
+
+\subsubsection*{Example}
+
+
+
+\ex
+
+\textbf{Does the inverse of $\mathbf{F_X(x)}$ exist?}
+
+\ex
+
+Set $y=F_X(x)$, $x=F^{-1}(y)$. For the inverse $F_X^{-1}(y)$ to exist, each element $y \in Y$ must correspond to exactly one element of $x \in support \set{F_X(x)}$ -- this means for all $x$ where $F_X(x) > 0$.
+
+Since $F_X(x) = \sum_{x_i \leq x} P_X(x = x_i) u(x=x_i)$
+
+...
+
+Each element of $y \in Y$ corresponds to an unaccountably infinite elements in an interval on the real line. $F_x^{-1}(x)$ ...
+
+
+\textbf{Construct a method to generate samples from the random variable $X$ when $F_X(x) = Bernoulli(p)$.}
+
+... Proving, for instance on an exam always involves the same method $\hat{F_X}(x) = F_X(x)$. Know which method to apply. 
+
+In an inverse transform method, invert the probability distribution function, not the density function.
+
+For Gaussian random variable, you cannot use the inverse transform method.
+
+\subsection{Compositional Method}
+
+$$\hat{F}_X(x) = P(X(\mathbf{Y}_i) \leq x)$$
 %--------------------------------%
 
 
@@ -1941,5 +2182,211 @@ Putting it together:
 
 
 \end{enumerate}
+
+
+
+
+
+\subsection{Tutorial 4 (Yang)}
+
+\subsubsection*{Example}
+
+$F_X(x) = 1 - \frac{1}{x^2}$, $x > 1$
+
+\begin{enumerate}[(a)]
+\item Find pdf of $y = x^2 \rightarrow g(x) = x^2$
+
+CDF of given: $$F_X(x) = 1 - \frac{1}{x^2}$$
+
+Since $x>0$: $$F_Y(y) = P(Y \leq y) = P(x^2 \leq y)$$
+
+$$F_Y(y)$$
+
+not paying attention...
+
+\end{enumerate}
+
+\textbf{Hint for assignment 2, Q1}
+
+\begin{enumerate}[(a)]
+\item $${x \choose y} \sim N \br{ {u_1 \choose u_2}, \Sigma_x }$$
+
+$${v \choose w} = f  {x \choose y} , {v \choose w} = A {x \choose y}$$
+
+$$sin {x \choose y} \sim N  \implies {v \choose w} \sim N (\hat{u},  \Sigma )  $$
+
+\ex
+ 
+$$ Z = 2X + 3Y, X,Y \sim N(Q u, \delta)$$
+\end{enumerate}
+
+\textbf{Q2}
+
+\textbf{Q3}
+
+Generate true density directly from expressions in (a) and (b).
+
+...
+
+\textbf{Inverse transform}
+
+Random variable $X$ with pdf $f_X(x)$ and $F_X(x)$ is invertible.
+
+If we want to generate $N$ values of $X$:
+
+\textit{Algorithm}
+
+Step 0: compute the cdf $F_X(x)$.
+
+Repeat the following $N$ times:
+
+\ \ \ Step 1: Generate a uniform RV $u=runif(I)$
+
+\ \ \ Step 2: Apply $F_X^{-1}(u)$ and record result as $x$
+
+Compute $F_X^{-1}(u)$ by $F_X(x)=u$ and solve $x$
+
+MATLAB pseudocode:
+
+\begin{verbatim}
+u = rand(1e5, 1);
+x = F_x^{-1}(u);
+histogram(x);
+compare
+\end{verbatim}
+
+
+\textbf{Example}
+
+Generate 10,000 values from: $f_X(x) = \int^x(f_X(x)) dt = ln(x)$
+
+To get inverse pdf: $ln(x) = u \rightarrow x = e^u$, 
+$F_x^{-1}(u) = e^u$
+
+\textbf{Inverse transform for discrete random}
+
+RV $X$ discrete, $f_X(x) = P(X =x)$ --- pmf
+
+\textit{Algorithm}
+
+Step 1: Generate a Unif(0,1) = $u$
+
+Step 2: $$Set\ x = \begin{cases} 
+x_1 & 0 \leq u \leq p_1 \\
+x_2 & p_1 \leq u \leq p_1 + p_2 \\
+...\\
+x_n & \sum_{i=1}^{n-1} p_z \leq u \leq 1 \\
+\end{cases}$$
+
+\textbf{Example}
+
+10,000 values
+
+$X$ --- $P(X=x)$
+
+
+1 --- $\frac{1}{3}$
+
+2 --- $\frac{1}{6}$
+
+3 --- $\frac{1}{4}$
+
+4 --- $\frac{1}{4}$
+
+Generating exponential distribution in MATLAB:
+\begin{verbatim}
+mu = 1;
+u = rand(1e5,1);
+X = expinv(1e6,1,me);
+numbins = 100;
+hist(X, numbins, 'g'); hold on;
+
+h = hist(X, numbins, 'g');
+
+v = 0:0.01:10;
+Y = exp(-v);
+plot(v, Y*h(1), 'r', 'LineWidth', 2);
+\end{verbatim}
+
+
+\textbf{Compositional Method}
+
+Can use when $F_X(x) = \sum_{i=1}^n P_i F_{x_i} (x)$, $\sum_{i=1}^n P_i = 1$, $P_i \geq 0$
+
+Where $P_i$ is the weights, and $F_{x_i}$ are cdfs of $x$ which are invertible.
+
+Need $N$ from $x$
+
+\textit{Algorithm}
+
+Step 1: Generate $u \sim unif(0,1)$
+
+Step 2: Use discrete transform to generate 1
+
+I -- $P(I=i)$
+
+1 -- $P_1$
+
+2 -- $P_2$
+
+$n$ -- $P_n$
+
+Step 3: Generate $v \sim unif(0,1)$ 
+
+Step 4: Generate $x$ using $F_X^{-1}(v)$
+
+\textbf{Example:} $$F_X(x) = \frac{x^2}{4} + \frac{x^3}{4} + \frac{e^x -1}{2(e-1)}$$
+
+$$F_{X_1}(x) = x^2 \rightarrow F_{X_1}^{-1}(v) = \sqrt{v}$$ 
+$$F_{X_2}(x) = x^3 \rightarrow F_{X_2}^{-1}(v) = \sqrt[3]{v}$$ 
+$$F_{X_3}(x) = x^4 \rightarrow F_{X_3}^{-1}(v) = \sqrt[4]{v}$$ 
+
+Repeat the following $n$ times: 
+
+\ \ \ \ \ 1. Generate $u (u \leftarrow runnif(1)) $ ??
+
+\ \ \ \ \ 2. $$I = \begin{cases} 1 & 0 \leq u \leq 1/4 \\
+2 & 1/4 \leq u \leq 1/2 \\
+3 & 1/2 \leq u \leq 1 \\
+ \end{cases}$$
+ 
+\ \ \ \ \ 3. Generate $v \leftarrow runif(1)$ ??
+ 
+$$f_X(x) = \frac{2x}{4} + \frac{3x^2}{4} + \frac{e^x}{2(e-1)}$$
+  
+MATLAB pseudo code:
+
+\begin{verbatim}
+u = rand(1e5, 1);
+I = InverseMethod(u);
+
+run iteration based on I
+
+if ( I[i] == 1 ) inverse method for F_X_1
+if ( I[i] == 2 ) inverse method for F_X_2
+if ( I[i] == 3 ) inverse method for F_X_3
+
+
+%%%
+
+n = 1;
+while n < num+1
+   if I(n) == 1
+      X(n) = v(n)*0.5 % inverse of Fx1
+   elseif I(n) == 2
+      X(n) = v(n)*1/3 % inverse of Fx2
+   elseif I(n) == 3
+      X(n) = log((exp(1)-1)*v(n)+1) % inverse of Fx3
+   end
+   
+   n = n + 1
+   
+   
+hist(X, 100)
+
+
+\end{verbatim}
+
+ 
 
 \end{document}

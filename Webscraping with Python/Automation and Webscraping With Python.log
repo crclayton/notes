@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  11 FEB 2017 20:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  27 MAR 2017 12:12
 entering extended mode
 **"./Automation and Webscraping With Python.tex"
 ("Automation and Webscraping With Python.tex"
@@ -736,25 +736,46 @@ Overfull \hbox (0.68643pt too wide) in paragraph at lines 621--622
 edia [] .org / wiki / List [] []of [] []battles [] []and [] []other []
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 688.
-[17] [18]
-Overfull \vbox (261.20316pt too high) has occurred while \output is active []
+[17]
+Overfull \hbox (36.14891pt too wide) in paragraph at lines 648--649
+[][]$\OT1/lmtt/m/n/10 https :// stackoverflow [] .com / users / 2374028 / charl
+es [] -clayton [] ?tab = reputation$[] 
+ []
 
+[18]
+Overfull \hbox (15.14897pt too wide) in paragraph at lines 664--665
+[][]\OT1/lmtt/m/n/10 https://www.reddit.com/r/all/search?q=foo+bar&sort=relevan
+ce&t=all 
+ []
 
 [19]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 688.
+Overfull \hbox (4.92914pt too wide) in paragraph at lines 705--706
+[]\OT1/lmr/m/n/10 We got a json text re-sponse, which was eas-ily con-verted to
+ a Python dic-tio-nary. 
+ []
+
+
+Overfull \hbox (16.64888pt too wide) in paragraph at lines 725--725
+[]\OT1/lmtt/m/n/10 resp = urllib.request.urlopen("http://api.open-notify.org/is
+s-now.json")[] 
+ []
+
+[20]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 792.
+ [21] [22]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 792.
  ("Automation and Webscraping With Python.aux")
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 688.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 688.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 792.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 792.
 Package rerunfilecheck Info: File `"Automation and Webscraping With Python".out
 ' has not changed.
-(rerunfilecheck)             Checksum: 150E6AB67EF4A11E2A7A749A680AEE79;4475.
+(rerunfilecheck)             Checksum: 997B468042CAAFE905081FF6C591EF08;4313.
  ) 
 Here is how much of TeX's memory you used:
- 11307 strings out of 493335
- 168293 string characters out of 3139228
- 421948 words of memory out of 3000000
- 14543 multiletter control sequences out of 15000+200000
+ 11306 strings out of 493335
+ 168224 string characters out of 3139228
+ 420948 words of memory out of 3000000
+ 14541 multiletter control sequences out of 15000+200000
  42067 words of font info for 44 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  46i,6n,35p,1985b,445s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -765,10 +786,10 @@ e1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmbx
  Files/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/public/lm/lmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /lm/lmtk10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "Automation and Webscraping With Python.pdf" (22 pages, 28746
-0 bytes).
+Output written on "Automation and Webscraping With Python.pdf" (25 pages, 29366
+7 bytes).
 PDF statistics:
- 457 PDF objects out of 1000 (max. 8388607)
- 82 named destinations out of 1000 (max. 500000)
- 481 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 462 PDF objects out of 1000 (max. 8388607)
+ 83 named destinations out of 1000 (max. 500000)
+ 465 words of extra memory for PDF output out of 10000 (max. 10000000)
 

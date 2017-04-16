@@ -1,0 +1,18 @@
+\ProvidesPackage{mycommands}[2017/04/05 Local macros by Charlie]
+
+\RequirePackage{mathtools}
+
+
+
+% \br{} for auto-sized ( )  
+\DeclarePairedDelimiter\autobracket{(}{)}
+\newcommand{\br}[1]{\autobracket*{#1}}
+
+% \sqbr{} for auto-sized [ ]  
+\DeclarePairedDelimiter\autosquarebracket{[}{]}
+\newcommand{\sqbr}[1]{\autosquarebracket*{#1}}
+
+% \abs{} auto-sized absolute value 
+\DeclarePairedDelimiter\autoabs{|}{|}
+\newcommand{\abs}[1]{\autoabs*{#1}}
+

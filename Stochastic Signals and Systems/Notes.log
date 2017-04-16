@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  15 MAR 2017 17:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  16 APR 2017 16:32
 entering extended mode
 **./Notes.tex
 (Notes.tex
@@ -681,29 +681,25 @@ Package csquotes Info: ... none found.
 
 
 Package csquotes Warning: No multilingual support.
-(csquotes)                Cannot enable multilingual quotes on input line 115.
+(csquotes)                Cannot enable multilingual quotes on input line 118.
 
-(Notes.aux
-
-LaTeX Warning: Label `cdf of continuous random variable' multiply defined.
-
-)
+(Notes.aux)
 \openout1 = `Notes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 115.
-LaTeX Font Info:    ... okay on input line 115.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 118.
+LaTeX Font Info:    ... okay on input line 118.
 
 ("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf
 .mkii"
@@ -738,9 +734,9 @@ File: english.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 129.
 LaTeX Info: Redefining \BHBI on input line 130.
 ) ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 115.
+LaTeX Info: Redefining \selectfont on input line 118.
 \AtBeginShipoutBox=\box39
-Package hyperref Info: Link coloring OFF on input line 115.
+Package hyperref Info: Link coloring OFF on input line 118.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -750,20 +746,20 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count174
 )
-LaTeX Info: Redefining \ref on input line 115.
-LaTeX Info: Redefining \pageref on input line 115.
-LaTeX Info: Redefining \nameref on input line 115.
+LaTeX Info: Redefining \ref on input line 118.
+LaTeX Info: Redefining \pageref on input line 118.
+LaTeX Info: Redefining \nameref on input line 118.
 
 (Notes.out) (Notes.out)
 \@outlinefile=\write4
 \openout4 = `Notes.out'.
 
-Package csquotes Info: Making character " active on input line 115.
-LaTeX Font Info:    Try loading font information for U+msa on input line 127.
+Package csquotes Info: Making character " active on input line 118.
+LaTeX Font Info:    Try loading font information for U+msa on input line 130.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 127.
+LaTeX Font Info:    Try loading font information for U+msb on input line 130.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -790,24 +786,24 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}]
 . Rerun may be required (or you may have forgotten to use commands like \gls) o
-n input line 147.
+n input line 150.
 
 Chapter 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.158 \newpage
+l.161 \newpage
                [1
 
 ] [2]
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 189.
+(amsmath)                 on input line 192.
 
 [3] [4] [5]
-Overfull \hbox (33.04315pt too wide) detected at line 252
+Overfull \hbox (33.04315pt too wide) detected at line 255
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 \ []\OT1
 /cmr/m/n/10 ) + \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 ([] \OMS/cmsy/m/n/10 \ \OML/c
 mm/m/it/10 D\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 ([])\OML/cmm/
@@ -820,7 +816,7 @@ n/10 05 = []
  []
 
 [6] [7]
-Overfull \hbox (44.40111pt too wide) detected at line 288
+Overfull \hbox (44.40111pt too wide) detected at line 291
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 B\OT1/cmr/m/n/10 ) = [] \OM
 L/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 B\OMS/cmsy/m/n/10 j\OML/cmm/m/
 it/10 D[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D
@@ -831,53 +827,53 @@ it/10 D[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D
  :\OT1/cmr/m/n/10 98) = []
  []
 
-[8] [9] <img/Series.png, id=392, 343.2825pt x 67.75313pt>
+[8] [9] <img/Series.png, id=406, 343.2825pt x 67.75313pt>
 File: img/Series.png Graphic file (type png)
  <use img/Series.png>
-Package pdftex.def Info: img/Series.png used on input line 345.
+Package pdftex.def Info: img/Series.png used on input line 348.
 (pdftex.def)             Requested size: 171.64082pt x 33.87646pt.
 
-[10] <img/Parallel.png, id=399, 148.68047pt x 248.42813pt>
+[10] <img/Parallel.png, id=413, 148.68047pt x 248.42813pt>
 File: img/Parallel.png Graphic file (type png)
 
 <use img/Parallel.png>
-Package pdftex.def Info: img/Parallel.png used on input line 353.
+Package pdftex.def Info: img/Parallel.png used on input line 356.
 (pdftex.def)             Requested size: 74.34004pt x 124.21376pt.
- <img/Subs.png, id=400, 302.63063pt x 185.19188pt>
+ <img/Subs.png, id=414, 302.63063pt x 185.19188pt>
 File: img/Subs.png Graphic file (type png)
 
 <use img/Subs.png>
-Package pdftex.def Info: img/Subs.png used on input line 368.
+Package pdftex.def Info: img/Subs.png used on input line 371.
 (pdftex.def)             Requested size: 151.31494pt x 92.5957pt.
  [11 <./img/Series.png> <./img/Parallel.png>] [12 <./img/Subs.png>] [13]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 453.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 456.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 453.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 456.
  [14]
-Overfull \hbox (8.76027pt too wide) in paragraph at lines 459--460
+Overfull \hbox (8.76027pt too wide) in paragraph at lines 462--463
 \OT1/cmr/m/n/10 A ran-dom vari-able is dis-crete when its range is ei-ther \OT1
 /cmr/m/it/10 fi-nite\OT1/cmr/m/n/10 , such as \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10
  0,1,2,$[] $,100\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ,
  []
 
 [15]
-Overfull \hbox (0.35233pt too wide) in paragraph at lines 508--510
+Overfull \hbox (0.35233pt too wide) in paragraph at lines 511--513
 \OT1/cmr/m/n/10 bound. But since we know these val-ues are dis-crete, we can co
 n-vert the inclusion-
  []
 
-[16] [17] <img/T1.png, id=449, 330.10828pt x 164.11313pt>
+[16] [17] <img/T1.png, id=463, 330.10828pt x 164.11313pt>
 File: img/T1.png Graphic file (type png)
  <use img/T1.png>
-Package pdftex.def Info: img/T1.png used on input line 558.
+Package pdftex.def Info: img/T1.png used on input line 561.
 (pdftex.def)             Requested size: 165.05373pt x 82.05635pt.
 
 [18] [19 <./img/T1.png>] [20] [21] [22] [23] [24]
-Overfull \hbox (10.62521pt too wide) in paragraph at lines 725--726
+Overfull \hbox (10.62521pt too wide) in paragraph at lines 728--729
 []\OT1/cmr/m/n/10 For Pois-son, $\OML/cmm/m/it/10 X$ \OT1/cmr/m/n/10 rep-re-sen
 ts the num-ber of oc-cur-rences over the range $\OMS/cmsy/m/n/10 f\OT1/cmr/m/n/
 10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 2\OM
@@ -885,17 +881,17 @@ L/cmm/m/it/10 ; [] \OMS/cmsy/m/n/10 g$
  []
 
 [25] [26] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36] [37]
-Overfull \hbox (68.4554pt too wide) in paragraph at lines 995--1007
+Overfull \hbox (68.4554pt too wide) in paragraph at lines 998--1010
  [][] 
  []
 
 [38]
-Overfull \hbox (8.68674pt too wide) detected at line 1050
+Overfull \hbox (8.68674pt too wide) detected at line 1053
 \OT1/cmr/m/n/10  = \OML/cmm/m/it/10 Cov[] \OT1/cmr/m/n/10 = [] = []
  []
 
 [39] [40]
-Overfull \hbox (1.90388pt too wide) detected at line 1095
+Overfull \hbox (1.90388pt too wide) detected at line 1098
 \OML/cmm/m/it/10 F[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; x[]\OT1/cmr/m/n/10 )
  = \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[] \OMS/cmsy/m/n/10  \
 OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10 \ \OML/cmm/m/it/10 X[] \OMS/cmsy/m/n/10  
@@ -906,7 +902,7 @@ mm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[] \OMS/cmsy/m/n/10  \OML/cmm/m
  []
 
 [41]
-Overfull \hbox (4.38123pt too wide) detected at line 1141
+Overfull \hbox (4.38123pt too wide) detected at line 1144
 \OML/cmm/m/it/10 F[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; x[]\OT1/cmr/m/n/10 )
  = [][] [][] [](\OML/cmm/m/it/10 t[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 t[]\OT1
 /cmr/m/n/10 )\OML/cmm/m/it/10 dt[]dt[] \OT1/cmr/m/n/10 = []\OML/cmm/m/it/10 ;  
@@ -915,7 +911,7 @@ m/n/10 1]
  []
 
 
-Overfull \hbox (28.95357pt too wide) detected at line 1154
+Overfull \hbox (28.95357pt too wide) detected at line 1157
 \OML/cmm/m/it/10 E\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X[]; X[]\OT1/cmr/m/n/10 ) =
  [][] [][] \OML/cmm/m/it/10 x[]x[]f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; x[]
 \OT1/cmr/m/n/10 )\OML/cmm/m/it/10 dx[]dx[] \OT1/cmr/m/n/10 = [][] [][] \OML/cmm
@@ -924,7 +920,7 @@ L/cmm/m/it/10 dx[]dx[] \OT1/cmr/m/n/10 =
  []
 
 [42]
-Overfull \hbox (34.53845pt too wide) detected at line 1203
+Overfull \hbox (34.53845pt too wide) detected at line 1206
 \OML/cmm/m/it/10 Cov\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Y\OT1/cmr/m/n/10 ) = \OML
 /cmm/m/it/10 E\OT1/cmr/m/n/10 ((\OML/cmm/m/it/10 Y \OMS/cmsy/m/n/10   \OML/cmm/
 m/it/10 E\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Y\OT1/cmr/m/n/10 ))(\OML/cmm/m/it/10
@@ -941,26 +937,27 @@ it/10 AX \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 B \OMS/cmsy/m/n/10   \OT1/cmr/m/n/1
 Chapter 2.
 [45
 
-] <img/transformations.png, id=631, 953.06062pt x 514.92375pt>
+] [46] [47] [48] [49]
+<img/transformations.png, id=667, 953.06062pt x 514.92375pt>
 File: img/transformations.png Graphic file (type png)
 
 <use img/transformations.png>
-Package pdftex.def Info: img/transformations.png used on input line 1295.
+Package pdftex.def Info: img/transformations.png used on input line 1410.
 (pdftex.def)             Requested size: 333.57622pt x 180.226pt.
- [46]
-Overfull \hbox (2.1984pt too wide) in paragraph at lines 1313--1314
+ [50]
+Overfull \hbox (2.1984pt too wide) in paragraph at lines 1428--1429
 []\OT1/cmr/m/n/10 To do this we have to make the as-sump-tion that $\OML/cmm/m/
 it/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X\OT1/cmr/m/n/10 )$ is a one-to-one/in
 jective
  []
 
-[47 <./img/transformations.png>]
-Overfull \hbox (23.32489pt too wide) in paragraph at lines 1329--1329
+[51 <./img/transformations.png>]
+Overfull \hbox (23.32489pt too wide) in paragraph at lines 1450--1450
 [] 
  []
 
-[48] [49] [50]
-Overfull \hbox (7.12572pt too wide) in paragraph at lines 1393--1394
+[52] [53] [54]
+Overfull \hbox (7.12572pt too wide) in paragraph at lines 1513--1514
 []\OT1/cmr/m/n/10 Here the inverse-mappings of $(\OML/cmm/m/it/10 v; w\OT1/cmr/
 m/n/10 )$ are given by $\OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 x[] \OT1/cmr/m/n/10 
 = \OML/cmm/m/it/10  []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 v; w\OT1/cmr/m/n/10 )\O
@@ -968,17 +965,12 @@ ML/cmm/m/it/10 ;  y[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 []\OT1/cmr/m/n/10 (\O
 ML/cmm/m/it/10 v; w\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 g[]$\OT1/cmr/m/n/10 ,
  []
 
-[51] [52]
-Overfull \hbox (7.60703pt too wide) in paragraph at lines 1468--1468
-|[]\OT1/cmr/bx/n/12 Inverse Trans-form Al-go-rithm (Dis-crete Ran-dom Vari-
- []
-
-[53] [54]
+[55] [56] [57] [58]
 No file Notes.bbl.
-[55
+[59
 
-] [56] [57]
-Overfull \hbox (0.39067pt too wide) detected at line 1620
+] [60] [61]
+Overfull \hbox (0.39067pt too wide) detected at line 1761
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 2\OML/cmm/
 m/it/10 nd is green\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 P\OT1
 /cmr/m/n/10 (\OML/cmm/m/it/10 G[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 G[]\OT1/cmr
@@ -990,29 +982,29 @@ t/10 G[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 R[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10
  P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 R[]\OT1/cmr/m/n/10 )
  []
 
-[58] [59] [60] [61]
-Overfull \hbox (35.88525pt too wide) detected at line 1776
+[62] [63] [64] [65]
+Overfull \hbox (35.88525pt too wide) detected at line 1917
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 E\OMS/cmsy/m/n/10 j\OML/cmm
 /m/it/10 I[]\OT1/cmr/m/n/10 ) = [] = []
  []
 
-[62]
-Overfull \hbox (89.21713pt too wide) detected at line 1786
+[66]
+Overfull \hbox (89.21713pt too wide) detected at line 1927
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 E\OMS/cmsy/m/n/10 j\OML/cmm
 /m/it/10 T[]\OT1/cmr/m/n/10 ) = [] = [] = 5\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 1(
 10)[]
  []
 
-[63] [64] [65] [66]
-Overfull \hbox (13.2532pt too wide) in paragraph at lines 1883--1884
+[67] [68] [69] [70]
+Overfull \hbox (13.2532pt too wide) in paragraph at lines 2024--2025
 []\OT1/cmr/m/n/10 Specific case we'll of-ten see is \OT1/cmr/bx/n/10 stan-dard 
 nor-mal\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 Z$\OT1/cmr/m/n/10 . At which $\OML/c
 mm/m/it/10 Z \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 N\OT1/cmr/m/n/10 (0\OML/cmm/m/
 it/10 ; \OT1/cmr/m/n/10 1)\OML/cmm/m/it/10 ;   \OT1/cmr/m/n/10 =
  []
 
-[67] [68] [69] [70]
-Overfull \hbox (0.66872pt too wide) detected at line 2000
+[71] [72] [73] [74]
+Overfull \hbox (0.66872pt too wide) detected at line 2141
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X > \OT1/cmr/m/n/10 0\OML/c
 mm/m/it/10 :\OT1/cmr/m/n/10 5) = 1 \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 P\OT1/cm
 r/m/n/10 (\OML/cmm/m/it/10 X \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 0\OML/cmm/m/it/
@@ -1022,29 +1014,38 @@ r/m/n/10 (\OML/cmm/m/it/10 X \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 0\OML/cmm/m/it/
 /it/10 e[]dt\OT1/cmr/m/n/10 ))
  []
 
-[71] [72] [73] [74] [75] [76] [77] [78] [79] [80] [81]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2392.
- [82]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2392.
+[75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85]
+Overfull \hbox (7.1673pt too wide) in paragraph at lines 2551--2553
+[]\OT1/cmr/m/n/10 covariance given two ran-dom vari-ables Var(X), Var(aX+b), Va
+r(X+Y),
+ []
+
+[86]
+Overfull \hbox (5.24245pt too wide) in paragraph at lines 2575--2576
+[]\OT1/cmr/m/n/10 Markov chain has two things: one is ini-tal dis-tri-bu-tion $
+\OML/cmm/m/it/10 [] \OT1/cmr/m/n/10 = [0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 30\O
+ML/cmm/m/it/10 :\OT1/cmr/m/n/10 50\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 2]$,
+ []
+
+[87] [88] [89] [90] [91] [92]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2707.
+ [93]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2707.
  (Notes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2392.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2392.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2707.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2707.
 
 Package rerunfilecheck Info: File `Notes.out' has not changed.
-(rerunfilecheck)             Checksum: 87B6CA0790CCC32FBBADD90D44C70BF0;2909.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 8A1B9DA97E5E4EBE0D81F5BCCB96E6B0;3034.
  ) 
 Here is how much of TeX's memory you used:
- 13547 strings out of 493335
- 203607 string characters out of 3139228
- 368679 words of memory out of 3000000
- 16466 multiletter control sequences out of 15000+200000
+ 13623 strings out of 493335
+ 204373 string characters out of 3139228
+ 367700 words of memory out of 3000000
+ 16475 multiletter control sequences out of 15000+200000
  16382 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,19n,40p,1941b,568s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,19n,40p,1941b,751s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Program Files/MiKTe
@@ -1066,9 +1067,9 @@ amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Notes.pdf (88 pages, 1185115 bytes).
+Output written on Notes.pdf (99 pages, 1222943 bytes).
 PDF statistics:
- 1011 PDF objects out of 1200 (max. 8388607)
- 337 named destinations out of 1000 (max. 500000)
- 330 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1137 PDF objects out of 1200 (max. 8388607)
+ 404 named destinations out of 1000 (max. 500000)
+ 354 words of extra memory for PDF output out of 10000 (max. 10000000)
 

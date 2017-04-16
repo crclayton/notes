@@ -81,6 +81,9 @@
 \newcommand{\jac}{\mathbf{\tilde{J}}}
 \newcommand{\ex}{\noindent\rule{\linewidth}{0.2pt}}
 
+\newcommand{\Var}{\text{Var}}
+\newcommand{\Cov}{\text{Cov}}
+
 
 %\newcommand{\ensuremath{21}}{\ensuremath{21}}
 
@@ -1274,17 +1277,129 @@ In all of these applications, construction of the event-space definition is the 
 
 
 
-\section{Probability Review (TODO ??? ... GO THROUGH THESE EXAMPLES)}
+\section{Probability Review}
 
 \subsection{Review of Random Variables}
 
+$\Omega$ is the set of all possible outcomes. Where an event is a subset of $\Omega$. \begin{enumerate}
+\item $0 \leq P(A) \leq 1$ for any event $A$
+\item $P(A \cup B) = P(A) + P(B)$ if $A \cap B = \emptyset$ ($A$ and $B$ are mutually exclusive): $$ P(\cup_{i=1}^n A_i) = \sum_{i=1}^n P(A_i)$$
+\item $P(\Omega) = 1$, $P(\emptyset) = 0$
+\end{enumerate}
+
+$P$ is a function that maps any event $A$ to $[0,1]$. You could think of it as measuring how big the event (a set) is. For instance: $$A \subset B \implies P(A) \leq P(B)$$
+
+$$P(A \cup B) = P(A) + P(B) - P(A \cap B)$$
+$$P(\n{A}) = 1 - P(A)$$
+For \textbf{mutually exclusive events}, $A \cap B = \emptyset$. Meaning that both cannot occur, or that the sets are disjoint. $$P(A \cup B) = P(A) + P(B)$$
+For \textbf{independent events}, meaning that the fact that event $A$ occurs has no affect on if event $B$ occurs: $$P(A \cap B) = P(A)P(B)$$
+Mutually exclusive events are \textit{not} necessarily independent.
+
+If $A$ and $B$ are independent and $B$ and $C$ are independent, $A$ and $B$ are \textit{not} necessarily independent.
+
+If $A \subset B$, then $A$ and $B$ are not independent because $P(A \cap B) = P(A) \neq P(A)P(B)$. 
+
+If $A \subset B$, then $A$ and $B$ are not mutually exclusive because $P(A \cup B) = P(B) \neq P(A) + P(B)$
+
+If $A \cap B = \emptyset$, then $A$ and $B$ are \textit{not} necessarily independent. If $P(A) \neq 0$ and $P(B) \neq 0$, then for them to be independent $P(A\cap B) \neq 0$, but for them to be mutually exclusive, $P(A \cap B) = 0$  must be true.
+
+\textbf{Conditional probability} states: $$P(A|B) = \frac{P(A \cap B)}{P(B)}$$
+
+Additionally, $$P(A|B) \leq  \frac{P(A)}{P(B)}$$
+
+Because $$P(A|B) = \frac{P(A \cap B)}{P(B)} = \frac{P(A) + P(B) - P(A \cup B)}{P(B)} = \frac{P(A)}{P(B)} + 1 - \frac{P(A \cup B)}{P(B)}$$
+
+And we know $P(A \cup B) \geq P(B)$, so $1 - \frac{P(A \cup B)}{P(B)} \leq 0$.  
+
+If $A$ and $B$ are independent, then $P(A|B) = P(A)$.
+
+If $A = B$, then $P(A|B) = P(A|A) = 1$.
+
+\textbf{Total Probability} states for mutually exclusive events $C_1$, $C_2$, \dots, $C_n$ that form a complete partion of $\Omega$, $C_1 \cup C_2 \cup \dots \cup C_n = \Omega$, then for any event $A$: \begin{align*}
+P(A) & = P(A \cap C_1) + P(A \cap C_2) + \dots + P(A \cap C_n) \\
+& = P(A|C_1)P(C_1) + P(A|C_2)P(C_2) + \dots + P(A|C_n)P(C_n) \\
+& = \sum_{i=1}^n P(A|C_i)P(C_i)
+\end{align*}
+
+\subsubsection*{Example}
+
+Let $\set{C_i}_{i=1}^n = \Omega$ be a partition of sample space $\Omega$ and $A$ and $B$ be two events. If (a) $A$ and $B$ are conditionally independent given $C_i$ and (b) $B$ is independent of all $C_i$, prove that $A$ and $B$ are independent.
+
+From (a) we know $P(A \cap B|C_i) = P(A|C_i)P(B|C_i)$. From (b) we know $P(B|C_i) = P(B)$. \begin{align*}
+P(A \cap B) & = \sum_{i=1}^n P(A \cap B|C_i)P(C_i) \\
+& = \sum_{i=1}^n P(A|C_i) P(B|C_i) P(C_i) & \text{From (a)} \\
+& = \sum_{i=1}^n P(A|C_i) P(B)P(C_i) & \text{From (b)} \\
+& = P(B) \sum_{i=1}^n P(A|C_i)P(C_i) \\
+& = P(B) P(A) & \text{By total probability} 
+\end{align*}
+
+\textbf{CDF}: $F_X(x) = P(X \leq x)$, $P(a < X \leq b) = F_X(b) - F_X(a)$
+
+$F_{X,Y}(x,y) = F_X(x)F_Y(y)$
+
+\textbf{PMF/PDF:} $f_X(x) = P(X = x_i)$ $$F_X(x) = \int_{-\infty}^{\infty} f_X(s) ds$$
+
+If $f_{X,Y}(x,y) = f_X(x)f_Y(y)$, then $X$ and $Y$ are \textbf{independent}.
+
+For a continuous random variable, $P(X = a)=0$
+
+\textbf{Expected value/mean}: $$E(X) = \int_{-\infty}^{\infty} x f_X(x) dx$$
+
+For any function $g$, (???)  $$E(X) = \int_{-\infty}^{\infty} g(x) f_X(x) dx$$
+
+$E(aX + bY) = aE(X) + bE(Y)$
+
+\textbf{Variance}: $$\text{Var}(X) = E(X - \mu^2) = \int_{-\infty}^{\infty} (x - \mu)^2 f_X(x) dx = E(X^2) - E(X)^2$$
+
+$\text{Var}(aX + b) = a^2 $
+
+\textbf{Covariance}: $$\text{Cov}(X,Y) = \int_{-\infty}^{\infty} (x - \mu_x)(y -\mu_y) f_{X,Y}(x,y) dx dy $$
+
+
+$\Cov(X,Y) = E(XY) - E(X)E(Y)$
+
+$\Var(X+Y) = \Var(X) + \Var(Y) + 2 \Cov(X,Y)$
+
+If $\Cov(X,Y)=0$, then $X$ and $Y$ are \textbf{uncorrelated}. 
+
+Note $f_{X|Y}(x|y) = f_X(x)$ and $F_{X|Y}(x|y) = F_X(x)$
+
 \subsubsection{Uniform Random Variables}
+
+
 
 \subsubsection{Exponential Random Variables}
 
+Exponential distributions are the only memoryless continuous random variable. 
+
+Weird things:
+
+\begin{enumerate}
+\item If the reliability of a car was exponentially distributed, then a used car is just as good as a brand new car
+\item Suppose a bus arrives on average every 10 minutes, $\lambda=1/10$. If you have  already waited 9 minutes, the probability of the bus arriving in the next minute is the same as if you have not waited for the 9 minutes.
+\begin{proof}
+\begin{align*}
+P(X > x + \Delta | X > \Delta) & = \frac{P(X > x + \Delta \cap X > \Delta)}{P(X > \Delta)} \\
+& = \frac{P(X >  x + \Delta)}{P(X > \Delta)} \\
+& = \frac{e^{-\lambda(x+\Delta)}}{e^{-\lambda \Delta}} \\
+& = e^{-\lambda \Delta}  \\
+& = P(X > x) \end{align*} \end{proof}
+\end{enumerate}
+
+
+
 \subsubsection{Gaussian Random Variables}
 
+\subsubsection*{Example}
+If $Y = aX + b$ and $X \sim N(\mu, \var)$, compute $f_Y(y)$.
+
+$\mu_y = E(Y) = E(aX + b) = aE(x) + bE(1) = a\mu + b$
+
+$\var_y = \Var(y) = a^2 \var$
+
 \subsubsection{Binomial Random Variables}
+
+
 
 \section{Transformations of Random Variables}
 
@@ -1312,23 +1427,28 @@ ie. We have $X \sim f_X(x)$ and we want to get $f_Y(y)$ where $Y=g(X)$.
 
 To do this we have to make the assumption that $g(X)$ is a one-to-one/injective function, that is $y=g(x)$ has only one solution (passes the horizontal line test).
 
-Making that assumption, we can say $x = g^{-1}(y)$ (??? how to get from $g(x)$ to $g^{-1}(y)$, so we can solve for the cdf of $Y$ like so: \begin{align*}
-F_Y(y) = P(Y \leq y) & = P(g(X) \leq y) \\
+Making that assumption we can solve for the cdf of $Y$ like so: \begin{align*}
+F_Y(y) & = P(Y \leq y) \\
+& = P(g(X) \leq y) \\
 & = \int_{ \{x|g(x) \leq y\} } f_X(x) dx \\
-& = \int_{-\infty}^{g^{-1}(y)} f_X(x) dx\\
+& = \int_{-\infty}^{g^{-1}(y)} f_X(x) dx
 \end{align*}
+\noteworthy{F_Y(y) = \int_{-\infty}^{g^{-1}(y)} f_X(x) dx}{Univariate Transform cdf}
 
-\item The probability of a value greater than a given $x$ is the cdf: \noteworthy{F(x) = P(X \leq x) = \int_{-\infty}^{x} f(t) dt}{cdf of continuous random variable}
+%And taking the derivative with respect to $y$: \noteworthy{f_Y(y) = \deriv{}{y} F_Y(y) = f_X(g^{-1}(y)) \abs{\frac{g^{-1}(y)}{dy}}}{Univariate Transform pdf}
+
+
+
+%\item The probability of a value greater than a given $x$ is the cdf: \noteworthy{F(x) = P(X \leq x) = \int_{-\infty}^{x} f(t) dt}{cdf of continuous random variable}
 
 
 Then determine the pdf by taking the derivative with respect to $y$: \begin{align*}
 f_Y(y) & = \deriv{}{y} F_Y(y) \\
 & = \deriv{}{y} \int_{-\infty}^{g^{-1}(y)} f_X(x) dx \\
 & = \sqbr{ f_X \br{ g^{-1}(y) } \deriv{}{y} g^{-1}(y) } - \cancelto{0}{\sqbr{ f(-\infty) \deriv{}{y} (-\infty) } } & \text{By Leibniz integral rule}  \\ 
-& = f_X \br{ g^{-1}(y) } \abs{ \frac{g^{-1}(y)}{dy} } & \text{Absolute because } f_Y(y) \geq 0  \\
+& = f_X \br{ g^{-1}(y) } \abs{ \frac{g^{-1}(y)}{dy} } & \text{Absolute because } f_Y(y) \geq 0 
 \end{align*}
-
-\noteworthy{f_Y(y) = f_X \br{ g^{-1}(y) } \abs{ \frac{g^{-1}(y)}{dy}}}{pdf of Y=g(X)}
+\noteworthy{f_Y(y) = f_X \br{ g^{-1}(y) } \abs{ \frac{g^{-1}(y)}{dy}}}{Univariate Transform pdf}
 
 \subsubsection*{Example}
 
@@ -1340,7 +1460,7 @@ If $x$ comes from Gaussian noise source $X \sim N(\mu, \var)$, what is the distr
 
 Recall we make the assumption that $y=g(x)$, which means $g^{-1}(y) = x$, so: $$g^{-1}(y) = x = \frac{y}{a}$$
 
-Using (\ref{pdf of Y=g(X)}), we know: \begin{align*}
+Using (\ref{Univariate Transform pdf}), we know: \begin{align*}
 f_Y(y) & = f_X \br{ g^{-1}(y) } \abs{ \frac{g^{-1}(y)}{dy}} \\
 & = f_X \br{ \frac{y}{a} } \abs{ \frac{\frac{y}{a}}{dy}} \\
 & = \frac{1}{a} f_X \br{ \frac{y}{a} }
@@ -1445,11 +1565,17 @@ A non-symmetric differential amplifier merges the signals, producing an estimate
 
 \subsection{Probability Integral Transform}
 
-You can use this to test if your dataset $\set{x_i}_{i=1}^n$ resulted from a certain distribution $f_X(x)$.
+You can use this to test if your dataset $\set{x_i}_{i=1}^n$ resulted from a certain distribution $f_X(x)$. You can use the chi-squared ($\mathcal{X}^2$) test to evaluate if your set is consistent with a uniform distribution. 
 
-You can use the chi-squared ($\mathcal{X}^2$) test to evaluate if your set is consistent with a uniform distribution. 
+Given a cdf $F_X(x)$ then the random variable $Y=F_X(X)$ has a uniform distribution. \begin{align*}
+F_Y(y) & = P(Y \leq y) \\
+& = P(F_X(X) \leq y) \\
+& = P(X \leq F_X^{-1}(y)) \\
+& = F_X(F^{-1}_X(y)) \\
+& = y
+\end{align*}
 
-Given a continuous random variable $Y = F_X(X)$, you can use the \textit{probability integral transform}
+Given a continuous random variable $Y = F_X(X)$, you can use the \textit{probability integral transform}, you cannot with discrete random variable samples.
 
 
 
@@ -1465,10 +1591,25 @@ We can use computers to generate random numbers with a specified probability den
 
 Stochastic means that you don't actually know exactly what a parameter's value is, you know with a certain probability what its range is.
 
-\subsection{Inverse Transform Algorithm (Discrete Random Variables)}
+\subsection{Inverse Transform Algorithm}
+
+\subsubsection{Discrete}
+
+Given a uniform random number generator, how can we simulate a discrete distribution $P_X(X=x_i)=p_i$?
+
+\begin{enumerate}
+\item Generate random variable $u \sim U(0,1)$
+\item Set $x = \begin{cases}
+x_1 & u \in [0,p_1] \\
+x_2 & u \in (p_1, p_1 + p_2) \\
+\vdots & \vdots \\
+x_n & u \in (\sum_{i=1}^{n-1} p_i, 1]
+\end{cases}$
+\end{enumerate}
 
 \subsubsection*{Example}
 
+Consider random variable $X$ with any discrete distribution $F_X(x)$.
 
 
 \ex
@@ -2387,6 +2528,180 @@ hist(X, 100)
 
 \end{verbatim}
 
+ \subsection{Review}
  
+ Normal, uniform, exponential distributions only ones to consider. Given PDFs of all of them. Be able to generate random variables, compute things from PDFs. 
+ 
+ Look at formula sheet.
+ 
+ \begin{enumerate}
+ \item Fundamentals of probability -- Reubens  (20\% of final) \begin{enumerate}
+
+\item   know how to define event spaces for flipping coins, rolling die, stuff
+ \item mutually exclusivity
+ \item dependence
+ \item total probability rule
+ \item conditional probability
+\end{enumerate}
+
+ \item Common distributions (normal, exp, unif) -- work with these to calculate things like 
+  \begin{enumerate}
+ \item mean
+ \item variance
+ \item covariance given two random variables
+ Var(X), Var(aX+b), Var(X+Y), Cov(X,Y). 
+ 
+ If X and Y are indep, then $f_{X,Y}(x,y) = f_X(x)f_Y(y)$. If X and Y are uncorrelated if $Cov(X,Y)=0$.
+ 
+ \textbf{100\% on the final is multivariate normal distribution} and creating other distributions from that. \textbf{Generating random variables using the uniform distribution. }
+ \end{enumerate}
+
+ \item Transformation of random variables. \textbf{Apply these transformations given transformation method.} Derivation unnecessary. Derivation of jacobian unnecessary. How to apply/when to apply.
+  
+  \begin{enumerate}
+ \item Univariate (!) -- apply when 1d
+ \item Multivariate  -- apply when multi d
+ \item Probability integral transform -- useful for constructing samples of random variables -- particuarly uniform
+ \end{enumerate}
+ \item Generate samples of random variables -- don't know how to derive, but how to implement
+  \begin{enumerate}
+ \item \textbf{Inverse transform} -- useful for any discrete, for continuous if can construct inverse can construct inverse transform --- 1) generate uniforms between 0-1, 2) $F_X^{-1}(U)=X$ -- inverse cdf, works because of probability integral transform, if you take values from X and appyly cDF of X, then resulting thing is uniform of 0,1
+ \item Polar algorithm -- 0 mean, unit variance -- can then construct anything from it (effeen transformation?) -- useful for generating any gaussian dist
+ \item \textbf{Compositional} -- sums of weighted distributions, two steps 1) generate the uniform, 2) see where uniform falls , then break it down into different ps 3) get new uniform from where unifrom falls on scale, (what $p$ it gets), then feed $U$ back into the $F_{X_{your p}}$. $F_X(x) = p_1 F_{x_1}(x) + ... + p_n F_{X_n}(X)$ generating number then generate 
+ \item Acceptance/Rejection Method -- if can't use the above three, must use this. Last one you should try if none are applicable. Wastes generated samples of the uniform, less efficient than above. Most sophisticated to try to construct sampling because must figure out how to bound pdf with other pdf. -- seems to imply not going to be on the exam
+ \item How to apply each method or comb. of methods to generate samples. If normal, use polar with properties of efeen. Combining inverse and polar to solve problems very likely.
+ \item Generating samples for Markov Chains -- inverse transform where current dist. is current state -- for each unique state have different inverse transform algorithm embedded 
+ 
+Markov chain has two things: one is inital distribution $\pi_0 = [0.3 0.5 0.2]$, matrix $A$ is N by M, where M is number of states. Proabibilities are the probability from what state to what state. Where tos are the rows and froms are the columns. Each row has to add to 1. 
+
+
+Generate state one with initial distribution. Generate uniform then look where uniform falls, if its from 0 to 0.3 it's x[1]=1, if it's from 0.3 to 0.8 it's x[1]=2, if it's from 0.8 to 1 x[1]=3. This is like markov chains.
+
+Generate state 2. if x[1]=1, get uniform, then look at first row of matrix $A$. If between 0 and 0.1, then x[2]=1, ...
+ 
+ \end{enumerate}
+ \item Random process -- know definitions and how to identify, markov and other one, 
+ \begin{enumerate}
+ \item Independent and IID -- no memory, time-invariant/identically distributed
+ \begin{enumerate}
+ \item If you can see these properties, just state it's an IID by inspection
+\end{enumerate}  
+ \item \textbf{Markov Chains} (2 questions on markov chains) -- conditional probability, X[k] depends on X[k-1]
+ \begin{enumerate}
+ \item State space
+ \item initial state distribution
+ \item Transition probability matrix -- all rows must sum to one, because each row has own probaiblity distribution. 
+ \item Chapman-Kolmogorow Equation -- at any time can evaluate the distribution based on initial distribution -- A' is the transpose of the transition matrix -- \textbf{COMMIT TO MEMORY}
+ 
+ 
+Not interested in generating anything. 
+
+$$\pi_1 = A^T \pi_0$$
+$$\pi_2 = A^T \pi_1 = (A^T)^2 \pi_0$$
+$$\pi_i = (A^T)\pi_0 = A^T \pi_{i-1}$$ 
+ 
+ \item If regular markov chain, it's guaranteed that a \textbf{stationary distribution} exists: 
+ $\pi[\infty] = A'\pi[\infty]$ $'\pi[\infty]=1$ -- \textbf{warning} cannot generate random samples of markov chain using stationary distribution. If you're not using transition matrix then you're doing it wrong.
+ 
+stationary distribution --- property markovs chains have, $\pi_\infty = (A^T)^\infty \pi_0 = (A^T - I)\pi_{\infty} = 0$ Where $I$ is the identitiy. Solve system of equations for $\pi_{\infty_1}$, $\pi_{\infty_2}$,$\pi_{\infty_3}$, also add other other equation where $\pi_{\infty_1} + \pi_{\infty_2} + \pi_{\infty_3} = 1$. Then $\pi_\infty$ is a vector. It basically shows how much time you spend in each state. Not all markov chains have stationary distribution -- only regular. It has to be aperiodic (doesn't get stuck in infinite loops), irreducable (you can get from anywhere to anywhere). It's regular if you can find such a $k$, if you can take $A^k$ and all entries are nonzero. 
+
+
+
+ 
+ \item \textbf{Aperiod} recurrance time is null parameter -- do not have regular markov chain
+ \item \textbf{Recurrance} relation -- can travel in finite steps back to previous state, hard to check
+ \end{enumerate}
+ \item Weak law of large numbers -- bridges between statistics and probability theory: probabilistic mean = statistical mean with many samples
+ \textbf{mean of random process}, auto-covariance, cross-covariance
+ \end{enumerate}
+ \item Bayesian inference 
+ \begin{enumerate}
+ \item \textbf{Bayes rule, conditional probability, marginal }
+ \item \textbf{Maximum likelihood } -- maximize maximum function
+ \item \textbf{Bayesian maximum} -- maximizes likelihood multiplied by the prior
+ \item \textbf{Conditional expectation} -- definition, distiribution is now conditional distribution, optimal in mean-square error sense (estimate is optimate in mean-sequare errer sense) 
+ \item \textbf{Law of Iterated Expectation} -- useful, if take expectation of expecation of X given Y is expectation of X
+ \item \textbf{Recursive Bayesian Estimation} -- either remember formula or do derivation, if you want estimate of $x$ where it doesn't depend on time, you can do summation of Probabilities. It's in the slides, expand out using bayes rule.\textbf{ Will ask for a recursive basian estimatain formula.}
+ \end{enumerate}
+ \end{enumerate}
+
+\subsection{Review II}
+
+\subsubsection{Example 1 -- know multivariate and univariate}
+
+Consider multivariate normal distribution for $X=[X_1, X_2, \dots X_n]'$
+
+$$f_X(x) = \frac{1}{\sqrt{(2\pi)^2 \det{\Sigma}}} \exp{ \br{ -\frac{1}{2} (x-\mu) \Sigma^{-1}(x-\mu)' } }$$
+
+
+"Main task is to find $B$ and $A$, then use Bayes rule and ... to find distributions" -- something at this example he said "commit to memory for final". 
+
+
+\subsubsection{Example 2 -- uncorrelated random variables}
+
+If independent, guaranteed to be uncorrelated. If uncorrelated, not necessarily independent. Prove this just through counterexample. 
+
+Consider where $X \sim N(0,1)$ and $Y=X^2$:
+
+From $Y=X^2$: $$Cov(X,Y) = E[XY] - E[X]E[Y] = \cancelto{0}{ E[X^3]} - \cancelto{0}{E[X]}E[X^2] = 0$$
+
+So uncorrelated but not independent.
+
+Only for gaussian distributions, if uncorrelated then independent. `
+
+
+\subsubsection{Example 3 -- Markov Process}
+
+
+\subsection{Final Review Examples}
+
+\subsubsection{HW5 Example 2 - Resistor Selection}
+
+Suppose we have a resistor $R$ from a batch with parameters $\mu=1000\Omega$ and $\sigma=200\Omega$. 
+
+What's the probability that $R$ will be in the internal $[900, 1100]\Omega$?
+
+--- \begin{align*}
+P(900 < R \leq 1100) & = P(R \leq 1100) - P(R \leq 900) \\
+& = F(1100) - F(900) \\
+& = 0.69146246 - 0.30853754 \\
+& = 0.3829249225
+\end{align*}
+
+\subsubsection{HW5 Example 3 - Failure Estimate}
+
+A company produces one defective chip for every five good chips. The defective chips have a time of failure $X$ that obey the cdf: $$F_{X|Y} (x|Y = 0) = (1-e^{-x/2})u(x)$$ The time of failure for the good chips obey the cdf: $$F_{X|Y} (x|Y = 1) = (1-e^{-x/10})u(x)$$ (a) Compute the cdf $F_X(x)$ (b) If you purchased a chip from this company, what is the probability that the chip will fail before six months of use?
+
+---
+
+Good chips, $Y=0$: $$P(Y=0) = \frac{1}{6}$$
+Bad chips, $Y=1$: $$P(Y=1) = 1-P(Y=0) = 1-\frac{1}{6} = \frac{5}{6}$$
+(a): \begin{align*}
+F_X(x) & = F_{X|Y}(x|Y=0)P(Y=0) + F_{X|Y}(x|Y=1)P(Y=1) \\
+& = \sqbr{ \frac{1}{6}(1-e^{-x/2}) + \frac{5}{6}(1-e^{-x/10}) } u(x)
+\end{align*}
+
+(b): Probability of failure before 5 months: $$P(X \leq 6) = F_X(6) = \frac{1}{6}(1-e^{-6/2}) + \frac{5}{6}(1-e^{-6/10}) = 0.534 $$
+
+\subsubsection*{HW5 Example 4 - Conditional Poisson}
+
+Let $X$ be a Poisson random variable with a rate parameter $\lambda > 0$, $$f_X(x) = \frac{\lambda^x}{x!}e^{-\lambda}\ \ \ \ \ \ \ \ x \in \set{0, 1, \dots} $$
+Let $Y$ be the event that $\set{X\ is\ even}$ Compute (a) the pdf $f_X(x|Y)$ and (b) the cdf $F_X(x|Y)$
+
+---
+
+By Baye's rule: $$f_{X|Y}(x|y) = \frac{f_{XY}(x,y)}{f_Y(y)}$$
+
+$$f_Y(y) = P(\set{X \text{ is even}}) = \sum_{x=0,2,\dots}^{\infty} \frac{\lambda^x}{x!}e^{-\lambda}$$ 
+
+And we'll define $$f_Z(z) = P(\set{X \text{ is odd}}) = \sum_{x=1,3,\dots}^{\infty} \frac{\lambda^x}{x!}e^{-\lambda}$$
+
+By the property of factorial sums: $$\sum_{x=0}^\infty \frac{\lambda^x}{x!}(-1)^x = e^{-\lambda}$$
+$$f_Y(y) - f_Z(z) = \sum_{x=0}^{\infty} \frac{\lambda^x}{x!} e^{-\lambda} (-1)^x  =  e^{-2 \lambda}$$
+
+And so $f_Y(y) = \frac{1}{2}(1+e^{-2 \lambda})$
+
+$$f_{XY}(x,y) = P(X=x, X \text{ is even})$$
+
 
 \end{document}

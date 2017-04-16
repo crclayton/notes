@@ -623,28 +623,132 @@ Let's first look at: \url{https://en.wikipedia.org/wiki/List_of_battles_and_othe
 First thing we see is that the tables probably have this class \verb|.wikitable|. And there's seven of them.
 
 
+\newpage
+\section{Fetching with \texttt{urlib2} and APIs}
 
-\section{Fetching with \texttt{urlib2}}
-
-\subsection{Using the Developer Tools Network Tab}
+Okay, so yes this is a course in webscraping. But since you were kind enough to watch this far, I'm going to let you in on a secret: webscraping can be a hassle. And it can be an unnecessary one. 
 
 \subsection{Bypassing the Browser}
 
+
+\subsubsection{When Not to Web Scrape}
+
+
+\textbf{APIs}
+
+When you're a hammer everything looks like a nail, so often I'll see people doing things like write webscrapers to clumsily get movie reviews or weather data or other information that is readily available through an API. 
+
+
+API stands for "Application Program Interface" -- when people want to create doors for programmers to make requests for data or to use their tools, they'll create an API and document it for you. Using this you can bypass the browser and the HTML. Websites evolve constantly, changing their HTML, so if you're writing code to refetch data every once and a while -- make sure there isn't an API available before you go down that rabbit hole.
+
+\textbf{Better Data Sources}
+
+The other thing, is that I strongly suggest making sure you do your research, and ensure there aren't alternative solutions before you begin writing a potentially unnecessary webscraper. For instance, when I was learning to webscrape I wanted to gather data on my stackoverflow reputation. 
+
+\url{https://stackoverflow.com/users/2374028/charles-clayton?tab=reputation}
+
+If you look at this, by this point you should know that we could fairly simply figure out a way to scrape this data. We could expand out all the days, then scrape the data, then press the next button until there are no more next buttons. 
+
+But instead of noticing that and immediately beginning to write a scraping script, if you did another 5 minutes of research, you might learn that all that data can be easily found here:
+
+\url{https://stackoverflow.com/reputation}
+ 
+
+
 \subsubsection{URL Query Strings}
 
-\subsubsection{HTTP Requests}
+Let's do a little primer on URLs. You might have seen URLs that looks like this in the past, and it's possible you've inferred their meaning: 
 
-\subsubsubsection{\texttt{GET}}
 
-\subsubsubsection{\texttt{POST}}
 
-\subsubsection{Retrieving Files}
+\verb|https://www.reddit.com/r/all/search?q=foo+bar&sort=relevance&t=all|
 
-\subsubsection{Demo with WireShark}
+But just to formalize this, this is called a \textbf{query string}. It's a common way for links or users to submit queries to a website, which will look at the requested parameters in the URL the correct data. 
 
-\subsection{Authentication}
+For instance, in this link, we're first telling reddit that we want to go to the search page:
 
-\subsection{Refused/Timed out Connections}
+\verb|https://www.reddit.com/r/all/search|
+
+And that alone would take us to the plain search page on the website. 
+
+The question mark is a separator to indicate what part is the website and to tell the website that we have some additional parameters. 
+
+Then each parameter has a name, so for instance \verb|q| is the text to search, \verb|sort| is the method to sort the results by, and \verb|t| specifies the time range of the results. Each parameter gets a value using the equal sign, and they are separated by ampersands. 
+
+Note that a plus-sign indicates a space, not a separate parameter.
+
+\subsubsection{JSON}
+
+As you know, when you make requests to a webpage, you'll get HTML and then you'll have to use a parser to extract the information you want.
+
+APIs will usually return \textbf{json}, JavaScript Object Notation, this is a string that very closely resembles a Python dictionary. We can then very easily convert it to a dict. 
+
+This way we get our data in a consise and easily parsable format, and we don't get all the extra information that comes with HTML which just wastes time and  bandwidth.
+
+
+\subsection{APIs}
+
+
+\subsubsection{Simple Example with \texttt{requests}}
+
+Okay, now let's do an excruciatingly simple API request.
+
+\begin{verbatim}
+import requests
+resp = requests.get("https://api.ip2country.info/ip?184.68.182.250")
+obj = resp.json()
+print(obj.get("countryName")) # Canada
+\end{verbatim}
+
+Here, we used the open source \verb|api.ip2country|, and the only parameter we passed was an IP address. 
+
+We got a json text response, which was easily converted to a Python dictionary. 
+
+Note again, that just like when webscraping, be courteous and do not repeatedly re-run your API fetches while debugging and write your code. Usually there are limits to the poll rate and a server may stop responding to your requests.
+
+\subsubsection{More Complicated Example}
+
+The \texttt{requests} module is nice because it can handle both the get request and the json conversion, but we'll do another example using \texttt{urllib} and \texttt{json} modules, just for variety.
+
+This time, we can use the \verb|api.open-notify| API to get the current location of the international space station. 
+
+And in the same request, as the parameters of the query, I'm going to pass my current location, and the API will tell me when the ISS passes over my city, Vancouver.
+
+\begin{verbatim}
+import urllib.request, json
+resp = urllib.request.urlopen("http://api.open-notify.org/iss-now.json")
+obj = json.loads(resp.read().decode("utf8"))
+print(obj)
+print(obj.get("iss_position"))
+print(obj.get("iss_position", {}).get("latitude"), 
+      obj.get("iss_position", {}).get("longitude"))
+\end{verbatim}
+
+Note here that we first read the response, then we decode it to unicode and convert it using the json module.
+
+Note that this time we get nested dictionaries. I'm always wary of indexing dictionaries with keys like \verb|obj["iss_position"]["longitude"]| because I hate it when scripting languages break halfway through execution, so I used nested gets with an empty dictionary as the first fallback, so we'll just get a \verb|None| if either key isn't present.
+
+\subsection{Why Web Scrape}
+
+Now, not all websites are going to have APIs. If people can just use APIs to grab their data directly, then the website just costs money to host, isn't getting people actually coming to their website to click on their ads, and nothing is stopping you from hosting your own website that just replicates data on another website.
+
+So, a lot of APIs require authentication and some cost money. So webscraping is still popular and convienient for getting data from websites that don't have APIs or that you simply don't want to pay for.
+
+Scraping some websites can require authentication, and although there are ways aronud that that can be implemented using beautifulsoup or selenium or wget, authentication through APIs is usually much cleaner and more robust.
+
+%\subsubsection{HTTP Requests}
+
+%\subsubsubsection{\texttt{GET}}
+
+%\subsubsubsection{\texttt{POST}}
+
+%\subsubsection{Retrieving Files}
+
+%\subsubsection{Demo with WireShark}
+
+%\subsection{Authentication}
+
+%\subsection{Refused/Timed out Connections}
 
 
 

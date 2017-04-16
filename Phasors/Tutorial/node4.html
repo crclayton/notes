@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!--Converted with LaTeX2HTML 2008 (1.71)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Calculations</TITLE>
+<META NAME="description" CONTENT="Calculations">
+<META NAME="keywords" CONTENT="Tutorial">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META NAME="Generator" CONTENT="LaTeX2HTML v2008">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="Tutorial.css">
+
+<LINK REL="next" HREF="node5.html">
+<LINK REL="previous" HREF="node1.html">
+<LINK REL="up" HREF="Tutorial.html">
+<LINK REL="next" HREF="node5.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A NAME="tex2html48"
+  HREF="node5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html46"
+  HREF="Tutorial.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html40"
+  HREF="node3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html49"
+  HREF="node5.html">Bibliography</A>
+<B> Up:</B> <A NAME="tex2html47"
+  HREF="Tutorial.html">The Basics of Phasors</A>
+<B> Previous:</B> <A NAME="tex2html41"
+  HREF="node3.html">Resistances, Reactances, and Impedances</A>
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00020000000000000000">
+Calculations</A>
+</H1>
+
+<P>
+So let's do a quick calculation. We have some wire and we don't know if it has any resistance, capacitance, or inductance. So we apply an AC voltage of <!-- MATH
+ $v(t) = 240 sin(116t + 28 \degree)$
+ -->
+<SPAN CLASS="MATH">22#22</SPAN> and see an AC current of <!-- MATH
+ $i(t) = 14 sin (116t-14 \degree)$
+ -->
+<SPAN CLASS="MATH">23#23</SPAN>. Let's figure out the characteristics of this wire.
+
+<P>
+First let's turn these waves into phasors.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<!-- MATH
+ \begin{displaymath}
+\vec{V} = \frac{240}{\sqrt{2}} \angle 28 \degree \ \ \ \ \vec{I} = \frac{14}{\sqrt{2}} \angle -14 \degree
+\end{displaymath}
+ -->
+
+24#24
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Then we can apply Ohm's law.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<!-- MATH
+ \begin{displaymath}
+\vec{Z} = \frac{\vec{V}}{\vec{I}} = 12.72 + j11.47
+\end{displaymath}
+ -->
+
+25#25
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+Then we can deconstruct the impedance into its components.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<!-- MATH
+ \begin{displaymath}
+R = 12.72\Omega \ \ \ \ \ X = 11.47\Omega
+\end{displaymath}
+ -->
+
+26#26
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+However, we haven't entirely solved our problem. We know that the reactance is 11.47<SPAN CLASS="MATH">27#27</SPAN>, but before we can calculate inductance or capacitance, we have to determine if the reactance is from a capacitor or an inductor. Recall the formulas for reactance, <!-- MATH
+ $X_L = 2 \pi f L$
+ -->
+<SPAN CLASS="MATH">12#12</SPAN> and <!-- MATH
+ $X_C = \frac{-1}{2\pi f C}$
+ -->
+<SPAN CLASS="MATH">13#13</SPAN>. This shows us that whenever the reactance is negative (called <SPAN  CLASS="textbf">leading</SPAN>), there's a capacitor in the line. And whenever the reactance is positive (called <SPAN  CLASS="textbf">lagging</SPAN>), it's due to an inductor. Since the reactance is positive, we know there is an inductor. From the original equations we can see that the frequency, <!-- MATH
+ $\omega = 2\pi f = 116\ rad/s$
+ -->
+<SPAN CLASS="MATH">28#28</SPAN>.
+
+<P>
+Rearranging the formula we get
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER" CLASS="mathdisplay">
+<!-- MATH
+ \begin{displaymath}
+L = \frac{X_L}{2 \pi f} = \frac{11.47}{116} = 98.9mH
+\end{displaymath}
+ -->
+
+29#29
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+
+<P>
+And that's how phasors work.
+
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A NAME="tex2html48"
+  HREF="node5.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="/usr/share/latex2html/icons/next.png"></A> 
+<A NAME="tex2html46"
+  HREF="Tutorial.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="/usr/share/latex2html/icons/up.png"></A> 
+<A NAME="tex2html40"
+  HREF="node3.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="/usr/share/latex2html/icons/prev.png"></A>   
+<BR>
+<B> Next:</B> <A NAME="tex2html49"
+  HREF="node5.html">Bibliography</A>
+<B> Up:</B> <A NAME="tex2html47"
+  HREF="Tutorial.html">The Basics of Phasors</A>
+<B> Previous:</B> <A NAME="tex2html41"
+  HREF="node3.html">Resistances, Reactances, and Impedances</A></DIV>
+<!--End of Navigation Panel-->
+<ADDRESS>
+""
+2017-03-20
+</ADDRESS>
+</BODY>
+</HTML>

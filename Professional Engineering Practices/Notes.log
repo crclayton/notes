@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  15 FEB 2017 15:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  18 APR 2017 19:50
 entering extended mode
 **./Notes.tex
 (Notes.tex
@@ -507,23 +507,23 @@ Package csquotes Info: ... none found.
 
 
 Package csquotes Warning: No multilingual support.
-(csquotes)                Cannot enable multilingual quotes on input line 75.
+(csquotes)                Cannot enable multilingual quotes on input line 76.
 
 (Notes.aux)
 \openout1 = `Notes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 75.
-LaTeX Font Info:    ... okay on input line 75.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
 
 ("C:\Users\Charles Clayton\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf
 .mkii"
@@ -590,21 +590,20 @@ File: english.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 129.
 LaTeX Info: Redefining \BHBI on input line 130.
 ) ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 75.
-Package csquotes Info: Making character " active on input line 75.
+LaTeX Info: Redefining \selectfont on input line 76.
+Package csquotes Info: Making character " active on input line 76.
  [0
 
 {C:/Users/Charles Clayton/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (
-Notes.toc)
+Notes.toc [1])
 \tf@toc=\write4
 \openout4 = `Notes.toc'.
 
- [1] (Notes.lof)
+ [2] (Notes.lof)
 \tf@lof=\write5
 \openout5 = `Notes.lof'.
 
-
-(Notes.lot)
+ (Notes.lot)
 \tf@lot=\write6
 \openout6 = `Notes.lot'.
 
@@ -612,49 +611,64 @@ Notes.toc)
 \tf@equ=\write7
 \openout7 = `Notes.equ'.
 
- [2]
+ [3]
 
 Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}]
 . Rerun may be required (or you may have forgotten to use commands like \gls) o
-n input line 107.
+n input line 108.
 
 [1]
-Overfull \hbox (2.70784pt too wide) in paragraph at lines 169--170
+Overfull \hbox (2.70784pt too wide) in paragraph at lines 170--171
 []\OT1/cmr/m/n/10 APEGBC and other provin-cial as-so-ca-tions are mem-bers of E
 n-gi-neers Canada,
  []
 
 [2]
-Overfull \hbox (49.0563pt too wide) in paragraph at lines 191--192
+Overfull \hbox (49.0563pt too wide) in paragraph at lines 192--193
 \OT1/cmr/m/n/10 ers Com-pen-sa-tion Act), in-tel-lec-tual prop-erty rights, con
 -struc-tion reg-u-la-tions/codes/bylaws,
  []
 
-[3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14]
+[3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 516.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 516.
+ [14] [15] [16]
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no “ in font cmr10!
+
+[17] [18] [19] [20] [21] [22] [23] [24]
 No file Notes.bbl.
-[15] (Notes.aux) ) 
+[25] (Notes.aux) ) 
 Here is how much of TeX's memory you used:
- 8359 strings out of 493335
- 124138 string characters out of 3139228
- 259967 words of memory out of 3000000
- 11697 multiletter control sequences out of 15000+200000
- 10442 words of font info for 38 fonts, out of 3000000 for 9000
+ 8380 strings out of 493335
+ 124477 string characters out of 3139228
+ 259968 words of memory out of 3000000
+ 11714 multiletter control sequences out of 15000+200000
+ 10751 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,8n,40p,1941b,223s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,8n,40p,1941b,251s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
-i10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-
-Output written on Notes.pdf (18 pages, 177260 bytes).
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Notes.pdf (29 pages, 226241 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
+ 147 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

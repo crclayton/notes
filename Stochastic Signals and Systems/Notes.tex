@@ -1565,7 +1565,7 @@ A non-symmetric differential amplifier merges the signals, producing an estimate
 
 \subsection{Probability Integral Transform}
 
-You can use this to test if your dataset $\set{x_i}_{i=1}^n$ resulted from a certain distribution $f_X(x)$. You can use the chi-squared ($\mathcal{X}^2$) test to evaluate if your set is consistent with a uniform distribution. 
+You can use this to test if your dataset $\set{x_i}_{i=1}^n$ resulted from a certain distribution $f_X(x)$. %You can use the chi-squared ($\mathcal{X}^2$) test to evaluate if your set is consistent with a uniform distribution. 
 
 Given a cdf $F_X(x)$ then the random variable $Y=F_X(X)$ has a uniform distribution. \begin{align*}
 F_Y(y) & = P(Y \leq y) \\
@@ -1575,10 +1575,7 @@ F_Y(y) & = P(Y \leq y) \\
 & = y
 \end{align*}
 
-Given a continuous random variable $Y = F_X(X)$, you can use the \textit{probability integral transform}, you cannot with discrete random variable samples.
-
-
-
+Given a continuous random variable $Y = F_X(X)$, you can use the \textit{probability integral transform}, you cannot with discrete random variable samples. \noteworthy{F_X(X) \sim \text{Unif}(0,1)}{Probability Integral Transform}
 
 
 
@@ -1595,7 +1592,8 @@ Stochastic means that you don't actually know exactly what a parameter's value i
 
 \subsubsection{Discrete}
 
-Given a uniform random number generator, how can we simulate a discrete distribution $P_X(X=x_i)=p_i$?
+The inverse transform algorithm is useful for any discrete distribution. 
+ Given a uniform random number generator, how can we simulate a discrete distribution $P_X(X=x_i)=p_i$?
 
 \begin{enumerate}
 \item Generate random variable $u \sim U(0,1)$
@@ -1607,42 +1605,159 @@ x_n & u \in (\sum_{i=1}^{n-1} p_i, 1]
 \end{cases}$
 \end{enumerate}
 
-\subsubsection*{Example}
+Let's say: $$x = \begin{cases}
+1 & \text{20\% of the time} \\
+2 & \text{10\% of the time} \\
+3 & \text{70\% of the time} \\
+\end{cases}$$
 
-Consider random variable $X$ with any discrete distribution $F_X(x)$.
+Then you generate a uniform and if it falls between $[0,20]$, you assign the value 1. If the uniform falls between $(20,30)$, you assign value 2. Then for $ \in (30, 70]$, you assign 3. You get the idea.
 
+\subsubsection{Continuous}
 
-\ex
+In the case that the distribution you want, say $F_X(x)$ is continuous, then it'll look like this: $$F_X(x) = P(X \leq x) = p$$ It takes $x$ as an input and outputs $p$. If you take the inverse of that function so: $$x = F^{-1}_X(p)$$ Then the input will be $p$, which is actually uniform so we'll call it $u$, and given uniform inputs will provide outputs $x$ in the desired distribution.
 
-\textbf{Does the inverse of $\mathbf{F_X(x)}$ exist?}
+\textbf{Note}: You cannot use the inverse transform method to generate a Gaussian because there's no good CDF to take the inverse of.
 
-\ex
+The opposite of this is that if you want to generate a uniform, then you generate samples of a distribution, then you feed those values into that distribution's CDF and you'll get out a uniform distribution.
 
-Set $y=F_X(x)$, $x=F^{-1}(y)$. For the inverse $F_X^{-1}(y)$ to exist, each element $y \in Y$ must correspond to exactly one element of $x \in support \set{F_X(x)}$ -- this means for all $x$ where $F_X(x) > 0$.
+\subsection{Polar Algorithm}
 
-Since $F_X(x) = \sum_{x_i \leq x} P_X(x = x_i) u(x=x_i)$
+You can construct anything from this method, it's particularly useful for generating a Gaussian which we can't do with the inverse method. 
 
-...
+\begin{enumerate}
+\item Generate $u_1 \sim U(0,1)$, and $u_2 \sim U(0,1)$
+\item Set $d=-2\ln{u_1}$ and set $\theta=2\pi u_2$
+\item Set $x=\sqrt{d} \cos \theta$ and $y=\sqrt{d}\sin\theta$
+\end{enumerate}
 
-Each element of $y \in Y$ corresponds to an unaccountably infinite elements in an interval on the real line. $F_x^{-1}(x)$ ...
+And by doing this, $X\sim N(0,1)$ and $Y\sim N(0,1)$ are independent normal random variables.
 
+To then construct a non-standard normal distribution, use the linear properties and set: $$Z = \sigma X + \mu \ \ \ \ \ \text{where } X \sim N(0,1)$$
 
-\textbf{Construct a method to generate samples from the random variable $X$ when $F_X(x) = Bernoulli(p)$.}
-
-... Proving, for instance on an exam always involves the same method $\hat{F_X}(x) = F_X(x)$. Know which method to apply. 
-
-In an inverse transform method, invert the probability distribution function, not the density function.
-
-For Gaussian random variable, you cannot use the inverse transform method.
 
 \subsection{Compositional Method}
 
-$$\hat{F}_X(x) = P(X(\mathbf{Y}_i) \leq x)$$
+If it's challenging to create a distribution using the inverse transform method, you can try the compositional method. 
+
+The idea here is to decompose your desired distribution $F_X(x)$ from a sum of weighted distributions $F_{X_i}$. This is good if it's easy to generate samples from the  $F_{X_i}$ distributions. $$F_X(x) = \sum_{i=1}^n p_i F_{X_i}(x) \ \ \ \ \ \text{where} \sum_{i=1}^n p_1 = 1 \ \ \ p_i \geq 0$$ Then we can use the compositional method to generate samples from $F_X(x)$ \begin{enumerate}
+\item Generate random variable $I$ which has a discrete distribution $P(I=i)=p_i$, for $i=1,2,\dots,n$.
+\item Generate random variable $Y_I$ with distribution $F_{X_I}$ 
+\item Set $X = Y_I$
+\end{enumerate}
+
+
+
+
+
+\subsection{Acceptance-Rejection Method}
+
+Propose value, see if it gets accepted. Often use exponential because it goes from [0,$\infty$] and looks like a symmetrical side of normal.
+
+Sampling something constrained between values use uniform, sampling something that's positive use exponential, sampling something that uses entire real line use normal.
+
+
+
+
+
+
+
+
+%$$\hat{F}_X(x) = P(X(\mathbf{Y}_i) \leq x)$$
+
+%\ex
+
+%\textbf{Does the inverse of $\mathbf{F_X(x)}$ exist?}
+
+%\ex
+
+%Set $y=F_X(x)$, $x=F^{-1}(y)$. For the inverse $F_X^{-1}(y)$ to exist, each element $y \in Y$ must correspond to exactly one element of $x \in support \set{F_X(x)}$ -- this means for all $x$ where $F_X(x) > 0$.
+
+%Since $F_X(x) = \sum_{x_i \leq x} P_X(x = x_i) u(x=x_i)$
+
+%...
+
+%Each element of $y \in Y$ corresponds to an unaccountably infinite elements in an interval on the real line. $F_x^{-1}(x)$ ...
+
+
+%\textbf{Construct a method to generate samples from the random variable $X$ when $F_X(x) = Bernoulli(p)$.}
+
+%... Proving, for instance on an exam always involves the same method $\hat{F_X}(x) = F_X(x)$. Know which method to apply. 
+
+%In an inverse transform method, invert the probability distribution function, not the density function.
+
+%For Gaussian random variable, you cannot use the inverse transform method.
+
+
 %--------------------------------%
 
+\section{Random Processes}
 
+\subsection{Independent and Identically Distributed (IID)}
 
+With IID distributions, each random variable has the same distribution (possible outcome) and all outcomes are mutually independent.
 
+A random process is IID if:\begin{enumerate}
+\item It has no memory, so past results tell us nothing about future results
+$$P(X[k] = x_k | X[1], \dots, X[k-1]) = P(X[k] = x_k) = f_{X_k}(x_k;k)$$
+\item Identical/time-invariant distribution
+$$P(X[k] = x_k) = f_{X_k}(x_k;k) = f(x_k)$$
+\end{enumerate}
+
+And IID process is actually a special case of a Markov chain, which we get to in section \ref{Markov Section}.
+
+\subsection{Markov Chain} \label{Markov Section}
+
+Most sources have some sort of correlated random process, and are not pure IID. Markov Chains are a very important type of dependent stochastic process, and almost all engineering, economics, and social sciences model is Markov. 
+
+Whereas IID processes have no memory: \noteworthy{P(X[k]\ |\ X[k-1], X[k-1], \dots) = P(X[k])}{IID Process}
+
+Markov chains do have some sort of memory: \noteworthy{P(X[k]\ |\ X[k-1], X[k-1], \dots) = P(X[k]\ |\ X[k-1]) \forall k}{First-order Markov chain}
+
+They are characterized by three ingredients: \begin{enumerate}
+\item \textbf{State space} -- $S = \set{x_1, \dots, x_m}$
+\item \textbf{Initial state distribution} -- $\pi[0]$ (M dimensional column vector)
+
+$\pi[0] = [P(X[0] = x_1), P(X[0] = x_2), \dots, P(X[0] = x_M)]'$
+
+Clearly, $\pi ' [0] \mathbf{1} = 1$  -- ??? WHAT THE FUCK DOES THIS MEAN
+
+\item Transition probability matrix: $A = (a_{ij})$ which is an $M \times M$ matrix $$\sum_{j=1}^M a_{ij} = 1 \implies A_{M\times M} \mathbf{1}_{M\times 1} = \mathbf{1}_{M \times 1}$$
+
+In this matrix $A$, each row sums to 1, and all elements are non-negative.
+
+\end{enumerate}
+
+\subsubsection*{Example}
+Consider a two-state Markov chain ($M=2$) with $\pi[0] = [0.3, 0.7]'$
+
+\begin{figure}[ht!]
+
+\begin{tabular}{cc}
+$A = \begin{bmatrix}
+0.8 & 0.2 \\
+0.6 & 0.4 \\
+\end{bmatrix}$ & \includegraphics[scale=0.5]{m1.png}
+\end{tabular}
+
+\end{figure}
+
+\textbf{Remarks about this Markov chain} \begin{itemize}
+\item $a_{ij} = P(X[x+1] = j\ |\ X[k]=i)$, denotes the transition probability from state $i$ to state $j$. $a_{ii}$ denotes the probability of remaining in state $i$.
+
+\item $A$ always has one eigenvalue at $\lambda = 1$ corresponding to eigenvector $\mathbf{1}$ because $A \mathbf{1} = \mathbf{1}$
+\item $A^k$ is always a stochastic matrix for any integer  $k > 0$ --- meaning this is a first-order \textit{homogeneous} Markov Chain because $A$ is not a function of time (???)
+\item Markov property means that there is \textit{conditional independence}, in that given $X[k]$, $X[k+1]$ is independent of the past (???)
+\end{itemize}
+
+\subsubsection{Stationary Distribution}
+
+How can we compute the \textbf{steady-state probability} (stationary distribution), $\pi[\infty]$ of a Markov chain?
+
+If we calculate $\pi[\infty]$ then we can model any source by a Markov chain, estimate the transition probabilities, and compute how much info it has. 
+
+We do this using the \textbf{Chapman-Kolomorov Equation}. Given $\pi[0]$ and $A$, the state probability vector at time $k$ is given by: $$\pi[k] = [P(X[k] = x_1), \dots, P(X[k] = x_M)]'$$ 
+This can be computed by: \noteworthy{\pi[k+1] = A'\pi[k] = (A')^{k+1}\pi[0]}{Chapman-Kolmogorov Equation}
 
 
 
@@ -2567,7 +2682,7 @@ hist(X, 100)
   \begin{enumerate}
  \item \textbf{Inverse transform} -- useful for any discrete, for continuous if can construct inverse can construct inverse transform --- 1) generate uniforms between 0-1, 2) $F_X^{-1}(U)=X$ -- inverse cdf, works because of probability integral transform, if you take values from X and appyly cDF of X, then resulting thing is uniform of 0,1
  \item Polar algorithm -- 0 mean, unit variance -- can then construct anything from it (effeen transformation?) -- useful for generating any gaussian dist
- \item \textbf{Compositional} -- sums of weighted distributions, two steps 1) generate the uniform, 2) see where uniform falls , then break it down into different ps 3) get new uniform from where unifrom falls on scale, (what $p$ it gets), then feed $U$ back into the $F_{X_{your p}}$. $F_X(x) = p_1 F_{x_1}(x) + ... + p_n F_{X_n}(X)$ generating number then generate 
+\item \textbf{Compositional} -- sums of weighted distributions, two steps 1) generate the uniform, 2) see where uniform falls , then break it down into different ps 3) get new uniform from where unifrom falls on scale, (what $p$ it gets), then feed $U$ back into the $F_{X_{your p}}$. $F_X(x) = p_1 F_{x_1}(x) + ... + p_n F_{X_n}(X)$ generating number then generate 
  \item Acceptance/Rejection Method -- if can't use the above three, must use this. Last one you should try if none are applicable. Wastes generated samples of the uniform, less efficient than above. Most sophisticated to try to construct sampling because must figure out how to bound pdf with other pdf. -- seems to imply not going to be on the exam
  \item How to apply each method or comb. of methods to generate samples. If normal, use polar with properties of efeen. Combining inverse and polar to solve problems very likely.
  \item Generating samples for Markov Chains -- inverse transform where current dist. is current state -- for each unique state have different inverse transform algorithm embedded 
@@ -2704,4 +2819,40 @@ And so $f_Y(y) = \frac{1}{2}(1+e^{-2 \lambda})$
 $$f_{XY}(x,y) = P(X=x, X \text{ is even})$$
 
 
+
+
+\subsubsection{Multivariate Normal Distribution}
+
+Random vectors not random variables. Let's assume you have three 
+
+%$$X = \begin{bmartrix}x_1 \\ x_2 \\ x_3 \end{bmatrix} \sim N $$
+
+
+
+
+
+No information theory on final.
+
+Derive conditional distributions. 
+
+Define marginal distributions. 
+
+Transformations of multivariate normals. 
+
+\textbf{Conditional probabilities/expectations.}
+
+\textbf{Random processes.}
+
+\textbf{Recursive Baysians.}
+
+Markov Chains -- learn from slides and tutorial notes.
+
+\textbf{Solve markov chains using R} -- general algorithm/pseudocode.
+
+Compute \textbf{stationary conditions}. How to compute \textbf{stationary distribution}. \textbf{Chapman-Kolomogorov} equation. Need to \textbf{write pseudocode to sample from a markov chain}.
+
+Assignment 3, estimate matrix A -- must know. Generate sequence of states, then count number of transitions and transitions into other states.
+
+
+Use polar when sampling normal.
 \end{document}

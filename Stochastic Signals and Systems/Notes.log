@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  16 APR 2017 16:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.20)  18 APR 2017 15:21
 entering extended mode
 **./Notes.tex
 (Notes.tex
@@ -778,11 +778,11 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@lot=\write7
 \openout7 = `Notes.lot'.
 
- (Notes.equ [3])
+ (Notes.equ [3] [4])
 \tf@equ=\write8
 \openout8 = `Notes.equ'.
 
- [4]
+ [5]
 
 Package glossaries Warning: Empty glossary for \printnoidxglossary[type={main}]
 . Rerun may be required (or you may have forgotten to use commands like \gls) o
@@ -827,19 +827,19 @@ it/10 D[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 D
  :\OT1/cmr/m/n/10 98) = []
  []
 
-[8] [9] <img/Series.png, id=406, 343.2825pt x 67.75313pt>
+[8] [9] <img/Series.png, id=443, 343.2825pt x 67.75313pt>
 File: img/Series.png Graphic file (type png)
  <use img/Series.png>
 Package pdftex.def Info: img/Series.png used on input line 348.
 (pdftex.def)             Requested size: 171.64082pt x 33.87646pt.
 
-[10] <img/Parallel.png, id=413, 148.68047pt x 248.42813pt>
+[10] <img/Parallel.png, id=450, 148.68047pt x 248.42813pt>
 File: img/Parallel.png Graphic file (type png)
 
 <use img/Parallel.png>
 Package pdftex.def Info: img/Parallel.png used on input line 356.
 (pdftex.def)             Requested size: 74.34004pt x 124.21376pt.
- <img/Subs.png, id=414, 302.63063pt x 185.19188pt>
+ <img/Subs.png, id=451, 302.63063pt x 185.19188pt>
 File: img/Subs.png Graphic file (type png)
 
 <use img/Subs.png>
@@ -866,7 +866,7 @@ Overfull \hbox (0.35233pt too wide) in paragraph at lines 511--513
 n-vert the inclusion-
  []
 
-[16] [17] <img/T1.png, id=463, 330.10828pt x 164.11313pt>
+[16] [17] <img/T1.png, id=500, 330.10828pt x 164.11313pt>
 File: img/T1.png Graphic file (type png)
  <use img/T1.png>
 Package pdftex.def Info: img/T1.png used on input line 561.
@@ -938,7 +938,7 @@ Chapter 2.
 [45
 
 ] [46] [47] [48] [49]
-<img/transformations.png, id=667, 953.06062pt x 514.92375pt>
+<img/transformations.png, id=704, 953.06062pt x 514.92375pt>
 File: img/transformations.png Graphic file (type png)
 
 <use img/transformations.png>
@@ -965,12 +965,18 @@ ML/cmm/m/it/10 ;  y[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 []\OT1/cmr/m/n/10 (\O
 ML/cmm/m/it/10 v; w\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 g[]$\OT1/cmr/m/n/10 ,
  []
 
-[55] [56] [57] [58]
-No file Notes.bbl.
-[59
+[55] [56] [57] [58] [59] [60] <img/m1.png, id=777, 310.91156pt x 121.57922pt>
+File: img/m1.png Graphic file (type png)
 
-] [60] [61]
-Overfull \hbox (0.39067pt too wide) detected at line 1761
+<use img/m1.png>
+Package pdftex.def Info: img/m1.png used on input line 1740.
+(pdftex.def)             Requested size: 155.45538pt x 60.78946pt.
+ [61 <./img/m1.png>] [62]
+No file Notes.bbl.
+[63
+
+] [64] [65]
+Overfull \hbox (0.39067pt too wide) detected at line 1876
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 2\OML/cmm/
 m/it/10 nd is green\OMS/cmsy/m/n/10 g\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 P\OT1
 /cmr/m/n/10 (\OML/cmm/m/it/10 G[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 G[]\OT1/cmr
@@ -982,29 +988,29 @@ t/10 G[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 R[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10
  P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 R[]\OT1/cmr/m/n/10 )
  []
 
-[62] [63] [64] [65]
-Overfull \hbox (35.88525pt too wide) detected at line 1917
+[66] [67] [68] [69]
+Overfull \hbox (35.88525pt too wide) detected at line 2032
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 E\OMS/cmsy/m/n/10 j\OML/cmm
 /m/it/10 I[]\OT1/cmr/m/n/10 ) = [] = []
  []
 
-[66]
-Overfull \hbox (89.21713pt too wide) detected at line 1927
+[70]
+Overfull \hbox (89.21713pt too wide) detected at line 2042
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 E\OMS/cmsy/m/n/10 j\OML/cmm
 /m/it/10 T[]\OT1/cmr/m/n/10 ) = [] = [] = 5\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 1(
 10)[]
  []
 
-[67] [68] [69] [70]
-Overfull \hbox (13.2532pt too wide) in paragraph at lines 2024--2025
+[71] [72] [73] [74]
+Overfull \hbox (13.2532pt too wide) in paragraph at lines 2139--2140
 []\OT1/cmr/m/n/10 Specific case we'll of-ten see is \OT1/cmr/bx/n/10 stan-dard 
 nor-mal\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 Z$\OT1/cmr/m/n/10 . At which $\OML/c
 mm/m/it/10 Z \OMS/cmsy/m/n/10  \OML/cmm/m/it/10 N\OT1/cmr/m/n/10 (0\OML/cmm/m/
 it/10 ; \OT1/cmr/m/n/10 1)\OML/cmm/m/it/10 ;   \OT1/cmr/m/n/10 =
  []
 
-[71] [72] [73] [74]
-Overfull \hbox (0.66872pt too wide) detected at line 2141
+[75] [76] [77] [78]
+Overfull \hbox (0.66872pt too wide) detected at line 2256
 \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 X > \OT1/cmr/m/n/10 0\OML/c
 mm/m/it/10 :\OT1/cmr/m/n/10 5) = 1 \OMS/cmsy/m/n/10   \OML/cmm/m/it/10 P\OT1/cm
 r/m/n/10 (\OML/cmm/m/it/10 X \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 0\OML/cmm/m/it/
@@ -1014,62 +1020,61 @@ r/m/n/10 (\OML/cmm/m/it/10 X \OMS/cmsy/m/n/10  \OT1/cmr/m/n/10 0\OML/cmm/m/it/
 /it/10 e[]dt\OT1/cmr/m/n/10 ))
  []
 
-[75] [76] [77] [78] [79] [80] [81] [82] [83] [84] [85]
-Overfull \hbox (7.1673pt too wide) in paragraph at lines 2551--2553
+[79] [80] [81] [82] [83] [84] [85] [86] [87] [88] [89]
+Overfull \hbox (7.1673pt too wide) in paragraph at lines 2666--2668
 []\OT1/cmr/m/n/10 covariance given two ran-dom vari-ables Var(X), Var(aX+b), Va
 r(X+Y),
  []
 
-[86]
-Overfull \hbox (5.24245pt too wide) in paragraph at lines 2575--2576
+[90]
+Overfull \hbox (5.24245pt too wide) in paragraph at lines 2690--2691
 []\OT1/cmr/m/n/10 Markov chain has two things: one is ini-tal dis-tri-bu-tion $
 \OML/cmm/m/it/10 [] \OT1/cmr/m/n/10 = [0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 30\O
 ML/cmm/m/it/10 :\OT1/cmr/m/n/10 50\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 2]$,
  []
 
-[87] [88] [89] [90] [91] [92]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2707.
- [93]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2707.
+[91] [92] [93] [94] [95] [96] [97]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2858.
+ [98]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2858.
  (Notes.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2707.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2707.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2858.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2858.
 
 Package rerunfilecheck Info: File `Notes.out' has not changed.
-(rerunfilecheck)             Checksum: 8A1B9DA97E5E4EBE0D81F5BCCB96E6B0;3034.
+(rerunfilecheck)             Checksum: 1FC7D91138D16BBDFA01E289C127C9A1;3419.
  ) 
 Here is how much of TeX's memory you used:
- 13623 strings out of 493335
- 204373 string characters out of 3139228
- 367700 words of memory out of 3000000
- 16475 multiletter control sequences out of 15000+200000
+ 13667 strings out of 493335
+ 204962 string characters out of 3139228
+ 367948 words of memory out of 3000000
+ 16489 multiletter control sequences out of 15000+200000
  16382 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,19n,40p,1941b,751s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 46i,19n,40p,1941b,753s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cmextra/cmex7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Notes.pdf (99 pages, 1222943 bytes).
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cmextra/cmex7.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmsy5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmsy7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti1
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program
+ Files/MiKTeX 2.9/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Notes.pdf (105 pages, 1263687 bytes).
 PDF statistics:
- 1137 PDF objects out of 1200 (max. 8388607)
- 404 named destinations out of 1000 (max. 500000)
- 354 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1214 PDF objects out of 1440 (max. 8388607)
+ 433 named destinations out of 1000 (max. 500000)
+ 399 words of extra memory for PDF output out of 10000 (max. 10000000)
 

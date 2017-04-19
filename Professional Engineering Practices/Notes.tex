@@ -35,7 +35,8 @@
 \newcommand{\listequationsname}{\Large{List of Equations}}
 \newlistof{myequations}{equ}{\listequationsname}
 \newcommand{\myequations}[1]{
-   \addcontentsline{equ}{myequations}{\protect\numberline{\theequation}#1}
+   \addcontentsline{equ}{myequations}{\protect								       \numberline{\theequation}#1
+   }
 }
 \setlength{\cftmyequationsnumwidth}{2.3em}
 \setlength{\cftmyequationsindent}{1.5em}
@@ -224,13 +225,24 @@ A tort has three elements: \begin{enumerate}
 
 The point of a tort is to restore the plaintiff to the way they were before the tort happened by way of compensation. The plaintiff cannot get more out of the law suit (damages) than they had before. In especially bad cases, the court may award \textit{aggravated} or \textit{punitive} damages. If there is no harm, then you will be awarded no damages.
 
-
-
 If the damages are less than \$25k, then you will go to small-claims provincial court. You will pay our own legal fees if you win/lose.
 
 With torts, the burden of proof is on the plaintiff, who must prove "on a balance of probabilities" ($> 50\%$ likelihood) that they were wronged. Note that criminal law has the much higher of "beyond a reasonable doubt". In tort law, the plaintiff can make their case with circumstantial law -- things that would make people  \textit{think} that the defendant is guilty.
 
 The focus of a tort is on the plaintiff, whereas the focus of a crime is on the offender. 
+
+
+\subsubsection{Punitive Damages}
+
+
+Generally, damages are intended to compensate the victim of a tort (negligence). Courts can and do award punitive damages, which are intended to punish the defendant, rather than compensate the plaintiff.
+
+Courts impose punitive damages (also called aggravated damages) in cases where the court finds that a defendant's conduct has been "high-handed, malicious or reprehensible". Punitive damages skew the decision tree.
+
+Problem: since judgments are retrospective, there is no way to know in advance what the punitive judgment would amount to.
+
+
+
 
 \subsection{Court Structure}
 
@@ -497,7 +509,274 @@ In any case where an employee is terminated, the employee has a duty to mitigate
 
 Restrictions on your actions continue to end after employment ends. You cannot compete for clients/customers of your former employer. These agreements are often unenforceable because courts do not want to restrict people from working. The courts are more favourable to the employee than the employer, so the agreements will only be upheld by courts if they are reasonable in their scope, confined geographic regions and only for a period of time.
 
-\newpage
+\section{10 Rules of Business}
+
+\begin{enumerate}
+\item \textbf{Leadership is confidence and vulnerability} \begin{itemize}
+\item Ask for/accept help
+\item Be humble
+\item Understand your impact on and perception by other
+\end{itemize}
+\item \textbf{Know yourself} \begin{itemize}
+\item Find out your own values/purpose
+\item Use your values to help you make decisions
+\end{itemize}
+\item \textbf{Get the basics right} \begin{itemize}
+\item Be on time
+\item Write thank-you notes
+\item Be polite
+\end{itemize}
+\item \textbf{Learn through failure} \begin{itemize}
+\item If you never fail then you're not taking enough risks
+\item Taking \textit{personal} risk as opposed to company/technical risks differentiates leaders
+\end{itemize}
+\item \textbf{Keep energy banks full} \begin{itemize}
+\item Eat/sleep/exercise
+\end{itemize}
+\item \textbf{Read} \begin{itemize}
+\item If someone recommends a book, read it
+\end{itemize}
+\item \textbf{Bosses don't decide who gets promoted, peers do} \begin{itemize}
+\item You'll only lead if people want you to
+\item Be kind to people 
+\item Support other peoples' success
+\item Have courage/hire smarter people than you
+\end{itemize}
+\item \textbf{Life balance} \begin{itemize}
+\item Professionals get professional help  whether childcare, housework, finance advice, health care counseling, coaching -- this is a differentiator
+\end{itemize}
+\item \textbf{Parallel career} \begin{itemize}
+\item Find a passion and do it
+\item Use it to develop leadership skills
+\end{itemize}
+\item \textbf{Keep options open} \begin{itemize}
+\item Option value is least understood and most powerful resource 
+\end{itemize}
+\end{enumerate}
+
+\section{Case Studies in Engineering/Ethical Failures}
+
+\subsection{Kansas City Hyatt Walkway Collapse}
+
+The 40 story Hyatt Regency in Kansas City was constructed in 1978-1980. The atrium lobby had several suspended walkways at the second, third and fourth floor levels. The fourth floor walkway was suspended directly over the second floor walkway; the third floor walkway was offset. 
+
+1600 people were in the lobby on July 17, 1981 to participate in and watch a "tea dance". Many stood on the walkways to watch the dance on the floor of the lobby.
+
+ The fourth floor walkway collapsed onto the second floor walkway, which in turn collapsed onto the floor.  114 lives were lost.
+
+A contractor suggested a change to ease fabrication  by using two hole and nut pairs in a crossbeam instead of one.
+
+The result was that the load on the nuts holding the fourth floor walkway was twice as large and the walkway collapsed.
+
+The contractor claimed to have phoned the design engineer for approval, but the engineer denied ever receiving the call. There was no documentation of the change other than shop drawings.
+
+The design engineer delegated a technician was tasked with reviewing the drawings, but the technician performed to calculations of the loads on the connection. 
+
+The design engineer testified that it was common industry practice for structural engineers to leave the design of steel-to-steel connections to fabricators, then performed "spot checks" on portions of the shop drawings and approved them.
+
+As a result, several engineers lost their licenses and firms went bankrupt.
+
+\subsection{DC-10 Cargo Door}
+
+The DC-10 was McDonell Douglas's answer to Boeing's 747. Developed in the late 1960s, the DC-10 began flying in 1970 and entered commercial service in 1971.
+
+On March 3, 1974, Turkish Airlines flight 981, a DC-10 flying out of Paris experienced an explosive decompression 10 minutes after takeoff when a rear cargo door burst open.
+
+The resulting differential in pressure between the passenger and cargo compartments collapsed the floor, severing the hydraulic control lines that ran within the floor. The aircraft crashed and 346 people were killed.
+
+
+The problem was that although the passenger doors opened inwards, "plug-type", the cargo doors had the latches face the opposite direction and the doors opened outward. If the doors weren't completely closed, then pressure could force the latches open.
+
+This was because they used electric actuators instead of hydraulic actuators. Hydraulic actuators apply constant pressure, but the electric ones turn off after use and ratchets hold the latches in place, but these ratchets failed.
+
+The design engineer recommended hydraulic actuators for this reason, but was overruled because of the lower weight and maintenance ease of the electric actuator.
+
+DC-10 cargo doors had failed prior to this crash – both doors blew off in 1970 during a ground test and the American Airlines flight had experienced a similar explosive decompression over Windsor, Ontario in 1972. The American Airlines flight landed safely, however. The incident was blamed on a mechanic who didn't properly close the door, and some small modifications were made to the door including an indicator showing if it was properly closed. Other modifications were failed to be implemented due to failure of the FAA to ground the aircraft and convey the urgency of the modifications.
+
+An engineer called these "bandaid fixes" and predicted that the safety of the doors would degrade and they would come open, resulting in the loss of the airplane. The engineer's bosses did not act on the memo because they thought it would harm the relationship between companies.
+
+\subsection{Ford Pinto}
+
+Crash tests showed the Pinto wouldn't withstand the standards proposed by the National Highway Traffic Saftey Administration -- stating that cars needed to be able to survive a 20 mph crash without leaking fuel.
+
+A rubber-bladder modification estimated to cost \$11 per vehicle would prevent the leaking, but would push back the introduction of the Pinto. Ford decided to bring it to market without the modification.
+
+There was an internal document with calculations weighing the options. At the time the law valued the a like at \$200k and serious burn injuries at \$67k. Ford estimated selling 11M Pintos and anticipated 180 deaths and 180 burn injuries. 
+
+As a result, Ford calculated the modifications would cost \$121M whereas the lawsuits would cost \$40M and didn't do the modifications.
+
+\subsection{Economic Theory of Negligence (Learned Hand Rule)}
+
+This states the the defendant's duty to protect against injuries is a function of three variables: \begin{enumerate}
+\item The probability of the accident, $P$
+\item The gravity of the resulting loss/injury, $L$
+\item The burned of the adequate precautions, $B$
+\end{enumerate} Whereby the expected loss must be greater than the amount of burden to create a duty of care: $$PL > B$$ 
+
+\section{10 Things I Wish I Learned in Engineering School}
+
+\begin{enumerate}
+\item \textbf{Overconfidence bias} -- "I know what I'm doing", 90\% of drivers rate themselves as above average
+\item \textbf{Confirmation bias} -- "It's worked this long"
+\item \textbf{Sunk cost fallacy} -- "I might as well ride it out"
+\item \textbf{Rare events happen}, and they have massive impacts
+\item \textbf{Most measurements are imprecise}  -- experts are useless, no better than average public
+\item \textbf{Gambler's fallacy} -- "hot hand"
+\item \textbf{Loss aversion} -- people really hate losing stuff, even if your expected value of the risk outweighs the expected value of the non-risk
+\item \textbf{Don't buy from beautiful people} 
+\item \textbf{Be wary of the narrative}
+\item \textbf{Don't trust memory}  unless its made of silicon
+\item \textbf{Beware averages} -- they hide important information
+\item \textbf{Seek out things with options} -- options can have asymmetric payoffs
+\end{enumerate}
+
+\section{Contracts}
+
+Contracts are a legally enforceable promise between parties. It's a common-law recognition that people should make good on their promises.
+
+Form and content are largely unconstrained -- can be oral or written, with 2 or more parties, unilateral or bilateral, but have four requirements to be enforced: \begin{enumerate}
+\item \textbf{Intention to create legal obligations} -- can't be any duress or incapacity
+\item \textbf{Offer} -- promise that contains sufficient details so everyone knows what's required of them\footnote{Different from \textbf{invitation to treatt}, which is an advertisement or willingness to negotiate, if someone accepts it that doesn't mean your contractually obligated to go through with it}
+\item \textbf{Acceptance and communication of acceptance} -- can't force a contract on someone, \textit{a counter-offer rescinds the offer}
+\item \textbf{Consideration} -- something must be given or done in exchange for the promise, gratuitous promises are unenforcable. Consideration can be nominal though.
+\end{enumerate}
+
+Freedom of contract is highly regarded in courts, so courts often will try to enforce contracts. It will not enforce contracts wherein it is for something illegal \textbf{illegal}, or where one or more parties did not have \textbf{capacity}, or where there was any \textbf{duress/undue influence}, or any \textbf{misrepresentation}.
+
+\subsection{Remedies}
+
+These are when one party fails to perform obligations, then the contract is breached. You may then sue for \textbf{breach of contract} and the award will be damages. Damages will put you in the position you would have been in had the contract been performed.
+
+If the contract is something unique, the court can require the parties to carry out their obligations, called \textbf{specific performance}.
+
+
+\subsection{Limitation clauses}
+
+You can limit your liability with a limitation or exclusion cause, but \textbf{you have to bring attention to it} -- use bold type, require signing/initializing clause, etc.
+
+In class we discussed a case of a home inspector getting penalized \$200k because he did not bring enough attention to the limitation of liability clause. 
+
+As engineers, you still may be potentially liable for negligence.
+
+\subsection{Tender Contracts}
+
+Engineers may deal with contractors in a tendering process. The engineer will oversee bids for a contract. Each bid by a contract forms a \textbf{contract A} with the owner -- this is not an invitation to treat, so there can be liability at the bidding stage, such as changing the terms for certain bidders but not all. 
+
+Once the bid is accepted, \textbf{contract B} is formed.
+
+\section{Business Structures}
+
+People complicate their business beyond sole proprietorship for reasons including:
+\begin{enumerate}
+\item protecting themselves and others from liability
+\item gaining tax advantages, providing a means to grow through investment
+\item giving the appearance of professionalism
+\item providing posterity for the business to survive 
+
+\end{enumerate}
+
+\subsection{Sole Proprietorship}
+
+This is the simplest form of business -- there is no separate legal entity, you are the business. It is easy and cheap to form/dissolve, and the business also dies when you die. 
+
+This is a tax advantage because you can deduct business expenses -- but there is no tax deferral and no special tax rate.
+
+It is appropriate for mom and pop shops, tradespeople, hobbyists, consultants, and people who like to start businesses that go nowhere. 
+
+The main risk here is that there is \textbf{unlimited liability}, you are personally on the hook if your business is sued.
+
+You need to reserve a name online which costs about \$30, then register the business online costing another \$40 dollars.If you want to serve customers on your premises, it'll cost about another \$200 to get a city business license. You also have to register for GST if your revenue is $>$\$30k/yr.
+
+For your business name, you have to have a $distinctive$ element, such as your name or whatever, and then a $descriptive$ element which is what the company does. You can then have a suffix, such as "co." or "Ltd".
+
+\subsection{Partnership}
+
+These are where two or more people carry on a business with a view of profit, sharing profits, expenses, liability, and administration. In BC, these can be \begin{enumerate}\item General Partnerships -- debts incurred by one partner are shared by the others
+\item Limited Partnerships or Limited Liability Partnerships -- limits liability of partners to their contribution
+\end{enumerate}
+
+Partnership registration and fees the same as the proprietorship. These are harder to set-up and more money is needed because you'll need a lawyer for the partnership agreement.
+
+There are tax advantages, especially to Limited Partnerships.
+
+\subsection{Corporations}
+
+Corporations are separate legal entities. They can sue and be sued, obtain insurance, own property, enter into contracts, purchase products, and live forever.
+
+The point of the separate legal entity is that liability is shifted away from you and your partners to the corporate entity, protecting the owners from debts and liabilities. You can't use the corporation completely to shield yourself from liability, courts will "pierce the corporate veil" where appropriate.
+
+
+\textbf{Shareholders} are the owners of the company, making ultimate decisions. The \textbf{board of directors} are appointed by the shareholders to run the company. The \textbf{executives} carry out day-to-day management as directed by the board. 
+
+\textbf{Shares} represent fractional ownership of a corporation, and owners are entitled to \textbf{dividends}, capital on windup, and to choose directions/vote on major decisions.
+
+Directors owe the company a \textbf{fiduciary duty}, as well as duties of care, and confidentiality -- so they can be liable for conflicts of interest, taking corporate opportunities, or incompetence -- unhappy shareholders can effectively \textit{sue} directors (this happens frequently in hostile take-overs).
+
+Corporations pay tax just like people, and the sum of the tax paid by the corporation (26\%) plus you as the owner through dividends (19\%) is the same as if you were taxed individually (45\%), but there are three significant tax advantages as a corporation: \begin{enumerate}
+\item \textbf{Small business tax deduction} -- reduces tax payable from 26\% to 13.5\% for up to \$500k in net \textit{income} (not revenue)
+\item \textbf{Tax deferral} -- delays paying tax, allows you to earn income at a lower rate which can then be invested and earn interest. This is like borrowing from the Canadian Revenue Agency. 
+\item \textbf{Capital gains exemption} -- reduces tax payable. 
+\item \textbf{Qualified small business shares} -- if you sell your business you can save up to \$200k in tax, but if you did not incorporate, a good tax lawyer can hook you up to get this
+\end{enumerate}
+
+The best structure for getting investment is being a corporation. You are prohibited from selling shares to the public, and must rely on exemptions such as friends and family, or  you get an accredited investor exemption.
+
+You then present your idea to BCIC, VANTEC, Angel Investors Forum, or whatever, then you find investors and negotiate terms. You'll want to sell the smallest slice possible for as much as possible, and investors will want the biggest slice possible for as little as possible.
+
+At 1/3 of the company sold, you lose the rights to sell all assets or issue new shares and others. At 1/2 of the company sold, you lose the right to elect the board of directors, losing control.
+
+\noindent You should structure your business as a corporation if: \begin{enumerate}
+\item When you get an employee (usually)
+\item When you are making more \$ than you spend
+\item When you are dealing with big money, the loss of which you could not absorb
+\item When you are doing something financially risky
+\item When you have investors or partners who don't participate in the business
+\item when you want to look more official than you are
+\end{enumerate}
+
+\section{Intellectual Property}
+
+IP is increasingly important especially for engineers as companies are getting more aggressive in protecting IP. Employment agreements will likely say what happens to IP and Confidential Information.
+
+\subsection{Patents}
+
+Patents exist too protect the efforts of an inventor. A patent will grant you a time-limited monopoly for 20 years from the date of filing, so no one else can making, use, or sell your invention.
+
+Patentable inventions must be \textbf{novel}, \textbf{non-obvious}\footnote{As in you cannot be a simple combination of 2 other inventions}, and \textbf{useful}. Computer software is not patentable on its own without physical implementation. Improvements and new applications of existing inventions are patentable.
+
+It can take years to get a patent, and can cost \$5k for extremely simple objects and over \$20k for software-related inventions, for filing fees, and lawyer/patent agent fees. 
+
+\subsubsection{Patent Infringement}
+
+With a patent, you can sue someone for making, using, or selling your invention. Remedies for infringement are powerful and broad: \textbf{injunctions} (order to stop the infringement), \textbf{order delivery of infringing goods}, \textbf{lost profits}, \textbf{disgorgement of profits}.
+
+
+\subsection{Copyrights}
+
+Laws created to protect the efforts of artists, but this now includes software enginers, photographers, website owners, video game producers, broadcasters, and other engineers. These do not protect \textit{ideas} but rather their \textit{expressions}. Unlike patents, copyright arises automatically, you do not need to register or use \copyright.
+
+This gives you the exclusive right to reproduce work, make recordings, perform a performance, broadcast a work, etc. A work requires some exercise in skill to create something original. 
+
+A copyright lasts for the life of the author plus 50 years (70 years in the US). After this, the work becomes public domain. 
+
+If you create a work while employed and at work, your employer owns it unless you agree otherwise.
+
+\subsubsection{Infringement}
+
+When a substantial part of a  work is copied, you can sue for infringement. Remedies are similar to patents (injunction, accounting for profits, etc).
+
+There are also statutory remedies -- set amounts for infringement \$100-\$5k for all infringements that are non-commercial.
+
+Fair dealing allows some copying.
+
+\subsection{Trade-Marks}
+
+These protect brands from being imitated and protect consumers from purchasing knock-offs. A trade-mark signals a distinguished good or service of one supplier from another. 
+
+You can register your trade-mark for \textbf{free}, but it requires \textbf{distinctiveness}. Even without trademark, you are protected in areas where you have established "goodwill" and people know your brand.
+
+If someone puts your mark  on their wares, you can sue for infringement with similar remedies to patents and copyright.
+
 
 
 %--------------------------------%

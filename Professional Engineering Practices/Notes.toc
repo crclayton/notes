@@ -12,26 +12,48 @@
 \contentsline {subsubsection}{\numberline {2.2.1}Regulations}{4}
 \contentsline {subsection}{\numberline {2.3}Terminology}{4}
 \contentsline {subsection}{\numberline {2.4}Torts}{5}
-\contentsline {subsection}{\numberline {2.5}Court Structure}{5}
+\contentsline {subsubsection}{\numberline {2.4.1}Punitive Damages}{5}
+\contentsline {subsection}{\numberline {2.5}Court Structure}{6}
 \contentsline {section}{\numberline {3}Ethics}{6}
-\contentsline {section}{\numberline {4}Negligence}{7}
+\contentsline {section}{\numberline {4}Negligence}{8}
 \contentsline {subsection}{\numberline {4.1}Duty of care}{8}
-\contentsline {subsection}{\numberline {4.2}Causation}{8}
-\contentsline {subsection}{\numberline {4.3}Damages}{8}
+\contentsline {subsection}{\numberline {4.2}Causation}{9}
+\contentsline {subsection}{\numberline {4.3}Damages}{9}
 \contentsline {subsection}{\numberline {4.4}Liability}{9}
-\contentsline {subsection}{\numberline {4.5}Limitation Period}{9}
-\contentsline {section}{\numberline {5}Conflict of Interest}{9}
-\contentsline {subsection}{\numberline {5.1}Whistleblowing}{10}
+\contentsline {subsection}{\numberline {4.5}Limitation Period}{10}
+\contentsline {section}{\numberline {5}Conflict of Interest}{10}
+\contentsline {subsection}{\numberline {5.1}Whistleblowing}{11}
 \contentsline {section}{\numberline {6}Persuasive Communication}{11}
-\contentsline {section}{\numberline {7}Employment Law}{11}
-\contentsline {subsection}{\numberline {7.1}Sources of Employment Law}{11}
+\contentsline {section}{\numberline {7}Employment Law}{12}
+\contentsline {subsection}{\numberline {7.1}Sources of Employment Law}{12}
 \contentsline {subsection}{\numberline {7.2}Minimum standards}{12}
 \contentsline {subsection}{\numberline {7.3}Occupational Health and Safety}{12}
-\contentsline {subsection}{\numberline {7.4}Human Rights}{12}
-\contentsline {subsection}{\numberline {7.5}Ending the employment relationship}{12}
+\contentsline {subsection}{\numberline {7.4}Human Rights}{13}
+\contentsline {subsection}{\numberline {7.5}Ending the employment relationship}{13}
 \contentsline {subsubsection}{\numberline {7.5.1}Just Cause}{13}
 \contentsline {subsubsection}{\numberline {7.5.2}Wrongful Dismissal Damages}{13}
 \contentsline {subsubsection}{\numberline {7.5.3}Constructive Dismissal}{13}
-\contentsline {subsubsection}{\numberline {7.5.4}Duty to Mitigate}{13}
-\contentsline {subsubsection}{\numberline {7.5.5}Non-competition and Non-solicitation agreements}{13}
-\contentsline {section}{Appendix}{15}
+\contentsline {subsubsection}{\numberline {7.5.4}Duty to Mitigate}{14}
+\contentsline {subsubsection}{\numberline {7.5.5}Non-competition and Non-solicitation agreements}{14}
+\contentsline {section}{\numberline {8}10 Rules of Business}{14}
+\contentsline {section}{\numberline {9}Case Studies in Engineering/Ethical Failures}{15}
+\contentsline {subsection}{\numberline {9.1}Kansas City Hyatt Walkway Collapse}{15}
+\contentsline {subsection}{\numberline {9.2}DC-10 Cargo Door}{16}
+\contentsline {subsection}{\numberline {9.3}Ford Pinto}{17}
+\contentsline {subsection}{\numberline {9.4}Economic Theory of Negligence (Learned Hand Rule)}{17}
+\contentsline {section}{\numberline {10}10 Things I Wish I Learned in Engineering School}{18}
+\contentsline {section}{\numberline {11}Contracts}{18}
+\contentsline {subsection}{\numberline {11.1}Remedies}{19}
+\contentsline {subsection}{\numberline {11.2}Limitation clauses}{19}
+\contentsline {subsection}{\numberline {11.3}Tender Contracts}{20}
+\contentsline {section}{\numberline {12}Business Structures}{20}
+\contentsline {subsection}{\numberline {12.1}Sole Proprietorship}{20}
+\contentsline {subsection}{\numberline {12.2}Partnership}{21}
+\contentsline {subsection}{\numberline {12.3}Corporations}{21}
+\contentsline {section}{\numberline {13}Intellectual Property}{23}
+\contentsline {subsection}{\numberline {13.1}Patents}{23}
+\contentsline {subsubsection}{\numberline {13.1.1}Patent Infringement}{23}
+\contentsline {subsection}{\numberline {13.2}Copyrights}{24}
+\contentsline {subsubsection}{\numberline {13.2.1}Infringement}{24}
+\contentsline {subsection}{\numberline {13.3}Trade-Marks}{24}
+\contentsline {section}{Appendix}{25}
